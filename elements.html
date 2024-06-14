@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAS Elements</title>
+    <style>
+        @font-face {
+            font-family: caudex;
+            src: url(data/font/Caudex-Regular.ttf);
+        }
+
+        /* unvisited link */
+        a:link {
+            color: white;
+        }
+
+        /* visited link */
+        a:visited {
+            color: white;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: white;
+        }
+
+        /* selected link */
+        a:active {
+            color: white;
+        }
+
+        @media only screen and (max-width: 750px) {
+
+            /* Removes padding */
+            #main {
+                max-width: 100vw !important;
+            }
+
+            /* Adjusts size of "The Cornell Astronomical Society" text over top image */
+            #cas_overlay {
+                font-size: 3.3vw !important;
+                max-width: 32vw !important;
+            }
+
+            #main_content {
+                display: block !important;
+            }
+
+            #newsletter_img {
+                max-width: 75vw !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color: black; background-image: url(data/img/bg1.jpg); background-repeat: no-repeat;
+  background-attachment: fixed; background-size: cover; background-position: center; color: rgb(234, 234, 234);">
+    <div id="main" style="margin: auto; max-width: 65vw;">
+
+        <!-- Title image -->
+        <div style="position: relative; text-align: center;">
+            <img src="data/img/casbg.jpg" style="width: 100%;">
+            <div id="cas_overlay"
+                style="position: absolute; bottom: 4px; left: 50%; transform: translate(-50%, -50%); font-family: caudex,serif; max-width: 25vw; font-size: 2.5vw; color: #CACACA;">
+                The Cornell Astronomical Society</div>
+        </div>
+
+        <!-- Opening status box -->
+        <div
+            style="width: 100%; background-color: rgba(140, 0, 0, 0.69); text-align: center; margin: auto; padding: 6vh 2vw; max-width: 100%; box-sizing: border-box; color: white">
+            <span style="text-shadow: white 0 0 6px; font-size: 40px;">Open every Friday <span
+                    style="font-weight: bold;">8 PM - midnight</span>.</span>
+            <br>
+            <!-- Status message -->
+            <span style="text-shadow: white 0 0 4px; color: white; font-size: 24px;">Open all summer, but less
+                staffed—check here in case of sudden cancellations.</span>
+        </div>
+
+        <!-- Main content -->
+        <div id="main_box"
+            style="width: 100%; background-color: rgba(0, 0, 0, 0.8); text-align: left; margin: auto; padding: 6vh 2vw; max-width: 100%; box-sizing: border-box;">
+            <div id="main_content" style="display: grid; grid-template-columns: 70% 30%;">
+                <div id="col_1">
+                    <span style="color: rgb(140, 191, 233); font-size: 35px; font-family: Georgia, serif;">The
+                        Cornell Astronomical Society & Fuertes
+                        Observatory</span>
+                    <span style="text-align: justify;">
+                        <p>The Cornell Astronomical Society (CAS) has conducted public viewing nights at Cornell
+                            University's Fuertes Observatory for over 50 years. We open the observatory every Friday
+                            night
+                            during the academic year from 8 PM until midnight, <span
+                                style="font-weight: 600; font-style: italic;">regardless of clouds</span>.</p>
+                        <p>During Cornell winter and summer breaks, check this page to see if we're open. Join our
+                            listserv
+                            at the bottom of this page for weekly updates on events!</p>
+                        <p>Visit our Hours & Directions page for directions and parking information, the Open House and
+                            Accessibility page for what to expect when there, and our Event Calendar for a schedule of
+                            upcoming events.</p>
+                        <p>Lectures to the public are given by Cornell astronomy faculty and other researchers several
+                            times
+                            throughout the semester on Friday nights, prior to the open house. Visit the Lecture Series
+                            page
+                            for a list of upcoming lectures.</p>
+                        <p>The Cornell Astronomical Society is Cornell's astronomy club. All Cornell students,
+                            regardless of
+                            prior experience or area of study, are welcome to become members of CAS. Visit About the
+                            Club
+                            for more information.</p>
+                    </span>
+                </div>
+                <div id="col_2">
+                    <div id="widget_2" style="margin: auto;">
+                        <a href="https://time.is/Ithaca" id="time_is_link" rel="nofollow" style="font-size:24px">
+                            <div id="Ithaca_z161" style="font-size:14px;color:white;text-align:center"></div>
+                            <script src="//widget.time.is/en.js"></script>
+                            <script>
+                                time_is_widget.init({ Ithaca_z161: { template: "DATE<br>SUN", date_format: "monthname dnum, year:", sun_format: "Sunrise: srhour:srminute Sunset: sshour:ssminute", coords: "42.4406300,-76.4966100" } });
+                            </script>
+                        </a>
+                    </div>
+                    <div id="widget_3">
+                        <!-- // Begin Current Moon Phase HTML (c) MoonConnection.com // -->
+                        <img style="margin: auto; display: block;" src="https://www.moonmodule.com/cs/dm/vn.gif">
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: justify;">
+                <div style="padding: 3vh;"></div>
+                <span style="color: rgb(140, 191, 233); font-size: 24px; font-family: Georgia, serif;">Fuertes
+                    Observatory Tours and Group Events</span>
+                <p>Organizations and informal <span style="font-weight: 600;">large groups</span> may request an
+                    educational observing session at Fuertes Observatory conducted by CAS volunteers. These can be
+                    arranged on non-Fridays and any night when the observatory is not reserved for introductory
+                    astronomy classes. Private sessions are completely free! Scheduling of events is subject to the
+                    availability of CAS officers and to the full discretion of the Cornell Department of Astronomy. Send
+                    us an email to arrange an event.</p>
+            </div>
+            <div style="padding: 10vh;"></div>
+            <div style="text-align: center;">
+                <span style="color: rgb(140, 191, 233); font-size: 24px; font-family: Georgia, serif;">Check out our
+                    newsletters by clicking below!</span>
+                <div style="padding: 1vh;"></div>
+                <img id="newsletter_img" src="data/img/newsletters.png"
+                    style="margin: auto; display: block; max-width: 30vw;">
+            </div>
+            <div style="padding: 10vh;"></div>
+            <div style="text-align: center;">
+                <span style="color: rgb(140, 191, 233); font-size: 24px; font-family: Georgia, serif;">Mailing
+                    List</span>
+                <p>Fill out the form below to be added to our email listserv. We generally send out a weekly
+                    announcement listing the events at Fuertes for that Friday, as well as notifications about special
+                    events on non-Friday nights.</p>
+                <iframe src="data/html/form.html"
+                    style="display: inline-block; background-color: rgba(50, 117, 182, 0.78); max-height: 15ex; padding: 0 5vw;"
+                    frameBorder="0" width="83%;">
+                </iframe>
+                <p>Ignore the "This request is invalid" message if received. Check your email for subscription
+                    verification.
+                    <br>
+                    Contact <a href="mailto:astrosociety@cornell.edu">astrosociety@cornell.edu</a> for
+                    assistance.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
