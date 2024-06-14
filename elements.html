@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow-x: hidden;">
 
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,49 @@
         @font-face {
             font-family: caudex;
             src: url(data/font/Caudex-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: rubik;
+            src: url(data/font/Rubik-Light.ttf);
+        }
+
+        @keyframes flyin {
+            from {
+                transform: translateY(-20vh);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadein {
+            0% {
+                opacity: 0;
+            }
+
+            33% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Fixes background: https://stackoverflow.com/a/33057806 */
+        body:before {
+            content: "";
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            background: url(data/img/bg1.jpg) no-repeat center center;
+            background-size: cover;
         }
 
         /* unvisited link */
@@ -31,6 +74,71 @@
             color: white;
         }
 
+        .nav_el {
+            text-align: center;
+            border-radius: 0;
+            border: 0.5px solid black;
+            font-family: rubik, serif;
+            background-image: linear-gradient(rgb(202, 202, 202), rgb(148, 148, 148));
+            cursor: pointer;
+            color: #222;
+            line-height: 50px;
+            font-size: 17px;
+            width: 100%;
+        }
+
+        .nav_el_sel {
+            background-image: linear-gradient(rgb(123, 193, 228) 0%, 15.6682%, rgb(58, 160, 210) 31.3364%, 65.6682%, rgb(6, 121, 180) 100%);
+            color: rgb(240, 240, 240);
+        }
+
+        .nav_el:hover {
+            background-image: linear-gradient(rgb(107, 107, 107) 0%, 3.21101%, rgb(100, 100, 100) 6.42202%, 53.211%, rgb(6, 6, 6) 100%);
+            color: rgb(240, 240, 240);
+        }
+
+        .nav_dd {
+            position: relative;
+            display: inline-block;
+        }
+
+        .nav_dd_menu {
+            display: none;
+            position: absolute;
+            z-index: 10161922;
+            width: 100%;
+            text-align: center;
+            font-family: rubik, serif;
+        }
+
+        .nav_dd_menu .nav_dd_space {
+            display: block;
+        }
+
+        .nav_dd_main {
+            background-color: rgb(161, 161, 161);
+            border-radius: 2px;
+            margin-top: 6px;
+        }
+
+        .nav_dd_menu a {
+            color: rgb(6, 6, 6);
+            display: block;
+            width: 100%;
+            text-decoration: none;
+            font-size: 17px;
+            line-height: 32px;
+        }
+
+        .nav_dd_menu a:hover {
+            background-image: linear-gradient(rgb(107, 107, 107) 0%, 3.21101%, rgb(100, 100, 100) 6.42202%, 53.211%, rgb(6, 6, 6) 100%);
+            color: rgb(240, 240, 240);
+        }
+
+        .nav_dd:hover .nav_dd_menu {
+            display: block;
+        }
+
         @media only screen and (max-width: 750px) {
 
             /* Removes padding */
@@ -44,70 +152,106 @@
                 max-width: 32vw !important;
             }
 
-            #main_content {
+            .main_content {
                 display: block !important;
             }
 
             #newsletter_img {
                 max-width: 75vw !important;
             }
+
+            #copyright {
+                text-align: left !important;
+            }
         }
     </style>
 </head>
 
-<body style="background-color: black; background-image: url(data/img/bg1.jpg); background-repeat: no-repeat;
-  background-attachment: fixed; background-size: cover; background-position: center; color: rgb(234, 234, 234);">
-    <div id="main" style="margin: auto; max-width: 65vw;">
+<body style="background-color: black; color: rgb(234, 234, 234); overflow-x: hidden;">
+    <div id="main" style="margin: auto; max-width: 67vw; animation: fadein ease-in-out 1.5s none;">
+
+        <div style="padding: 1vh;"></div>
+
+        <!-- Nav bar, should persist across pages; add nav_el_sel to current page -->
+        <nav style="display: grid; grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%; animation: flyin ease-in-out 1s none;">
+            <button class="nav_el nav_el_sel">Home</button>
+            <div class="nav_dd">
+                <button class="nav_el">About</button>
+                <div class="nav_dd_menu">
+                    <div class="nav_dd_main">
+                        <a href="#.">The Club</a>
+                        <a href="#.">Eclipse on April 8</a>
+                        <a href="#.">The Telescope</a>
+                        <a href="#.">Fuertes History</a>
+                        <a href="#.">Telescope History</a>
+                        <a href="#.">Lantern Slide Wall</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_dd">
+                <button class="nav_el" style="width: 100%;">Visit Us</button>
+                <div class="nav_dd_menu">
+                    <div class="nav_dd_main">
+                        <a href="#.">Hours, Directions</a>
+                        <a href="#.">Accessibility</a>
+                        <a href="#.">Weather</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_dd">
+                <button class="nav_el" style="width: 100%;">Events</button>
+                <div class="nav_dd_menu">
+                    <div class="nav_dd_main">
+                        <a href="#.">Lecture Series</a>
+                        <a href="#.">Open House Nights</a>
+                        <a href="#.">Archived Lectures</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_dd">
+                <button class="nav_el" style="width: 100%;">Photos</button>
+                <div class="nav_dd_menu">
+                    <div class="nav_dd_main">
+                        <a href="#.">Photo Gallery</a>
+                        <a href="#.">Museum Gallery</a>
+                    </div>
+                </div>
+            </div>
+            <button class="nav_el">Newsletters</button>
+        </nav>
+
+        <div style="padding: 2vh;"></div>
 
         <!-- Title image -->
         <div style="position: relative; text-align: center;">
             <img src="data/img/casbg.jpg" style="width: 100%;">
-            <div id="cas_overlay"
-                style="position: absolute; bottom: 4px; left: 50%; transform: translate(-50%, -50%); font-family: caudex,serif; max-width: 25vw; font-size: 2.5vw; color: #CACACA;">
-                The Cornell Astronomical Society</div>
+            <div id="cas_overlay" style="position: absolute; bottom: 4px; left: 50%; transform: translate(-50%, -50%); font-family: caudex,serif; max-width: 25vw; font-size: 2.5vw; color: #CACACA;">The Cornell Astronomical Society</div>
         </div>
+
+        <div style="padding: 2vh;"></div>
 
         <!-- Opening status box -->
-        <div
-            style="width: 100%; background-color: rgba(140, 0, 0, 0.69); text-align: center; margin: auto; padding: 6vh 2vw; max-width: 100%; box-sizing: border-box; color: white">
-            <span style="text-shadow: white 0 0 6px; font-size: 40px;">Open every Friday <span
-                    style="font-weight: bold;">8 PM - midnight</span>.</span>
+        <div style="width: 100%; background-color: rgba(140, 0, 0, 0.69); text-align: center; margin: auto; padding: 6vh 2vw; max-width: 100%; box-sizing: border-box; color: white">
+            <span style="text-shadow: white 0 0 6px; font-size: 40px;">Open every Friday <span style="font-weight: bold;">8 PM - midnight</span>.</span>
             <br>
             <!-- Status message -->
-            <span style="text-shadow: white 0 0 4px; color: white; font-size: 24px;">Open all summer, but less
-                staffed—check here in case of sudden cancellations.</span>
+            <span style="text-shadow: white 0 0 4px; color: white; font-size: 24px;">Open all summer, but less staffed—check here in case of sudden cancellations.</span>
         </div>
 
+        <div style="padding: 2vh;"></div>
+
         <!-- Main content -->
-        <div id="main_box"
-            style="width: 100%; background-color: rgba(0, 0, 0, 0.8); text-align: left; margin: auto; padding: 6vh 2vw; max-width: 100%; box-sizing: border-box;">
-            <div id="main_content" style="display: grid; grid-template-columns: 70% 30%;">
+        <div id="main_box" style="width: 100%; background-color: rgba(0, 0, 0, 0.8); text-align: left; margin: auto; padding: 6vh 2vw; max-width: 100%; box-sizing: border-box;">
+            <div class="main_content" style="display: grid; grid-template-columns: 70% 30%;">
                 <div id="col_1">
                     <span style="color: rgb(140, 191, 233); font-size: 35px; font-family: Georgia, serif;">The
-                        Cornell Astronomical Society & Fuertes
-                        Observatory</span>
+                        Cornell Astronomical Society & Fuertes Observatory</span>
                     <span style="text-align: justify;">
-                        <p>The Cornell Astronomical Society (CAS) has conducted public viewing nights at Cornell
-                            University's Fuertes Observatory for over 50 years. We open the observatory every Friday
-                            night
-                            during the academic year from 8 PM until midnight, <span
-                                style="font-weight: 600; font-style: italic;">regardless of clouds</span>.</p>
-                        <p>During Cornell winter and summer breaks, check this page to see if we're open. Join our
-                            listserv
-                            at the bottom of this page for weekly updates on events!</p>
-                        <p>Visit our Hours & Directions page for directions and parking information, the Open House and
-                            Accessibility page for what to expect when there, and our Event Calendar for a schedule of
-                            upcoming events.</p>
-                        <p>Lectures to the public are given by Cornell astronomy faculty and other researchers several
-                            times
-                            throughout the semester on Friday nights, prior to the open house. Visit the Lecture Series
-                            page
-                            for a list of upcoming lectures.</p>
-                        <p>The Cornell Astronomical Society is Cornell's astronomy club. All Cornell students,
-                            regardless of
-                            prior experience or area of study, are welcome to become members of CAS. Visit About the
-                            Club
-                            for more information.</p>
+                        <p>The Cornell Astronomical Society (CAS) has conducted public viewing nights at Cornell University's Fuertes Observatory for over 50 years. We open the observatory every Friday night during the academic year from 8 PM until midnight, <span style="font-weight: 600; font-style: italic;">regardless of clouds</span>.</p>
+                        <p>During Cornell winter and summer breaks, check this page to see if we're open. Join our listserv at the bottom of this page for weekly updates on events!</p>
+                        <p>Visit our Hours & Directions page for directions and parking information, the Open House and Accessibility page for what to expect when there, and our Event Calendar for a schedule of upcoming events.</p>
+                        <p>Lectures to the public are given by Cornell astronomy faculty and other researchers several times throughout the semester on Friday nights, prior to the open house. Visit the Lecture Series page for a list of upcoming lectures.</p>
+                        <p>The Cornell Astronomical Society is Cornell's astronomy club. All Cornell students, regardless of prior experience or area of study, are welcome to become members of CAS. Visit About the Club for more information.</p>
                     </span>
                 </div>
                 <div id="col_2">
@@ -128,43 +272,50 @@
             </div>
             <div style="text-align: justify;">
                 <div style="padding: 3vh;"></div>
-                <span style="color: rgb(140, 191, 233); font-size: 24px; font-family: Georgia, serif;">Fuertes
-                    Observatory Tours and Group Events</span>
-                <p>Organizations and informal <span style="font-weight: 600;">large groups</span> may request an
-                    educational observing session at Fuertes Observatory conducted by CAS volunteers. These can be
-                    arranged on non-Fridays and any night when the observatory is not reserved for introductory
-                    astronomy classes. Private sessions are completely free! Scheduling of events is subject to the
-                    availability of CAS officers and to the full discretion of the Cornell Department of Astronomy. Send
-                    us an email to arrange an event.</p>
+                <span style="color: rgb(140, 191, 233); font-size: 24px; font-family: Georgia, serif;">Fuertes Observatory Tours and Group Events</span>
+                <p>Organizations and informal <span style="font-weight: 600;">large groups</span> may request an educational observing session at Fuertes Observatory conducted by CAS volunteers. These can be arranged on non-Fridays and any night when the observatory is not reserved for introductory astronomy classes. Private sessions are completely free! Scheduling of events is subject to the availability of CAS officers and to the full discretion of the Cornell Department of Astronomy. Send us an email to arrange an event.</p>
             </div>
             <div style="padding: 10vh;"></div>
             <div style="text-align: center;">
-                <span style="color: rgb(140, 191, 233); font-size: 24px; font-family: Georgia, serif;">Check out our
-                    newsletters by clicking below!</span>
+                <span style="color: rgb(140, 191, 233); font-size: 24px; font-family: Georgia, serif;">Check out our newsletters by clicking below!</span>
                 <div style="padding: 1vh;"></div>
-                <img id="newsletter_img" src="data/img/newsletters.png"
-                    style="margin: auto; display: block; max-width: 30vw;">
+                <img id="newsletter_img" src="data/img/newsletters.png" style="margin: auto; display: block; max-width: 30vw;">
             </div>
             <div style="padding: 10vh;"></div>
             <div style="text-align: center;">
-                <span style="color: rgb(140, 191, 233); font-size: 24px; font-family: Georgia, serif;">Mailing
-                    List</span>
-                <p>Fill out the form below to be added to our email listserv. We generally send out a weekly
-                    announcement listing the events at Fuertes for that Friday, as well as notifications about special
-                    events on non-Friday nights.</p>
-                <iframe src="data/html/form.html"
-                    style="display: inline-block; background-color: rgba(50, 117, 182, 0.78); max-height: 15ex; padding: 0 5vw;"
-                    frameBorder="0" width="83%;">
+                <span style="color: rgb(140, 191, 233); font-size: 24px; font-family: Georgia, serif;">Mailing List</span>
+                <p>Fill out the form below to be added to our email listserv. We generally send out a weekly announcement listing the events at Fuertes for that Friday, as well as notifications about special events on non-Friday nights.</p>
+                <iframe src="data/html/form.html" style="display: inline-block; background-color: rgba(50, 117, 182, 0.78); max-height: 15ex; padding: 0 5vw;" frameBorder="0" width="83%;">
                 </iframe>
-                <p>Ignore the "This request is invalid" message if received. Check your email for subscription
-                    verification.
-                    <br>
-                    Contact <a href="mailto:astrosociety@cornell.edu">astrosociety@cornell.edu</a> for
-                    assistance.
+                <p>Ignore the "This request is invalid" message if received. Check your email for subscription verification.<br>Contact <a href="mailto:astrosociety@cornell.edu">astrosociety@cornell.edu</a> for assistance.
                 </p>
             </div>
         </div>
     </div>
+
+    <div style="padding: 2vh;"></div>
+
+    <footer style="background-color: rgba(0, 0, 0, 0.8); width: 100vw; align-items: center; justify-content: center; font-size: 0.8em;">
+        <div style="padding: 2vh;"></div>
+        <div class="main_content" style="display: grid; grid-template-columns: 4fr 2.2fr 1px 2fr 1px 1.5fr 1px 3fr 1px 2fr 4fr; margin: auto;">
+            <div></div>
+            <div style="text-align: left; padding: 1rem 10%; overflow-wrap: anywhere;">Email us: <a href="mailto:astrosociety@cornell.edu">astrosociety@cornell.edu</a></div>
+            <div style="background-color: white; width: 100%;"></div>
+            <div style="text-align: left; padding: 1rem 10%;">Find us:<br>209 Cradit Farm Drive<br>Ithaca, New York 14850</div>
+            <div style="background-color: white; width: 100%;"></div>
+            <div style="text-align: left; padding: 1rem 10%;">Hours:<br>Fri: 8pm - 12am</div>
+            <div style="background-color: white; width: 100%;"></div>
+            <div id="copyright" style="text-align: center; padding: 1rem 10%; font-size: 0.8em; line-height: 1.5em;">© 2024 by the Cornell Astronomical Society<br>Member Login<br><br>This organization is a registered student organization of Cornell University.</div>
+            <div style="background-color: white; width: 100%;"></div>
+            <div style="padding: 1rem 10%; max-width: 20vw; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 5%; place-items: center;">
+                <a href="https://www.facebook.com/FuertesObservatory"><img style="width: 100%;" src="data/social/Facebook_Logo_Primary.png"></a>
+                <a href="https://twitter.com/FuertesObs"><img style="width: 100%;" src="data/social/Logo_of_Twitter.png"></a>
+                <a href="https://www.instagram.com/fuertesobservatory"><img style="width: 100%;" src="data/social/Instagram_Glyph_Gradient.png"></a>
+            </div>
+            <div></div>
+        </div>
+        <div style="padding: 2vh;"></div>
+    </footer>
 </body>
 
 </html>
