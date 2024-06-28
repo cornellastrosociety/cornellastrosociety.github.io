@@ -124,28 +124,22 @@ body {
     width: 100%;
 
     background:
-        url("../../data/img/GalaxyBackground.jpg");
+        url("data/img/ugc.jpg");
 
 }
 
-/* unvisited link */
-a:link {
-    color: white;
-}
-
-/* visited link */
-a:visited {
-    color: white;
-}
-
-/* mouse over link */
-a:hover {
-    color: white;
-}
-
-/* selected link */
+a:link,
+a:visited,
+a:hover,
 a:active {
     color: white;
+}
+
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active {
+    color: rgb(234, 234, 234) !important;
 }
 
 .nav_el {
