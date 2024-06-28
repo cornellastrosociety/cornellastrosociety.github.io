@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fuertes Observatory | The Cornell Astronomical Society</title>
+    <link rel="stylesheet" href="../../index.css">
+    <style>
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: black;
+        }
+
+        body:before {
+            content: "";
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            background: url(../../data/img/pl.png) no-repeat center center, rgba(0, 0, 0, 0.15);
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+
+        .nav_el {
+            border: 0;
+        }
+
+        .border_el {
+            border-right: 0.5px solid black;
+        }
+    </style>
+</head>
+
+<body style="background-color: black; color: rgb(234, 234, 234); overflow-x: hidden;">
+    <div id="main" style="margin: auto; max-width: 67vw; animation: fadein ease-in-out 1.5s none;">
+
+        <div style="padding: 1vh;"></div>
+
+        <!-- Nav bar, should persist across pages; add nav_el_sel to current page -->
+        <nav style="display: grid; grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%; animation: flyin ease-in-out 1s none; box-shadow: 0px 0px 7.5px rgba(0, 0, 0, 0.5);">
+            <a href="../../"><button class="nav_el border_el">Home</button></a>
+            <div class="nav_dd">
+                <button class="nav_el border_el nav_el_sel">About</button>
+                <div class="nav_dd_menu">
+                    <div class="nav_dd_main">
+                        <a href="" class="nav_el_sel">The Club</a>
+                        <a href="#.">Eclipse on April 8</a>
+                        <a href="#.">The Telescope</a>
+                        <a href="#.">Fuertes History</a>
+                        <a href="#.">Telescope History</a>
+                        <a href="#.">Lantern Slide Wall</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_dd">
+                <button class="nav_el border_el" style="width: 100%;">Visit Us</button>
+                <div class="nav_dd_menu">
+                    <div class="nav_dd_main">
+                        <a href="#.">Hours, Directions</a>
+                        <a href="#.">Accessibility</a>
+                        <a href="#.">Weather</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_dd">
+                <button class="nav_el border_el" style="width: 100%;">Events</button>
+                <div class="nav_dd_menu">
+                    <div class="nav_dd_main">
+                        <a href="#.">Lecture Series</a>
+                        <a href="#.">Open House Nights</a>
+                        <a href="#.">Archived Lectures</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_dd">
+                <button class="nav_el border_el" style="width: 100%;">Photos</button>
+                <div class="nav_dd_menu">
+                    <div class="nav_dd_main">
+                        <a href="#.">Photo Gallery</a>
+                        <a href="#.">Museum Gallery</a>
+                    </div>
+                </div>
+            </div>
+            <button class="nav_el">Newsletters</button>
+        </nav>
+
+        <div style="padding: 3vh;"></div>
+
+        <!-- Title text -->
+        <div style="width: 100%; text-align: center; color: black; -webkit-text-stroke: 0 white; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 36px; font-weight: bold; text-shadow: white -1px -1px, white -1px 1px, white 1px 1px, white 1px -1px;">History of the Fuertes Observatory</div>
+
+        <div style="padding: 2vh;"></div>
+
+        <!-- Title image -->
+        <div style="width: 100%; text-align: center;">
+            <img src="../../data/img/fos.jpg" style="width: 65%;">
+        </div>
+
+        <!-- Main content -->
+        <div id="main_box" style="width: 100%; background-color: rgba(225, 225, 225, 0.9); text-align: left; margin: auto; padding: 6vh 2vw; max-width: 100%; box-sizing: border-box; line-height: 1.375em; color: black; font-family: Tahoma, Geneva, Verdana, sans-serif; font-size: 13px;">
+            <span style="font-size: 10px;">Written by Professor Phil Nicholson, Cornell University Astronomy Department; Jennifer Bailard '09; and Shianne Beer '08</span>
+            <div class="main_content" style="display: grid; grid-template-columns: 69% 2% 29%;">
+                <div>
+                    <span style="text-align: justify;">
+                        <p>Many Cornell alumni have fond memories of their first encounter with the mysteries of the night sky at Fuertes Observatory, located on a grassy knoll overlooking the north shore of Beebe Lake. Although the present building has stood on this site since 1917, many people are surprised to learn that it is in fact the fourth or fifth astronomical observatory on the Cornell campus. The first, albeit rather primitive, wooden observatory building was built between 1876 and 1882 and was located on the Arts Quad where now stands the north end of Goldwin Smith Hall. The main impetus for its construction came from Prof. Estevan Antonio Fuertes, the Dean and first professor of Civil Engineering at Cornell and a devotee of practical, laboratory-based learning. Throughout the Fall term, engineering seniors used the observatory's telescopes to measure stars for calculations of time and position. Their summer was spent in field work, surveying the Finger Lakes.</p>
+                        <p>Born in Puerto Rico, educated in fine arts in Barcelona and in engineering at Rensselaer Polytechnic Institute in Troy, NY, where he graduated in 1857, Prof. Fuertes was a successful civil engineer who had worked on public infrastructure in Puerto Rico, on the Croton aqueduct for New York City, and on early Panama canal surveys for the US Government. He was lured to Cornell in 1873 by Andrew Dickson White's vision of a new university where practical training would coexist with traditional academic learning. Fuertes schooled many generations of civil engineers in the art of astronomical observations, necessary to establish accurate geographical surveys as well as time-keeping in the days before GPS satellites and radio time signals. He was a much-loved figure at Cornell, nicknamed “The Mogue” because of his supposed resemblance to the Mogul emperor of India whose likeness appeared on cigarette packs of the day. His house stood on the site of the present Statler Hotel, and he organized musical recitals at neaby Sage College in the evenings. Cornell's famed Ornithological Laboratory is named for his son, Louis Agassiz Fuertes, a Cornell graduate of 1897. Estevan retired due to ill-health in 1902 after 29 years of teaching and died early the following year.</p>
+                    </span>
+                </div>
+                <div></div>
+                <div style="padding: 1vw; text-align: center;">
+                    <img src="../../data/img/fu.jpeg" style="width: 100%; max-width: 50vw;" alt="Estevan Antonio Fuertes">
+                    <div style="font-size: 0.75em;">Professor Estevan A. Fuertes, Cornell Archives</div>
+                </div>
+            </div>
+            <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                <div style="padding: 1vw; text-align: center;">
+                    <img src="../../data/img/acb.jpg" style="width: 100%; max-width: 50vw;" alt="A.C. Barnes Observatory">
+                    <div style="font-size: 0.75em;">A.C. Barnes Observatory in 1905, Cornell Archives</div>
+                </div>
+                <div></div>
+                <div>
+                    <span style="text-align: justify;">
+                        <p>Demolished in 1892 to make way for the Dairy Building, the first of Cornell's Agriculture College buildings, the original observatory was rebuilt by 1896 on or near what is now the site of Day Hall (1), but apparently it remained a rather ramshackle wooden structure which was deemed a “standing reproach to the campus”. Around 1902, trustee General Alfred C. Barnes offered to provide a more suitable building to house the observatory and its geodetic equipment. Contemporary postcards show a handsome brick building, 80 feet by 20 feet and topped with three domes, which was completed in September 1903 (2). It was situated across East Avenue, on an eminence to the south of the old Veterinary College, on what is now the site of Barton Hall. The Observatory boasted a 5-inch equatorial telescope, two transit telescopes for timing and stellar position measurements, as well as more specialized surveying instruments, an astronomical clock and a spacious "computing room". Unfortunately, this fine facility was demolished in 1914 or 1915 to make way for the huge new drill hall.</p>
+                    </span>
+                </div>
+            </div>
+            <div class="main_content" style="display: grid; grid-template-columns: 49% 2% 49%;">
+                <div>
+                    <span style="text-align: justify;">
+                        <p>Soon afterwards, however, plans were laid for a new Fuertes Observatory, to be located on the Hasbrouck poultry farm to the north of Beebe Lake. Construction was undertaken by the Cornell Superintendant of Buildings and Grounds in April 1916, following a design by Prof. of Architecture, L. P Burnham and under the supervision of the Department of Civil Engineering. Of concrete block and stucco construction, 87 by 18 feet with a 24-foot diameter steel dome, the building was completed in the Fall of 1917 at a total cost of $20,000. Support for a future 12- inch telescope was provided by a set of four 30-foot-long steel I-beams built into the structure, rather than the conventional masonry pier. Initially the old 5-inch equatorial telescope was installed in the dome, but in 1919 Prof. Irving P Church, head of the Civil Engineering department and another afficionado of practical astronomy, procured two 12-inch glass blanks declared surplus by the Yerkes Observatory in Chicago.</p>
+                    </span>
+                </div>
+                <div></div>
+                <div style="padding: 1vw; text-align: center;">
+                    <img src="../../data/img/fo17.jpeg" style="width: 100%; max-width: 50vw;" alt="Fuertes Observatory in 1917">
+                    <div style="font-size: 0.75em;">Fuertes Observatory in 1917, Cornell Archives</div>
+                </div>
+            </div>
+            <div class="main_content" style="display: grid; grid-template-columns: 49% 2% 49%;">
+                <div style="padding: 1vw; text-align: center;">
+                    <img src="../../data/img/ib.jpeg" style="width: 100%; max-width: 50vw;" alt="Samuel L. Boothroyd using the Irving Porter Church telescope">
+                    <div style="font-size: 0.75em;">The Irving Porter Church Refractor in 1923, Cornell Alumni News</div>
+                </div>
+                <div></div>
+                <div>
+                    <span style="text-align: justify;">
+                        <p>The two-element lens was ground and polished by the well-known firm of Brashear & Co and delivered to Cornell in 1920, and under Prof. Church's continued urging and leadership, money to construct a suitable telescope mounting was raised from among the engineering alumni. In January 1922 a contract was given to the Warner and Swasey Company of Cleveland, Ohio, who had built both the Lick 36-inch and Yerkes 40-inch refractors. The present 12-inch telescope with its German equatorial mount was installed in October 1922 and officially dedicated on June 15, 1923 as the "Irving Porter Church Memorial Telescope." A graduate of Cornell's early civil engineering program in 1873, Professor Church had retired in 1916 after 40 years of service to the University. Author of a widely-used textbook on "The Mechanics of Engineering", he was also considered a co-founder, along with Estevan Fuertes, of the present-day concept of technical education. He died in 1931. In 1964 the Irving Porter Church professorship in engineering was endowed in his honor, and — fittingly — the present occupant of this chair is our own Prof. of Astronomy Joseph A. Burns.</p>
+                    </span>
+                </div>
+            </div>
+            <div class="main_content" style="display: grid; grid-template-columns: 49% 2% 49%;">
+                <div>
+                    <span style="text-align: justify;">
+                        <p>On its ground floor, the new observatory housed a transit room with four concrete piers, a classroom, a computing room, an office and secure storage rooms, as well as display cases for astronomical photographs and lantern slides, while in the basement there was a temperature-controlled room with double-glass windows for the astronomical clock, constant-temperature rooms for geodetic lab work, a photographic darkroom and a room for the “comparator”, previously housed in Lincoln Hall. In addition to the 12- inch telescope, it was equipped with three transit telescopes, a zenith instrument and an altazimuth, as well as assorted sextants, surveyor's transits, collimators and meteorological recording equipment. In later years, a mirror-grinding shop was installed in the basement. Much of the old optical equipment remains in storage at the observatory, although the best pieces have been refurbished and are on display in Snee Hall.</p>
+                    </span>
+                </div>
+                <div></div>
+                <div style="padding: 1vw; text-align: center;">
+                    <img src="../../data/img/tr.jpeg" style="width: 100%; max-width: 50vw;" alt="Fuertes Observatory transit room">
+                    <div style="font-size: 0.75em;">Fuertes Observatory Transit Room</div>
+                </div>
+            </div>
+            <div class="main_content" style="display: grid; grid-template-columns: 29% 2% 69%;">
+                <div style="padding: 1vw; text-align: center;">
+                    <img src="../../data/img/irvv.jpeg" style="width: 100%; max-width: 50vw;" alt="Irving Porter Church telescope in use">
+                </div>
+                <div></div>
+                <div>
+                    <span style="text-align: justify;">
+                        <p>Introductory laboratory classes in astronomy continue to be taught at Fuertes, which has remained largely unchanged for over 80 years. In the 1960s, responsibility for the Observatory was transferred to the new Center for Radio and Space Research (CRSR). In the 1980s the original leaky roof with its clamshell doors above the “transit room” in the eastern wing of the building was replaced by a conventional fixed roof. At some earlier date the original coal-fired furnace, reputedly tended by a live-in student, was replaced by a gas heater.</p>
+                        <p>However, the campus itself has grown immensely over this period, and what must once have been a remote site with dark skies is now hemmed in by the residential and dining facilities of North Campus, while the southern sky is regularly spoilt by the lights of Schoelkopf stadium. As a result, it is now impossible to see the Milky Way from the rooftop deck at Fuertes, or even most of the fainter naked-eye stars. Only the moon, planets and the brightest stars remain visible to the unaided eye.</p>
+                        <p>In the future, the Astronomy Department would like to construct a new facility for upper-level observing labs at a dark site, perhaps on Mt Pleasant adjacent to our existing Hartung-Boothroyd Observatory, or perhaps in the Cornell Plantations as part of a proposed Gateway Center off NYS Route 366. But its convenience for undergraduates, appeal to alumni and long history all argue for maintaining Fuertes as a functioning observatory well into the foreseeable future.</p>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Credit -->
+            <div>
+                <hr>
+                <p>The authors would like to acknowledge their debt to previous research on the history of Fuertes by Brian McLeod, Jeff Regester and Eric Weisstein, all past-presidents of the Cornell Astronomical Society. For at least 40 years, and perhaps much longer, the CAS has operated Friday Night open houses at the Observatory, inspiring generations of eager star-gazers of all ages.</p>
+                <hr>
+
+                <p>Footnotes:</p>
+                <p>(1) Hewitt (1905), on p. 342, reports the site of the second observatory to have been that now occupied by Stimson Hall, built in 1903 to house the Ithaca division of the Cornell Medical School, but this appears to be contradicted by contemporary campus maps reproduced by Parsons (1968) on p. 203, which place it further south. It is even possible that there were two observatories during this period.</p>
+                <p>(2) Although labelled “Barnes Observatory” on Charles Lowrie's 1903 plan of future development on the Cornell Campus, by 1914 it was known officially as the “Fuertes Astronomical Observatory and Geodetic Laboratory”.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div style="padding: 2vh;"></div>
+
+    <footer style="background-color: rgba(0, 0, 0, 0.8); left: 0; width: 100vw; align-items: center; justify-content: center; font-size: 0.8em;">
+        <div style="padding: 2vh;"></div>
+        <div class="main_content" style="display: grid; grid-template-columns: 4fr 2.2fr 1px 2fr 1px 1.5fr 1px 3fr 1px 2fr 4fr; margin: auto;">
+            <div></div>
+            <div style="text-align: left; padding: 1rem 10%; overflow-wrap: anywhere;">Email us: <a href="mailto:astrosociety@cornell.edu">astrosociety@cornell.edu</a></div>
+            <div style="background-color: white; width: 100%;"></div>
+            <div style="text-align: left; padding: 1rem 10%;">Find us:<br>209 Cradit Farm Drive<br>Ithaca, New York 14850</div>
+            <div style="background-color: white; width: 100%;"></div>
+            <div style="text-align: left; padding: 1rem 10%;">Hours:<br>Fri: 8pm - 12am</div>
+            <div style="background-color: white; width: 100%;"></div>
+            <div id="copyright" style="text-align: center; padding: 1rem 10%; font-size: 0.8em; line-height: 1.5em;">© 2024 by the Cornell Astronomical Society<br>Member Login<br><br>This organization is a registered student organization of Cornell University.</div>
+            <div style="background-color: white; width: 100%;"></div>
+            <div style="padding: 1rem 10%; max-width: 20vw; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 5%; place-items: center;">
+                <a href="https://www.facebook.com/FuertesObservatory"><img style="width: 100%;" src="../../data/social/Facebook_Logo_Primary.png"></a>
+                <a href="https://twitter.com/FuertesObs"><img style="width: 100%;" src="../../data/social/Logo_of_Twitter.png"></a>
+                <a href="https://www.instagram.com/fuertesobservatory"><img style="width: 100%;" src="../../data/social/Instagram_Glyph_Gradient.png"></a>
+            </div>
+            <div></div>
+        </div>
+        <div style="padding: 2vh;"></div>
+    </footer>
+</body>
+
+</html>

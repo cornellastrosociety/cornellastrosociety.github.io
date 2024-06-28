@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Telescope | The Cornell Astronomical Society</title>
+    <link rel="stylesheet" href="../../index.css">
+    <style>
+        body:before {
+            content: "";
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            background: url(../../data/img/cd.jpg) no-repeat top center;
+            background-size: cover;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 6px;
+            font-size: 0.75em;
+        }
+
+        td {
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        tr:nth-child(odd) {
+            background-color: rgb(100, 100, 100);
+        }
+
+        tr:nth-child(even) {
+            background-color: rgb(75, 75, 75)
+        }
+    </style>
+</head>
+
+<body style="background-color: black; color: rgb(234, 234, 234); overflow-x: hidden;">
+    <div id="main" style="margin: auto; max-width: 67vw; animation: fadein ease-in-out 1.5s none;">
+
+        <div style="padding: 1vh;"></div>
+
+        <!-- Nav bar, should persist across pages; add nav_el_sel to current page -->
+        <nav style="display: grid; grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%; animation: flyin ease-in-out 1s none;">
+            <a href="../../"><button class="nav_el">Home</button></a>
+            <div class="nav_dd">
+                <button class="nav_el nav_el_sel">About</button>
+                <div class="nav_dd_menu">
+                    <div class="nav_dd_main">
+                        <a href="" class="nav_el_sel">The Club</a>
+                        <a href="#.">Eclipse on April 8</a>
+                        <a href="#.">The Telescope</a>
+                        <a href="#.">Fuertes History</a>
+                        <a href="#.">Telescope History</a>
+                        <a href="#.">Lantern Slide Wall</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_dd">
+                <button class="nav_el" style="width: 100%;">Visit Us</button>
+                <div class="nav_dd_menu">
+                    <div class="nav_dd_main">
+                        <a href="#.">Hours, Directions</a>
+                        <a href="#.">Accessibility</a>
+                        <a href="#.">Weather</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_dd">
+                <button class="nav_el" style="width: 100%;">Events</button>
+                <div class="nav_dd_menu">
+                    <div class="nav_dd_main">
+                        <a href="#.">Lecture Series</a>
+                        <a href="#.">Open House Nights</a>
+                        <a href="#.">Archived Lectures</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_dd">
+                <button class="nav_el" style="width: 100%;">Photos</button>
+                <div class="nav_dd_menu">
+                    <div class="nav_dd_main">
+                        <a href="#.">Photo Gallery</a>
+                        <a href="#.">Museum Gallery</a>
+                    </div>
+                </div>
+            </div>
+            <button class="nav_el">Newsletters</button>
+        </nav>
+
+        <div style="padding: 3vh;"></div>
+
+        <!-- Title text -->
+        <div style="width: 100%; background-color: rgba(0, 0, 0, 0.65); text-align: center; margin: auto; max-width: 100%; box-sizing: border-box; font-family: Georgia, 'Times New Roman', Times, serif; text-shadow: rgba(0, 0, 0, 0.3) 0px 6px 0px; padding: 7.5vh; font-size: 45px; font-weight: bold;">The Irving Porter Church Refractor</div>
+
+        <div style="padding: 2vh;"></div>
+
+        <!-- Main content -->
+        <div id="main_box" style="width: 100%; background-color: rgba(0, 0, 0, 0.65); text-align: left; margin: auto; padding: 6vh 2vw; max-width: 100%; box-sizing: border-box; text-shadow: rgba(0, 0, 0, 0.5) -1px -1px 0px, rgba(0, 0, 0, 0.5) 1px 1px 0px; line-height: 1.375em;">
+            <div class="main_content" style="display: grid; grid-template-columns: 49% 2% 49%;">
+                <div style="padding: 1vw; text-align: center;">
+                    <img src="../../data/img/irv.png" style="width: 100%; border: 1px solid white; max-width: 50vw;">
+                </div>
+                <div></div>
+                <div>
+                    <span style="text-align: justify;">
+                        <p>Fuertes Observatory was completed in 1917 with a dome capable of housing a 12-inch (0.3 m) equatorial refracting telescope; however, at the time, the University had yet to acquire such a telescope. Several small "transit" telescopes used for instruction in civil engineering and geodesy were installed on piers in the eastern wing of the observatory, while a 4 1/2" (0.11 m) equatorial telescope owned by the College of Civil Engineering was temporarily installed in place of the anticipated 12". It is believed that this 4 1/2" scope was piggybacked onto the main 12" instrument, and currently serves as its finderscope. The original mounting and clock drive for the 4 1/2" are still kept at Fuertes.</p>
+                        <p>By 1919, A pair of 12" surplus flint and crown glass blanks was acquired from Yerkes Observatory of the University of Chicago by Irving Porter Church ('73), the retired chair of the Department of Civil Engineering at Cornell. These were delivered to the Pittsburgh firm, the John A. Brashear Co., where they were polished and figured, and delivered to Cornell in 1920, the year of Brashear's death.</p>
+                    </span>
+                </div>
+            </div>
+            <div class="main_content" style="display: grid; grid-template-columns: 49% 2% 49%;">
+                <div>
+                    <span style="text-align: justify;">
+                        <p>The renowned Warner & Swasey Company was contracted early in 1922 to build a mounting, which was completed and installed at Cornell in October of that year. Much of the necessary funds for the mounting were obtained through donations from alumni. The dedication, held on 15 June 1923, named the telescope for Professor Church, who was then still alive.</p>
+                        <p>The telescope optics consist of a 12" (0.3m) pair of objective lenses, ground of crown and flint glass, that form an achromatic lens with a focal length of 180" (4.6m) and a focal ratio of f/15. Brashear-made optics commonly place the flint element of glass "forward" towards the sky, unlike most refractor designs. Such is the case for the Irving Porter Church refractor; the forward element is a negative meniscus lens made of flint glass, while the rear element is a positive biconvex lens made of crown glass.</p>
+                    </span>
+                </div>
+                <div></div>
+                <div style="padding: 1vw; text-align: center;">
+                    <img src="../../data/img/obj.jpg" style="width: 100%; border: 1px solid white; max-width: 50vw;">
+                </div>
+            </div>
+            <div class="main_content" style="display: grid; grid-template-columns: 49% 2% 49%;">
+                <div style="padding: 1vw; text-align: center;">
+                    <img src="../../data/img/irv2.jpg" style="width: 100%; border: 1px solid white; max-width: 50vw;">
+                </div>
+                <div></div>
+                <div>
+                    <span style="text-align: justify;">
+                        <p>The achromat doublet was designed for "visual" correction of colors, with the shapes of the two objective lenses calculated to produce the least amount of color fringing in the wavelengths where the eye is most sensitive -- that is, the green to yellow region. As a result, bright stars exhibit a blue-violet halo from poor focus outside the eye's most sensitive region.</p>
+                        <p>The telescope includes an auxiliary color correction lens, midway in the telescope tube, which can be inserted into the beam to change the correction of colors to produce best focus in the violet to blue section of the spectrum: this was intended to make the telescope function well with photographic plates available at the time of its construction, whose chief sensitivity was in this color range.</p>
+                    </span>
+                </div>
+            </div>
+            <div class="main_content" style="display: grid; grid-template-columns: 74% 2% 24%;">
+                <div>
+                    <span style="text-align: justify;">
+                        <p>The telescope tracks objects in the sky using an original weight-driven clockdrive. Wound by hand once every 90 minutes while in use, the weights power a set of gears that turn the telescope at 15 degrees per hour on its polar axis. This allows it to compensate for the rotation of the Earth and keeps objects centered in the eyepiece for long periods of time. A flyball governor in the heart of the clockdrive regulates the exact speed at which the gears turn; it moves outwards as it spins faster due to centrifugal motion, and applies a brake once it reaches a high enough, predetermined point.</p>
+                        <p>Few antique telescopes have their original, unmodified clockdrives left in operation, making the Irving Porter Church Telescope one of only a handful in its condition. The telescope is open to the public every Friday evening as part of our open house nights regardless of weather, and when clear, visitors have the opportunity to look through the 100 year old refractor at the planets, stars, and galaxies.</p>
+                    </span>
+                </div>
+                <div></div>
+                <div style="padding: 1vw; text-align: center;">
+                    <img src="../../data/img/cd2.jpg" style="width: 100%; border: 1px solid white; max-width: 50vw;">
+                </div>
+            </div>
+
+            <!-- Credit -->
+            <div>
+                <p>This page draws from <a href="https://topics.sirtf.com/Fuertes/FuertesTelescope">a description of the telescope</a>, with permission, by former Cornell astronomer Don Barry, one of several to have led restorations of the telescope over its long lifetime.</p>
+            </div>
+        </div>
+    </div>
+
+    <div style="padding: 2vh;"></div>
+
+    <footer style="background-color: rgba(0, 0, 0, 0.8); left: 0; width: 100vw; align-items: center; justify-content: center; font-size: 0.8em;">
+        <div style="padding: 2vh;"></div>
+        <div class="main_content" style="display: grid; grid-template-columns: 4fr 2.2fr 1px 2fr 1px 1.5fr 1px 3fr 1px 2fr 4fr; margin: auto;">
+            <div></div>
+            <div style="text-align: left; padding: 1rem 10%; overflow-wrap: anywhere;">Email us: <a href="mailto:astrosociety@cornell.edu">astrosociety@cornell.edu</a></div>
+            <div style="background-color: white; width: 100%;"></div>
+            <div style="text-align: left; padding: 1rem 10%;">Find us:<br>209 Cradit Farm Drive<br>Ithaca, New York 14850</div>
+            <div style="background-color: white; width: 100%;"></div>
+            <div style="text-align: left; padding: 1rem 10%;">Hours:<br>Fri: 8pm - 12am</div>
+            <div style="background-color: white; width: 100%;"></div>
+            <div id="copyright" style="text-align: center; padding: 1rem 10%; font-size: 0.8em; line-height: 1.5em;">© 2024 by the Cornell Astronomical Society<br>Member Login<br><br>This organization is a registered student organization of Cornell University.</div>
+            <div style="background-color: white; width: 100%;"></div>
+            <div style="padding: 1rem 10%; max-width: 20vw; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 5%; place-items: center;">
+                <a href="https://www.facebook.com/FuertesObservatory"><img style="width: 100%;" src="../../data/social/Facebook_Logo_Primary.png"></a>
+                <a href="https://twitter.com/FuertesObs"><img style="width: 100%;" src="../../data/social/Logo_of_Twitter.png"></a>
+                <a href="https://www.instagram.com/fuertesobservatory"><img style="width: 100%;" src="../../data/social/Instagram_Glyph_Gradient.png"></a>
+            </div>
+            <div></div>
+        </div>
+        <div style="padding: 2vh;"></div>
+    </footer>
+</body>
+
+</html>
