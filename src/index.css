@@ -244,51 +244,7 @@ a:active {
     }
 }
 
-body {
-    margin: 0;
 
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-.bg {
-    background:
-        url("data/img/GalaxyBackground.jpg");
-    background-size: cover;
-    height: 120vh;
-    justify-content: center;
-    position: absolute;
-
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0vh;
-}
-
-.fg {
-    width: 768px;
-    font-size: 2rem;
-    position: absolute;
-
-}
-
-.parallax {
-
-    position: relative;
-
-
-    display: flex;
-    flex-direction: row;
-    align-items: left;
-    justify-content: center;
-}
-
-
-@media (max-width:800px) {
-    .hide-medium {
-        display: none !important
-    }
-}
 
 .example::-webkit-scrollbar {
     display: none;
