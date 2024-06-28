@@ -2,143 +2,143 @@
 <html lang="en" ">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About the Club | The Cornell Astronomical Society</title>
-    <link rel="stylesheet" href="../../index.css">
-    <style>
-        /* Default background */
-        body:before {
-            content: "";
-            display: block;
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -10;
-            background: url(data/img/ugc.jpg) no-repeat top center;
-            background-size: cover;
+    <meta charset=" UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About the Club | The Cornell Astronomical Society</title>
+<link rel="stylesheet" href="../../index.css">
+<style>
+    /* Default background */
+    body:before {
+        content: "";
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        background: url(data/img/ugc.jpg) no-repeat top center;
+        background-size: cover;
+    }
+
+    body {
+        margin: 0;
+        overscroll-behavior: contain;
+    }
+
+    .parallax {
+        height: 100vh;
+        overflow-x: hidden;
+
+        perspective: 1px;
+    }
+
+    .parallax-layer {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .layer1 {
+        transform: translateZ(-99px) translateY(0vh) scale(100);
+    }
+
+    .layer2 {
+        transform: translateZ(0px);
+    }
+
+    /* specific to this implementation */
+
+    .parallax-layer.layer1 {
+        width: 100%;
+
+        background:
+            url(../../data/img/ugc.jpg) top center;
+
+    }
+
+    th,
+    td {
+        text-align: left;
+        padding: 6px;
+        font-size: 0.75em;
+    }
+
+    td {
+        font-family: Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    tr:nth-child(odd) {
+        background-color: rgb(100, 100, 100);
+    }
+
+    tr:nth-child(even) {
+        background-color: rgb(75, 75, 75)
+    }
+</style>
+
+<script>
+    window.onresize = function () {
+
+        var windowsize = window.innerHeight;
+        var windowwide = window.innerWidth;
+        var height = document.getElementById('test').scrollHeight;
+        let shift = ((Math.abs(height - windowsize) + (height - windowsize)) / 4);
+        let scale = windowsize + ((Math.abs(height - windowsize) + (height - windowsize)) / 185)
+        document.getElementById('bg').style.marginTop = (shift) + "px"
+        document.getElementById('bg').style.height = scale + "px";
+
+        setTimeout(() => {
+            document.getElementById('bg').style.marginTop = (shift - 10) + "px";
+        },
+            10);
+        var scrolldist = document.getElementById('wind').scrollTop;
+        if (scrolldist > height - windowsize) {
+            document.getElementById('wind').scrollTo(0, height - windowsize);
         }
 
-        body {
-            margin: 0;
-            overscroll-behavior: contain;
+    }
+
+    window.onload = function () {
+
+
+        var windowsize = window.innerHeight;
+        var windowwide = window.innerWidth;
+        var height = document.getElementById('test').scrollHeight;
+
+        let shift = ((Math.abs(height - windowsize) + (height - windowsize)) / 4);
+        let scale = windowsize + (((Math.abs(height - windowsize) + (height - windowsize)) / 185) * 4)
+        //document.getElementById('bg').style.marginTop = shift + "px";
+        document.getElementById('bg').style.height = scale + "px";
+
+        /*setTimeout(() => {
+            document.getElementById('bg').style.marginTop = (shift - 10) + "px";
+        },
+            10);*/
+
+    }
+
+    function overscroll() {
+        var windowsize = window.innerHeight;
+        var windowwide = window.innerWidth;
+        var height = document.getElementById('test').scrollHeight;
+        var scrolldist = document.getElementById('wind').scrollTop;
+        if (scrolldist > height - windowsize) {
+            document.getElementById('wind').scrollTo(0, height - windowsize);
         }
 
-        .parallax {
-            height: 100vh;
-            overflow-x: hidden;
+    }
 
-            perspective: 1px;
-        }
-
-        .parallax-layer {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-        }
-
-        .layer1 {
-            transform: translateZ(-99px) translateY(0vh) scale(100);
-        }
-
-        .layer2 {
-            transform: translateZ(0px);
-        }
-
-        /* specific to this implementation */
-
-        .parallax-layer.layer1 {
-            width: 100%;
-
-            background:
-                url(../../data/img/ugc.jpg) top center;
-
-        }
-
-        th,
-        td {
-            text-align: left;
-            padding: 6px;
-            font-size: 0.75em;
-        }
-
-        td {
-            font-family: Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        tr:nth-child(odd) {
-            background-color: rgb(100, 100, 100);
-        }
-
-        tr:nth-child(even) {
-            background-color: rgb(75, 75, 75)
-        }
-    </style>
-
-    <script>
-        window.onresize = function () {
-
-            var windowsize = window.innerHeight;
-            var windowwide = window.innerWidth;
-            var height = document.getElementById('test').scrollHeight;
-            let shift = ((Math.abs(height - windowsize) + (height - windowsize)) / 4);
-            let scale = windowsize + ((Math.abs(height - windowsize) + (height - windowsize)) / 185)
-            document.getElementById('bg').style.marginTop = (shift) + "px"
-            document.getElementById('bg').style.height = scale + "px";
-
-            setTimeout(() => {
-                document.getElementById('bg').style.marginTop = (shift - 10) + "px";
-            },
-                10);
-            var scrolldist = document.getElementById('wind').scrollTop;
-            if (scrolldist > height - windowsize) {
-                document.getElementById('wind').scrollTo(0, height - windowsize);
-            }
-
-        }
-
-        window.onload = function () {
-
-
-            var windowsize = window.innerHeight;
-            var windowwide = window.innerWidth;
-            var height = document.getElementById('test').scrollHeight;
-
-            let shift = ((Math.abs(height - windowsize) + (height - windowsize)) / 4);
-            let scale = windowsize + ((Math.abs(height - windowsize) + (height - windowsize)) / 185)
-            document.getElementById('bg').style.marginTop = shift + "px";
-            document.getElementById('bg').style.height = scale + "px";
-
-            setTimeout(() => {
-                document.getElementById('bg').style.marginTop = (shift - 10) + "px";
-            },
-                10);
-
-        }
-
-        function overscroll() {
-            var windowsize = window.innerHeight;
-            var windowwide = window.innerWidth;
-            var height = document.getElementById('test').scrollHeight;
-            var scrolldist = document.getElementById('wind').scrollTop;
-            if (scrolldist > height - windowsize) {
-                document.getElementById('wind').scrollTo(0, height - windowsize);
-            }
-
-        }
-
-    </script>
+</script>
 </head>
 
 <body style="background-color: black; color: rgb(234, 234, 234); "></body>
-    <div class="parallax example"  id="wind" style="background-color: black; color: rgb(234, 234, 234); overflow-x: hidden; margin:auto; " onscroll="overscroll()">
-    <div id="bg" class="parallax-layer layer1" style="background-size: cover; height: 100vh; margin-top: 0vh; " ></div>
-    <div id="test" class="parallax-layer layer2"  style="height: auto; animation: fadein ease-in-out 0.5s none;" >
-        <div id="main"  style="margin: auto; max-width: 67vw; animation: fadein ease-in-out 1.5s none;" >
+<div class="parallax example" id="wind" style="background-color: black; color: rgb(234, 234, 234); overflow-x: hidden; margin:auto; " onscroll="overscroll()">
+    <div id="bg" class="parallax-layer layer1" style="background-size: cover; height: 100vh; margin-top: 0vh; "></div>
+    <div id="test" class="parallax-layer layer2" style="height: auto; animation: fadein ease-in-out 0.5s none;">
+        <div id="main" style="margin: auto; max-width: 67vw; animation: fadein ease-in-out 1.5s none;">
 
             <div style="padding: 1vh;"></div>
 
@@ -745,6 +745,6 @@
             <div style="padding: 2vh;"></div>
         </footer>
     </div>
-</body>
+    </body>
 
 </html>
