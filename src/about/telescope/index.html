@@ -46,55 +46,11 @@
 
         <div style="padding: 1vh;"></div>
 
-        <!-- Nav bar, should persist across pages; add nav_el_sel to current page -->
-        <nav style="display: grid; grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%; animation: flyin ease-in-out 1s none;">
-            <a href="../../"><button class="nav_el">Home</button></a>
-            <div class="nav_dd">
-                <button class="nav_el nav_el_sel">About</button>
-                <div class="nav_dd_menu">
-                    <div class="nav_dd_main">
-                        <a href="" class="nav_el_sel">The Club</a>
-                        <a href="#.">Eclipse on April 8</a>
-                        <a href="#.">The Telescope</a>
-                        <a href="#.">Fuertes History</a>
-                        <a href="#.">Telescope History</a>
-                        <a href="#.">Lantern Slide Wall</a>
-                    </div>
-                </div>
-            </div>
-            <div class="nav_dd">
-                <button class="nav_el" style="width: 100%;">Visit Us</button>
-                <div class="nav_dd_menu">
-                    <div class="nav_dd_main">
-                        <a href="#.">Hours, Directions</a>
-                        <a href="#.">Accessibility</a>
-                        <a href="#.">Weather</a>
-                    </div>
-                </div>
-            </div>
-            <div class="nav_dd">
-                <button class="nav_el" style="width: 100%;">Events</button>
-                <div class="nav_dd_menu">
-                    <div class="nav_dd_main">
-                        <a href="#.">Lecture Series</a>
-                        <a href="#.">Open House Nights</a>
-                        <a href="#.">Archived Lectures</a>
-                    </div>
-                </div>
-            </div>
-            <div class="nav_dd">
-                <button class="nav_el" style="width: 100%;">Photos</button>
-                <div class="nav_dd_menu">
-                    <div class="nav_dd_main">
-                        <a href="#.">Photo Gallery</a>
-                        <a href="#.">Museum Gallery</a>
-                    </div>
-                </div>
-            </div>
-            <button class="nav_el">Newsletters</button>
-        </nav>
-
-        <div style="padding: 3vh;"></div>
+        <script src="../../data/js/nav.js"></script>
+        <script>
+            document.getElementById('nav_about').classList.add('nav_el_sel');
+            document.getElementById('nav_about_telescope').classList.add('nav_el_sel');
+        </script>
 
         <!-- Title text -->
         <div style="width: 100%; background-color: rgba(0, 0, 0, 0.65); text-align: center; margin: auto; max-width: 100%; box-sizing: border-box; font-family: Georgia, 'Times New Roman', Times, serif; text-shadow: rgba(0, 0, 0, 0.3) 0px 6px 0px; padding: 5vh 1vw; font-size: 41px; font-weight: bold;">The Irving Porter Church Refractor</div>
@@ -169,29 +125,7 @@
         </div>
     </div>
 
-    <div style="padding: 2vh;"></div>
-
-    <footer style="background-color: rgba(0, 0, 0, 0.8); left: 0; width: 100vw; align-items: center; justify-content: center; font-size: 0.8em;">
-        <div style="padding: 2vh;"></div>
-        <div class="main_content" style="display: grid; grid-template-columns: 4fr 2.2fr 1px 2fr 1px 1.5fr 1px 3fr 1px 2fr 4fr; margin: auto;">
-            <div></div>
-            <div style="text-align: left; padding: 1rem 10%; overflow-wrap: anywhere;">Email us: <a href="mailto:astrosociety@cornell.edu">astrosociety@cornell.edu</a></div>
-            <div style="background-color: white; width: 100%;"></div>
-            <div style="text-align: left; padding: 1rem 10%;">Find us:<br>209 Cradit Farm Drive<br>Ithaca, New York 14850</div>
-            <div style="background-color: white; width: 100%;"></div>
-            <div style="text-align: left; padding: 1rem 10%;">Hours:<br>Fri: 8pm - 12am</div>
-            <div style="background-color: white; width: 100%;"></div>
-            <div id="copyright" style="text-align: center; padding: 1rem 10%; font-size: 0.8em; line-height: 1.5em;">© 2024 by the Cornell Astronomical Society<br>Member Login<br><br>This organization is a registered student organization of Cornell University.</div>
-            <div style="background-color: white; width: 100%;"></div>
-            <div style="padding: 1rem 10%; max-width: 20vw; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 5%; place-items: center;">
-                <a href="https://www.facebook.com/FuertesObservatory"><img style="width: 100%;" src="../../data/social/Facebook_Logo_Primary.png"></a>
-                <a href="https://twitter.com/FuertesObs"><img style="width: 100%;" src="../../data/social/Logo_of_Twitter.png"></a>
-                <a href="https://www.instagram.com/fuertesobservatory"><img style="width: 100%;" src="../../data/social/Instagram_Glyph_Gradient.png"></a>
-            </div>
-            <div></div>
-        </div>
-        <div style="padding: 2vh;"></div>
-    </footer>
+    <script src="../../data/js/footer.js"></script>
 </body>
 
 </html>
