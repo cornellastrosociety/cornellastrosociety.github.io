@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lantern Slide Wall | The Cornell Astronomical Society</title>
+    <link rel="stylesheet" href="../../index.css">
+    <style>
+        body:before {
+            content: "";
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            background: url(../../data/img/slide/horsehead.jpeg) no-repeat top center;
+            background-size: cover;
+        }
+
+        .img_contain {
+            padding: 1vw;
+            text-align: center;
+            padding-top: 0;
+            aspect-ratio: 4 / 3;
+        }
+
+        .img {
+            width: 100%;
+            max-width: 50vw;
+            object-fit: cover;
+            margin-top: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .img_title {
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #EEE;
+        }
+
+        .capt_contain {
+            text-align: left;
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 13px;
+            color: #AAA;
+        }
+
+        .main_content {
+            padding-bottom: 4vh;
+        }
+
+        @media only screen and (max-width: 750px) {
+            .main_content {
+                text-align: center !important;
+            }
+
+            .img_contain {
+                padding: 1vw;
+                text-align: center;
+                padding-top: 0;
+                aspect-ratio: unset !important;
+                padding-bottom: 2vh;
+            }
+
+            .img {
+                width: 100%;
+                max-width: none !important;
+                object-fit: contain;
+                margin-top: 0;
+                height: 100%;
+                width: 100%;
+                max-height: 50vh;
+            }
+
+            .img_title {
+                text-align: center !important;
+                display: block;
+            }
+
+            .capt_contain {
+                text-align: center !important;
+            }
+        }
+
+        /* specific to this implementation */
+        .parallax-layer.layer1 {
+            background:
+                url(../../data/img/slide/horsehead.jpeg) top center;
+        }
+    </style>
+
+    <script src="../../data/js/parallax.js"></script>
+</head>
+
+<body style="background-color: black; color: rgb(234, 234, 234); overflow-x: hidden;">
+    <div class="parallax example" id="wind" style="background-color: black; color: rgb(234, 234, 234); overflow-x: hidden; margin:auto;" onscroll="overscroll()">
+        <div id="bg" class="parallax-layer layer1" style="background-size: cover; height: 100vh; margin-top: 0vh; "></div>
+        <div id="test" class="parallax-layer layer2" style="height: auto; animation: fadein ease-in-out 0.5s none;">
+            <div id="main" style="margin: auto; max-width: 64vw; animation: fadein ease-in-out 1.5s none;">
+
+                <div style="padding: 1vh;"></div>
+
+                <!-- Nav bar, should persist across pages; add nav_el_sel to current page -->
+                <nav style="display: grid; grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%; animation: flyin ease-in-out 1s none;">
+                    <a href="../../"><button class="nav_el">Home</button></a>
+                    <div class="nav_dd">
+                        <button class="nav_el nav_el_sel">About</button>
+                        <div class="nav_dd_menu">
+                            <div class="nav_dd_main">
+                                <a href="" class="nav_el_sel">The Club</a>
+                                <a href="#.">Eclipse on April 8</a>
+                                <a href="#.">The Telescope</a>
+                                <a href="#.">Fuertes History</a>
+                                <a href="#.">Telescope History</a>
+                                <a href="#.">Lantern Slide Wall</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav_dd">
+                        <button class="nav_el" style="width: 100%;">Visit Us</button>
+                        <div class="nav_dd_menu">
+                            <div class="nav_dd_main">
+                                <a href="#.">Hours, Directions</a>
+                                <a href="#.">Accessibility</a>
+                                <a href="#.">Weather</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav_dd">
+                        <button class="nav_el" style="width: 100%;">Events</button>
+                        <div class="nav_dd_menu">
+                            <div class="nav_dd_main">
+                                <a href="#.">Lecture Series</a>
+                                <a href="#.">Open House Nights</a>
+                                <a href="#.">Archived Lectures</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav_dd">
+                        <button class="nav_el" style="width: 100%;">Photos</button>
+                        <div class="nav_dd_menu">
+                            <div class="nav_dd_main">
+                                <a href="#.">Photo Gallery</a>
+                                <a href="#.">Museum Gallery</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="nav_el">Newsletters</button>
+                </nav>
+
+                <div style="padding: 3vh;"></div>
+
+                <!-- Main content -->
+                <div id="main_box" style="width: 100%; background-color: rgba(0, 0, 0, 0.65); text-align: left; margin: auto; padding: 6vh 2vw; max-width: 100%; box-sizing: border-box; text-shadow: rgba(0, 0, 0, 0.5) -1px -1px 0px, rgba(0, 0, 0, 0.5) 1px 1px 0px; line-height: 1.1em;">
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/ngc891.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">NGC 891</span>
+                            <p>NGC 891 is an unbarred spiral galaxy about 30 million light-years away, that lies in the constellation Andromeda. The galaxy is of scientific interest due to a supernova that was observed in 1986; it also served as the first light of the Large Binocular Telescope. The galaxy appears edge-on in this image, taken November 26, 1916.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/doublecluster.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Double Cluster (NGC 869 & 884)</span>
+                            <p>The double cluster is a group of two open clusters that lie close to each other in the sky. The clusters are thought to be very massive, each containing thousands of solar masses of stars and very young - about 12 million years old. Both clusters are about 7500 light-years away.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/m46.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">M46</span>
+                            <p>M46 is an open cluster first recorded by Charles Messier in 1771. It is an example of a smaller open cluster - thought to contain about 500 stars and lies about 5000 light-years away. The planetary nebula NGC 2438 (the blurry object slightly larger than the stars in the photo) appears to lie within the cluster, but it is probably a more distant object.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/snake.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Snake Nebula</span>
+                            <p>The Snake Nebula (Barnard 72) is a dark nebula in the constellation Ophiuchus. While it does not glow on its own, it is a collection of gas and dust dense enough to block out nearly all the light from stars that are behind it. Often dark nebulae are responsible for star formation and other astronomically interesting phenomena. Taken July 4, 1921, through the 36-inch refractor at the Lick Observatory.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/morehouse.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Comet Morehouse</span>
+                            <p>Comet Morehouse was a bright comet discovered by Daniel Walter Morehouse and was first observed in 1908. Comet Morehouse is unique in that it first formed its tail while it was still far from the Sun, about 2 AU away, and sprouted as many as six tails during its pass by the Sun. Comet Morehouse is believed to be a non-periodic comet; if it is a periodic comet, then its orbit is very large and will likely not return for million of years.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/solarprominences.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Solar Prominences</span>
+                            <p>Solar prominences are glowing hot gas that extend far away from the photosphere -- the sun's surface. Prominences are large, often several times the size of Earth, and can last anywhere from a day to several weeks. The center of this image is black since the light form the Sun's disk is blocked - which allows astronomers to see fainter features. Taken August 13, 1908 from the Yerkes Observatory.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/halleys.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Halley's Comet</span>
+                            <p>Halley's comet is a relatively short period comet which takes about 75 years to orbit the Sun. Its orbit is very elliptical. At its closest approach, it passes closer to the Sun than Venus, whereas its further approach lies beyond Neptune. The image was taken the last time it was visible, on May 7th, 1986 from Fuertes Observatory. Comet Halley is scheduled to next be visible in 2061.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/andromeda.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Andromeda Galaxy (M31)</span>
+                            <p>The Andromeda Galaxy is the largest galaxy in our galactic neighborhood, and is thought to contain about a trillion stars -- roughly twice as many as the Milky Way. It is also roughly twice the size of our galaxy, stretching about 220,000 light-years in diameter. The blurry object to the upper left of the galaxy is M32, and the one to the lower right is M110. Both are dwarf elliptical galaxies and are satellites of M31.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/whirlpool.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Whirlpool Galaxy (M51)</span>
+                            <p>M51 is the larger spiral galaxy in this image, is about 20 million light-years away, and is about 1/3 the size of the Milky Way. The smaller galaxy visible in this image is NGC 5195; it is a dwarf elliptical galaxy that is interacting with the Whirlpool Galaxy, and is currently connected by a tidal bridge. </p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/m81.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">M81</span>
+                            <p>M81 is a spiral galaxy that lies about 12 million light-years away from Earth. It has an active galactic nucleus and is suspected to harbor a black hole weighing about 70 million solar masses. It is one of the brighter galaxies in the night sky, visible with only binoculars in dark conditions.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/m101.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Pinwheel Galaxy (M101)</span>
+                            <p>The Pinwheel Galaxy is a large galaxy, about twice the size of the Milky Way. However, due to its distance, about 21 million light-years, it is difficult to see except on the darkest of nights. The galaxy is believed to be asymmetrical due to tidal interactions with other galaxies.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/sunsurface.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">The Sun's Surface</span>
+                            <p>This is an image of sunspots on the surface of the Sun. Sunspots are slightly cooler regions of the Sun that appear dark in comparison to their hotter surroundings. The vertices lines in the image is a spectra of calcium vapor overlaid on the image. Taken August 10, 1917 at Yerkes Observatory.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/1905.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">The Great Sun-Spot of 1905</span>
+                            <p>This is an image taken of a particularly large sunspot on July 1905, during that year's solar maximum, and was measured to be over 95,000 miles (152,000km) in length. The spot later fragmented over a period of months.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/waningmoon.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">The Waning Moon</span>
+                            <p>This image was taken of the waning moon when it was 20 days into its 28 day cycle. It was taken at Fuertes Observatory on April 7, 1923.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/waxingmoon.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">The Waxing Moon</span>
+                            <p>This image was taken of the waxing moon when it was 9 days into its 28 day cycle. It was taken at Fuertes Observatory on March 26, 1923.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/m104.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Sombrero Galaxy (M104)</span>
+                            <p>The Sombrero Galaxy is a bright spiral galaxy in the constellation Virgo, which is about 31 million light-years from Earth. Here the galaxy appears like a flat disk because it is viewed edge-on from Earth.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/m42.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Orion Nebula (M42)</span>
+                            <p>The Orion Nebula is one of the brightest nebulae in the sky, often visible to the naked eye even from relatively light polluted conditions. At only 1300 light-years away, it is one of the closest regions to earth experiencing massive star formation, and is estimated to be about 25 light years across. This image was a 3-hr exposure taken November 19, 1920.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/veil.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Veil Nebula</span>
+                            <p>The Veil Nebula is a supernova remnant from a star that exploded between 3000-6000 B.C. The nebula is one of the brightest features in the x-ray sky, and recent spectroscopic measurements indicate the presence of oxygen, sulfur, and hydrogen in the remnant.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/m20.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Trifid Nebula (M20)</span>
+                            <p>The Trifid Nebula is a combination of a nebula and an open cluster of stars, the nebula being responsible for the dark gas and the cluster being responsible for the bright internal regions. The nebula is about 5200 light-years away and has been used by astronomers to study the birth of stars.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/m22.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">M22</span>
+                            <p>M22 is one of the brightest globular clusters in the night sky; it lies in the constellation Sagittarius. The globular contains about 70,000 stars and is about 50 light-years across. It is also relatively close to earth, lying only 10,000 light-years away. The cluster is actually the brightest globular visible from most northern latitudes; however, it never rises very high in the sky and so appears less impressive than other dimmer clusters.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/js.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Jupiter and Saturn</span>
+                            <p>These images show changes in the appearance of Jupiter and Saturn over time. On the left we see the Saturn's rings disappear over a period of about a decade. The right most image shows Jupiter's clouds evolving over time on December 1917. Both images were taken at the Lowell Observatory.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/halleys_fo.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Comet Halley from Fuertes</span>
+                            <p>Comet Halley is the dim star-like object at the end of the arrow. Comet Giacobini-Zinner is on the lower right, while NGC 2174 is on the upper right. Taken at Fuertes Observatory, September 14, 1985. This image was taken when Comet Halley was very far from the Sun; consequently, it was much dimmer than it was at close approach and did not have a visible tail.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/yerkesp.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Solar Prominences</span>
+                            <p>These images show changes in solar prominences over a period of only 35 minutes. The size of Earth is illustrated by the black dot. The prominences are the large bright features extending outwards from the dark disk -- the Sun's surface, which is blocked in order to see the prominences. Some prominences can be as large as the planet Jupiter.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/marsmap.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Mars</span>
+                            <p>A close-up of features believed in the early twentieth century to be on Mars, which were labeled "canals". Early astronomers believed they saw canals on Mars and hypothesized that they were used to bring water from Mars' polar regions to the dryer equator. Today it is know that these features do not exist and their observation was a combination of optical illusions and poor optics.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/milkyway.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Milky Way Star Field</span>
+                            <p>Star-Cloud in Scutum. 6in Bruce telescope. Exposure 2h40m, taken on April 20 1904</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/milkyway2.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Milky Way Star Field</span>
+                            <p>Star Cloud and Black Holes in Sagittarius. taken on July 31 1905, near 8h7m, -18 20' through the 10 inch Bruce Telescope. Exposure 4hrs 30min</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/catseye.jpg" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Cat's Eye Nebula</span>
+                            <p>The Cat's Eye Nebula (NGC 6543) is a planetary nebula that appears here as a bull's eye pattern of many shells around the center star. While each shell looks 2-D, it is actually a spherical bubble seen projected onto the sky, which is why it appears bright along its outer edge.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/helix.jpg" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Helix Nebula</span>
+                            <p>The Helix Nebula is one of the closest planeary nebulae to Earth, and is only about 700 light-years away. It is estimated to be about 2 light-years across, and 10 thousand years old. Strictly speaking, the Helix Nebula should appear very large in the sky, since its diameter is about half that of the full moon. However, since it is an extremely dim object, it is often not visible and easily overlooked.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/ring.jpg" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Ring Nebula (M57)</span>
+                            <p>The Ring Nebula is a planetary nebula that is about one light-year across and about 20,000 light years away. The greenish interior of the nebula is caused by ionized oxygen, which produces this color only in conditions of very low density.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/un.jpg" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Uranus and Neptune</span>
+                            <p>On the left is an image of the planet Uranus, taken by the Voyager 2 spacecraft. It orbits about 1.8 billion miles from the Sun and is roughly 14 times the mass of Earth. Uranus is often covered by thick haze and can appear featureless. On the right is an image of Neptune, also taken by Voyager 2. It orbits about 2.8 billion miles from the Sun and weighs about 17 Earths. The Great Dark spot can be seen near Neptune's left rim. Unlike the storms on Earth, the dark spot is a region of high pressure, and it lasted a few years.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/mm101.jpg" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Pinwheel Galaxy (M101)</span>
+                            <p>The Pinwheel Galaxy is located near the Big Dipper in the sky, but it is extremely faint. It is about 21 million light-years from Earth. This image is composed of 51 individual Hubble exposures, in addition to elements from images from ground-based photos, and is one of the most detailed images of the galaxy.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/mm51.jpg" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Whirlpool Galaxy (M51)</span>
+                            <p>The Whirlpool Galaxy was first recorded by Charles Messier in 1773; it is located 31 million light-years from Earth in the constellation Canes Venatici. It is fairly dim and is difficult to see except on very dark nights. The Whirlpool galaxy's beautiful face-on view and closeness to Earth allow astronomers to study a classic spiral galaxy's structure and its star-forming processes.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/antennas.jpg" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Antenna Galaxies</span>
+                            <p>The Antenna Galaxies are two that are undergoing a starburst due to their collision. The original centers of the galaxies can be seen in the leftmost image as two yellow cores, surrounded by blue gas and dust. It is expected that in about 400 million years, the galaxies will finally fuse to form a giant elliptical galaxy.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/mm104.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Sombrero Galaxy (M104)</span>
+                            <p>This image is a compilation of two different images of the Sombrero Galaxy. The above image was taken in visible light by the Hubble Space Telescope and shows the galaxy as it would appear to the naked eye. The lower image is in infrared light and is a compilation of images from the Hubble and Spitzer space telescopes, with starlight subtracted so that the dust in the galaxy is more visible.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/pluto.jpg" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Pluto</span>
+                            <p>This image of Pluto was taken by NASA's New Horizons spacecraft, on July 13, 2015, when the spacecraft was 476,000 miles away from the planet. It was the last and most detailed image sent to Earth before the spacecraft’s closest approach to Pluto on July 14. Clearly visible in the image is the large, bright beige "heart" which measures approximately 1,000 miles (1,600 kilometers) across.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/udf.jpg" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Hubble Ultra-Deep Field</span>
+                            <p>Hubble Ultra-Deep Field image includes some of the most distant galaxies to have been imaged by an optical telescope. The image is a composite of separate exposures taken in 2003 and 2012. The image contains about 10,000 galaxies, some only a few millions of years younger than the big bang.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/john.jpg" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Centaurus A</span>
+                            <p>This is a composite image of Centaurus A, revealing the lobes and jets emanating from the active galaxy's central black hole. This is a composite of images obtained with three instruments, operating at different wavelengths -- a submillimeter image in orange, x-ray imagery from the Chandra satellite, and a visible light image from the MPG/ESO telescope in La Silla, Chile.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/hex.jpg" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Saturn's Polar Hexagon</span>
+                            <p>The image was taken with the Cassini spacecraft's wide-angle camera on Nov. 27, 2012 using a spectral filter sensitive to wavelengths of near-infrared light centered at 750 nanometers. It shows a hexagonal storm on Saturn's north pole. The shape is believed to be the result of a perturbed jet in Saturn's upper atmosphere.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/chb.png" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Comet Hale-Bopp</span>
+                            <p>Comet Hale-Bopp was discovered on July 23, 1995 by Alan Hale and Thomas Bopp, and it was one of the brightest and most observed comets of the 20th century as it was visible to observers on Earth for a record of 18 months. The blue tail in this image streams opposite from the Sun and carries ions away from the comet's nucleus. The yellow tail is composed largely of dust and traces the curve of the comet's orbit.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/fom.jpg" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Fomalhaut b</span>
+                            <p>The large disk of gas surrounding the star Fomalhaut is clearly visible in this image. A planet—Fomalhaut b—was later found in the disk. It is likely less than twice Jupiter's mass that is either enshrouded in a spherical cloud of dust from ongoing planetesimal collisions or surrounded by a large circumplanetary ring system. Its orbital period is estimated to be about 1700 years.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/mm42.jpg" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Orion Nebula (M42)</span>
+                            <p>This image of the Orion nebula is one of the most detailed astronomical images ever produced; it was created using the Hubble Space Telescope over 105 Hubble orbits. All imaging instruments aboard the telescope were used simultaneously to study Orion. It is one of the brightest nebulae in the night sky, and one of the only major star forming regions near Earth.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/wl2.jpg" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Westerlund 2</span>
+                            <p>This image of Westerlund 2 was taken to celebrate the Hubble Space Telescope anniversary of 25 years in space. The star cluster is located inside large cloud of gas known as Gum 29, and is about 20,000 light-years away. The cluster measures between 6 to 13 light-years across.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/horsehead.jpeg" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Horsehead Nebula</span>
+                            <p>This image of the Horsehead Nebula in infrared light was made by the Hubble Space Telescope to mark the 23rd anniversary of the famous observatory's launch aboard the space shuttle Discovery on April 24, 1990. The Horsehead is an example of a dark nebula - it is only visible because it is lit from behind.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/uvsun.jpg" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Sun in UV</span>
+                            <p>This image is an extreme ultraviolet snapshot of the Sun and was made on August 1, 2010 using the Solar Dynamics Observatory. It shows a large solar flare (white area on upper left), a solar tsunami (wave-like structure, upper right), multiple filaments of magnetism lifting off the stellar surface, large-scale shaking of the solar corona, radio bursts, a coronal mass ejection, and more.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/zoph.jpg" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Zeta Oph- Bow Shock</span>
+                            <p>The star Zeta Ophiuchi produces the arcing interstellar bow wave or bow shock which can be seen in this infared image. In the false-color view, bluish Zeta Oph, which is about 20 solar masses is moving toward the left at 24 kilometers per second. Its strong stellar wind precedes it, which compresses the interstellar medium and produces the curved shock front. It is likely that Zeta Oph was once a member of a binary star system whose companion exploded as a supernova, which caused Zeta Oph to be flung out of the system at high speed.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/juper.jpg" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Jupiter and its Moons</span>
+                            <p>This image is a compilation of Jupiter an its four largest moons. From left to right, they are Io, Europa, Ganymede and Callisto. On the bottom of the image, the great red spot can be seen. The individual images of Jupiter and its moons were taken by spacecraft, but cannot be seen in this orientation.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/saturn.jpg" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Saturn</span>
+                            <p>This natural color image of the planet Saturn was created from images collected shortly after Cassini began its extended Equinox Mission in July 2008. Several of Saturn's moons can be seen in this image, most prominently Titan, which appears as a brown ball just off Saturn's rings.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="../../data/img/slide/m80.jpg" class="img">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">M80</span>
+                            <p>This is an image of M80, also known as NGC 6093, taken by the Hubble Space Telescope. It is one of about 250 globular clusters that orbit our Galaxy. Many of the stars in M80 are older and redder than our Sun, but some enigmatic stars appear to be bluer and younger. These blue stars are known as blue stragglers, and by analyzing pictures like this one, astronomers have been able identify one of the largest populations of blue stragglers to date. As blue stragglers are thought to be the result of nearby stars colliding, it is believed that stars are much more closely spaced, and thus collide more frequently, in M80 than in our stellar neighborhood.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="padding: 2vh;"></div>
+
+            <footer style="background-color: rgba(0, 0, 0, 0.8); left: 0; width: 100vw; align-items: center; justify-content: center; font-size: 0.8em;">
+                <div style="padding: 2vh;"></div>
+                <div class="main_content" style="display: grid; grid-template-columns: 4fr 2.2fr 1px 2fr 1px 1.5fr 1px 3fr 1px 2fr 4fr; margin: auto;">
+                    <div></div>
+                    <div style="text-align: left; padding: 1rem 10%; overflow-wrap: anywhere;">Email us: <a href="mailto:astrosociety@cornell.edu">astrosociety@cornell.edu</a></div>
+                    <div style="background-color: white; width: 100%;"></div>
+                    <div style="text-align: left; padding: 1rem 10%;">Find us:<br>209 Cradit Farm Drive<br>Ithaca, New York 14850</div>
+                    <div style="background-color: white; width: 100%;"></div>
+                    <div style="text-align: left; padding: 1rem 10%;">Hours:<br>Fri: 8pm - 12am</div>
+                    <div style="background-color: white; width: 100%;"></div>
+                    <div id="copyright" style="text-align: center; padding: 1rem 10%; font-size: 0.8em; line-height: 1.5em;">© 2024 by the Cornell Astronomical Society<br>Member Login<br><br>This organization is a registered student organization of Cornell University.</div>
+                    <div style="background-color: white; width: 100%;"></div>
+                    <div style="padding: 1rem 10%; max-width: 20vw; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 5%; place-items: center;">
+                        <a href="https://www.facebook.com/FuertesObservatory"><img style="width: 100%;" src="../../data/social/Facebook_Logo_Primary.png"></a>
+                        <a href="https://twitter.com/FuertesObs"><img style="width: 100%;" src="../../data/social/Logo_of_Twitter.png"></a>
+                        <a href="https://www.instagram.com/fuertesobservatory"><img style="width: 100%;" src="../../data/social/Instagram_Glyph_Gradient.png"></a>
+                    </div>
+                    <div></div>
+                </div>
+                <div style="padding: 2vh;"></div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

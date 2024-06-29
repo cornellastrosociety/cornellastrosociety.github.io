@@ -50,13 +50,9 @@
         }
 
         /* specific to this implementation */
-
         .parallax-layer.layer1 {
-            width: 100%;
-
             background:
                 url(../../data/img/ugc.jpg) top center;
-
         }
 
         th,
@@ -79,59 +75,7 @@
         }
     </style>
 
-    <script>
-        window.onresize = function () {
-
-            var windowsize = window.innerHeight;
-            var windowwide = window.innerWidth;
-            var height = document.getElementById('test').scrollHeight;
-            let shift = ((Math.abs(height - windowsize) + (height - windowsize)) / 4);
-            let scale = windowsize + ((Math.abs(height - windowsize) + (height - windowsize)) / 185)
-            document.getElementById('bg').style.marginTop = (shift) + "px"
-            document.getElementById('bg').style.height = scale + "px";
-
-            setTimeout(() => {
-                document.getElementById('bg').style.marginTop = (shift - 10) + "px";
-            },
-                10);
-            var scrolldist = document.getElementById('wind').scrollTop;
-            if (scrolldist > height - windowsize) {
-                document.getElementById('wind').scrollTo(0, height - windowsize);
-            }
-
-        }
-
-        window.onload = function () {
-
-
-            var windowsize = window.innerHeight;
-            var windowwide = window.innerWidth;
-            var height = document.getElementById('test').scrollHeight;
-
-            let shift = ((Math.abs(height - windowsize) + (height - windowsize)) / 4);
-            let scale = windowsize + (((Math.abs(height - windowsize) + (height - windowsize)) / 185) * 4)
-            //document.getElementById('bg').style.marginTop = shift + "px";
-            document.getElementById('bg').style.height = scale + "px";
-
-            /*setTimeout(() => {
-                document.getElementById('bg').style.marginTop = (shift - 10) + "px";
-            },
-                10);*/
-
-        }
-
-        function overscroll() {
-            var windowsize = window.innerHeight;
-            var windowwide = window.innerWidth;
-            var height = document.getElementById('test').scrollHeight;
-            var scrolldist = document.getElementById('wind').scrollTop;
-            if (scrolldist > height - windowsize) {
-                document.getElementById('wind').scrollTo(0, height - windowsize);
-            }
-
-        }
-
-    </script>
+    <script src="../../data/js/parallax.js"></script>
 </head>
 
 <body style="background-color: black; color: rgb(234, 234, 234);">
