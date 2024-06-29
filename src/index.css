@@ -112,20 +112,11 @@ body {
 
 .layer1 {
     transform: translateZ(-99px) translateY(0vh) scale(100);
+    width: 100%;
 }
 
 .layer2 {
     transform: translateZ(0px);
-}
-
-/* specific to this implementation */
-
-.parallax-layer.layer1 {
-    width: 100%;
-
-    background:
-        url("data/img/ugc.jpg");
-
 }
 
 a:link,
