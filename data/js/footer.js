@@ -13,9 +13,9 @@ var footer_data = `<div style="padding: 2vh;"></div>
         <div id="copyright" style="text-align: center; padding: 1rem 10%; font-size: 0.8em; line-height: 1.5em;">© 2024 by the Cornell Astronomical Society<br>Member Login<br><br>This organization is a registered student organization of Cornell University.</div>
         <div style="background-color: white; width: 100%;"></div>
         <div style="padding: 1rem 10%; max-width: 20vw; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 5%; place-items: center;">
-            <a href="https://www.facebook.com/FuertesObservatory"><img style="width: 100%;" src="data/social/Facebook_Logo_Primary.png"></a>
-            <a href="https://twitter.com/FuertesObs"><img style="width: 100%;" src="data/social/Logo_of_Twitter.png"></a>
-            <a href="https://www.instagram.com/fuertesobservatory"><img style="width: 100%;" src="data/social/Instagram_Glyph_Gradient.png"></a>
+            <a href="https://www.facebook.com/FuertesObservatory"><img style="width: 100%;" src="/data/social/Facebook_Logo_Primary.png"></a>
+            <a href="https://twitter.com/FuertesObs"><img style="width: 100%;" src="/data/social/Logo_of_Twitter.png"></a>
+            <a href="https://www.instagram.com/fuertesobservatory"><img style="width: 100%;" src="/data/social/Instagram_Glyph_Gradient.png"></a>
         </div>
         <div></div>
     </div>
