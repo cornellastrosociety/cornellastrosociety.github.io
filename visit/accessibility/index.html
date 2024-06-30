@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility | The Cornell Astronomical Society</title>
+    <link rel="stylesheet" href="/data/css/index.css">
+    <style>
+        body:before {
+            content: "";
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            background: url(/data/img/slide/mm42.jpg) no-repeat top center;
+            background-size: cover;
+        }
+
+        .img_contain {
+            padding: 1vw;
+            text-align: center;
+            padding-top: 0;
+            aspect-ratio: 4 / 3;
+        }
+
+        .img {
+            width: 100%;
+            max-width: 50vw;
+            object-fit: cover;
+            margin-top: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .img_title {
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #EEE;
+        }
+
+        .capt_contain {
+            text-align: left;
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 13px;
+            color: #AAA;
+        }
+
+        .main_content {
+            padding-bottom: 4vh;
+        }
+
+        @media only screen and (max-width: 750px) {
+            .main_content {
+                text-align: center !important;
+            }
+
+            .img_contain {
+                padding: 1vw;
+                text-align: center;
+                padding-top: 0;
+                aspect-ratio: unset !important;
+                padding-bottom: 2vh;
+            }
+
+            .img {
+                width: 100%;
+                max-width: none !important;
+                object-fit: contain;
+                margin-top: 0;
+                height: 100%;
+                width: 100%;
+                max-height: 50vh;
+            }
+
+            .img_title {
+                text-align: center !important;
+                display: block;
+            }
+
+            .capt_contain {
+                text-align: center !important;
+            }
+        }
+
+        /* specific to this implementation */
+        .parallax-layer.layer1 {
+            background:
+                url(/data/img/slide/mm42.jpg) top center;
+        }
+    </style>
+
+    <script src="/data/js/parallax.js"></script>
+</head>
+
+<body style="color: rgb(234, 234, 234); overflow-x: hidden;">
+    <div class="parallax example" id="wind" style="overflow-x: hidden; margin:auto;" onscroll="overscroll()">
+        <div id="bg" class="parallax-layer layer1" style="background-size: cover; height: 100vh; margin-top: 0vh; "></div>
+        <div id="test" class="parallax-layer layer2" style="height: auto; animation: fadein ease-in-out 0.5s none;">
+            <div id="main" style="margin: auto; max-width: 67vw; animation: fadein ease-in-out 1.5s none;">
+
+                <div style="padding: 1vh;"></div>
+
+                <script src="/data/js/nav.js"></script>
+                <script>
+                    document.getElementById('nav_about').classList.add('nav_el_sel');
+                    document.getElementById('nav_about_slides').classList.add('nav_el_sel');
+                </script>
+
+                <div style="padding: 2vh;"></div>
+
+                <!-- Main content -->
+                <div id="main_box" style="width: 95%; background-color: rgba(0, 0, 0, 0.65); text-align: left; margin: auto; padding: 6vh 2vw; max-width: 100%; box-sizing: border-box; text-shadow: rgba(0, 0, 0, 0.5) -1px -1px 0px, rgba(0, 0, 0, 0.5) 1px 1px 0px; line-height: 1.25em;">
+                    <div style="text-shadow: rgba(255, 255, 255, 0.4) 0px 4px 5px; font-size: 52px; text-align: center; font-weight: bold; line-height: 2em;">Accessibility</div>
+                    <div style="text-align: center; font-weight: bold; font-size: 24px; line-height: 1.25em;">If you have questions about any of the following, please email us:<br><a href="mailto:astrosociety@cornell.edu">astrosociety@cornell.edu</a></div>
+
+                    <div style="padding: 4vh;"></div>
+
+                    <div style="font-family: 'Times New Roman', Times, serif; font-weight: 600; font-size: 21px; line-height: 2.5em;">Stairs and Lack of ADA-Compliance</div>
+                    <div style="font-size: 19px;">
+                        <p>Fuertes Observatory was constructed in 1917 and lacks ramps, lifts, and an ADA-compliant bathroom. There are four steps up to the ground floor of Fuertes where the classroom and museum are located, and one flight of narrow stairs (with a handrail only halfway up) to reach the telescope and observing deck. There is a bathroom located on the ground floor, but it is not wide enough to accommodate wheelchairs.</p>
+                        <p>On the second floor, our historic telescope is very large, and often requires climbing a ladder. Our modern telescopes on the deck do not require ladders, but can be hard to reach for some visitors without use of our step stools—or instead may require bending down.</p>
+                        <p>We are actively seeking ways to improve this situation and offer alternative accommodations, but for now it remains true that all levels of the building can only be accessed via stairs. If this is an issue for any members of your group, please let us know, and we'll do our best to bring the tour and observing components outside!</p>
+                    </div>
+
+                    <div style="font-family: 'Times New Roman', Times, serif; font-weight: 600; font-size: 21px; line-height: 2.5em;">Seating</div>
+                    <div style="font-size: 19px;">
+                        <p>Due to constant flow of people, there is no seating on the top floor of the building (observation dome and deck). If you need to take a seat while upstairs, let one of our members know, and we can bring up a chair from downstairs. There are always chairs in the museum wing on the ground floor.</p>
+                    </div>
+
+                    <div style="font-family: 'Times New Roman', Times, serif; font-weight: 600; font-size: 21px; line-height: 2.5em;">Vision Impairments</div>
+                    <div style="font-size: 19px;">
+                        <p>We are actively seeking ways to make astronomy more accessible to those with vision impairments. We hope to set up auditory methods of observing the sky soon.</p>
+                        <p>Some objects are inherently darker and harder to see than others—many people with 20/20 vision struggle to see galaxies and nebulae, but planets and the Moon are much brighter. There tend to be at least a couple bright objects on any given night, but it's worth checking online or by emailing <a href="mailto:astrosociety@cornell.edu">astrosociety@cornell.edu</a>.</p>
+                    </div>
+
+                    <div style="font-family: 'Times New Roman', Times, serif; font-weight: 600; font-size: 21px; line-height: 2.5em;">Hearing Impairments and Sign Language</div>
+                    <div style="font-size: 19px;">
+                        <p>We typically use built-in red lights to preserve the eye's sensitivity to faint night sky objects. The dim visibility may not be an optimal environment for sign language, but the observing dome and deck are never fully dark. Red flashlights can also be provided or set up if needed.</p>
+                        <p>Our tours are fully verbal, but the same information can be found on pages of this website.</p>
+                    </div>
+
+                    <div style="font-family: 'Times New Roman', Times, serif; font-weight: 600; font-size: 32px; line-height: 3em;">Sensory Information</div>
+
+                    <div style="font-family: 'Times New Roman', Times, serif; font-weight: 600; font-size: 21px; line-height: 2.5em;">Lights</div>
+                    <div style="font-size: 19px;">
+                        <p>The ground floor of Fuertes Observatory is always lit, but the observation dome and deck can become very dark when telescopes are in use. We typically use red lights to provide dim visibility.</p>
+                    </div>
+
+                    <div style="font-family: 'Times New Roman', Times, serif; font-weight: 600; font-size: 21px; line-height: 2.5em;">Sounds and Crowds</div>
+                    <div style="font-size: 19px;">
+                        <p>Most of the telescope operations in our building are relatively quiet, but when we need to turn the dome to view a different part of the sky, the sound can get quite loud (similar to standing near a small landmower). Let us know before you arrive if loud noises are an issue for anyone in your group by emailing <a href="mailto:astrosociety@cornell.edu">astrosociety@cornell.edu</a>.</p>
+                        <p>On crowded nights, the limited space can also amplify conversations, and the dome and the deck can get quite packed. We tend to limit the number of people in the dome to around 20 at a time—but the darkness can make it hard to gauge the crowds.</p>
+                        <p>In winter, the cold tends to deter any large crowds. If you plan to attend during temperature or warm months and crowds are a major issue for anyone in your group, feel free to schedule a private tour for a non-Friday night by sending an email to <a href="mailto:astrosociety@cornell.edu">astrosociety@cornell.edu</a>. There also tend to be less crowds and noise in the museum wing on the ground floor, so it can be a good place to take a break.</p>
+                    </div>
+
+                    <div style="font-family: 'Times New Roman', Times, serif; font-weight: 600; font-size: 21px; line-height: 2.5em;">Temperature</div>
+                    <div style="font-size: 19px;">
+                        <p>The ground level of Fuertes is not air conditioned, but it is heated in the winter. The observation levels (deck and dome) are not heated or air conditioned. Be sure to wear appropriate clothing!</p>
+                    </div>
+                </div>
+            </div>
+
+            <script src="/data/js/footer.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>
