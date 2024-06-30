@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open House Nights | The Cornell Astronomical Society</title>
+    <link rel="stylesheet" href="/data/css/index.css">
+    <style>
+        body:before {
+            content: "";
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            background: url(/data/img/fo.jpg) no-repeat top center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body style="background-color: black; color: rgb(234, 234, 234); overflow-x: hidden;">
+    <div id="main" style="margin: auto; max-width: 67vw; animation: fadein ease-in-out 1.5s none;">
+
+        <div style="padding: 1vh;"></div>
+
+        <script src="/data/js/nav.js"></script>
+        <script>
+            document.getElementById('nav_events').classList.add('nav_el_sel');
+            document.getElementById('nav_events_openhouses').classList.add('nav_el_sel');
+        </script>
+
+        <!-- Title image -->
+        <div style="position: relative; text-align: center;">
+            <img src="/data/img/openhouse.png" style="width: 70%; border: 0.5px solid black; box-shadow: 0px 0px 7.5px rgba(0, 0, 0, 0.5);" alt="Members of the Cornell Astronomical Society posing for a photo on the deck at Fuertes Observatory; the dome, with the Irving Porter Church telescope visible, is present in the background">
+        </div>
+
+        <div style="padding: 2vh;"></div>
+
+        <!-- Opening status box -->
+        <script src="/data/js/status.js"></script>
+
+        <div style="padding: 2vh;"></div>
+
+        <!-- Main content -->
+        <div id="main_box" style="width: 100%; background-color: rgba(0, 0, 0, 0.8); text-align: left; margin: auto; padding: 6vh 2vw; max-width: 100%; box-sizing: border-box;">
+            <div style="text-align: justify;">
+                <span style="color: rgb(140, 191, 233); font-size: 24px; font-family: Georgia, serif;">Fuertes Observatory Open House Nights</span>
+                <p>Fuertes Observatory is open every Friday night during the Cornell academic year from 8 PM until midnight (regardless of weather) and occasionally at other times, as announced in the status bar above, on our <a href="/#email">mailing list</a>, and on our <a href="/">home page</a>. <a href="/events/lectures">Lectures</a> are given on select Friday nights in an external building on North Campus. Open house nights begin after each lecture.</p>
+                <p>When clear, public viewing takes place through the observatory's telescopes. Tours of the historic building, the <a href="/about/telescope">Irving Porter Church Refractor</a>, and our museum will be given throughout the night, regardless of the weather.</p>
+                <p>You can also visit our <a href="/visit/hours">Hours & Directions</a> page for hours, directions, parking information.</p>
+                <p>For accessibility information, see our <a href="/visit/accessibility">Accessibility</a> page.</p>
+            </div>
+            <div style="text-align: justify;">
+                <span style="color: rgb(140, 191, 233); font-size: 24px; font-family: Georgia, serif;">Fuertes Observatory Guidelines</span>
+                <p>When you attend an open house night at the Fuertes Observatory, please be respectful of the volunteers and other observers. Please <span style="font-weight: bold; color: rgb(220, 178, 60);">do not use flash photography, cell phones,</span> and other sources of white light while observing is taking place. In order to see faint detail in galaxies and nebulae, the eyes must be fully dark adapted, which takes several minutes. Any source of white light will interfere with this adjustment and will disturb other observers.</p>
+                <p>Dress appropriately for the season! The dome room and deck of the observatory are both unheated, and the temperature often falls rapidly after sunset.</p>
+                <p>Children are welcome, but must be accompanied by an adult at all times.</p>
+                <p>Smoking of any kind (including e-cigarettes) is strictly prohibited in or around the observatory and on the observing deck. Pets are not allowed in the building.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/data/js/footer.js"></script>
+</body>
+
+</html>
