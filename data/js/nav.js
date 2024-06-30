@@ -18,7 +18,7 @@ var nav_data = `<!-- Nav bar, should persist across pages; add nav_el_sel to cur
                 <div class="nav_dd_menu">
                     <div class="nav_dd_main">
                         <a href="/visit/hours" id="nav_visit_hours">Hours, Directions</a>
-                        <a href="/visit/accessiblity" id="nav_visit_accessibility">Accessibility</a>
+                        <a href="/visit/accessibility" id="nav_visit_accessibility">Accessibility</a>
                         <a href="/visit/weather" id="nav_visit_weather">Weather</a>
                     </div>
                 </div>
