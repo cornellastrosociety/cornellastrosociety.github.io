@@ -6,7 +6,7 @@ var footer_data = `<div style="padding: 2vh;"></div>
         <div></div>
         <div style="text-align: left; padding: 1rem 10%; overflow-wrap: anywhere;">Email us: <a href="mailto:astrosociety@cornell.edu">astrosociety@cornell.edu</a></div>
         <div style="background-color: white; width: 100%;"></div>
-        <div style="text-align: left; padding: 1rem 10%;">Find us:<br>209 Cradit Farm Drive<br>Ithaca, New York 14850</div>
+        <div style="text-align: left; padding: 1rem 10%;"><a href="/visit/hours">Find us</a>:<br>209 Cradit Farm Drive<br>Ithaca, New York 14850</div>
         <div style="background-color: white; width: 100%;"></div>
         <div style="text-align: left; padding: 1rem 10%;">Hours:<br>Fri: 8pm - 12am</div>
         <div style="background-color: white; width: 100%;"></div>

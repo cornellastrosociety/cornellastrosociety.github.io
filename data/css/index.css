@@ -1,11 +1,11 @@
 @font-face {
     font-family: caudex;
-    src: url(data/font/Caudex-Regular.ttf);
+    src: url(/data/font/Caudex-Regular.ttf);
 }
 
 @font-face {
     font-family: rubik;
-    src: url(data/font/Rubik-Light.ttf);
+    src: url(/data/font/Rubik-Light.ttf);
 }
 
 @keyframes flyin {
@@ -86,7 +86,7 @@ body:before {
     width: 100%;
     height: 100%;
     z-index: -10;
-    background: url(data/img/bg1.jpg) no-repeat center center;
+    background: url(/data/img/bg1.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -126,6 +126,7 @@ a:active {
     color: white;
 }
 
+footer,
 footer a:link,
 footer a:visited,
 footer a:hover,
