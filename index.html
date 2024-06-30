@@ -13,7 +13,7 @@
 
         <div style="padding: 1vh;"></div>
 
-        <script src="data/js/nav.js"></script>
+        <script src="/data/js/nav.js"></script>
         <script>
             document.getElementById('nav_home').classList.add('nav_el_sel');
         </script>
@@ -27,12 +27,7 @@
         <div style="padding: 2vh;"></div>
 
         <!-- Opening status box -->
-        <div style="width: 100%; background-color: rgba(140, 0, 0, 0.69); text-align: center; margin: auto; padding: 6vh 2vw; max-width: 100%; box-sizing: border-box; color: white">
-            <span style="text-shadow: white 0 0 6px; font-size: 40px;">Open every Friday <span style="font-weight: bold;">8 PM - midnight</span>.</span>
-            <br>
-            <!-- Status message -->
-            <span style="text-shadow: white 0 0 4px; color: white; font-size: 24px;">Open all summer, but less staffed—check here in case of sudden cancellations.</span>
-        </div>
+        <script src="/data/js/status.js"></script>
 
         <div style="padding: 2vh;"></div>
 
@@ -81,7 +76,7 @@
             <div style="text-align: center;">
                 <span style="color: rgb(140, 191, 233); font-size: 24px; font-family: Georgia, serif;">Mailing List</span>
                 <p>Fill out the form below to be added to our email listserv. We generally send out a weekly announcement listing the events at Fuertes for that Friday, as well as notifications about special events on non-Friday nights.</p>
-                <iframe src="data/html/form.html" style="display: inline-block; background-color: rgba(50, 117, 182, 0.78); max-height: 15ex; padding: 0 5vw; border: 0; width: 83%;">
+                <iframe id="email" src="data/html/form.html" style="display: inline-block; background-color: rgba(50, 117, 182, 0.78); max-height: 15ex; padding: 0 5vw; border: 0; width: 83%;">
                 </iframe>
                 <p>Ignore the "This request is invalid" message if received. Check your email for subscription verification.<br>Contact <a href="mailto:astrosociety@cornell.edu">astrosociety@cornell.edu</a> for assistance.
                 </p>
