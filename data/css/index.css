@@ -203,6 +203,27 @@ footer a:active {
     margin: 8px;
 }
 
+.img_contain {
+    padding: 1vw;
+    text-align: center;
+    padding-top: 0;
+    aspect-ratio: 16 / 9;
+}
+
+.img {
+    width: 100%;
+    object-fit: cover;
+    margin-top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.img_credit {
+    font-size: 8px;
+    color: rgb(161, 161, 161);
+    font-family: sans-serif;
+}
+
 @media only screen and (max-width: 750px) {
 
     /* Removes padding */
@@ -219,6 +240,10 @@ footer a:active {
 
     .main_content {
         display: block !important;
+    }
+
+    .main_group {
+        margin: 3vh 0 !important;
     }
 
     #newsletter_img {
@@ -242,4 +267,8 @@ footer a:active {
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
+}
+
+.special {
+    color: goldenrod;
 }
