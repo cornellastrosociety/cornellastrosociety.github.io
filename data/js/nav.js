@@ -29,7 +29,6 @@ var nav_data = `<!-- Nav bar, should persist across pages; add nav_el_sel to cur
                     <div class="nav_dd_main">
                         <a href="/events/lectures" id="nav_events_lectures">Lecture Series</a>
                         <a href="/events/openhouse" id="nav_events_openhouse">Open Houses</a>
-                        <a href="/events/archivedlectures" id="nav_events_archivedlectures">Archived Lectures</a>
                     </div>
                 </div>
             </div>
