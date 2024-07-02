@@ -13,6 +13,6 @@ ids.reverse();
 for (let i = ids.length; i > 0; i--) {
     setTimeout(() => {
         iframes[i - 1].src = `https://www.youtube-nocookie.com/embed/${ids[i - 1]}`;
-    }, i * (5000 / ids.length));
+    }, i * (6000 / ids.length));
 }
-// Load time fixed at 5 seconds, loading each iframe at a separate instant, as to improve overall page loading time
+// Load time fixed at 6 seconds, loading each iframe at a separate instant, as to improve overall page loading time
