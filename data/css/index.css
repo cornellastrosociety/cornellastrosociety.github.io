@@ -149,7 +149,7 @@ footer a:active {
 
 .nav_el_sel {
     background-image: linear-gradient(rgb(123, 193, 228) 0%, 15.6682%, rgb(58, 160, 210) 31.3364%, 65.6682%, rgb(6, 121, 180) 100%);
-    color: rgb(240, 240, 240);
+    color: rgb(240, 240, 240) !important;
 }
 
 .nav_el:hover {
