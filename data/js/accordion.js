@@ -103,6 +103,12 @@ function showSlide(n) {
     };
 
     console.log(slides)
-    slides[slideIndex - 1].style.display = 'block';
-    modalPreviews[slideIndex - 1].className += ' active';
+    if (slides.length >= slideIndex) slides[slideIndex - 1].style.display = 'block';
+    if (modalPreviews.length >= slideIndex) modalPreviews[slideIndex - 1].className += ' active';
 };
+
+document.onkeyup = function (e) {
+    if (e.key == 'Escape') {
+        closeLightbox();
+    }
+}
