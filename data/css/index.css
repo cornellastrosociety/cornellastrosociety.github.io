@@ -357,6 +357,7 @@ Galleries
 
 .image-slide {
     width: 100%;
+    max-width: 100vw;
 }
 
 .modal-preview {
