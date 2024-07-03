@@ -1,11 +1,12 @@
 window.onresize = function () {
-    var windowsize = window.innerHeight;
+    var windowsize = window.outerHeight;
+    var windowwide = window.outerWidth;
     var height = document.getElementById('test').scrollHeight;
     let shift = ((Math.abs(height - windowsize) + (height - windowsize)) / 4);
     let scale = windowsize + ((Math.abs(height - windowsize) + (height - windowsize)) / 198)
     document.getElementById('bg').style.marginTop = (shift) + "px"
     document.getElementById('bg').style.height = scale + "px";
-
+    document.getElementById('bg').style.width = windowwide + "px";
     setTimeout(() => {
         document.getElementById('bg').style.marginTop = (shift - 10) + "px";
     },
@@ -17,7 +18,7 @@ window.onresize = function () {
 }
 
 window.onload = function () {
-    var windowsize = window.innerHeight;
+    var windowsize = window.outerHeight;
     var windowwide = window.outerWidth;
     var height = document.getElementById('test').scrollHeight;
     let shift = ((Math.abs(height - windowsize) + (height - windowsize)) / 4);
@@ -47,3 +48,4 @@ function overscroll() {
         document.getElementById('wind').scrollTo(0, height - windowsize);
     }
 }
+
