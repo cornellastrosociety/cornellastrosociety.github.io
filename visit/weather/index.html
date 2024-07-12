@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather | The Cornell Astronomical Society</title>
+    <link rel="stylesheet" href="/data/css/index.css">
+    <style>
+        /* Default background */
+        body:before {
+            content: "";
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            background: url(/data/img/allyeastronomerscomegathernighillsingyouasongofthestarsintheskyanditswindyweatherboysstormyweatherboyswhenthewindblowswerealltogetherboysblowyewindswesterlyblowyewindsblowjollysouwesterboyssteadyshegoes.jpg) no-repeat top center;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body style="color: rgb(234, 234, 234); overflow-x: hidden;">
+    <div id="main" style="margin: auto; max-width: 67vw; animation: fadein ease-in-out 1.5s none;">
+
+        <div style="padding: 1vh;"></div>
+
+        <script src="/data/js/nav.js"></script>
+        <script>
+            document.getElementById('nav_visit').classList.add('nav_el_sel');
+            document.getElementById('nav_visit_weather').classList.add('nav_el_sel');
+        </script>
+
+        <div style="padding: 2vh;"></div>
+
+        <!-- Main content -->
+        <div id="main_box" style="width: 95%; background-color: rgba(0, 0, 0, 0.8); text-align: left; margin: auto; padding: 6vh 2vw; max-width: 95%; box-sizing: border-box;">
+            <span style="color: rgb(140, 191, 233); font-size: 24px; font-family: Georgia, serif;">The weather in Ithaca isn't always good... check it before coming!</span>
+            <div style="text-align: left;">
+                <p>We try to hold public observing at the Fuertes Observatory every Friday night when the weather permits. Even if the weather is prohibitive for stargazing, we will still open up for tours of the observatory and its historic telescopes. This said, we generally advise visitors to come on clear nights so they can have a fantastic stargazing experience.</p>
+                <p>The best place to look to see if it's clear outside is up! If you can't see any stars where you are, there is good chance that we can't either. We also have some resources below to help you plan your visit!</p>
+
+                <div style="position: relative; text-align: center;">
+                    <div style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; margin: 1em 0;">National Weather Service forecast for the Fuertes Observatory:</div>
+                    <a target="_blank" href="https://forecast.weather.gov/MapClick.php?lat=42.4528&lon=-76.4745&unit=0&lg=english&FcstType=graphical">
+                        <img src="https://forecast.weather.gov/meteograms/Plotter.php?lat=42.4528&lon=-76.4745&wfo=BGM&zcode=NYZ025&gset=20&gdiff=10&unit=0&tinfo=EY5&ahour=0&pcmd=11100110000000000000000000000000000000000000000000000000000&lg=en&indu=1!1!1!&dd=&bw=&hrspan=48&pqpfhr=6&psnwhr=6" style="width: 90%;" alt="The National Weather Service forecast for the coordinates of the Fuertes Observatory, including temperatures, precipitation, and cloud cover." title="National Weather Service forecast">
+                    </a>
+                </div>
+
+                <div style="position: relative; text-align: center;">
+                    <div style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; margin: 1em 0;">Clear Sky Chart for Ithaca, NY:</div>
+                    <a target="_blank" href="https://www.cleardarksky.com/c/IthacaNYkey.html">
+                        <img src="https://www.cleardarksky.com/c/IthacaNYcsk.gif?c=1036807" style="width: 90%;" alt="The Clear Dark Sky/CMC forecast for Ithaca." title="Clear Dark Sky/Canadian Meteorological Centre forecast">
+                    </a>
+                </div>
+
+                <div style="padding: 1vh;"></div>
+
+                <div style="font-family: Verdana, Geneva, Tahoma, sans-serif; margin-bottom: 0.5em;">Other Clear Sky Charts:</div>
+                <div style="line-height: 2.5em; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 0.75em;">
+                    <div>
+                        <a target="_blank" href="http://cleardarksky.com/c/ChrSprPkPAkey.html"><img style="max-width: 100%;" src="https://www.cleardarksky.com/c/ChrSprPkPAcs0.gif?1"></a> - Cherry Springs State Park, PA
+                    </div>
+                    <div>
+                        <a target="_blank" href="http://cleardarksky.com/c/CstrInsNYkey.html"><img style="max-width: 100%;" src="http://cleardarksky.com/c/CstrInsNYcs0.gif?1"></a> - Custer Institute in Southold, NY
+                    </div>
+                    <div>
+                        <a target="_blank" href="http://cleardarksky.com/c/WklyMtnNYkey.html"><img style="max-width: 100%;" src="http://cleardarksky.com/c/WklyMtnNYcs0.gif?1"></a> - Wakely Mountain in Adirondack Park, NY
+                    </div>
+                    <div>
+                        <a target="_blank" href="http://cleardarksky.com/c/BrycCNPUTkey.html"><img style="max-width: 100%;" src="http://cleardarksky.com/c/BrycCNPUTcs0.gif?1"></a> - Bryce Canyon National Park, UT
+                    </div>
+                </div>
+
+                <hr style="display: block; margin: 4vh 0;">
+
+                <div style="display: grid; grid-template-columns: 64% 2% 44%;">
+                    <div id="col_1">
+                        <div style="text-align: justify;">
+                            <p>Be sure to check the sunset times listed to the right. Observing typically won't begin until an hour or so after sunset, and doesn't get spectacular until an hour and a half after sunset!</p>
+                            <p>Unfortunately, a bright moon makes it harder to observe deep-sky objects. The best time to observe planets, galaxies, and nebulae is a new moon; however, brighter objects like planets are still visible during even a full moon.</p>
+                            <p> But if you want to observe the moon instead, the best time is first or third quarter. Shadows help to accentuate the craters!</p>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div id="col_2" style="position: relative;">
+                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                            <div id="widget_2" style="margin: auto; text-align: center; margin-bottom: 3vh;">
+                                <a href="https://time.is/Ithaca" id="time_is_link" rel="nofollow" style="font-size:24px">
+                                    <div id="Ithaca_z161" style="font-size:14px;color:white;text-align:center"></div>
+                                    <script src="//widget.time.is/en.js"></script>
+                                    <script>
+                                        time_is_widget.init({ Ithaca_z161: { template: "DATE<br>SUN", date_format: "monthname dnum, year:", sun_format: "Sunrise: srhour:srminute Sunset: sshour:ssminute", coords: "42.4406300,-76.4966100" } });
+                                    </script>
+                                </a>
+                            </div>
+                            <div id="widget_3" style="margin: auto; text-align: center;">
+                                <!-- // Begin Current Moon Phase HTML (c) MoonConnection.com // -->
+                                <a href="https://www.moonconnection.com/"><img style="margin: auto; display: block; max-width: 100%;" src="https://www.moonmodule.com/cs/dm/vn.gif" alt="Current phase of the Moon, according to MoonConnection.com."></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/data/js/footer.js"></script>
+</body>
+
+</html>
