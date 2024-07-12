@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletters | The Cornell Astronomical Society</title>
+    <link rel="stylesheet" href="/data/css/index.css">
+    <style>
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: black;
+        }
+
+        body:before {
+            content: "";
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            background: url(/data/img/nbg.jpg) no-repeat center center;
+            background-size: cover;
+        }
+
+        .nl {
+            display: grid;
+            grid-template-columns: 24% 1% 35% 6% 33%;
+            padding: 1vh;
+            margin-bottom: 3vh;
+        }
+
+        .nl_yr {
+            font-size: 31px;
+            color: rgb(161, 161, 161);
+            margin-bottom: 3vh;
+        }
+
+        .nl_mth {
+            font-size: 40px;
+        }
+
+        .nl_desc {
+            text-align: left;
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+            color: #ddd;
+            margin-bottom: 2em;
+            line-height: 1.6em;
+        }
+
+        .nl_link {
+            font-family: system-ui;
+            font-weight: 100;
+            font-size: 22px;
+            color: goldenrod;
+        }
+
+        @media only screen and (max-width: 750px) {
+            .nl_yr {
+                display: inline;
+                font-size: 30px;
+                margin-bottom: 0 !important;
+                padding-right: 0.278em;
+            }
+
+            .nl_mth {
+                font-size: 30px;
+            }
+
+            .nl_tc {
+                width: 100%;
+                text-align: center;
+                align-items: center;
+            }
+
+            .nl_thumb {
+                width: 75% !important;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color: black; color: rgb(234, 234, 234); overflow-x: hidden;">
+    <div id="main" style="margin: auto; max-width: 67vw; animation: fadein ease-in-out 1.5s none;">
+
+        <div style="padding: 1vh;"></div>
+
+        <script src="/data/js/nav.js"></script>
+        <script>
+            document.getElementById('nav_newsletters').classList.add('nav_el_sel');
+        </script>
+
+        <div style="padding: 2vh;"></div>
+
+        <!-- Title text -->
+        <div style="width: 100%; text-align: center; font-family: serif; font-size: 56px; text-shadow: rgb(255, 255, 255) 0px 0px 6px;">Monthly Newsletters</div>
+
+        <div style="padding: 4vh;"></div>
+
+        <!-- Main content -->
+        <div id="nl_main" style="width: 95%; background-color: rgba(0, 0, 0, 0.86); text-align: left; margin: auto; padding: 3vw 2vw; max-width: 95%; box-sizing: border-box;">
+
+            <script src="/data/js/newsletter.js"></script>
+
+        </div>
+    </div>
+
+    <script src="/data/js/footer.js"></script>
+</body>
+
+</html>
