@@ -125,7 +125,7 @@ const template_sect = `<div class="main_content nl">
     </div>
     <div></div>
     <div class="nl_tc">
-        <a href="/data/newsletters/CAS Newsletter %mth %yr.pdf"><img class="nl_thumb" style="width: 100%;" src="/data/img/newsletter/%date.png"></a>
+        <a href="/data/newsletters/CAS Newsletter %mth %yr.pdf"><img class="nl_thumb" style="width: 100%;" src="/data/img/newsletter/%date.png" alt="%mth %yr CAS Newsletter thumbnail></a>
     </div>
 </div>`;
 
@@ -139,7 +139,7 @@ if (nl_sect) {
 }
 
 const template_widg = `<a href="/data/newsletters/CAS Newsletter %mth %yr.pdf" style="display: block; text-align: center;">
-    <img class="nl_thumb" style="width: 60%;" src="/data/img/newsletter/%date.png">
+    <img class="nl_thumb" style="width: 60%;" src="/data/img/newsletter/%date.png" alt="%mth %yr CAS Newsletter thumbnail">
 </a>`;
 
 const nl_widget = document.getElementById('nl_widget');
