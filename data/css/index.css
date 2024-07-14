@@ -137,7 +137,7 @@ footer a:active {
 .nav_el {
     text-align: center;
     border-radius: 0;
-    border: 0.5px solid black;
+    border: 0.1px solid rgba(0, 0, 0, 0.5);
     font-family: rubik, serif;
     background-image: linear-gradient(rgb(202, 202, 202), rgb(148, 148, 148));
     cursor: pointer;
@@ -351,8 +351,8 @@ Galleries
     justify-content: center;
     margin: auto;
     padding: 0 0 0 0;
-
-    height: 95vh;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .image-slide {

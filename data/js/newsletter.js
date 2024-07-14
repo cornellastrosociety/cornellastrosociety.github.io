@@ -119,13 +119,13 @@ const template_sect = `<div class="main_content nl">
     <div></div>
     <div class="main_group">
         <div class="nl_desc">%desc</div>
-        <a href="/data/newsletters/CAS Newsletter %mth %yr.pdf">
+        <a target="_blank" href="/data/newsletters/CAS Newsletter %mth %yr.pdf">
             <div class="nl_link">Read ></div>
         </a>
     </div>
     <div></div>
     <div class="nl_tc">
-        <a href="/data/newsletters/CAS Newsletter %mth %yr.pdf"><img class="nl_thumb" style="width: 100%;" src="/data/img/newsletter/%date.png" alt="%mth %yr CAS Newsletter thumbnail"></a>
+        <a target="_blank" href="/data/newsletters/CAS Newsletter %mth %yr.pdf"><img class="nl_thumb" style="width: 100%;" src="/data/img/newsletter/%date.png" alt="%mth %yr CAS Newsletter thumbnail"></a>
     </div>
 </div>`;
 
@@ -138,7 +138,7 @@ if (nl_sect) {
     nl_sect.innerHTML = insertion.join('\n\n');
 }
 
-const template_widg = `<a href="/data/newsletters/CAS Newsletter %mth %yr.pdf" style="display: block; text-align: center;">
+const template_widg = `<a target="_blank" href="/data/newsletters/CAS Newsletter %mth %yr.pdf" style="display: block; text-align: center;">
     <img class="nl_thumb" style="width: 60%;" src="/data/img/newsletter/%date.png" alt="%mth %yr CAS Newsletter thumbnail">
 </a>`;
 

@@ -110,5 +110,9 @@ function showSlide(n) {
 document.onkeyup = function (e) {
     if (e.key == 'Escape') {
         closeLightbox();
+    } else if (e.key == 'ArrowLeft') {
+        changeSlide(-1);
+    } else if (e.key == 'ArrowRight') {
+        changeSlide(1);
     }
 }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery | The Cornell Astronomical Society</title>
+    <link rel="stylesheet" href="/data/css/index.css">
+    <link rel="stylesheet" href="/data/css/gallery.css">
+    <style>
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: black;
+        }
+
+        body:before {
+            content: "";
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            background: url(/data/img/orion.jpg) no-repeat center center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body style="background-color: black; color: rgb(234, 234, 234); overflow-x: hidden;">
+    <div id="main" style="margin: auto; max-width: 67vw; animation: fadein ease-in-out 1.5s none;">
+
+        <div style="padding: 1vh;"></div>
+
+        <script src="/data/js/nav.js"></script>
+        <script>
+            document.getElementById('nav_photos').classList.add('nav_el_sel');
+            document.getElementById('nav_photos_photos').classList.add('nav_el_sel');
+        </script>
+
+        <div style="padding: 2vh;"></div>
+
+        <!-- Title text -->
+        <div style="width: 100%; text-align: center; color: white; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; font-size: 24px;">Photo Gallery</div>
+
+        <div style="padding: 2vh;"></div>
+
+        <div style="display: none;" id="galtype" data-galtype="photos"></div>
+        <div id="gal"></div>
+        <div style="padding: 1vh;"></div>
+        <div id="gal_ext" style="width: 100%; text-align: center; cursor: pointer; text-decoration: underline;" onclick="galplace()">Show More</div>
+
+        <div style="padding: 2vh;"></div>
+    </div>
+
+    <script src="/data/js/footer.js"></script>
+
+    <div id="lightboxtwo" class="modal" style="position: fixed; overflow: hidden;"></div>
+
+    <script src="/data/js/gallery.js"></script>
+    <script src="/data/js/lightbox.js"></script>
+</body>
+
+</html>
