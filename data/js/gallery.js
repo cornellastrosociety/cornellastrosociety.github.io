@@ -78,6 +78,10 @@ galleries.set('photos', {
             name: `2024 CAS Grads with Irv`
         },
         {
+            id: `sunsetdeck.jpg`,
+            name: `Sunset from Fuertes`
+        },
+        {
             id: `totality.jpg`,
             name: `Totality in Rochester!`
         },
@@ -92,6 +96,11 @@ galleries.set('photos', {
         {
             id: `rocjillianjb.jpg`,
             name: `Jillian Epstein and Ben Jacobson-Bell at ROC the Eclipse festival`
+        },
+        {
+            id: `eclipseprep.jpg`,
+            name: `Eclipse preparations at Fuertes`,
+            desc: `April 7, 2024`
         },
         {
             id: `glasses.jpg`,
@@ -132,6 +141,35 @@ galleries.set('photos', {
             desc: `On February 13, 2024, CAS held a Cosmos episode 6 showing at Cornell Cinema, followed by a Q&A with Cosmos co-producer Ann Druyan!`
         },
         {
+            id: `bit.jpg`,
+            name: `CAS Freshmen in the road`,
+            desc: `February 2024`
+        },
+        {
+            id: `antenna.jpg`,
+            name: `Antenna at Fuertes`,
+            desc: `First experiments with radio reception from the observatory.`
+        },
+        {
+            id: `decknight.jpg`,
+            name: `Busy night on the deck`
+        },
+        {
+            id: `c14mount.jpg`,
+            name: `Mounting of the C14`,
+            desc: `After extensive repairs, the C14 rises again!`
+        },
+        {
+            id: `logbook.jpg`,
+            name: `Signing of the logbook`,
+            desc: `Around 6 AM during our first all-night observing session of 2023-24.`
+        },
+        {
+            id: `venusirv.jpg`,
+            name: `Venus and Irv`,
+            desc: `Taken around 4 AM during an all-night observing session at the Fuertes Observatory.`
+        },
+        {
             id: `sagan23.jpg`,
             name: `President Gillis Lowry presenting Carl Sagan's Birthday Night 2023`
         },
@@ -153,6 +191,15 @@ galleries.set('photos', {
             id: `fuertespano.jpg`,
             name: `Fuertes Fall Foliage`,
             desc: `2023`
+        },
+        {
+            id: `visitors.jpg`,
+            name: `Visitors during a tour`
+        },
+        {
+            id: `fuertes1023.jpg`,
+            name: `The Fuertes Observatory`,
+            desc: `October 2023`
         },
         {
             id: `officers2324.jpg`,
