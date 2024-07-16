@@ -47,5 +47,12 @@ function overscroll() {
     if (scrolldist > height - windowsize) {
         document.getElementById('wind').scrollTo(0, height - windowsize);
     }
+
+    var windowwidth = window.innerWidth;
+    var width = document.getElementById('test').scrollWidth;
+    var scrollwidedist = document.getElementById('wind').scrollLeft;
+    if (scrollwidedist > width - windowwidth) {
+        document.getElementById('wind').scroll(width - windowwidth, 0);
+    }
 }
 
