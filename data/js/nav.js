@@ -1,5 +1,5 @@
 var nav_data = `<!-- Nav bar, should persist across pages; add nav_el_sel to current page -->
-        <a id="hamburger" style="position: absolute; top: 0; right: 0; z-index: 2147483647; font-size: 50px; text-decoration: none; color: white;" href="javascript:void('Irv :D');">☰</a>
+        <a id="hamburger" style="position: absolute; top: 0; right: 0; z-index: 2147483646; font-size: 50px; text-decoration: none; color: white;" href="javascript:void('Irv :D');">☰</a>
         <nav class="nav_no_display" style="display: grid; grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%; animation: flyin ease-in-out 1s none;">
             <a href="/"><button class="nav_el" id="nav_home">Home</button></a>
             <div class="nav_dd">
@@ -44,8 +44,7 @@ var nav_data = `<!-- Nav bar, should persist across pages; add nav_el_sel to cur
                 </div>
             </div>
             <a href="/newsletters"><button class="nav_el" id="nav_newsletters">Newsletters</button></a>
-        </nav>
-        <div style="padding: 2vh;"></div>`
+        </nav>`
 
 document.write(nav_data);
 

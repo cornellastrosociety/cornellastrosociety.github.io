@@ -138,6 +138,7 @@ nav {
     max-width: 67vw;
     margin: auto;
     margin-top: calc(8px + 2vh);
+    margin-bottom: 4vh;
     position: relative;
 }
 
@@ -311,7 +312,7 @@ nav {
         top: 0;
         position: fixed !important;
         grid-template-columns: unset !important;
-        z-index: 2147483646;
+        z-index: 2147483645;
         animation: none !important;
     }
 
@@ -490,4 +491,8 @@ img.modal-preview {
 .previous:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+#hamburger.hamburger_hide {
+    display: none !important;
 }
