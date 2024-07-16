@@ -138,6 +138,7 @@ nav {
     max-width: 67vw;
     margin: auto;
     margin-top: calc(8px + 2vh);
+    position: relative;
 }
 
 .nav_el {
