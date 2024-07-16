@@ -44,7 +44,8 @@ var nav_data = `<!-- Nav bar, should persist across pages; add nav_el_sel to cur
                 </div>
             </div>
             <a href="/newsletters"><button class="nav_el" id="nav_newsletters">Newsletters</button></a>
-        </nav>`
+        </nav>
+        <div style="padding: 2vh;"></div>`
 
 document.write(nav_data);
 
