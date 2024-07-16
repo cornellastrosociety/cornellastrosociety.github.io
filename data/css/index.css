@@ -230,6 +230,10 @@ nav {
     font-family: sans-serif;
 }
 
+#hamburger {
+    display: none;
+}
+
 @media only screen and (max-width: 750px) {
 
     /* Removes padding */
@@ -304,10 +308,23 @@ nav {
         width: 100vw;
         left: 0;
         top: 0;
-        display: block !important;
-        position: relative !important;
+        position: fixed !important;
         grid-template-columns: unset !important;
-        z-index: 2147483647;
+        z-index: 2147483646;
+        animation: none !important;
+    }
+
+    .nav_display {
+        display: block !important;
+    }
+
+    .nav_no_display {
+        display: none !important;
+    }
+
+    #hamburger {
+        display: block !important;
+        position: fixed !important;
     }
 }
 

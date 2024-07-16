@@ -1,5 +1,6 @@
 var nav_data = `<!-- Nav bar, should persist across pages; add nav_el_sel to current page -->
-        <nav style="display: grid; grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%; animation: flyin ease-in-out 1s none;">
+        <a id="hamburger" style="position: absolute; top: 0; right: 0; z-index: 2147483647; font-size: 50px; text-decoration: none; color: white;" href="javascript:void('Irv :D');">☰</a>
+        <nav class="nav_no_display" style="display: grid; grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%; animation: flyin ease-in-out 1s none;">
             <a href="/"><button class="nav_el" id="nav_home">Home</button></a>
             <div class="nav_dd">
                 <button class="nav_el" id="nav_about">About</button>
@@ -43,8 +44,13 @@ var nav_data = `<!-- Nav bar, should persist across pages; add nav_el_sel to cur
                 </div>
             </div>
             <a href="/newsletters"><button class="nav_el" id="nav_newsletters">Newsletters</button></a>
-        </nav>
-
-        <div style="padding: 2vh;"></div>`
+            <div style="padding: 2vh;"></div>
+        </nav>`
 
 document.write(nav_data);
+
+document.getElementById('hamburger').onclick = function () {
+    const nav = document.getElementsByTagName('nav')[0];
+    if (nav && nav.classList.contains('nav_no_display')) nav.classList.replace('nav_no_display', 'nav_display');
+    else if (nav && nav.classList.contains('nav_display')) nav.classList.replace('nav_display', 'nav_no_display');
+}
