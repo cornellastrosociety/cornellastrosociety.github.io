@@ -196,6 +196,7 @@ nav {
     text-decoration: none;
     font-size: 17px;
     line-height: 32px;
+    overflow-wrap: anywhere;
 }
 
 .nav_dd_menu a:hover {
