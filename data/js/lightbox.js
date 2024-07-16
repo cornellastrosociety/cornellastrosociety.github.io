@@ -12,6 +12,7 @@ let slideIndexTwo = 1;
 showSlideTwo(slideIndexTwo);
 
 function openLightboxTwo() {
+    document.getElementById('hamburger').classList.add('hamburger_hide');
     document.getElementById('lightboxtwo').style.display = 'block';
     document.getElementsByTagName('html')[0].style.overflow = 'hidden';
     document.getElementsByTagName('body')[0].style.overflow = 'hidden';
@@ -19,6 +20,7 @@ function openLightboxTwo() {
 };
 
 function closeLightboxTwo() {
+    document.getElementById('hamburger').classList.remove('hamburger_hide');
     document.getElementById('lightboxtwo').style.display = 'none';
     document.getElementsByTagName('html')[0].style.overflow = 'auto';
     document.getElementsByTagName('body')[0].style.overflow = 'auto';
