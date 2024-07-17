@@ -74,6 +74,18 @@
         tr:nth-child(even) {
             background-color: rgb(75, 75, 75)
         }
+        #burger {
+            display: none;
+        }
+        #burger.burger_hide {
+            display: none !important;
+        }
+        @media only screen and (max-width: 750px) {
+            #burger {
+            display: block !important;
+      
+            }
+        }
     </style>
 
     <script src="/data/js/parallax.js"></script>
@@ -82,12 +94,61 @@
 
 <body style="color: rgb(234, 234, 234);">
     <div class="parallax example" id="wind" style="overflow-x: hidden; margin: auto;" onscroll="overscroll()">
+        <div  id="burger"style=" position:sticky; top: 0;  z-index: 2147483646;">
+            <a style = "font-size: 50px; text-decoration: none; color: white; position: absolute; right: 0px;" href="javascript:void('Irv :D');" onclick = "showNav()">☰</a>
+            <navtwo class="nav_no_display" style="display: grid;width: 100vw;  left: 0; top: 0;  position: sticky!important; grid-template-columns: unset !important; z-index: -10;  animation: none !important;">
+                <a href="/"><button class="nav_el" id="nav_home">Home</button></a>
+                <div class="nav_dd">
+                    <button class="nav_el" id="nav_about">About</button>
+                    <div class="nav_dd_menu">
+                        <div class="nav_dd_main">
+                            <a href="/about/theclub" id="nav_about_theclub">The Club</a>
+                            <a href="/about/telescope" id="nav_about_telescope">The Telescope</a>
+                            <a href="/about/fuertes" id="nav_about_fuertes">Fuertes History</a>
+                            <a href="/about/irvhistory" id="nav_about_irvhistory">Telescope History</a>
+                            <a href="/about/slides" id="nav_about_slides">Lantern Slide Wall</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_dd">
+                    <button class="nav_el" style="width: 100%;" id="nav_visit">Visit Us</button>
+                    <div class="nav_dd_menu">
+                        <div class="nav_dd_main">
+                            <a href="/visit/hours" id="nav_visit_hours">Hours, Directions</a>
+                            <a href="/visit/accessibility" id="nav_visit_accessibility">Accessibility</a>
+                            <a href="/visit/weather" id="nav_visit_weather">Weather</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_dd">
+                    <button class="nav_el" style="width: 100%;" id="nav_events">Events</button>
+                    <div class="nav_dd_menu">
+                        <div class="nav_dd_main">
+                            <a href="/events/lectures" id="nav_events_lectures">Lecture Series</a>
+                            <a href="/events/openhouse" id="nav_events_openhouse">Open Houses</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_dd">
+                    <button class="nav_el" style="width: 100%;" id="nav_photos">Photos</button>
+                    <div class="nav_dd_menu">
+                        <div class="nav_dd_main">
+                            <a href="/photos/photos" id="nav_photos_photos">Photo Gallery</a>
+                            <a href="/photos/museum" id="nav_photos_museum">Museum Gallery</a>
+                            <a href="/photos/astro" id="nav_photos_astro">Astrophotography</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="/newsletters"><button class="nav_el" id="nav_newsletters">Newsletters</button></a>
+            </navtwo>
+        </div>
+
         <div id="bg" class="parallax-layer layer1" style="height: 100vh; margin-top: 0; background-size: cover;"></div>
         <div id="test" class="parallax-layer layer2" style="height: auto; animation: fadein ease-in-out 0.5s none;">
 
             <div id="main" style="margin: auto; max-width: 67vw; animation: fadein ease-in-out 1.5s none;">
-
-                <script src="/data/js/nav.js"></script>
+                
+                <script src="/data/js/navparallax.js"></script>
                 <script>
                     document.getElementById('nav_about').classList.add('nav_el_sel');
                     document.getElementById('nav_about_theclub').classList.add('nav_el_sel');
@@ -265,7 +326,7 @@
         </div>
 
         <script src="/data/js/accordion.js"></script>
-
+        
         <div id="lightbox" class="modal" style="position: sticky; overflow: hidden;">
 
             <span class="close pointer" onclick="closeLightbox()">&times;</span>
@@ -300,8 +361,11 @@
             <a class="previous" style="position: absolute; left: 0px" onclick="changeSlide(-1)">&#10094;</a>
             <a class="next" onclick="changeSlide(1)">&#10095;</a>
         </div>
+
         <div id="lightboxtwo" class="modal" style="position: sticky; overflow: hidden;"></div>
+        
     </div>
+    
     <script src="/data/js/gallery.js"></script>
     <script src="/data/js/lightbox.js"></script>
 </body>
