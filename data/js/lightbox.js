@@ -1,18 +1,19 @@
-document.onkeyup = function (e) {
-    if (e.key == 'Escape') {
-        closeLightboxTwo();
-    } else if (e.key == 'ArrowLeft') {
-        changeSlideTwo(-1);
-    } else if (e.key == 'ArrowRight') {
-        changeSlideTwo(1);
-    }
-}
+
 
 let slideIndexTwo = 1;
 showSlideTwo(slideIndexTwo);
 
 function openLightboxTwo() {
-    document.getElementById('hamburger').classList.add('hamburger_hide');
+    if (document.getElementById('hamburger') != null)
+    {
+        document.getElementById('hamburger').classList.add('hamburger_hide');
+    }
+    else if (document.getElementById('burger') != null)
+    {
+        document.getElementById('burger').classList.add('burger_hide');
+    }
+   
+
     document.getElementById('lightboxtwo').style.display = 'block';
     document.getElementsByTagName('html')[0].style.overflow = 'hidden';
     document.getElementsByTagName('body')[0].style.overflow = 'hidden';
@@ -20,7 +21,16 @@ function openLightboxTwo() {
 };
 
 function closeLightboxTwo() {
-    document.getElementById('hamburger').classList.remove('hamburger_hide');
+      if (document.getElementById('hamburger') != null)
+        {
+            document.getElementById('hamburger').classList.add('hamburger_show');
+            document.getElementById('hamburger').classList.remove('hamburger_hide');
+        }
+        else if (document.getElementById('burger') != null)
+        {
+            document.getElementById('burger').classList.add('burger_show');
+            document.getElementById('burger').classList.remove('burger_hide');
+        }
     document.getElementById('lightboxtwo').style.display = 'none';
     document.getElementsByTagName('html')[0].style.overflow = 'auto';
     document.getElementsByTagName('body')[0].style.overflow = 'auto';
@@ -72,13 +82,13 @@ function resizeSlideTwo(n) {
     {   
         document.getElementsByClassName('slideTwo')[0].parentElement.style.width = (vpH * 7/10  * (imgW/imgH) )+ 'px';
         document.getElementsByClassName('slideTwo')[0].parentElement.style.height = 'auto';
-        console.log('c1')
+
     }
     else
     {
         document.getElementsByClassName('slideTwo')[0].parentElement.style.width = (vpW * 9/10 ) + 'px';
         document.getElementsByClassName('slideTwo')[0].parentElement.style.height = 'auto';
-        console.log('c2')
+
     }
     if (document.getElementsByClassName('slideTwo')[i].childElementCount >= 2)
     {
@@ -88,11 +98,5 @@ function resizeSlideTwo(n) {
     {
         document.getElementsByClassName('slideTwo')[i].children[2].style.fontSize = vpH / 60 + 'px';
     }
-    console.log('c')
-
 }
 
-window.onresize = function () {
-
-    resizeSlideTwo(slideIndexTwo)
-}
