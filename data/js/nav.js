@@ -52,4 +52,52 @@ document.getElementById('hamburger').onclick = function () {
     const nav = document.getElementsByTagName('nav')[0];
     if (nav && nav.classList.contains('nav_no_display')) nav.classList.replace('nav_no_display', 'nav_display');
     else if (nav && nav.classList.contains('nav_display')) nav.classList.replace('nav_display', 'nav_no_display');
+    if (document.getElementsByTagName('html')[0].style.overflow === 'auto' ||document.getElementsByTagName('html')[0].style.overflow === "")
+    {
+        document.getElementsByTagName('html')[0].style.overflow = 'hidden';
+        document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+        if (document.getElementById('wind')) document.getElementById('wind').style.overflow = 'hidden';
+    }
+    else if(document.getElementsByTagName('html')[0].style.overflow === 'hidden')
+    {
+        document.getElementsByTagName('html')[0].style.overflow = 'auto';
+        document.getElementsByTagName('body')[0].style.overflow = 'auto';
+        if (document.getElementById('wind')) document.getElementById('wind').style.overflow = 'auto';
+    }
+}
+
+window.onresize = function () {
+    if (document.getElementsByClassName('slideTwo').length > 0)
+    {
+        resizeSlideTwo(slideIndexTwo)
+    }
+    if (document.getElementsByClassName('slide').length > 0)
+    {
+        resizeSlide(slideIndex)
+    }
+   
+}
+
+document.onkeyup = function (e) {
+    if (document.getElementsByClassName('slideTwo').length > 0)
+        {
+            if (e.key == 'Escape') {
+                closeLightboxTwo();
+            } else if (e.key == 'ArrowLeft') {
+                changeSlideTwo(-1);
+            } else if (e.key == 'ArrowRight') {
+                changeSlideTwo(1);
+            }
+        }
+    if (document.getElementsByClassName('slide').length > 0)
+        {
+            if (e.key == 'Escape') {
+                closeLightbox();
+            } else if (e.key == 'ArrowLeft') {
+                changeSlide(-1);
+            } else if (e.key == 'ArrowRight') {
+                changeSlide(1);
+            }
+        }    
+
 }
