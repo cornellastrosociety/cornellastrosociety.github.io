@@ -1,6 +1,6 @@
 var nav_data = `<!-- Nav bar, should persist across pages; add nav_el_sel to current page -->
         
-        <nav class="nav_no_display" style="display: grid; grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%; animation: flyin ease-in-out 1s none;">
+        <nav class="nav_no_display" style="display: grid; grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%; animation: flyin ease-in-out 1s none;  height: 10%;">
             <a href="/"><button class="nav_el" id="nav_home">Home</button></a>
             <div class="nav_dd">
                 <button class="nav_el" id="nav_about">About</button>
