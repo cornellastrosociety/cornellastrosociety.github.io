@@ -86,6 +86,11 @@ galleries.set('photos', {
             name: `Totality in Rochester!`
         },
         {
+            id: `jmq28.jpg`,
+            name: `CAS on FOX Philadelphia!`,
+            desc: `With Jack Qualkenbush, and William C. Atkinson's modified slitless spectrograph, at the ROC the Eclipse festival.`
+        },
+        {
             id: `rocjason.jpg`,
             name: `Jason Peskin at ROC the Eclipse festival`
         },

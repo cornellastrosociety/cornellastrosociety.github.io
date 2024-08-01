@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Events and Projects | The Cornell Astronomical Society</title>
+    <link rel="stylesheet" href="/data/css/index.css">
+    <style>
+        body:before {
+            content: "";
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            background: url(/data/img/astro/pleiades.jpg) no-repeat top center;
+            background-size: cover;
+        }
+
+        .img_title {
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #EEE;
+        }
+
+        .capt_contain {
+            text-align: left;
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 13px;
+            color: #AAA;
+        }
+
+        .main_content {
+            padding-bottom: 4vh;
+        }
+
+        @media only screen and (max-width: 750px) {
+            .main_content {
+                text-align: center !important;
+            }
+
+            .img_contain {
+                padding: 1vw;
+                text-align: center;
+                padding-top: 0;
+                aspect-ratio: unset !important;
+                padding-bottom: 2vh;
+            }
+
+            .img {
+                width: 100%;
+                max-width: none !important;
+                object-fit: contain;
+                margin-top: 0;
+                height: 100%;
+                width: 100%;
+                max-height: 50vh;
+            }
+
+            .img_title {
+                text-align: center !important;
+                display: block;
+            }
+
+            .capt_contain {
+                text-align: center !important;
+            }
+        }
+
+        /* specific to this implementation */
+        .parallax-layer.layer1 {
+            background:
+                url(/data/img/astro/pleiades.jpg) top center;
+        }
+
+        #main_box a:link,
+        #main_box a:visited,
+        #main_box a:hover,
+        #main_box a:active {
+            color: rgb(126, 192, 238);
+            text-decoration: none;
+        }
+    </style>
+
+    <script src="/data/js/parallax.js"></script>
+</head>
+
+<body style="color: rgb(234, 234, 234); overflow-x: hidden;">
+    <div class="parallax example" id="wind" style="overflow-x: hidden; margin:auto;" onscroll="overscroll()">
+        <div id="bg" class="parallax-layer layer1" style="background-size: cover; height: 100vh; margin-top: 0vh; "></div>
+        <div id="test" class="parallax-layer layer2" style="height: auto; animation: fadein ease-in-out 0.5s none;">
+            <div id="main" style="margin: auto; max-width: 67vw; animation: fadein ease-in-out 1.5s none;">
+
+                <script src="/data/js/nav.js"></script>
+                <script>
+                    document.getElementById('nav_events').classList.add('nav_el_sel');
+                    document.getElementById('nav_events_past').classList.add('nav_el_sel');
+                </script>
+
+                <!-- Main content -->
+                <div id="main_box" style="width: 100%; background-color: rgba(0, 0, 0, 0.65); text-align: left; margin: auto; padding: 6vh 2vw; max-width: 100%; box-sizing: border-box; text-shadow: rgba(0, 0, 0, 0.5) -1px -1px 0px, rgba(0, 0, 0, 0.5) 1px 1px 0px; line-height: 1.1em;">
+                    <div style="font-size: 3em; font-weight: bold; width: 100%; text-align: center; line-height: 1em;">Past Events and Projects</div>
+
+                    <div style="padding: 4vh;"></div>
+
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="/data/img/photos/totality.jpg" class="img" alt="CAS's view of the April 8, 2024 total eclipse">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title"><a href="eclipse/">Solar Eclipse on April 8, 2024</a></span>
+                            <p>The Cornell Astronomical Society organized a trip to enable more than 400 undergraduate students to travel to Rochester and experience totality during the April 8, 2024 eclipse. We provided eclipse glasses and safety information to the broader community, allowing as Cornell students to view the partial eclipse from the Ithaca campus.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="/data/img/irv100.jpg" class="img" alt="Irv's 100th Birthday tours">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title">Irv's 100th Birthday</span>
+                            <p>CAS members celebrated the 100th birthday of our flagship telescope, the <a href="/about/telescope/">Irving Porter Church refractor</a>! <a target="_blank" href="https://news.cornell.edu/stories/2022/10/crowd-gathers-wish-happy-birthday-fuertes-telescope">An article</a> was written about the celebration in the Cornell Chronicle, and <a target="_blank" href="https://www.youtube.com/watch?v=U7-tVG1SUFw">a lecture</a> was presented by Professor Phil Nicholson.</p>
+                        </div>
+                    </div>
+                    <div id="museum" class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="/data/img/museum/thumb/38.jpg" class="img" alt="Visitors in the museum">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title"><a href="museum/overview/">Fuertes Museum Project</a></span>
+                            <p>For many years, it has been a dream of CAS members to set up a museum in the eastern wing of the observatory to display our collection of vintage instruments and observatory history. However, the former transit rooms had fallen into disrepair over the years. The walls were peeling; the windows needed blinds, glazing, and caulking; and the building required humidity control to prevent further damage to our collection of antiques. Thanks to our wonderful new facility manager, David Pawelcyzk, and some campaigning by CAS, these goals have now been met! Read more about the project at the link above, or check out our 2017 fundraiser information <a href="museum/updates/">here</a>.</p>
+                        </div>
+                    </div>
+                    <div class="main_content" style="display: grid; grid-template-columns: 39% 2% 59%;">
+                        <div class="img_contain">
+                            <img src="/data/img/outreach.jpg" class="img" alt="Crowds gathered at Fuertes">
+                        </div>
+                        <div></div>
+                        <div class="capt_contain">
+                            <span class="img_title"><a href="press/">Fuertes in the Press (pre-2020)</a></span>
+                            <p>The Fuertes Observatory and the Cornell Astronomical Society have been featured several times in local newspapers, dating back before the observatory's first open house on February 23, 1923. A collection of some of these publications may be found at the link above. The page has not been updated recently, and as such, features no articles published after 2020.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="/data/js/footer.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>
