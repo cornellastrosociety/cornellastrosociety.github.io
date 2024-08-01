@@ -3,6 +3,12 @@
 const newsletters = [
     {
         yr: `2024`,
+        mth: `August`,
+        desc: `Our final special issue newsletter of the summer contains another look into the Museum Restoration Project, discussing the telescopes at the forefront of astronomy research and their relation to Cornell.`,
+        date: `aug24`
+    },
+    {
+        yr: `2024`,
         mth: `July`,
         desc: `Our first special issue of Summer '24 introduces our new Editor-in-Chief, Shane Kuo, and unveils our Museum Restoration Project!`,
         date: `jul24`
