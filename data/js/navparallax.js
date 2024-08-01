@@ -48,8 +48,8 @@ var nav_data = `<!-- Nav bar, should persist across pages; add nav_el_sel to cur
 
 document.write(nav_data);
 
- function showNav() {
-    const nav = document.getElementsByTagName('navtwo')[0];
+function showNav() {
+    const nav = document.getElementById('navtwo');
     if (nav && nav.classList.contains('nav_no_display')) nav.classList.replace('nav_no_display', 'nav_display');
     else if (nav && nav.classList.contains('nav_display')) nav.classList.replace('nav_display', 'nav_no_display');
 }
