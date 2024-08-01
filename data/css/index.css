@@ -8,6 +8,16 @@
     src: url(/data/font/Rubik-Light.ttf);
 }
 
+@font-face {
+    font-family: roboto;
+    src: url(/data/font/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: sarabun;
+    src: url(/data/font/Sarabun-Regular.ttf);
+}
+
 @keyframes flyin {
     from {
         transform: translateY(-20vh);

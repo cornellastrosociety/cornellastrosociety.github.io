@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Events and Projects | The Cornell Astronomical Society</title>
+    <link rel="stylesheet" href="/data/css/index.css">
+    <style>
+        body:before {
+            content: "";
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            background: url(/data/img/eclipse.jpg) no-repeat top center;
+            background-size: cover;
+        }
+
+        .img_title {
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #EEE;
+        }
+
+        .capt_contain {
+            text-align: left;
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 13px;
+            color: #AAA;
+        }
+
+        .main_content {
+            padding-bottom: 4vh;
+        }
+
+        @media only screen and (max-width: 750px) {
+            .main_content {
+                text-align: center !important;
+            }
+
+            .img_contain {
+                padding: 1vw;
+                text-align: center;
+                padding-top: 0;
+                aspect-ratio: unset !important;
+                padding-bottom: 2vh;
+            }
+
+            .img {
+                width: 100%;
+                max-width: none !important;
+                object-fit: contain;
+                margin-top: 0;
+                height: 100%;
+                width: 100%;
+                max-height: 50vh;
+            }
+
+            .img_title {
+                text-align: center !important;
+                display: block;
+            }
+
+            .capt_contain {
+                text-align: center !important;
+            }
+        }
+
+        /* specific to this implementation */
+        .parallax-layer.layer1 {
+            background:
+                url(/data/img/eclipse.jpg) top center;
+        }
+
+        p,
+        ul {
+            font-family: sarabun;
+            font-size: 1.35em;
+            line-height: 1.5em;
+        }
+
+        li {
+            margin: 2vh 0;
+        }
+
+        #main_box a:link,
+        #main_box a:visited,
+        #main_box a:hover,
+        #main_box a:active {
+            color: rgb(132, 204, 202);
+        }
+    </style>
+
+    <script src="/data/js/parallax.js"></script>
+</head>
+
+<body style="color: rgb(234, 234, 234); overflow-x: hidden;">
+    <div class="parallax example" id="wind" style="overflow-x: hidden; margin:auto;" onscroll="overscroll()">
+        <div id="bg" class="parallax-layer layer1" style="background-size: cover; height: 100vh; margin-top: 0vh; "></div>
+        <div id="test" class="parallax-layer layer2" style="height: auto; animation: fadein ease-in-out 0.5s none;">
+            <div id="main" style="margin: auto; max-width: 67vw; animation: fadein ease-in-out 1.5s none;">
+
+                <script src="/data/js/nav.js"></script>
+
+                <!-- Main content -->
+                <div id="main_box" style="width: 100%; background-image: url(/data/img/eclipsebg.jpg); background-size: contain; background-repeat: no-repeat; background-color: rgb(0, 0, 0); text-align: left; margin: auto; padding: 6vh 2vw; max-width: 100%; box-sizing: border-box; text-shadow: rgba(0, 0, 0, 0.5) -1px -1px 0px, rgba(0, 0, 0, 0.5) 1px 1px 0px; line-height: 1.1em;">
+                    <div style="padding: 9vw;"></div>
+
+                    <div style="width: 100%; text-align: center; font-family: roboto; font-size: 4em; line-height: 1em;">Eclipse Info!</div>
+
+                    <div style="padding: 3vh;"></div>
+
+                    <p>There was a total solar eclipse on <span style="color: rgb(186, 218, 85);">April 8</span>, 2024 (fully seen 2 hours north of Ithaca—so you'd have to have traveled if you want to see totality, the only time it's safe to take off your eclipse glasses).</p>
+                    <p>There won't be another total eclipse in America until the 2040s. So please find a friend or upperclassman and carpool to totality!</p>
+                    <p style="font-size: 1em; color: #CCC; line-height: 1.7em;">Our <a target="_blank" href="https://cglink.me/2ee/r2248322">bus trip</a> for undergrads without cars is now fully reserved, but if you arrive at the pick-up location by 8 AM on April 8th, then we will do our best to seat you in any empty spots on a first-come first-serve basis.</p>
+
+                    <div style="padding: 2vh;"></div>
+
+                    <div style="width: 100%; text-align: center; text-decoration: underline; font-size: 2.3em; font-family: roboto;">Safety Information</div>
+
+                    <div style="padding: 2vh;"></div>
+
+                    <ul>
+                        <li>NEVER look at the sun with just your eyes outside of totality. There is NO totality in Ithaca.</li>
+                        <li>Don't look at the sun with sunglasses. Use certified eclipse glasses from the American Astronomical Society <a target="_blank" href="https://eclipse.aas.org/eye-safety/viewers-filters">website</a>.</li>
+                        <li>From Ithaca, you need to travel to see totality. Use an <a target="_blank" href="https://eclipse2024.org/eclipse_cities/statemap.html">interactive eclipse map</a> (or <a target="_blank" href="https://eclipse.aas.org/totality">mobile app</a>) and find your exact destination, then write down the time in seconds that totality starts and ends there.</li>
+                        <li>Wear your eclipse glasses (ABOVE any prescription glasses) until totality hits, and put them on right before totality ends.</li>
+                    </ul>
+
+                    <p style="font-size: 1em; color: #CCC; line-height: 1.7em;">Want certified eclipse glasses? Ask any of our club members at a Friday night <a href="/events/openhouse/">open house</a> (while supplies last)! You can also find eclipse glasses at the Ithaca library, some shops on the Ithaca Commons, and at Wegmans.</p>
+
+                    <div style="text-align: center; width: 100%;">
+                        <div style="padding: 2vh;"></div>
+
+                        <iframe style="width: 100%; max-width: 7in; aspect-ratio: 16 / 9; border: 0;" src="https://www.youtube-nocookie.com/embed/21UmbqXAJs4" title="YouTube video player" allowfullscreen></iframe>
+
+                        <div style="padding: 2vh;"></div>
+
+                        <img style="width: 100%; max-width: 7in;" src="/data/img/totalitymap.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <script src="/data/js/footer.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>
