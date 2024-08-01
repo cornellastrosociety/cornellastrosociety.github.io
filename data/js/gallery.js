@@ -894,14 +894,14 @@ const galplace = () => {
     height += incr;
     let galbuilder = '';
     for (let i = 0; i <= pics.length; i++) {
-        if (i >= width * height) {
-            break;
-        }
         if (i == pics.length) {
             if (i % width != 0) {
                 galbuilder += `</div>\n`;
             }
             document.getElementById('gal_ext').style.display = 'none';
+            break;
+        }
+        if (i >= width * height) {
             break;
         }
         const tgt = pics[i];
