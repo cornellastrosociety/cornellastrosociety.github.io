@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cornell Astronomical Society</title>
+    <script>
+        console.log(window.location.pathname);
+        switch (window.location.pathname.replace(/\//g, '')) {
+            // Site migration
+            case 'home':
+                location.replace('/');
+                break;
+            case 'theclub':
+                location.replace('/about/theclub');
+                break;
+            case 'telescope':
+                location.replace('/about/telescope');
+                break;
+            case 'fuerteshistory':
+                location.replace('/about/fuertes');
+                break;
+            case 'telescopehistory':
+                location.replace('/about/irvhistory');
+                break;
+            case 'slide-wall':
+                location.replace('/about/slides');
+                break;
+            case 'hours':
+                location.replace('/visit/hours');
+                break;
+            case 'accessibility':
+                location.replace('/visit/accessibility');
+                break;
+            case 'weather':
+                location.replace('/visit/weather');
+                break;
+            case 'lecture-series':
+                location.replace('/events/lectures');
+                break;
+            case 'open-house-nights':
+                location.replace('/events/openhouse');
+                break;
+            case 'archived-lectures':
+                location.replace('/events/archivedlectures');
+                break;
+            case 'past-events-and-projects':
+                location.replace('/events/past');
+                break;
+            case 'eclipses':
+                location.replace('/events/past/eclipse');
+                break;
+            case 'overview':
+                location.replace('/events/past/museum/overview');
+                break;
+            case 'fuertescentennial':
+                location.replace('/events/past/museum/updates');
+                break;
+            case 'press':
+                location.replace('/events/past/press');
+                break;
+            case 'photos':
+                location.replace('/photos/photos');
+                break;
+            case 'museumgallery':
+                location.replace('/photos/museum');
+                break;
+
+            // Typing only first of directory
+            case 'about':
+                location.replace('/about/theclub');
+                break;
+            case 'visit':
+                location.replace('/visit/hours');
+                break;
+            case 'events':
+                location.replace('/events/openhouse');
+                break;
+            case 'photos':
+                location.replace('/photos/photos');
+                break;
+            default:
+                setTimeout(() => {
+                    location.replace('/');
+                }, 1500);
+        }
+    </script>
+</head>
+
+<body style="font-family: monospace;">
+    This page may have moved? We're sorry about that! We'll take you home.<br><br>~The Cornell Astronomical Society
+</body>
+
+</html>
