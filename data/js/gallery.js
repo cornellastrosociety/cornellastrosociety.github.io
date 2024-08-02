@@ -3,6 +3,7 @@ const galleries = new Map();
 galleries.set('club', {
     width: 3,
     incr: 3,
+    thumb: false,
     data: [
         {
             id: `2324.jpg`,
@@ -58,6 +59,7 @@ galleries.set('club', {
 galleries.set('photos', {
     width: 4,
     incr: 5,
+    thumb: true,
     data: [
         {
             id: `asgrad24.jpg`,
@@ -547,6 +549,7 @@ galleries.set('photos', {
 galleries.set('museum', {
     width: 4,
     incr: 6,
+    thumb: true,
     data: [
         {
             id: '39.jpg'
@@ -671,6 +674,7 @@ galleries.set('museum', {
 galleries.set(`astro`, {
     width: 3,
     incr: 4,
+    thumb: true,
     data: [
         {
             id: `andromeda.jpg`,
@@ -888,6 +892,7 @@ let galdata = galleries.get(galtype);
 let width = galdata.width;
 if (window.innerWidth < 750) width = 1;
 let incr = galdata.incr;
+let thumb = galdata.thumb;
 let pics = galdata.data;
 
 const galplace = () => {
@@ -909,7 +914,7 @@ const galplace = () => {
             const cols = `${' 1fr 1%'.repeat(width - 1)} 1fr`
             galbuilder += `<div class="gallery-row" style="grid-template-columns:${cols}">\n\t`;
         }
-        galbuilder += el_tmp.replace(/%path/g, `/data/img/${galtype}/thumb/${tgt.id.replace(/\.{a-z}{3,4}/g, '.jpg')}`).replace(/%name/g, tgt.name || '').replace(/%slide/g, i + 1);
+        galbuilder += el_tmp.replace(/%path/g, `/data/img/${galtype}${thumb ? '/thumb' : ''}/${tgt.id.replace(/\.{a-z}{3,4}/g, '.jpg')}`).replace(/%name/g, tgt.name || '').replace(/%slide/g, i + 1);
         if (i % width == width - 1) {
             galbuilder += `</div>\n`;
         } else {
