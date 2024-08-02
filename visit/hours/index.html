@@ -51,6 +51,12 @@
         .nav_dd_main {
             box-shadow: 0px 0px 7.5px rgba(0, 0, 0, 0.5);
         }
+
+        @media only screen and (max-width: 968px) {
+            #buf {
+                padding: 2vh !important;
+            }
+        }
     </style>
 </head>
 
@@ -101,7 +107,7 @@
                 <br>
                 <div style="text-align: center;"><a href="https://tcatbus.com/">TCAT</a>'s bus routes 37, 81, 90, and 92 serve the nearby McClintock Hall at Cradit Farm stop.</div>
             </div>
-            <div></div>
+            <div id="buf"></div>
             <div style="padding: 1vw; text-align: center;">
                 <div id="map" style="width: 100%; border: 0 solid white; max-width: 80vw; height: 100%; min-height: 50vh; margin: auto;"></div>
                 <script>
