@@ -549,7 +549,7 @@ galleries.set('photos', {
 galleries.set('museum', {
     width: 4,
     incr: 6,
-    thumb: true,
+    thumb: false,
     data: [
         {
             id: '39.jpg'
