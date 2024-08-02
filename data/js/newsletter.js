@@ -138,8 +138,12 @@ const template_sect = `<div class="main_content nl">
 const nl_sect = document.getElementById('nl_main');
 if (nl_sect) {
     const insertion = [];
-    for (const nl of newsletters) {
+    for (let i = 0; i < newsletters.length; i++) {
+        const nl = newsletters[i];
         insertion.push(template_sect.replace(/%yr/g, nl.yr).replace(/%mth/g, nl.mth).replace(/%desc/g, nl.desc).replace(/%date/g, nl.date));
+        if (i < newsletters.length - 1) {
+            insertion.push(`<hr class="nl_hr">`);
+        }
     }
     nl_sect.innerHTML = insertion.join('\n\n');
 }
