@@ -120,7 +120,6 @@ function showSlide(n) {
         modalPreviews[i].className = modalPreviews[i].className.replace(' active', '');
     };
 
-    console.log(slides)
     if (slides.length >= slideIndex) slides[slideIndex - 1].style.display = 'block';
     if (modalPreviews.length >= slideIndex) modalPreviews[slideIndex - 1].className += ' active';
     resizeSlide(slideIndex)
