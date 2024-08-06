@@ -249,6 +249,7 @@ nav {
 .mnav_main {
     color: black;
     font-size: 4vh;
+    margin: 2vh;
    
 }
 .no_und a:link{
@@ -277,6 +278,8 @@ nav {
     font-size: 3vh;
     margin-left: 2vw;
     color: black !important;
+    margin-top: 0.75vh;
+    margin-bottom: 0.75vh;
 }
 
 .arrow {
