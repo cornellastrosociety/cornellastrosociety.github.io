@@ -346,9 +346,9 @@ nav {
         padding: -1px 0 !important;
     }
 
-    .nav_el_sel {
-        background: rgb(58, 160, 210) !important;
-        color: rgb(240, 240, 240) !important;
+   .nav_el_sel {
+        background: none !important;
+        color: rgb(139,0, 0) !important;
     }
 
     .nav_el:hover {
