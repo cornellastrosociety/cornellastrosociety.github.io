@@ -53,4 +53,16 @@ function showNav() {
     const nav = document.getElementById('navtwo');
     if (nav && nav.classList.contains('nav_no_display')) nav.classList.replace('nav_no_display', 'nav_display');
     else if (nav && nav.classList.contains('nav_display')) nav.classList.replace('nav_display', 'nav_no_display');
+    if (document.getElementsByTagName('html')[0].style.overflow === 'auto' ||document.getElementsByTagName('html')[0].style.overflow === "")
+        {
+            document.getElementsByTagName('html')[0].style.overflow = 'hidden';
+            document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+            if (document.getElementById('wind')) document.getElementById('wind').style.overflow = 'hidden';
+        }
+        else if(document.getElementsByTagName('html')[0].style.overflow === 'hidden')
+        {
+            document.getElementsByTagName('html')[0].style.overflow = 'auto';
+            document.getElementsByTagName('body')[0].style.overflow = 'auto';
+            if (document.getElementById('wind')) document.getElementById('wind').style.overflow = 'auto';
+        }
 }
