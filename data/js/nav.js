@@ -144,3 +144,38 @@ document.onkeyup = function (e) {
     }
 
 }
+
+function showhide(input)
+{
+
+    arrow = document.getElementById(input + 'arrow');
+    content = document.getElementById('mnav_' + input);
+    if (arrow.classList.contains('up'))
+        {
+            arrow.classList.replace('up', 'down');
+            content.style.display = 'none';
+        }
+    else if (arrow.classList.contains('down'))
+        {
+            arrow.classList.replace('down', 'up');
+            content.style.display = 'block';
+        }
+}
+function hidemenu()
+{
+    const nav = document.getElementById('navone');
+    if (nav.classList.contains('nav_no_display')) nav.classList.replace('nav_no_display', 'nav_display');
+    else if (nav && nav.classList.contains('nav_display')) nav.classList.replace('nav_display', 'nav_no_display');
+    if (document.getElementsByTagName('html')[0].style.overflow === 'auto' ||document.getElementsByTagName('html')[0].style.overflow === "")
+    {
+        document.getElementsByTagName('html')[0].style.overflow = 'hidden';
+        document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+        if (document.getElementById('wind')) document.getElementById('wind').style.overflow = 'hidden';
+    }
+    else if(document.getElementsByTagName('html')[0].style.overflow === 'hidden')
+    {
+        document.getElementsByTagName('html')[0].style.overflow = 'auto';
+        document.getElementsByTagName('body')[0].style.overflow = 'auto';
+        if (document.getElementById('wind')) document.getElementById('wind').style.overflow = 'auto';
+    }
+}
