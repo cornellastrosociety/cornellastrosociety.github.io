@@ -59,7 +59,18 @@
             padding-bottom: 4vh;
         }
 
-        @media only screen and (max-width: 750px) {
+        #burger {
+            display: none;
+        }
+        #burger.burger_hide {
+            display: none !important;
+        }
+        @media only screen and (max-width: 968px) {
+            #burger {
+            display: block !important;
+      
+            }
+      
             .main_content {
                 text-align: center !important;
             }
@@ -90,10 +101,7 @@
             .capt_contain {
                 text-align: center !important;
             }
-        }
-
-        p {
-            line-height: 1.5em;
+            
         }
 
         /* specific to this implementation */
@@ -104,19 +112,22 @@
     </style>
 
     <script src="/data/js/parallax.js"></script>
+    <script src="/data/js/throttle.js"></script>
 </head>
 
 <body style="color: rgb(234, 234, 234); overflow-x: hidden;">
     <div class="parallax example" id="wind" style="overflow-x: hidden; margin:auto;" onscroll="overscroll()">
+        <script src="/data/js/mnavparallax.js"></script>
         <div id="bg" class="parallax-layer layer1" style="background-size: cover; height: 100vh; margin-top: 0vh; "></div>
         <div id="test" class="parallax-layer layer2" style="height: auto; animation: fadein ease-in-out 0.5s none;">
 
             <div id="main" style="margin: auto; max-width: 67vw; animation: fadein ease-in-out 1.5s none;">
 
-                <script src="/data/js/nav.js"></script>
+                <script src="/data/js/navparallax.js"></script>
                 <script>
                     document.getElementById('nav_visit').classList.add('nav_el_sel');
                     document.getElementById('nav_visit_accessibility').classList.add('nav_el_sel');
+                    showhide("visit");
                 </script>
 
                 <div style="padding: 2vh;"></div>
