@@ -246,6 +246,64 @@ nav {
 #hamburger {
     display: none;
 }
+.mnav_main {
+    color: black;
+    font-size: 4vh;
+   
+}
+.no_und a:link{
+    text-decoration: none;
+    color: black;
+
+    
+}
+.no_und a:visited{
+    text-decoration: none;
+    color: black;
+
+}
+.no_und a:hover{
+    text-decoration: none;
+    color: black;
+
+}
+.no_und a:active{
+    text-decoration: none;
+    color: black;
+
+}
+.mnav_sub {
+    text-decoration: none;
+    font-size: 3vh;
+    margin-left: 2vw;
+    color: black !important;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0vw 0.35vh 0.35vh 0vw;
+    margin-left: 1.2vh;
+    display: inline-block;
+    padding: 1vh;
+  }
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+.show_small{
+    display: none ;
+}
+.show_large{
+    display: block;
+}
+
 
 @media only screen and (max-width: 968px) {
 
