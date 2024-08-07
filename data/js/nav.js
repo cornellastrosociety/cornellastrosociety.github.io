@@ -35,6 +35,7 @@ var nav_data = `<!-- Nav bar, should persist across pages; add nav_el_sel to cur
                     <br style = "font-size: 1vh">
                         <a href="/events/lectures" id="nav_events_lectures" class = "nav_dd_sub">Lecture Series <br> <br style = "font-size: 1vh"></a>
                         <a href="/events/openhouse" id="nav_events_openhouse" class = "nav_dd_sub">Open Houses <br> <br style = "font-size: 1vh"></a>
+                        <a href="/events/past" id="nav_events_past" class = "nav_dd_sub">Past Events <br> <br style = "font-size: 1vh"></a>
                     </div>
                 </div>
             
