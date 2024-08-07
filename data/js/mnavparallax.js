@@ -1,14 +1,14 @@
 var nav_data = `<!-- Nav bar, should persist across pages; add nav_el_sel to current page -->
 
-    <div  id="burger"style=" position:sticky; top: 0;  z-index: 2147483646;">
-            <a style = "font-size: 50px; text-decoration: none; color: white; position: absolute; right: 0px;" href="javascript:void('Irv :D');" onclick = showNav()>☰</a>
-            <div id = "navtwo" class = "show_small nav_no_display" style = "width: 80vh; max-width: 80vw; height: 100vh; position: fixed; background: url(/data/img/moonburger.jpg) no-repeat right center; background-size: cover; top: 0vh; right: 0px; z-index: 2147483647;">
-                <div onclick = hidemenu() style = "width: 10vh; font-size: 10vh; color:  black; margin-right: 2vh; top: 0vh; float: right; margin-top: 2vh; rotate: 45deg;  user-select: none"> + </div>
+     <div id="burger" onclick = showNav() style=" user-select: none; position: fixed; top: 2vh; right: 0; z-index: 2147483649; width: min(50px, 12vh); height: min(50px, 12vh); background-color: black; margin-right: 2vh; text-align: center; border: solid white; border-width: 0.25vh;">    
+            <a id = "lines" style=" user-select: none; display: block;  position: relative; z-index: 2147483649; font-size: min(50px, 12vh); text-decoration: none; color: white; line-height:min(50px, 12.5vh);" >☰</a>
+            <a id = "arrdown" class = "large_arrow up " style=" border-color: inherit; user-select: none; display: none; width: min(12.5px,3vh); height: min(12.5px, 3vh);margin: min(16.667px, 4vh) 0vh 0vh 0vh; z-index: 2147483649;" ></a> 
+        </div>
+            <div id = "navtwo" class = "show_small nav_no_display" style = "animation: slidein 0.5s; width: 80vh; max-width: 80vw; height: 100vh; position: fixed; background: url(/data/img/moonburger.jpg) no-repeat right center; background-size: cover; top: 0vh; right: 0px; z-index: 2147483646;">
+                
                 <div style = "position: relative; width: 25vh; margin-right: 3vh; float: right; ">
                     <div style = "height: 15vh"></div>
                     <div class = "no_und" ><a class = "no_und"   href="/"><div  class = "mnav_main" id="nav_home">Home</div></a> </div>
-
-                     <div class = "no_und" ><a class = "no_und"   href="/"><div  class = "mnav_main" id="nav_home">Home</div></a> </div>
             
             <div  class = "mnav_main" id="nav_about">About <i class = "arrow down" id = "aboutarrow" onclick = showhide("about")> </i > </div>
                 <div>
@@ -53,8 +53,10 @@ var nav_data = `<!-- Nav bar, should persist across pages; add nav_el_sel to cur
                 </div>
                 <div class = "no_und" > <a  class = "no_und" href="/newsletters"><div  id="nav_newsletters" class = "mnav_main ">Newsletters</div></a>   </div>
        
+               
+        
                 </div> 
-            </div>
+           
         </div>`
 
 document.write(nav_data);
@@ -78,20 +80,4 @@ function showhide(input)
         }
 }
 
-function hidemenu() {
-    const nav = document.getElementById('navtwo');
-    if (nav.classList.contains('nav_no_display')) nav.classList.replace('nav_no_display', 'nav_display');
-    else if (nav && nav.classList.contains('nav_display')) nav.classList.replace('nav_display', 'nav_no_display');
-    if (document.getElementsByTagName('html')[0].style.overflow === 'auto' ||document.getElementsByTagName('html')[0].style.overflow === "")
-        {
-            document.getElementsByTagName('html')[0].style.overflow = 'hidden';
-            document.getElementsByTagName('body')[0].style.overflow = 'hidden';
-            if (document.getElementById('wind')) document.getElementById('wind').style.overflow = 'hidden';
-        }
-        else if(document.getElementsByTagName('html')[0].style.overflow === 'hidden')
-        {
-            document.getElementsByTagName('html')[0].style.overflow = 'auto';
-            document.getElementsByTagName('body')[0].style.overflow = 'auto';
-            if (document.getElementById('wind')) document.getElementById('wind').style.overflow = 'auto';
-        }
-}
+
