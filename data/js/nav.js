@@ -1,6 +1,7 @@
 var nav_data = `<!-- Nav bar, should persist across pages; add nav_el_sel to current page -->
-<div id = "navone" class = "show_small nav_no_display" style = "width: 80vh; max-width: 80vw; height: 100vh; position: fixed; background: url(/data/img/moonburger.jpg) no-repeat right center; background-size: cover; top: 0vh; right: 0px; z-index: 2147483647;">
-        <div onclick = hidemenu() style = "width: 10vh; font-size: 10vh; color:  black; margin-right: 2vh; top: 0vh; float: right; margin-top: 2vh; rotate: 45deg; user-select: none">+</div>
+
+    <div id = "navone" class = "show_small nav_no_display" style = "animation: slidein 0.5s; width: 80vh; max-width: 80vw; height: 100vh; position: fixed; background: url(/data/img/moonburger.jpg) no-repeat right center; background-size: cover; top: 0vh; right: 0px; z-index: 2147483647;">
+
         <div style = "position: relative; width: 25vh; margin-right: 3vh; float: right; margin-left: 5vh; ">
             <div style = "height: 15vh"></div>
             <div class = "no_und" ><a class = "no_und"   href="/"><div  class = "mnav_main" id="nav_home">Home</div></a> </div>
@@ -51,7 +52,11 @@ var nav_data = `<!-- Nav bar, should persist across pages; add nav_el_sel to cur
 
         </div> 
     </div>
-        <a id="hamburger" style="position: absolute; top: 0; right: 0; z-index: 2147483646; font-size: 50px; text-decoration: none; color: white;" href="javascript:void('Irv :D');">☰</a>
+        <div id="hamburger"  style=" user-select: none; position: fixed; top: 2vh; right: 0; z-index: 2147483648; width: min(50px, 12vh); height: min(50px, 12vh); background-color: black; margin-right: 2vh; text-align: center; border: solid white; border-width: 0.25vh;">
+             <a id = "lines" style=" user-select: none; display: block;  position: relative; z-index: 2147483649; font-size: min(50px, 12vh); text-decoration: none; color: white; line-height:min(50px, 12.5vh);" >☰</a>
+             <a id = "arrdown" class = "large_arrow up " style=" border-color: inherit; user-select: none; display: none; width: min(12.5px,3vh); height: min(12.5px, 3vh);margin: min(16.667px, 4vh) 0vh 0vh 0vh; z-index: 2147483649;" ></a>
+        </div>
+       
         <nav class="nav_no_display" style="display: grid; grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%; animation: flyin ease-in-out 1s none;">
             <a href="/"><button class="nav_el" id="nav_home">Home</button></a>
             <div class="nav_dd">
@@ -117,37 +122,61 @@ document.getElementById('hamburger').onclick = function () {
         document.getElementsByTagName('body')[0].style.overflow = 'auto';
         if (document.getElementById('wind')) document.getElementById('wind').style.overflow = 'auto';
     }
+    if (document.getElementById('lines').style.display === 'block')
+        {
+            document.getElementById('lines').style.display = 'none';
+            document.getElementById('arrdown').style.display = 'inline-block';
+            document.getElementById('arrdown').style.animation = 'spinin 0.35s';
+            document.getElementById('hamburger').style.borderColor = 'blue';
+            document.getElementById('hamburger').style.backgroundColor = 'white';
+            document.getElementById('navone').style.animationName = 'slidein';
+            
+        }
+    else if (document.getElementById('arrdown').style.display === 'inline-block')
+        {
+            document.getElementById('arrdown').style.display = 'none';
+            document.getElementById('lines').style.display = 'block';
+      
+            document.getElementById('hamburger').style.borderColor = 'white';
+            document.getElementById('hamburger').style.backgroundColor = 'black';
+            document.getElementById('navone').style.animationName = 'lingerout';
+        }
+    
 }
 
 window.onresize = function () {
-    if (document.getElementsByClassName('slideTwo').length > 0) {
+    if (document.getElementsByClassName('slideTwo').length > 0)
+    {
         resizeSlideTwo(slideIndexTwo)
     }
-    if (document.getElementsByClassName('slide').length > 0) {
+    if (document.getElementsByClassName('slide').length > 0)
+    {
         resizeSlide(slideIndex)
     }
-
+   
 }
 
 document.onkeyup = function (e) {
-    if (document.getElementsByClassName('slideTwo').length > 0) {
-        if (e.key == 'Escape') {
-            closeLightboxTwo();
-        } else if (e.key == 'ArrowLeft') {
-            changeSlideTwo(-1);
-        } else if (e.key == 'ArrowRight') {
-            changeSlideTwo(1);
+    if (document.getElementsByClassName('slideTwo').length > 0)
+        {
+            if (e.key == 'Escape') {
+                closeLightboxTwo();
+            } else if (e.key == 'ArrowLeft') {
+                changeSlideTwo(-1);
+            } else if (e.key == 'ArrowRight') {
+                changeSlideTwo(1);
+            }
         }
-    }
-    if (document.getElementsByClassName('slide').length > 0) {
-        if (e.key == 'Escape') {
-            closeLightbox();
-        } else if (e.key == 'ArrowLeft') {
-            changeSlide(-1);
-        } else if (e.key == 'ArrowRight') {
-            changeSlide(1);
-        }
-    }
+    if (document.getElementsByClassName('slide').length > 0)
+        {
+            if (e.key == 'Escape') {
+                closeLightbox();
+            } else if (e.key == 'ArrowLeft') {
+                changeSlide(-1);
+            } else if (e.key == 'ArrowRight') {
+                changeSlide(1);
+            }
+        }    
 
 }
 
@@ -167,21 +196,4 @@ function showhide(input)
             content.style.display = 'block';
         }
 }
-function hidemenu()
-{
-    const nav = document.getElementById('navone');
-    if (nav.classList.contains('nav_no_display')) nav.classList.replace('nav_no_display', 'nav_display');
-    else if (nav && nav.classList.contains('nav_display')) nav.classList.replace('nav_display', 'nav_no_display');
-    if (document.getElementsByTagName('html')[0].style.overflow === 'auto' ||document.getElementsByTagName('html')[0].style.overflow === "")
-    {
-        document.getElementsByTagName('html')[0].style.overflow = 'hidden';
-        document.getElementsByTagName('body')[0].style.overflow = 'hidden';
-        if (document.getElementById('wind')) document.getElementById('wind').style.overflow = 'hidden';
-    }
-    else if(document.getElementsByTagName('html')[0].style.overflow === 'hidden')
-    {
-        document.getElementsByTagName('html')[0].style.overflow = 'auto';
-        document.getElementsByTagName('body')[0].style.overflow = 'auto';
-        if (document.getElementById('wind')) document.getElementById('wind').style.overflow = 'auto';
-    }
-}
+
