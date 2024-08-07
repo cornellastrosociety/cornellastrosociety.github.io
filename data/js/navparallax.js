@@ -65,4 +65,23 @@ function showNav() {
             document.getElementsByTagName('body')[0].style.overflow = 'auto';
             if (document.getElementById('wind')) document.getElementById('wind').style.overflow = 'auto';
         }
+           if (document.getElementById('lines').style.display === 'block')
+            {
+                document.getElementById('lines').style.display = 'none';
+                document.getElementById('arrdown').style.display = 'inline-block';
+                document.getElementById('arrdown').style.animation = 'spinin 0.35s';
+                document.getElementById('burger').style.borderColor = 'blue';
+                document.getElementById('burger').style.backgroundColor = 'white';
+                document.getElementById('navone').style.animationName = 'slidein';
+                
+            }
+        else if (document.getElementById('arrdown').style.display === 'inline-block')
+            {
+                document.getElementById('arrdown').style.display = 'none';
+                document.getElementById('lines').style.display = 'block';
+          
+                document.getElementById('burger').style.borderColor = 'white';
+                document.getElementById('burger').style.backgroundColor = 'black';
+                document.getElementById('navone').style.animationName = 'lingerout';
+            }
 }
