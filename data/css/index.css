@@ -281,6 +281,18 @@ nav {
     margin-top: 0.75vh;
     margin-bottom: 0.75vh;
 }
+.large_arrow
+{
+    border: solid black;
+    border-width: 0vw 0.6vh 0.6vh 0vw;
+    display: inline-block;
+    padding: 1vh;
+   
+}
+
+hamburger::selection {
+    background-color: transparent;
+}
 
 .arrow {
     border: solid black;
