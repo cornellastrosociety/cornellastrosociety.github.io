@@ -85,6 +85,63 @@
 
     }
 }
+@keyframes spinin {
+    from {
+        rotate: 0deg; 
+    }
+    to {
+        rotate: 360deg; 
+    }
+    
+}
+@keyframes slidein {
+    from {
+        transform: translateX(min(80vh, 80vw));
+        opacity: 0;
+    
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1; 
+    }
+}
+
+@keyframes lingerout {
+    0%{
+        transform: translateX();
+        opacity: 1;
+    
+    }
+    99%{
+        display: block !important;
+    }
+    100%{
+        transform: translateX(min(80vh, 80vw));
+        opacity: 0; 
+        display: none;
+    }
+}
+ 
+    
+ 
+
+
+
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    33% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 
 /* Fixes background: https://stackoverflow.com/a/33057806 */
 body:before {
