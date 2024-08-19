@@ -12,6 +12,7 @@
     <meta name="twitter:image:src" content="https://www.cornellastrosociety.org/data/img/epic.jpg">
     <title>Weather | The Cornell Astronomical Society</title>
     <link rel="stylesheet" href="/data/css/index.css">
+    <script src="/data/js/weatherbg.js"></script>
     <style>
         /* Default background */
         body:before {
@@ -23,8 +24,24 @@
             width: 100%;
             height: 100%;
             z-index: -10;
-            background: url(/data/img/allyeastronomerscomegathernighillsingyouasongofthestarsintheskyanditswindyweatherboysstormyweatherboyswhenthewindblowswerealltogetherboysblowyewindswesterlyblowyewindsblowjollysouwesterboyssteadyshegoes.jpg) no-repeat top center;
+            background: black no-repeat top center;
             background-size: cover;
+        }
+
+        .snow_bg:before {
+            background-image: url(/data/img/photos/fuertessnow.jpg) !important;
+        }
+
+        .cloud_bg:before {
+            background-image: url(/data/img/allyeastronomerscomegathernighillsingyouasongofthestarsintheskyanditswindyweatherboysstormyweatherboyswhenthewindblowswerealltogetherboysblowyewindswesterlyblowyewindsblowjollysouwesterboyssteadyshegoes.jpg) !important;
+        }
+
+        .pc_bg:before {
+            background-image: url(/data/img/photos/sunsetdeck.jpg) !important;
+        }
+
+        .clear_bg:before {
+            background-image: url(/data/img/orion.jpg) !important;
         }
 
         @media only screen and (max-width: 968px) {
