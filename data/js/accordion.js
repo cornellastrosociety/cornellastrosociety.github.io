@@ -41,13 +41,13 @@ items.forEach((item, index) => {
     //Initial CSS properties for all items
     item.style.flex = "1";
     item.style.transition = "flex 1.2s ease-in-out";
-    var ratio = img.naturalWidth / img.naturalHeight;
 
     item.addEventListener(events[deviceType].start, throttleone(itemexp, 200));
     item.addEventListener(events[deviceType].end, throttleone(itemcont, 200));
 
 
     function itemexp() {
+        var ratio = img.naturalWidth / img.naturalHeight;
         item.style.flex = 5 * ratio / (104 / 60 - ratio); //Expand the item
         item.children[0].style.animationName = "caption";
         item.children[0].style.opacity = 0.7;
