@@ -890,8 +890,11 @@ let height = 0;
 const galtype = document.getElementById('galtype').getAttribute('data-galtype');
 let galdata = galleries.get(galtype);
 let width = galdata.width;
-if (window.innerWidth < 750) width = 1;
 let incr = galdata.incr;
+if (window.innerWidth < 750){
+    width = 1;
+    incr = 16;
+}
 let thumb = galdata.thumb;
 let pics = galdata.data;
 
