@@ -149,7 +149,7 @@ if (nl_sect) {
 }
 
 const template_widg = `<a target="_blank" href="/data/newsletters/CAS Newsletter %mth %yr.pdf" style="display: block; text-align: center;">
-    <img class="nl_thumb" style="width: 60%;" src="/data/img/newsletter/%date.png" alt="%mth %yr CAS Newsletter thumbnail">
+    <img class="nl_thumb" style="width: 60%;" src="/data/img/newsletter/%date.jpg" alt="%mth %yr CAS Newsletter thumbnail">
 </a>`;
 
 const nl_widget = document.getElementById('nl_widget');
