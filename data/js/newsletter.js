@@ -1,7 +1,7 @@
 
 
 const newsletters = [
-     {
+    {
         yr: `2024`,
         mth: `September`,
         desc: `We're marking our return to Cornell with some new officer introductions and information on events to come!`,
@@ -137,7 +137,7 @@ const template_sect = `<div class="main_content nl">
     </div>
     <div></div>
     <div class="nl_tc">
-        <a target="_blank" href="/data/newsletters/CAS Newsletter %mth %yr.pdf"><img class="nl_thumb" style="width: 100%;" src="/data/img/newsletter/%date.png" alt="%mth %yr CAS Newsletter thumbnail"></a>
+        <a target="_blank" href="/data/newsletters/CAS Newsletter %mth %yr.pdf"><img class="nl_thumb" style="width: 100%;" src="/data/img/newsletter/%date.jpg" alt="%mth %yr CAS Newsletter thumbnail"></a>
     </div>
 </div>`;
 
