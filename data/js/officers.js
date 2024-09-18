@@ -8,7 +8,7 @@ xmlhttp.onreadystatechange = function () {
         tab.shift();
         for (const row of tab) {
             var els = row.split(/,/g);
-            str += `<tr><td>${els[0]}</td><td>${els[1]}</td><td>${els[2]}</td><td>${els[3]}</td><td>${els[4]}</td><td>${els[5]}</td></tr>`;
+            str += `<tr><td>${els[0]}</td><td>${els[1]}</td><td>${els[2]}</td><td>${els[3]}</td><td>${els[4]}</td><td>${els[5]}</td><td>${els[6]}</td></tr>`;
         }
         document.getElementById('tab_officers').innerHTML = str;
     }
