@@ -722,7 +722,8 @@ galleries.set(`astro`, {
         },
         {
             id: `m42.jpg`,
-            name: `M42`
+            name: `M42`,
+            desc: `taken by Marquice Sanchez-Fleming`
         },
         {
             id: `m45.jpg`,
@@ -804,6 +805,10 @@ galleries.set(`astro`, {
             id: `ring91017.jpg`,
             name: `Ring Nebula`,
             desc: `September 10, 2017`
+        },
+        {
+            id: `ringmsf.jpg`,
+            name: `Ring Nebula`
         },
         {
             id: `ringhbo.jpg`,
