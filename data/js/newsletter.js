@@ -3,6 +3,12 @@
 const newsletters = [
     {
         yr: `2024`,
+        mth: `October`,
+        desc: `Happy fall! Our first regular edition of the semester contains book recommendations for cloudy nights and a glimpse at CAS activities on clear ones!`,
+        date: `oct24`
+    },
+    {
+        yr: `2024`,
         mth: `September`,
         desc: `We're marking our return to Cornell with some new officer introductions and information on events to come!`,
         date: `sep24`
