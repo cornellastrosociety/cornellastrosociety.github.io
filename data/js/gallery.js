@@ -6,6 +6,10 @@ galleries.set('club', {
     thumb: false,
     data: [
         {
+            id: `2425.jpg`,
+            name: `2024-2025`
+        },
+        {
             id: `2324.jpg`,
             name: `2023-2024`
         },
