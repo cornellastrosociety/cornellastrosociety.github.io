@@ -85,45 +85,51 @@
 
     }
 }
+
 @keyframes spinin {
     from {
-        rotate: 0deg; 
+        rotate: 0deg;
     }
+
     to {
-        rotate: 360deg; 
+        rotate: 360deg;
     }
-    
+
 }
+
 @keyframes slidein {
     from {
         transform: translateX(min(80vh, 80vw));
         opacity: 0;
-    
+
     }
+
     to {
         transform: translateY(0);
-        opacity: 1; 
+        opacity: 1;
     }
 }
 
 @keyframes lingerout {
-    0%{
+    0% {
         transform: translateX();
         opacity: 1;
-    
+
     }
-    99%{
+
+    99% {
         display: block !important;
     }
-    100%{
+
+    100% {
         transform: translateX(min(80vh, 80vw));
-        opacity: 0; 
+        opacity: 0;
         display: none;
     }
 }
- 
-    
- 
+
+
+
 
 
 
@@ -160,6 +166,10 @@ body:before {
 body {
     margin: 0;
     overscroll-behavior: contain;
+}
+
+.lec_ex_hr {
+    margin: 4vh 0;
 }
 
 .parallax {
@@ -303,33 +313,39 @@ nav {
 #hamburger {
     display: none;
 }
+
 .mnav_main {
     color: black;
     font-size: 4vh;
     margin: 2vh;
-   
+
 }
-.no_und a:link{
+
+.no_und a:link {
     text-decoration: none;
     color: black;
 
-    
-}
-.no_und a:visited{
-    text-decoration: none;
-    color: black;
 
 }
-.no_und a:hover{
-    text-decoration: none;
-    color: black;
 
-}
-.no_und a:active{
+.no_und a:visited {
     text-decoration: none;
     color: black;
 
 }
+
+.no_und a:hover {
+    text-decoration: none;
+    color: black;
+
+}
+
+.no_und a:active {
+    text-decoration: none;
+    color: black;
+
+}
+
 .mnav_sub {
     text-decoration: none;
     font-size: 3vh;
@@ -338,13 +354,13 @@ nav {
     margin-top: 0.75vh;
     margin-bottom: 0.75vh;
 }
-.large_arrow
-{
+
+.large_arrow {
     border: solid black;
     border-width: 0vw 0.6vh 0.6vh 0vw;
     display: inline-block;
     padding: 1vh;
-   
+
 }
 
 hamburger::selection {
@@ -358,22 +374,23 @@ hamburger::selection {
     display: inline-block;
     padding: 0.75vh;
     margin-bottom: 1vh;
-  }
+}
 
 .up {
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
-  }
+}
 
-  .down {
+.down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
-  }
-
-.show_small{
-    display: none ;
 }
-.show_large{
+
+.show_small {
+    display: none;
+}
+
+.show_large {
     display: block;
 }
 
@@ -419,9 +436,9 @@ hamburger::selection {
         padding: -1px 0 !important;
     }
 
-   .nav_el_sel {
+    .nav_el_sel {
         background: none !important;
-        color: rgb(139,0, 0) !important;
+        color: rgb(139, 0, 0) !important;
     }
 
     .nav_el:hover {
@@ -488,6 +505,11 @@ hamburger::selection {
 
 .special {
     color: goldenrod;
+}
+
+.special_contrast {
+    color: rgb(249, 194, 56);
+    text-shadow: rgb(249, 194, 56) 0 0 5px;
 }
 
 

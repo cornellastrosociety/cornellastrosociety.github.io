@@ -12,6 +12,7 @@
     <meta name="twitter:image:src" content="https://www.cornellastrosociety.org/data/img/epic.jpg">
     <title>Lecture Series | The Cornell Astronomical Society</title>
     <link rel="stylesheet" href="/data/css/index.css">
+    <link rel="stylesheet" href="/data/css/lecture.css">
     <style>
         body:before {
             content: "";
@@ -28,61 +29,6 @@
 
         hr {
             margin: 4vh 0;
-        }
-
-        .lecture {
-            display: grid;
-            grid-template-columns: 24% 1% 31% 2% 42%;
-            padding: 1vh;
-        }
-
-        .lecture_data div {
-            margin-bottom: 3vw;
-            /* Use of vw is intentional */
-        }
-
-        .lecture_title {
-            font-size: 25px;
-            line-height: 1.15em;
-        }
-
-        .lecture_detail {
-            font-size: 16px;
-            color: rgb(161, 161, 161);
-        }
-
-        .lecture_datetime {
-            font-size: 22px;
-            color: rgb(126, 192, 238);
-        }
-
-        .datetime_sep {
-            visibility: hidden;
-        }
-
-        .lecture_desc {
-            text-align: left;
-            font-family: Tahoma, Geneva, Verdana, sans-serif;
-            color: #ddd;
-        }
-
-        .lecture_media {
-            display: block;
-            width: 100%;
-            max-width: 5in;
-            aspect-ratio: 16 / 9;
-            /* Pardon the unusual aspect ratio */
-            border: 0;
-        }
-
-        @media only screen and (max-width: 750px) {
-            .datetime_sep {
-                visibility: visible !important;
-            }
-
-            .datetime_break {
-                display: none !important;
-            }
         }
     </style>
     <script defer src="/data/js/lectures.js"></script>
@@ -114,6 +60,83 @@
 
         <div style="padding: 4vh;"></div>
 
+        <!-- Temporary special lecture information -->
+
+        <div style="width: 100%; background-image: linear-gradient(rgba(0, 70, 140, 0.69), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); text-align: center; margin: auto; padding: 6vh 2vw; max-width: 100%; box-sizing: border-box; color: white">
+
+            <span style="text-shadow: white 0 0 6px; font-size: 40px;">Carl Sagan's 90th Birthday Information</span>
+            <br>
+            <div style="color: white; font-size: 20px;">The Cornell Astronomical Society is working with the Carl Sagan Institute to host a special lecture and viewing night, free and open to the public, in celebration of Professor Carl Sagan's 90th birthday.</div>
+
+            <div id="main_box_1" style="width: 100%; text-align: left; margin: auto; padding: 6vh 2vw; max-width: 100%; box-sizing: border-box; text-shadow: rgba(0, 0, 0, 0.5) -1px -1px 0px, rgba(0, 0, 0, 0.5) 1px 1px 0px; line-height: 1.375em;">
+
+                <div class="lecture_title special_contrast" style="text-align: center; margin: 2%;">Are We Alone? Searching for Life and Intelligence in the Universe</div>
+                <div class="lecture_title" style="text-align: center; margin: 2%; text-shadow: white 0 0 1px;">102 Toni Morrison Hall (<a target="_blank" href="https://www.google.com/maps/dir//Toni+Morrison+Hall" style="color: rgb(126, 192, 238);">Directions</a>)</div>
+                <div class="main_content lecture">
+                    <div class="lecture_data main_group">
+                        <div class="lecture_detail">Prof. Shami Chatterjee</div>
+                        <div class="lecture_datetime">November 8th, 2024<span class="datetime_sep">, </span>
+                            <div class="datetime_break"></div>7 PM–8 PM
+                        </div>
+                        <div class="lecture_detail">Toni Morrison Hall 102</div>
+                    </div>
+                    <div></div>
+                    <div class="lecture_desc main_group">
+                        People have wondered about life and intelligence beyond the Earth since the dawn of history. We will take a quick tour of searches for extraterrestrial intelligence (SETI), the quest for planets beyond our solar system, and the prospects for finding life and intelligence beyond the Earth with new telescopes and surveys.
+                    </div>
+                    <div></div>
+                    <div class="main_group img_contain">
+                        <img class="img" src="/data/img/lecture/11824.jpg">
+                    </div>
+                </div>
+
+                <hr class="lec_ex_hr">
+
+                <div class="lecture_title" style="text-align: center; margin: 2%; text-shadow: white 0 0 1px;">Friday Open House at the Fuertes Observatory</div>
+                <div class="main_content lecture">
+                    <div class="lecture_data main_group">
+                        <div class="lecture_datetime">November 8th, 2024<span class="datetime_sep">, </span>
+                            <div class="datetime_break"></div>8 PM–11 PM
+                        </div>
+                        <div class="lecture_detail">Fuertes Observatory</div>
+                    </div>
+                    <div></div>
+                    <div class="lecture_desc main_group">
+                        Following the lecture by Professor Chatterjee in Toni Morrison Hall, the Fuertes Observatory will be open to the public for observing and tours of the historic telescope, artifacts, and facility. The Observatory will close one hour earlier than usual, at 11.
+                    </div>
+                    <div></div>
+                    <div class="main_group img_contain">
+                        <img class="img" src="/data/img/photos/fuerteswintermoon.jpg">
+                    </div>
+                </div>
+
+                <hr class="lec_ex_hr">
+
+                <div class="lecture_title" style="text-align: center; margin: 2%; text-shadow: white 0 0 1px;">Special Saturday Open House at the Fuertes Observatory</div>
+                <div class="main_content lecture">
+                    <div class="lecture_data main_group">
+                        <div class="lecture_datetime">November 9th, 2024<span class="datetime_sep">, </span>
+                            <div class="datetime_break"></div>10 PM–12 AM
+                        </div>
+                        <div class="lecture_detail">Fuertes Observatory</div>
+                    </div>
+                    <div></div>
+                    <div class="lecture_desc main_group">
+                        Following <a target="_blank" href="https://carlsaganinstitute.cornell.edu/news/celebration-carl-sagans-90th-birthday-being-held-nov-9#:~:text=Schedule:">a day of festivities hosted by the Carl Sagan Institute</a>, the Fuertes Observatory will open to the public for a special Saturday open house from 10 PM until midnight, for observing and tours.
+                    </div>
+                    <div></div>
+                    <div class="main_group img_contain">
+                        <img class="img" src="/data/img/irv100.jpg">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="padding: 2vh;"></div>
+
+        <!-- End temporary special lecture information -->
+
         <div style="width: 100%; background-color: rgba(0, 0, 0, 0.65); text-align: center; margin: auto; max-width: 100%; box-sizing: border-box; font-family: Georgia, 'Times New Roman', Times, serif; padding: 5vh 1vw; font-size: 16px;">
             <div style="font-size: 30px; text-shadow: rgba(0, 0, 0, 0.3) 0px 6px 0px;">Fall '24 Lectures</div>
             <div style="padding: 1vh;"></div>
@@ -123,7 +146,7 @@
                 <div>September 20th - Gravitational Waves w/ Francisco Blanco</div>
                 <div>September 27th - Extreme Astrophysics w/ Professor Dong Lai</div>
                 <div>October 18th - Irving Porter Church Refractor 102nd Anniversary Lecture w/ Bart Fried</div>
-                <div>November 8th - Carl Sagan Birthday Lecture w/ Prof. Shami Chatterjee</div>
+                <div class="special">November 8th - Carl Sagan Birthday Lecture w/ Prof. Shami Chatterjee</div>
                 <div>November 15th - Professor Gordon Stacey</div>
                 <div>November 22nd - Student Research Night</div>
             </div>
@@ -135,7 +158,7 @@
         <div id="main_box_1" style="width: 100%; background-color: rgba(0, 0, 0, 0.65); text-align: left; margin: auto; padding: 6vh 2vw; max-width: 100%; box-sizing: border-box; text-shadow: rgba(0, 0, 0, 0.5) -1px -1px 0px, rgba(0, 0, 0, 0.5) 1px 1px 0px; line-height: 1.375em;">
             <div class="main_content lecture">
                 <div class="lecture_data main_group">
-                    <div class="lecture_title">Are We Alone? The Search for Life in the Universe</div>
+                    <div class="lecture_title special">Are We Alone? Searching for Life and Intelligence in the Universe</div>
                     <div class="lecture_detail">Prof. Shami Chatterjee</div>
                     <div class="lecture_datetime">November 8th, 2024<span class="datetime_sep">, </span>
                         <div class="datetime_break"></div>7:00 PM
@@ -144,11 +167,11 @@
                 </div>
                 <div></div>
                 <div class="lecture_desc main_group">
-                    Professor Shami Chatterjee of the Department of Astronomy will be speaking about the search for intelligent life, as part of the Carl Sagan Institute's <a href="https://carlsaganinstitute.cornell.edu/news/celebration-carl-sagans-90th-birthday-being-held-nov-9">celebration of Professor Carl Sagan's 90th birthday</a>.
+                    Professor Shami Chatterjee of the Department of Astronomy will be speaking about the search for intelligent life, as part of the Carl Sagan Institute's <a href="https://carlsaganinstitute.cornell.edu/news/celebration-carl-sagans-90th-birthday-being-held-nov-9">celebration of Professor Carl Sagan's 90th birthday</a>. People have wondered about life and intelligence beyond the Earth since the dawn of history. We will take a quick tour of searches for extraterrestrial intelligence (SETI), the quest for planets beyond our solar system, and the prospects for finding life and intelligence beyond the Earth with new telescopes and surveys.
                 </div>
                 <div></div>
                 <div class="main_group img_contain">
-                    <img class="img" src="/data/img/lecture/11824.jpeg">
+                    <img class="img" src="/data/img/lecture/11824.jpg">
                 </div>
             </div>
             <hr>

@@ -1,0 +1,60 @@
+.lecture {
+    display: grid;
+    grid-template-columns: 24% 1% 31% 2% 42%;
+    padding: 1vh;
+}
+
+.lecture_override {
+    display: grid;
+    grid-template-columns: 49% 2% 49%;
+    padding: 1vh;
+}
+
+.lecture_data div {
+    margin-bottom: 3vw;
+    /* Use of vw is intentional */
+}
+
+.lecture_title {
+    font-size: 25px;
+    line-height: 1.15em;
+}
+
+.lecture_detail {
+    font-size: 16px;
+    color: rgb(161, 161, 161);
+}
+
+.lecture_datetime {
+    font-size: 22px;
+    color: rgb(126, 192, 238);
+}
+
+.datetime_sep {
+    visibility: hidden;
+}
+
+.lecture_desc {
+    text-align: left;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    color: #ddd;
+}
+
+.lecture_media {
+    display: block;
+    width: 100%;
+    max-width: 5in;
+    aspect-ratio: 16 / 9;
+    /* Pardon the unusual aspect ratio */
+    border: 0;
+}
+
+@media only screen and (max-width: 750px) {
+    .datetime_sep {
+        visibility: visible !important;
+    }
+
+    .datetime_break {
+        display: none !important;
+    }
+}
