@@ -16,8 +16,8 @@ Add a corresponding object. Fields include:
  * media: an object with the following fields:
    * type: photo | video | lphoto
    * ref: /data/img/lecture/[].jpg name if photo
-          https://www.youtube.com/watch?v=[] if video
-          photo id separated by external link if lphoto
+          thumb id separated by %%% to https://www.youtube.com/watch?v=[] if video
+          photo id separated by %%% to external link if lphoto
    * attr: Attribution caption, if necessary
 
 Make sure to escape characters that would break the object format,
@@ -79,7 +79,7 @@ var cur_lecs = [
         desc: 'When FYST is completed, it will be installed near the summit of Cerro Chajnantor in Chile\'s Atacama Desert and become the second highest telescope in the world. Outfitted with cutting edge instrumentation, FYST will be able to rapidly map the sky at submillimeter to millimeter wavelengths, collecting data that will give scientists insight into "cosmic dawn"—the universe\'s earliest days—as well as play a role in the search for gravitational waves and dark matter.',
         media: {
             type: 'video',
-            ref: 'u2vIIxNqFP8'
+            ref: '111524%%%u2vIIxNqFP8'
         }
     },
     {
@@ -104,7 +104,7 @@ var cur_lecs = [
         desc: 'Professor Shami Chatterjee of the Department of Astronomy will be speaking about the search for intelligent life, as part of the Carl Sagan Institute\'s <a target="_blank" href="https://carlsaganinstitute.cornell.edu/news/celebration-carl-sagans-90th-birthday-being-held-nov-9">celebration of Professor Carl Sagan\'s 90th birthday</a>. People have wondered about life and intelligence beyond the Earth since the dawn of history. We will take a quick tour of searches for extraterrestrial intelligence (SETI), the quest for planets beyond our solar system, and the prospects for finding life and intelligence beyond the Earth with new telescopes and surveys.',
         media: {
             type: 'video',
-            ref: 'wXEdR9FDftA'
+            ref: '11824%%%wXEdR9FDftA'
         }
     },
     {
@@ -129,7 +129,7 @@ var cur_lecs = [
         desc: 'Much of what you thought you knew about the telescope will be challenged in this presentation... Many of the wrong people get credit for things they didn\'t do and others have been overlooked or forgotten. But first, consider that before the telescope, we knew nothing of the Universe we reside in. It\'s as if we were locked in a room with closed window blinds since time immemorial, seeing only the walls around us. But in 1608, the greatest invention of all time was demonstrated for the first time, allowing the blinds to be thrown open and our understanding of who, what and where we are in our existence to be illuminated. This gave humanity a soul-rocking new understanding of ourselves. That process continues today, with every new revelation of the Webb and other great telescopes!',
         media: {
             type: 'video',
-            ref: 'HfxN8K9fJLw'
+            ref: '101824%%%HfxN8K9fJLw'
         }
     },
     {
@@ -154,7 +154,7 @@ var cur_lecs = [
         desc: 'Compact objects, including white dwarfs, neutron stars and black holes, are some of the most exotic objects in the universe. How do we study them and what secrets do they reveal?',
         media: {
             type: 'video',
-            ref: 'ZpTgXP5tYUQ'
+            ref: '92724%%%ZpTgXP5tYUQ'
         }
     },
     {
@@ -179,7 +179,7 @@ var cur_lecs = [
         desc: 'In this talk, we will explore the fascinating world of binary systems—pairs of objects like black holes or neutron stars—and their role in generating gravitational waves. We\'ll discuss how detectors like LIGO and the upcoming LISA mission capture these ripples in spacetime, offering us a new window into the universe. We\'ll also delve into the mathematical frameworks—numerical relativity, post-Newtonian expansion and self-force approach—used to study the intricate dynamics of these systems and predict their gravitational wave signals. Finally, we\'ll discover how their study gives us insights into new fundamental physics.',
         media: {
             type: 'video',
-            ref: 'TL3KomLeIiE'
+            ref: '92024%%%TL3KomLeIiE'
         }
     }
 ]
@@ -207,7 +207,7 @@ var past_lecs = [
         desc: 'CAS Advisor Prof. Phil Nicholson discusses the basic geometry and terminology of lunar and solar eclipses, how and why they are governed by the ancient "Saros cycle", the circumstances of the eclipse of April 8, and some of the ways in which eclipses have been used historically to teach us about solar physics and the history of the Earth–Moon system.',
         media: {
             type: 'video',
-            ref: 'eNr5pcTNrv0'
+            ref: '32224%%%eNr5pcTNrv0'
         }
     },
     {
@@ -232,7 +232,7 @@ var past_lecs = [
         desc: 'Astronomy graduate student Maura Lally discusses primary exoplanet exoplanet detection methods, including transits, radial velocities, and direct detections. Maura also details the atmospheres of transiting exoplanets.',
         media: {
             type: 'video',
-            ref: '-e6ZgK-Yptg'
+            ref: '31524%%%-e6ZgK-Yptg'
         }
     },
     {
@@ -257,7 +257,7 @@ var past_lecs = [
         desc: 'The Irving Porter Church 12-inch refracting telescope in Fuertes Observatory has an objective lens designed, ground, and polished by the Brashear Company of Pittsburgh in 1920. Its original glass disks came as a gift from Yerkes Observatory in Wisconsin. Based on an assumption that its two lens elements are made of the same glasses that are in the 40-inch Yerkes refractor, a provisional study has been made of its optical properties. Charles Hastings of Yale was a long-term designer for Brashear. Hastings personally made a 9.4-inch objective for the Johns Hopkins University and published its complete specifications in 1882; the Church objective may have been a direct scale-up of the latter lens with minor adjustments. The talk will include a historical discussion of lens designing and evaluation methods, using two Hastings-designed objectives as examples.',
         media: {
             type: 'video',
-            ref: 'JVuZ8vnSuuw'
+            ref: '3824%%%JVuZ8vnSuuw'
         }
     },
     {
@@ -282,7 +282,7 @@ var past_lecs = [
         desc: 'Today, evidence of life can be seen all over the Earth, from the land and oceans to the atmosphere. These observations define what we look for when searching for life on other planets. But what about ancient life on Earth? Would the earlier life that roamed the Earth during the past 500 million years (from sponges to the first trees to dinosaurs) have been detectable to aliens from faraway exoplanets? How can we tell? And should we be looking for space-dinosaurs?<br>Our second lecture of the semester, hosted by Dr. Rebecca Payne, will discuss research on the biosignatures of life on the ancient Earth and the potential use of similar biosignatures for our own interstellar life-seeking purposes.',
         media: {
             type: 'video',
-            ref: 'S6AxTlTcx3g'
+            ref: '3124%%%S6AxTlTcx3g'
         }
     },
     {
@@ -307,7 +307,7 @@ var past_lecs = [
         desc: 'Voyager 1 and 2 were launched in 1977 and completed a grand tour of the Solar System. About ten years ago, they left the magnetic influence of the Sun and are still returning data. Prof. Cordes will discuss what we are learning from this data and more!',
         media: {
             type: 'video',
-            ref: 'zV6DL-EHSUQ'
+            ref: '21624%%%zV6DL-EHSUQ'
         }
     },
     {
@@ -332,7 +332,7 @@ var past_lecs = [
         desc: 'As part of our "Voyager Spacecraft Week," CAS joined Cornell Cinema in presenting <em>Cosmos</em> Episode 6: Traveler\'s Tales. After the showing, Carl Sagan\'s wife and co-producer Ann Druyan featured in a live Q&A with the audience. In addition to her work on <em>Cosmos</em> in 1980, Ann Druyan was the writer and producer for the two newer seasons of <em>Cosmos</em> (A Spacetime Odyssey in 2014 and Possible Worlds in 2020). She has written and co-written dozens of books, television shows, and movies, including six books with Carl Sagan and the film adaptation of <em>Contact</em>. She was also a member of the Voyager Golden Record team, which selected pictures, sounds, and music from Earth to cast out into space; her heartbeat and brain waves will roam the stars for millions of years.',
         media: {
             type: 'video',
-            ref: 'za9UFwB1cKI'
+            ref: '21324%%%za9UFwB1cKI'
         }
     },
     {
@@ -382,7 +382,7 @@ var past_lecs = [
         desc: 'What does the spectral fingerprint of biopigments look like? How can it aid in the search for extraterrestrial life? Are there purple-hued aliens? This lecture seeks to answer these questions and more!',
         media: {
             type: 'video',
-            ref: 'MkBb9lhTr1s'
+            ref: '10623%%%MkBb9lhTr1s'
         }
     },
     {
@@ -407,7 +407,7 @@ var past_lecs = [
         desc: 'The Laser Interferometer Gravitational Wave Observatory (LIGO) is severely limited in its sensitivity by quantum noise. CAS member Sophia Arnold outlines the development of LIGO and paths for future improvement.',
         media: {
             type: 'video',
-            ref: 'lO2UUDqPGbQ'
+            ref: '92923%%%lO2UUDqPGbQ'
         }
     },
     {
@@ -432,7 +432,7 @@ var past_lecs = [
         desc: 'Our first lecture of the semester comes from former president Annika Deutsch! She\'ll discuss her research involving observations of supernova SN2018ivc, which revealed a dramatic re-brightening after the supernova had already exploded. What might this tell us about the original star?',
         media: {
             type: 'video',
-            ref: '4AXuRbtHvBE'
+            ref: '92223%%%4AXuRbtHvBE'
         }
     },
     {
@@ -482,7 +482,7 @@ var past_lecs = [
         desc: 'Celebrating Yuri\'s Night and human spaceflight with Prof. Mason Peck!<br><br>SpaceX\'s Starship launch vehicle will disrupt the modern-day dominance of tiny spacecraft. What will the future of larger spacecraft look like? What infrastructure will we need to establish a sustained presence in cislunar space?',
         media: {
             type: 'video',
-            ref: 'ZgY4K0plnhY'
+            ref: '41423%%%ZgY4K0plnhY'
         }
     },
     {
@@ -503,7 +503,7 @@ var past_lecs = [
         desc: 'Our very own undergraduate members discussed their research in exoplanets, cosmology, and pulsar timing!',
         media: {
             type: 'video',
-            ref: 'H08XRPi0DP4'
+            ref: '32423%%%H08XRPi0DP4'
         }
     },
     {
@@ -528,7 +528,7 @@ var past_lecs = [
         desc: 'The story of minor planets is a fascinating one that spans billions of years and takes us on a journey through the history of our solar system. Asteroids, comets, and dwarf planets have played a crucial role in the formation of worlds like our Earth. Cornell Research Associate Rixin Li will introduce the formation and the destinies of these minor planets!',
         media: {
             type: 'video',
-            ref: 'nQ-kMP00Q08'
+            ref: '31723%%%nQ-kMP00Q08'
         }
     },
     {
@@ -553,7 +553,7 @@ var past_lecs = [
         desc: 'Einstein\'s theory of general relativity predicts gravitational waves—ripples in the fabric of space-time itself. We have now detected such ripples from black hole mergers. Shami Chatterjee, a Cornell astronomer and member of the NANOGrav collaboration, will talk about ongoing efforts to build a Galaxy-scale detector to observe low-frequency gravitational waves, as well as unexpected discoveries along the way.',
         media: {
             type: 'video',
-            ref: 'jzy7t3nIxD8'
+            ref: '31023%%%jzy7t3nIxD8'
         }
     },
     {
@@ -578,7 +578,7 @@ var past_lecs = [
         desc: 'Matter and anti-matter are mirror images of each other—so why is there so much more matter in the universe than anti-matter? Prof. Grossman, a Cornell researcher of theoretical high-energy physics, and will discuss this puzzle and the progress so far in solving it.',
         media: {
             type: 'video',
-            ref: 'YTSHpk7JPCI'
+            ref: '3323%%%YTSHpk7JPCI'
         }
     },
     {
@@ -603,7 +603,7 @@ var past_lecs = [
         desc: 'On the Friday nearest November 9th, we celebrated Carl Sagan\'s birthday with apple pie and a talk by Professor Lisa Kaltenegger, who follows in Sagan\'s footsteps to search for life on exoplanets.',
         media: {
             type: 'video',
-            ref: 'kjH2Tt7rgIM'
+            ref: '111122%%%kjH2Tt7rgIM'
         }
     },
     {
@@ -628,7 +628,7 @@ var past_lecs = [
         desc: 'Abigail Crites is an Assistant Professor & Fred Young Faculty Fellow in the Cornell Department of Astronomy. She will discuss the physics, engineering, and software development needed to build instruments that study the evolution of our universe!',
         media: {
             type: 'video',
-            ref: '_1tdOcud7F8'
+            ref: '102122%%%_1tdOcud7F8'
         }
     },
     {
@@ -653,7 +653,7 @@ var past_lecs = [
         desc: 'On October 14th, we celebrated the 100th birthday of our beloved telescope, Irv! CAS faculty advisor Phil Nicholson highlighted Irv\'s history, with space-themed cupcakes provided! We had telescope, museum, and sky tours every half hour, along with a special slideshow of Irv memories. Happy "Birvday"!',
         media: {
             type: 'video',
-            ref: 'U7-tVG1SUFw'
+            ref: '101422%%%U7-tVG1SUFw'
         }
     },
     {
@@ -674,7 +674,7 @@ var past_lecs = [
         desc: 'Water propellant and holograms in space? Cornell students involved in Space Systems Design Studio missions will give lectures about the spacecraft they\'re building!',
         media: {
             type: 'video',
-            ref: 'dSt0EE6suQA'
+            ref: '10722%%%dSt0EE6suQA'
         }
     },
     {
@@ -699,7 +699,7 @@ var past_lecs = [
         desc: 'Dr. Schneiderman is a Visiting Scientist in the Cornell Department of Astronomy. Her talk examines planetary debris—gas and dust—and how it helps reveal a planet\'s history!',
         media: {
             type: 'video',
-            ref: 'ct9PMMnYkpM'
+            ref: '93022%%%ct9PMMnYkpM'
         }
     },
     {
@@ -720,7 +720,7 @@ var past_lecs = [
         desc: 'Recent measurements of the cosmic microwave background (the remnant light from the Big Bang) suggest the Universe is expanding slower than measurements of supernova and other more “local” sources. These differing measurements of the Hubble expansion constant could indicate that a more complex model is needed to describe our Universe or could be due to a problem with one or more of the measurements themselves. We will discuss our current dark energy and dark matter dominated cosmological model as well as recent measurements from the Atacama Cosmology Telescope and other observatories that have contributed to this tension in our cosmological model. We will also briefly describe next generation observatories including the CCAT Observatory and Simons Observatory that will help address these questions in the future.',
         media: {
             type: 'video',
-            ref: 'BdOLtSz99Aw'
+            ref: '4221%%%BdOLtSz99Aw'
         }
     },
     {
@@ -741,7 +741,7 @@ var past_lecs = [
         desc: 'For centuries, humans have wondered about the existence of planets around stars, other than our own Sun. However, for the first time in human history we have the capability not just to find, but also to characterize these far away worlds, termed as “Exoplanets". In this talk Dr. Goyal will show the astonishing variety of exoplanets that have been discovered and techniques used to find them. He will discuss how we study exoplanet atmospheres using the combination of remote sensing observations, 1D and 3D atmospheric models, retrieval techniques and thereby characterize them. Dr. Goyal will also briefly discuss how modeling the atmospheres of exoplanets from first principles, aid in-depth understanding of different processes, in the past as well as present Earth. Finally, he will show our approach to answer one of the most fundamental questions of humanity, Are we alone in this Universe?',
         media: {
             type: 'video',
-            ref: 'J4kRIdGJUco'
+            ref: '32621%%%J4kRIdGJUco'
         }
     },
     {
@@ -825,7 +825,7 @@ var past_lecs = [
         ],
         media: {
             type: 'video',
-            ref: 'YG3vfEI_Loo'
+            ref: '101620%%%YG3vfEI_Loo'
         }
     },
     {
@@ -845,7 +845,7 @@ var past_lecs = [
         ],
         media: {
             type: 'video',
-            ref: 'Mn_lIMv8KCM'
+            ref: '10920%%%Mn_lIMv8KCM'
         }
     },
     {
@@ -865,7 +865,7 @@ var past_lecs = [
         ],
         media: {
             type: 'video',
-            ref: 'dFpkdy4J43Q'
+            ref: '10220%%%dFpkdy4J43Q'
         }
     },
     {
@@ -886,7 +886,7 @@ var past_lecs = [
         desc: 'Fast Radio Bursts are millisecond-duration pulses of unknown origin that were discovered by an undergraduate student at West Virginia University in 2007. A decade on, with over 100 further bursts currently known, fast radio bursts remain enigmatic sources which parallel the early days of gamma-ray burst astronomy in the early 1970s. I will tell the story of their discovery, summarize what we know about them so far, describe the science opportunities these bursts present, and make predictions for what we might learn in the next decade.',
         media: {
             type: 'video',
-            ref: '9WqaUSiB76k'
+            ref: '91820%%%9WqaUSiB76k'
         }
     },
     {
@@ -3509,7 +3509,14 @@ var img_tmp = (m, attr) => `<div class="main_group img_contain">
     ${attr ? `<span class="img_credit">${attr}</span>` : ``}
 </div>`;
 
-var vid_tmp = `<iframe src="/data/html/iframe.html" loading="lazy" class="lecture_media main_group" title="YouTube video player" allowfullscreen></iframe>`;
+var vid_tmp = m => `<iframe src="https://www.youtube-nocookie.com/embed/${m}" loading="lazy" class="lecture_media main_group" title="YouTube video player" allowfullscreen></iframe>`;
+
+var vid_ph = m => `<div data-ytsrc="${m.split(/%%%/g)[1]}">
+    <div class="main_group img_contain">
+        <img class="img" src="/data/img/lecture/${m.split(/%%%/g)[0]}.jpg" style="cursor: pointer;" onclick="vid_replace(this.parentElement.parentElement)">
+        <span class="img_credit">Click image to load video</span>
+    </div>
+</div>`
 
 var limg_tmp = m => `<div class="main_group img_contain">
     <a target="_blank" href="${m.split(/%%%/g)[1]}">
@@ -3531,6 +3538,10 @@ var el_tmp = (title, attr, desc, media, special, type) => `<div class="main_cont
     ${media}
 </div>
 `
+
+var vid_replace = el => {
+    el.innerHTML = vid_tmp(el.getAttribute('data-ytsrc'));
+}
 
 var vid_ids = [];
 const build = lecs => {
@@ -3566,8 +3577,7 @@ const build = lecs => {
                     media = img_tmp(lec.media.ref, lec.media.attr);
                     break;
                 case 'video':
-                    media = vid_tmp;
-                    vid_ids.push(lec.media.ref);
+                    media = vid_ph(lec.media.ref);
                     break;
                 case 'lphoto':
                     media = limg_tmp(lec.media.ref);
@@ -3581,12 +3591,3 @@ const build = lecs => {
 
 document.getElementById('main_box_1').innerHTML = build(cur_lecs).join('\n<hr>\n');
 document.getElementById('main_box_2').innerHTML = build(past_lecs).join('\n<hr>\n');
-
-var iframes = document.getElementsByTagName('iframe');
-
-for (let i = vid_ids.length; i > 0; i--) {
-    setTimeout(() => {
-        iframes[i - 1].src = `https://www.youtube-nocookie.com/embed/${vid_ids[i - 1]}`;
-    }, i * 250);
-}
-// Load time fixed at 250 milliseconds per video, loading each iframe at a separate instant, as to improve overall page loading time
