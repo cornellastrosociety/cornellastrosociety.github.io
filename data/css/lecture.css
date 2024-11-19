@@ -4,6 +4,12 @@
     padding: 1vh;
 }
 
+.lecture_nomedia {
+    display: grid;
+    grid-template-columns: 34% 1% 63%;
+    padding: 1vh;
+}
+
 .lecture_override {
     display: grid;
     grid-template-columns: 49% 2% 49%;
