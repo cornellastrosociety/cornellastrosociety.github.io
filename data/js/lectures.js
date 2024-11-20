@@ -3468,7 +3468,11 @@ var past_lecs = [
             },
             {
                 type: 'presenter',
-                value: 'Tanja Bode, Daniel Shapiro'
+                value: 'Tanja Bode'
+            },
+            {
+                type: 'presenter',
+                value: 'Daniel Shapiro'
             }
         ],
         desc: 'Extensions of the eye, telescopes come in many different forms, shapes and sizes. Come and discover how they work. Cool pictures guaranteed!'
