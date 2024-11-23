@@ -40,7 +40,7 @@ var cur_lecs = [
         attributes: [
             {
                 type: 'title',
-                value: 'From Spacecraft to Supernovae: CAS Members\' Student Research'
+                value: 'From Sagan to Spacecraft: CAS Members\' Student Research'
             },
             {
                 type: 'datetime',
