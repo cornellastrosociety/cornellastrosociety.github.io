@@ -1,7 +1,6 @@
 
 
 let slideIndexTwo = 1;
-showSlideTwo(slideIndexTwo);
 
 function openLightboxTwo() {
     if (document.getElementById('hamburger') != null) {
