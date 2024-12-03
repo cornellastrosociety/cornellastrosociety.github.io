@@ -64,8 +64,11 @@ function showSlideTwo(n) {
 
 
     if (slidesTwo.length >= slideIndexTwo) slidesTwo[slideIndexTwo - 1].style.display = 'grid';
+    slidesTwo[slideIndexTwo - 1].firstChild.src = slidesTwo[slideIndexTwo - 1].firstChild.getAttribute('data-src');
     if (modalPreviewsTwo.length >= slideIndexTwo) modalPreviewsTwo[slideIndexTwo - 1].className += ' active';
-    resizeSlideTwo(slideIndexTwo);
+    slidesTwo[slideIndexTwo - 1].firstChild.onload = function () {
+        resizeSlideTwo(slideIndexTwo);
+    }
 };
 
 function resizeSlideTwo(n) {
