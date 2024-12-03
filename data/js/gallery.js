@@ -902,7 +902,7 @@ let width = galdata.width;
 let incr = galdata.incr;
 if (window.innerWidth < 750) {
     width = 2;
-    incr = 8;
+    incr = 16;
 }
 let thumb = galdata.thumb;
 let pics = galdata.data;
