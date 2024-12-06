@@ -43,7 +43,7 @@ var nav_data = `<!-- Nav bar, should persist across pages; add nav_el_sel to cur
                 <div >
                     <div class = "mnav_sub no_und " id = "mnav_photo" style = "display: none; color: black">
                     <br style = "font-size: 1vh">
-                        <a href="/photos/photos" id="nav_photos_photos" class = "nav_dd_sub">Photo Gallery <br> <br style = "font-size: 1vh"></a>
+                        <a href="/photos" id="nav_photos_photos" class = "nav_dd_sub">Photo Gallery <br> <br style = "font-size: 1vh"></a>
                         <a href="/photos/museum" id="nav_photos_museum" class = "nav_dd_sub">Museum Gallery <br> <br style = "font-size: 1vh"></a>
                         <a href="/photos/astro" id="nav_photos_astro" class = "nav_dd_sub">Astrophotography <br> <br style = "font-size: 1vh"></a>
                     </div>
@@ -111,90 +111,79 @@ document.getElementById('hamburger').onclick = function () {
     const nav = document.getElementById('navone');
     if (nav.classList.contains('nav_no_display')) nav.classList.replace('nav_no_display', 'nav_display');
     else if (nav && nav.classList.contains('nav_display')) nav.classList.replace('nav_display', 'nav_no_display');
-    if (document.getElementsByTagName('html')[0].style.overflow === 'auto' ||document.getElementsByTagName('html')[0].style.overflow === "")
-    {
+    if (document.getElementsByTagName('html')[0].style.overflow === 'auto' || document.getElementsByTagName('html')[0].style.overflow === "") {
         document.getElementsByTagName('html')[0].style.overflow = 'hidden';
         document.getElementsByTagName('body')[0].style.overflow = 'hidden';
         if (document.getElementById('wind')) document.getElementById('wind').style.overflow = 'hidden';
     }
-    else if(document.getElementsByTagName('html')[0].style.overflow === 'hidden')
-    {
+    else if (document.getElementsByTagName('html')[0].style.overflow === 'hidden') {
         document.getElementsByTagName('html')[0].style.overflow = 'auto';
         document.getElementsByTagName('body')[0].style.overflow = 'auto';
         if (document.getElementById('wind')) document.getElementById('wind').style.overflow = 'auto';
     }
-    if (document.getElementById('lines').style.display === 'block')
-        {
-            document.getElementById('lines').style.display = 'none';
-            document.getElementById('arrdown').style.display = 'inline-block';
-            document.getElementById('arrdown').style.animation = 'spinin 0.35s';
-            document.getElementById('hamburger').style.borderColor = 'blue';
-            document.getElementById('hamburger').style.backgroundColor = 'white';
-            document.getElementById('navone').style.animationName = 'slidein';
-            
-        }
-    else if (document.getElementById('arrdown').style.display === 'inline-block')
-        {
-            document.getElementById('arrdown').style.display = 'none';
-            document.getElementById('lines').style.display = 'block';
-      
-            document.getElementById('hamburger').style.borderColor = 'white';
-            document.getElementById('hamburger').style.backgroundColor = 'black';
-            document.getElementById('navone').style.animationName = 'lingerout';
-        }
-    
+    if (document.getElementById('lines').style.display === 'block') {
+        document.getElementById('lines').style.display = 'none';
+        document.getElementById('arrdown').style.display = 'inline-block';
+        document.getElementById('arrdown').style.animation = 'spinin 0.35s';
+        document.getElementById('hamburger').style.borderColor = 'blue';
+        document.getElementById('hamburger').style.backgroundColor = 'white';
+        document.getElementById('navone').style.animationName = 'slidein';
+
+    }
+    else if (document.getElementById('arrdown').style.display === 'inline-block') {
+        document.getElementById('arrdown').style.display = 'none';
+        document.getElementById('lines').style.display = 'block';
+
+        document.getElementById('hamburger').style.borderColor = 'white';
+        document.getElementById('hamburger').style.backgroundColor = 'black';
+        document.getElementById('navone').style.animationName = 'lingerout';
+    }
+
 }
 
 window.onresize = function () {
-    if (document.getElementsByClassName('slideTwo').length > 0)
-    {
+    if (document.getElementsByClassName('slideTwo').length > 0) {
         resizeSlideTwo(slideIndexTwo)
     }
-    if (document.getElementsByClassName('slide').length > 0)
-    {
+    if (document.getElementsByClassName('slide').length > 0) {
         resizeSlide(slideIndex)
     }
-   
+
 }
 
 document.onkeyup = function (e) {
-    if (document.getElementsByClassName('slideTwo').length > 0)
-        {
-            if (e.key == 'Escape') {
-                closeLightboxTwo();
-            } else if (e.key == 'ArrowLeft') {
-                changeSlideTwo(-1);
-            } else if (e.key == 'ArrowRight') {
-                changeSlideTwo(1);
-            }
+    if (document.getElementsByClassName('slideTwo').length > 0) {
+        if (e.key == 'Escape') {
+            closeLightboxTwo();
+        } else if (e.key == 'ArrowLeft') {
+            changeSlideTwo(-1);
+        } else if (e.key == 'ArrowRight') {
+            changeSlideTwo(1);
         }
-    if (document.getElementsByClassName('slide').length > 0)
-        {
-            if (e.key == 'Escape') {
-                closeLightbox();
-            } else if (e.key == 'ArrowLeft') {
-                changeSlide(-1);
-            } else if (e.key == 'ArrowRight') {
-                changeSlide(1);
-            }
-        }    
+    }
+    if (document.getElementsByClassName('slide').length > 0) {
+        if (e.key == 'Escape') {
+            closeLightbox();
+        } else if (e.key == 'ArrowLeft') {
+            changeSlide(-1);
+        } else if (e.key == 'ArrowRight') {
+            changeSlide(1);
+        }
+    }
 
 }
 
-function showhide(input)
-{
+function showhide(input) {
 
     arrow = document.getElementById(input + 'arrow');
     content = document.getElementById('mnav_' + input);
-    if (arrow.classList.contains('up'))
-        {
-            arrow.classList.replace('up', 'down');
-            content.style.display = 'none';
-        }
-    else if (arrow.classList.contains('down'))
-        {
-            arrow.classList.replace('down', 'up');
-            content.style.display = 'block';
-        }
+    if (arrow.classList.contains('up')) {
+        arrow.classList.replace('up', 'down');
+        content.style.display = 'none';
+    }
+    else if (arrow.classList.contains('down')) {
+        arrow.classList.replace('down', 'up');
+        content.style.display = 'block';
+    }
 }
 
