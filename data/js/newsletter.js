@@ -2,6 +2,14 @@
 
 const newsletters = [
     {
+        
+        yr: `2024`,
+        mth: `December`,
+        desc: `As winter begins, we're releasing our final newsletter of the semester! In this edition, we cover recent astronomical events, the legacy of Sir Isaac Newton, and a second farewell from former President Gillis Lowry!`,
+        date: `dec24`
+    },
+    {
+        
         yr: `2024`,
         mth: `October`,
         desc: `Happy fall! Our first regular edition of the semester contains book recommendations for cloudy nights and a glimpse at CAS activities on clear ones!`,
