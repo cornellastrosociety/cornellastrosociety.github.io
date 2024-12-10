@@ -3507,6 +3507,7 @@ var datetime_tmp = m => `<div class="lecture_datetime">${m.split(/%/g)[0]}<span 
 var date_tmp = m => `<div class="lecture_datetime">${m}</div>`;
 
 var det_tmp = m => `<div class="lecture_detail">${m}</div>`;
+var det_comb_tmp = m => `<div class="lecture_detail" style="margin-bottom: 0 !important;">${m}</div>`;
 
 var img_tmp = (m, attr) => `<div class="main_group img_contain">
     <img class="img" src="/data/img/lecture/${m}.jpg">
@@ -3554,6 +3555,7 @@ const build = lecs => {
         var title = '';
         var special = false;
         var attrs = [];
+        var presenters = [];
         for (var attr of lec.attributes) {
             switch (attr.type) {
                 case 'title':
@@ -3562,6 +3564,8 @@ const build = lecs => {
                     special = attr.type == 'specialtitle';
                     break;
                 case 'presenter':
+                    presenters.push(attr.value);
+                    break;
                 case 'loc':
                     attrs.push(det_tmp(attr.value));
                     break;
@@ -3573,6 +3577,10 @@ const build = lecs => {
                     break;
             }
         }
+        for (var i = 0; i < presenters.length - 1; i++) {
+            attrs.push(det_comb_tmp(presenters[i]));
+        }
+        if (presenters.length) attrs.push(det_tmp(presenters[presenters.length - 1]));
         var desc = lec.desc ?? '';
         var media = '<div></div>';
         if (lec.media) {
