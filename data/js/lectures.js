@@ -53,8 +53,8 @@ var cur_lecs = [
         ],
         desc: 'Tons of fascinating astronomy research happens at Cornell, across multiple different departments. CAS members research everything from spacecraft and satellites to exoplanets and supernovae.',
         media: {
-            type: 'photo',
-            ref: '112224'
+            type: 'video',
+            ref: '112224%%%brze-SSfqqo'
         }
     },
     {
