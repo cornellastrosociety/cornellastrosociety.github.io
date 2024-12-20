@@ -1541,6 +1541,91 @@ var past_lecs = [
         attributes: [
             {
                 type: 'title',
+                value: 'Pluto Wars: The Return of Planet X'
+            },
+            {
+                type: 'presenter',
+                value: 'Art Samplaski'
+            },
+            {
+                type: 'datetime',
+                value: 'February 26th, 2016%7:30 PM'
+            },
+        ],
+        desc: 'Join us for a talk on the New Horizons mission to Pluto and the recently hypothesized "Planet Nine". The talk will be given by Art Samplaski, Fuertes Observatory outreach volunteer, in the observatory classroom. In the nearly 10 years since the IAU demoted Pluto (once called "Planet X") to "dwarf planet," resistance has lingered against what many feel was a badly-worded definition. And once the New Horizons probe showed Pluto to be as complex and dynamic a world as any other, the debate has only intensified. Now in the last few weeks there is evidence that there may be a Neptune-sized "Planet Nine" out in the solar system\'s dark fringes. Join us as we look at the backstory and current state of a saga of discovery more spectacular than any Lucas/Spielberg extravangaza... because it\'s real!',
+        media: {
+            type: 'photo',
+            ref: '22616',
+            attr: 'NASA'
+        }
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
+                value: 'Third Annual Yuri\'s Night Celebration'
+            },
+            {
+                type: 'presenter',
+                value: 'Prof. Lisa Kaltenegger'
+            },
+            {
+                type: 'datetime',
+                value: 'April 10th, 2015%7:30 PM'
+            },
+        ],
+        desc: 'All are welcome to come celebrate human spaceflight and space exploration at Fuertes Observatory! To commemorate Yuri Gagarin\'s spaceflight, the Cornell Astronomical Society is hosting a lecture form Dr. Lisa Kaltenegger (Cornell Professor of Astronomy and Director of the Institute for Pale Blue Dots), rocket launches from CU Rocketry, space food, astronomical observing, and more! All ages welcome.',
+        media: {
+            type: 'photo',
+            ref: '41015'
+        }
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
+                value: 'Public Lecture on Astrophysics'
+            },
+            {
+                type: 'presenter',
+                value: 'Prof. Dan Weedman'
+            },
+            {
+                type: 'datetime',
+                value: 'March 27th, 2015%7:30 PM'
+            },
+        ],
+        desc: 'Professor Dan Weedman will be giving a public lecture on astrophysics at the Fuertes Observatory! He will discuss observational discoveries about the most distant galaxies and quasars. How they formed in the early universe is one of the biggest mysteries in astrophysics.'
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
+                value: 'Second Annual Yuri\'s Night Celebration'
+            },
+            {
+                type: 'presenter',
+                value: 'Prof. Jean Hunter'
+            },
+            {
+                type: 'presenter',
+                value: 'Prof. Mason Peck'
+            },
+            {
+                type: 'datetime',
+                value: 'April 11th, 2014%7:30 PM'
+            },
+        ],
+        desc: 'Come celebrate human spaceflight at Fuertes Observatory! It will be an evening of space food, expert lectures, shuttle simulation, museum tours, and astronomical observing! Professor Jean Hunter of Cornell University will give a short talk on her work creating better food for astronauts and demonstrate a water recycling process used in space. Professor Mason Peck of Cornell University (formerly Chief Technologist for NASA) will discuss human exploration of asteroids.',
+        media: {
+            type: 'photo',
+            ref: '41114'
+        }
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
                 value: 'ET Phones Home?: Atrobiological Thoughts'
             },
             {
