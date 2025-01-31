@@ -26,6 +26,10 @@ galleries.set('club', {
             name: `2020-2021`
         },
         {
+            id: `1920.jpg`,
+            name: `2019-2020`
+        },
+        {
             id: `19.jpg`,
             name: `2018-2019`
         },
