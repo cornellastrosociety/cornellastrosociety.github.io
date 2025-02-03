@@ -40,6 +40,34 @@ var cur_lecs = [
         attributes: [
             {
                 type: 'title',
+                value: 'Weird and Wonderful Worlds in our Galaxy'
+            },
+            {
+                type: 'presenter',
+                value: 'Dr. Lili Alderson'
+            },
+            {
+                type: 'datetime',
+                value: 'February 7th, 2025%7:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Appel Commons Multipurpose Room 303'
+            }
+        ],
+        desc: 'From the Solar System to the most extreme exoplanets, we will explore how astronomers study the atmospheres of planets, and highlight some of the strangest skies we\'ve explored so far.',
+        media: {
+            type: 'photo',
+            ref: '2725'
+        }
+    }
+]
+
+var past_lecs = [
+    {
+        attributes: [
+            {
+                type: 'title',
                 value: 'From Sagan to Spacecraft: CAS Members\' Student Research'
             },
             {
@@ -181,10 +209,7 @@ var cur_lecs = [
             type: 'video',
             ref: '92024%%%TL3KomLeIiE'
         }
-    }
-]
-
-var past_lecs = [
+    },
     {
         attributes: [
             {
