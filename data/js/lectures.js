@@ -57,8 +57,8 @@ var cur_lecs = [
         ],
         desc: 'From the Solar System to the most extreme exoplanets, we will explore how astronomers study the atmospheres of planets, and highlight some of the strangest skies we\'ve explored so far.',
         media: {
-            type: 'photo',
-            ref: '2725'
+            type: 'video',
+            ref: '2725%%%LvBXcdoxIn8'
         }
     }
 ]
