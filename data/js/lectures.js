@@ -40,6 +40,32 @@ var cur_lecs = [
         attributes: [
             {
                 type: 'title',
+                value: 'Finding Our Way'
+            },
+            {
+                type: 'presenter',
+                value: 'Ho\'okele Ka\'iulani Murphy'
+            },
+            {
+                type: 'datetime',
+                value: 'February 28th, 2025%7:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Appel Commons Multipurpose Room 303'
+            }
+        ],
+        desc: 'The Cornell Astronomical Society\'s second lecture of the semester, presented by Ho\'okele Ka\'iulani Murphy, Professor of Hawaiian Astronomy and Navigation at University of Hawai\'i Honolulu Community College. She will be sharing the story of Hōkūle\'a, the voyaging canoe at the heart of the revival of traditional navigation in Hawai\'i. Guided by the knowledge of the heavens and the ocean, contemporary navigators sail in the wake of their ancestors.',
+        media: {
+            type: 'video',
+            ref: '22825',
+            attr: 'Polynesian Voyaging Society / \'Ōiwi TV / Nā\'ālehu Anthony'
+        }
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
                 value: 'Weird and Wonderful Worlds in our Galaxy'
             },
             {
@@ -3626,10 +3652,10 @@ var img_tmp = (m, attr) => `<div class="main_group img_contain">
 
 var vid_tmp = m => `<iframe src="https://www.youtube-nocookie.com/embed/${m}" loading="lazy" class="lecture_media main_group" title="YouTube video player" allowfullscreen></iframe>`;
 
-var vid_ph = m => `<div data-ytsrc="${m.split(/%%%/g)[1]}">
+var vid_ph = (m, attr) => `<div data-ytsrc="${m.split(/%%%/g)[1]}">
     <div class="main_group img_contain">
         <img class="img" src="/data/img/lecture/${m.split(/%%%/g)[0]}.jpg" style="cursor: pointer;" onclick="vid_replace(this.parentElement.parentElement)">
-        <span class="img_credit">Click image to load video</span>
+        ${attr ? `<span class="img_credit">${attr}</span><br>` : ``}<span class="img_credit">Click image to load video</span>
     </div>
 </div>`
 
@@ -3699,7 +3725,7 @@ const build = lecs => {
                     media = img_tmp(lec.media.ref, lec.media.attr);
                     break;
                 case 'video':
-                    media = vid_ph(lec.media.ref);
+                    media = vid_ph(lec.media.ref, lec.media.attr);
                     break;
                 case 'lphoto':
                     media = limg_tmp(lec.media.ref);
