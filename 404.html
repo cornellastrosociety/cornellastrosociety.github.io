@@ -85,6 +85,9 @@
                 location.replace('/photos/photos');
                 break;
             default:
+                if (window.location.pathname.replace(/\//g, '').startsWith('w')) {
+                    location.replace('/visit/weather');
+                }
                 setTimeout(() => {
                     location.replace('/');
                 }, 1500);
