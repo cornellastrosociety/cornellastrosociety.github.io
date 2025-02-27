@@ -57,7 +57,7 @@ var cur_lecs = [
         ],
         desc: 'The Cornell Astronomical Society\'s second lecture of the semester, presented by Ho\'okele Ka\'iulani Murphy, Professor of Hawaiian Astronomy and Navigation at University of Hawai\'i Honolulu Community College. She will be sharing the story of Hōkūle\'a, the voyaging canoe at the heart of the revival of traditional navigation in Hawai\'i. Guided by the knowledge of the heavens and the ocean, contemporary navigators sail in the wake of their ancestors.',
         media: {
-            type: 'video',
+            type: 'photo',
             ref: '22825',
             attr: 'Polynesian Voyaging Society / \'Ōiwi TV / Nā\'ālehu Anthony'
         }

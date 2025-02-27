@@ -512,6 +512,10 @@ hamburger::selection {
     text-shadow: rgb(249, 194, 56) 0 0 5px;
 }
 
+.contrast {
+    text-shadow: white 0 0 5px;
+}
+
 
 /*
 Galleries
