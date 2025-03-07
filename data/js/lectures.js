@@ -40,6 +40,31 @@ var cur_lecs = [
         attributes: [
             {
                 type: 'title',
+                value: 'Binary Asteroid Formation and NASA/DART: Double Asteroid Redirection Test'
+            },
+            {
+                type: 'presenter',
+                value: 'Colby Merrill'
+            },
+            {
+                type: 'datetime',
+                value: 'March 7th, 2025%7:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Appel Commons Multipurpose Room 303'
+            }
+        ],
+        desc: 'Colby is a PhD candidate in aerospace engineering at Cornell University. They were a member of the NASA/DART investigation team\'s dynamics working group and currently serve on the ESA/Hera science team. Their research is varied across multiple disciplines. Some of their recent work focuses on constraining ages for asteroid moons, optimizing spacecraft orbits, and designing missions for asteroid deflection. Outside of research, you can find them birding, hiking, gaming, and reading. This talk will focus on the NASA/DART mission, which impacted the asteroid moon, Dimorphos, in 2022 and how this moon and many asteroid moons form.',
+        media: {
+            type: 'photo',
+            ref: '3725'
+        }
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
                 value: 'Finding Our Way'
             },
             {
@@ -57,8 +82,8 @@ var cur_lecs = [
         ],
         desc: 'The Cornell Astronomical Society\'s second lecture of the semester, presented by Ho\'okele Ka\'iulani Murphy, Professor of Hawaiian Astronomy and Navigation at University of Hawai\'i Honolulu Community College. She will be sharing the story of Hōkūle\'a, the voyaging canoe at the heart of the revival of traditional navigation in Hawai\'i. Guided by the knowledge of the heavens and the ocean, contemporary navigators sail in the wake of their ancestors.',
         media: {
-            type: 'photo',
-            ref: '22825',
+            type: 'video',
+            ref: '22825%%%PS97Yh1x3tc',
             attr: 'Polynesian Voyaging Society / \'Ōiwi TV / Nā\'ālehu Anthony'
         }
     },
@@ -362,6 +387,7 @@ var past_lecs = [
         }
     },
     {
+        id: 'anndruyan',
         attributes: [
             {
                 type: 'specialtitle',
@@ -3666,8 +3692,8 @@ var limg_tmp = m => `<div class="main_group img_contain">
     <span class="img_credit">Click image to view video</span>
 </div>`
 
-var el_tmp = (title, attr, desc, media, special, type) => `<div class="main_content ${type}">
-    <div class="lecture_data main_group">
+var el_tmp = (id, title, attr, desc, media, special, type) => `<div class="main_content ${type}">
+    <div class="lecture_data main_group"${id ? ` id="${id}"` : ''}>
         <div class="lecture_title${special ? ` special` : ``}">${title}</div>
         ${attr}
     </div>
@@ -3732,7 +3758,7 @@ const build = lecs => {
                     break;
             }
         }
-        builder.push(el_tmp(title, attrs.join('\n'), desc, media, special, lec.media ? 'lecture' : 'lecture_nomedia'));
+        builder.push(el_tmp(lec.id, title, attrs.join('\n'), desc, media, special, lec.media ? 'lecture' : 'lecture_nomedia'));
     }
     return builder;
 }
