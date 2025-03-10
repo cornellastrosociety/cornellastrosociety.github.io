@@ -3685,6 +3685,27 @@ var past_lecs = [
             }
         ],
         desc: 'A tour of the solar system and beyond, examining the major features of our universe with exquisite images and a broad array of topics. The lecture is designed to supplement our Friday evening viewing by explaining the different types of objects typically seen at night.'
+    },
+    {
+        attributes: [
+            {
+                type: 'specialtitle',
+                value: 'Movements of the Earth and Moon'
+            },
+            {
+                type: 'presenter',
+                value: 'Prof. S. L. Boothroyd'
+            },
+            {
+                type: 'datetime',
+                value: 'March 2nd, 1923%%%7:30 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Fuertes Observatory'
+            }
+        ],
+        desc: 'Prof. S. L. Boothroyd \'08 will deliver a public lecture at the Fuertes Observatory from 7:30 until 10 o\'clock this evening. Professor Boothroyd\'s talk will be non-technical, being chiefly designed to arouse the interest of the public in astronomy. If the sky is clear, the lecture will be illustrated by views of the moon, stars, planets and nebulae. A feature of especial interest will be an eclipse of the moon which begins at 9:27 o\'clock and lasts until 11:30 o\'clock. Should the weather permit, the moon will be shown through the telescope. If the sky is overcast, lantern slides and plantetarium will be employed to demonstrate the various points of interest brought out during the lecture.'
     }
 ]
 
