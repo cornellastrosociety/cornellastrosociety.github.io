@@ -39,6 +39,32 @@ var cur_lecs = [
     {
         attributes: [
             {
+                type: 'yurititle',
+                value: 'Annual Yuri\'s Night Lecture: How to Thrive on the Moon'
+            },
+            {
+                type: 'presenter',
+                value: 'Prof. Mason Peck'
+            },
+            {
+                type: 'datetime',
+                value: 'April 18th, 2025%7:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Appel Commons Multipurpose Room 303'
+            }
+        ],
+        desc: 'Mason Peck is the Stephen Fujikawa professor of Astronautics at Cornell University, where his research focuses on spacecraft system architectures, attitude dynamics and control, and organizational practices for technology development and innovation. His past research includes chip-scale spacecraft, propellantless orbit maneuvers, and actuation with control-moment gyroscopes. Recent years have seen new missions to the moon with ultimate objectives that include permanent human settlement, national security, and commercial enterprises. In this talk he will discuss some of the space-technology innovations that must be in place if humanity is to realize these aspirations.',
+        media: {
+            type: 'photo',
+            ref: '41825',
+            attr: 'NASA'
+        }
+    },
+    {
+        attributes: [
+            {
                 type: 'title',
                 value: 'Binary Asteroid Formation and NASA/DART: Double Asteroid Redirection Test'
             },
@@ -540,7 +566,7 @@ var past_lecs = [
     {
         attributes: [
             {
-                type: 'title',
+                type: 'yurititle',
                 value: 'Yuri\'s Night Celebration: The Sunset of SmallSats and the Dawn of Big Space'
             },
             {
@@ -1035,7 +1061,7 @@ var past_lecs = [
     {
         attributes: [
             {
-                type: 'title',
+                type: 'yurititle',
                 value: 'Seventh Annual Yuri\'s Night Lecture'
             },
             {
@@ -1142,7 +1168,7 @@ var past_lecs = [
     {
         attributes: [
             {
-                type: 'title',
+                type: 'yurititle',
                 value: 'Sixth Annual Yuri\'s Night Lecture: Interstellar Probes: How to Fly By Proxima Centauri in Your Lifetime'
             },
             {
@@ -1346,7 +1372,7 @@ var past_lecs = [
     {
         attributes: [
             {
-                type: 'title',
+                type: 'yurititle',
                 value: 'Fifth Annual Yuri\'s Night Lecture: "Thousands of New Worlds"'
             },
             {
@@ -1525,7 +1551,7 @@ var past_lecs = [
     {
         attributes: [
             {
-                type: 'title',
+                type: 'yurititle',
                 value: 'Fourth Annual Yuri\'s Night Lecture: "Alien Ocean: New Paths to Europa"'
             },
             {
@@ -1639,7 +1665,7 @@ var past_lecs = [
     {
         attributes: [
             {
-                type: 'title',
+                type: 'yurititle',
                 value: 'Third Annual Yuri\'s Night Celebration'
             },
             {
@@ -1677,7 +1703,7 @@ var past_lecs = [
     {
         attributes: [
             {
-                type: 'title',
+                type: 'yurititle',
                 value: 'Second Annual Yuri\'s Night Celebration'
             },
             {
@@ -1736,7 +1762,7 @@ var past_lecs = [
     {
         attributes: [
             {
-                type: 'title',
+                type: 'yurititle',
                 value: 'First Annual Yuri\'s Night Celebration: The Development of Rocket Technology'
             },
             {
@@ -3692,9 +3718,9 @@ var limg_tmp = m => `<div class="main_group img_contain">
     <span class="img_credit">Click image to view video</span>
 </div>`
 
-var el_tmp = (id, title, attr, desc, media, special, type) => `<div class="main_content ${type}">
+var el_tmp = (id, title, attr, desc, media, special, yuri, type) => `<div class="main_content ${type}">
     <div class="lecture_data main_group"${id ? ` id="${id}"` : ''}>
-        <div class="lecture_title${special ? ` special` : ``}">${title}</div>
+        <div class="lecture_title${special ? ` special` : ``}${yuri ? ` yuri` : ``}">${title}</div>
         ${attr}
     </div>
     <div></div>
@@ -3716,14 +3742,17 @@ const build = lecs => {
     for (var lec of lecs) {
         var title = '';
         var special = false;
+        var yuri = false;
         var attrs = [];
         var presenters = [];
         for (var attr of lec.attributes) {
             switch (attr.type) {
                 case 'title':
                 case 'specialtitle':
+                case 'yurititle':
                     title = attr.value;
                     special = attr.type == 'specialtitle';
+                    yuri = attr.type == 'yurititle';
                     break;
                 case 'presenter':
                     presenters.push(attr.value);
@@ -3758,7 +3787,7 @@ const build = lecs => {
                     break;
             }
         }
-        builder.push(el_tmp(lec.id, title, attrs.join('\n'), desc, media, special, lec.media ? 'lecture' : 'lecture_nomedia'));
+        builder.push(el_tmp(lec.id, title, attrs.join('\n'), desc, media, special, yuri, lec.media ? 'lecture' : 'lecture_nomedia'));
     }
     return builder;
 }

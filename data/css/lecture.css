@@ -55,6 +55,10 @@
     border: 0;
 }
 
+.yuri {
+    color: rgb(247, 108, 93);
+}
+
 @media only screen and (max-width: 750px) {
     .datetime_sep {
         visibility: visible !important;
