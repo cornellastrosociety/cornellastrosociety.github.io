@@ -19,6 +19,7 @@ Add a corresponding object. Fields include:
           thumb id separated by %%% to https://www.youtube.com/watch?v=[] if video
           photo id separated by %%% to external link if lphoto
    * attr: Attribution caption, if necessary
+   * unbounded: true to override 16:9 aspect ratio
 
 Make sure to escape characters that would break the object format,
 such as an apostrophe inside single quotes, with a backslash.
@@ -3718,8 +3719,8 @@ var date_tmp = m => `<div class="lecture_datetime">${m}</div>`;
 var det_tmp = m => `<div class="lecture_detail">${m}</div>`;
 var det_comb_tmp = m => `<div class="lecture_detail" style="margin-bottom: 0 !important;">${m}</div>`;
 
-var img_tmp = (m, attr) => `<div class="main_group img_contain">
-    <img class="img" src="/data/img/lecture/${m}.jpg">
+var img_tmp = (m, attr, unbounded) => `<div class="main_group img_contain${unbounded ? '_unbounded' : ''}">
+    <img class="img${unbounded ? '_unbounded' : ''}" src="/data/img/lecture/${m}.jpg">
     ${attr ? `<span class="img_credit">${attr}</span>` : ``}
 </div>`;
 
@@ -3798,7 +3799,7 @@ const build = lecs => {
         if (lec.media) {
             switch (lec.media.type) {
                 case 'photo':
-                    media = img_tmp(lec.media.ref, lec.media.attr);
+                    media = img_tmp(lec.media.ref, lec.media.attr, lec.media.unbounded);
                     break;
                 case 'video':
                     media = vid_ph(lec.media.ref, lec.media.attr);

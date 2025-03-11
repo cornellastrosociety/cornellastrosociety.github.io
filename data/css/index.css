@@ -296,11 +296,25 @@ nav {
     aspect-ratio: 16 / 9;
 }
 
+.img_contain_unbounded {
+    padding: 1vw;
+    text-align: center;
+    padding-top: 0;
+    width: 100%;
+}
+
 .img {
     width: 100%;
     object-fit: cover;
     margin-top: 0;
     height: 100%;
+    width: 100%;
+}
+
+.img_unbounded {
+    width: 100%;
+    object-fit: cover;
+    margin-top: 0;
     width: 100%;
 }
 
