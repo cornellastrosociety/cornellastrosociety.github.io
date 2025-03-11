@@ -36,6 +36,16 @@
     color: rgb(126, 192, 238);
 }
 
+.timecolor {
+    color: rgb(126, 192, 238);
+    font-family: serif;
+    font-style: italic;
+}
+
+.phase_em {
+    font-weight: bold;
+}
+
 .datetime_sep {
     visibility: hidden;
 }

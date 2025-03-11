@@ -38,7 +38,7 @@ var nav_data = `<!-- Nav bar, should persist across pages; add nav_el_sel to cur
                 <button class="nav_el" style="width: 100%;" id="nav_photos">Photos</button>
                 <div class="nav_dd_menu">
                     <div class="nav_dd_main">
-                        <a href="/photos/photos" id="nav_photos_photos">Photo Gallery</a>
+                        <a href="/photos" id="nav_photos_photos">Photo Gallery</a>
                         <a href="/photos/museum" id="nav_photos_museum">Museum Gallery</a>
                         <a href="/photos/astro" id="nav_photos_astro">Astrophotography</a>
                     </div>

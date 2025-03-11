@@ -47,7 +47,7 @@ var nav_data = `<!-- Nav bar, should persist across pages; add nav_el_sel to cur
                 <div >
                     <div class = "mnav_sub no_und " id = "mnav_photo" style = "display: none; color: black">
                     <br style = "font-size: 1vh">
-                        <a href="/photos/photos" id="nav_photos_photos" class = "nav_dd_sub">Photo Gallery <br> <br style = "font-size: 1vh"></a>
+                        <a href="/photos" id="nav_photos_photos" class = "nav_dd_sub">Photo Gallery <br> <br style = "font-size: 1vh"></a>
                         <a href="/photos/museum" id="nav_photos_museum" class = "nav_dd_sub">Museum Gallery <br> <br style = "font-size: 1vh"></a>
                         <a href="/photos/astro" id="nav_photos_astro" class = "nav_dd_sub">Astrophotography <br> <br style = "font-size: 1vh"></a>
                     </div>
