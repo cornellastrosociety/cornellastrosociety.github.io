@@ -3,6 +3,13 @@
 const newsletters = [
     {
         
+        yr: `2025`,
+        mth: `March`,
+        desc: `A short edition containing a sneak peek at some moon-related events, from lunar eclipses and solar eclipses to how humans can stay on the moon!`,
+        date: `mar25`
+    },
+    {
+        
         yr: `2024`,
         mth: `December`,
         desc: `As winter begins, we're releasing our final newsletter of the semester! In this edition, we cover recent astronomical events, the legacy of Sir Isaac Newton, and a second farewell from former President Gillis Lowry!`,
