@@ -49,7 +49,7 @@ var cur_lecs = [
             },
             {
                 type: 'datetime',
-                value: 'April 18th, 2025%7:00 PM'
+                value: 'April 11th, 2025%7:00 PM'
             },
             {
                 type: 'loc',
