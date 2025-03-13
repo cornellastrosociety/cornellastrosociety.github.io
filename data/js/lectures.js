@@ -3,6 +3,7 @@
 Adding a lecture:
 
 Add a corresponding object. Fields include:
+ * id: an optional tag to associate an id with the lecture
  * attributes: an object with fields with a (type, value) pair.
    Tags may be used as frequently as desired, except for title
    or specialtitle, of which only one may be used. Types include:
