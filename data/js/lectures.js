@@ -84,8 +84,8 @@ var cur_lecs = [
         ],
         desc: 'Colby is a PhD candidate in aerospace engineering at Cornell University. They were a member of the NASA/DART investigation team\'s dynamics working group and currently serve on the ESA/Hera science team. Their research is varied across multiple disciplines. Some of their recent work focuses on constraining ages for asteroid moons, optimizing spacecraft orbits, and designing missions for asteroid deflection. Outside of research, you can find them birding, hiking, gaming, and reading. This talk will focus on the NASA/DART mission, which impacted the asteroid moon, Dimorphos, in 2022 and how this moon and many asteroid moons form.',
         media: {
-            type: 'photo',
-            ref: '3725'
+            type: 'video',
+            ref: '3725%%%1-ohA6w9rks'
         }
     },
     {
