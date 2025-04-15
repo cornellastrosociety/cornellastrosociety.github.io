@@ -1,4 +1,5 @@
 // Thanks Marquice for the suggestion
+// will not replace background based on input location; this would be too messy
 var url = "https://forecast.weather.gov/MapClick.php?lat=42.4528&lon=-76.4745&FcstType=digitalDWML"
 xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function () {
