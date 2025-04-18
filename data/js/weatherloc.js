@@ -50,3 +50,10 @@ const getloc = () => {
     xmlhttp.open("GET", url, true);
     xmlhttp.send(null);
 }
+
+const sethr = () => {
+    url = document.getElementById('nwsembed').getAttribute('src');
+    hr = document.getElementById('weatherhr').value;
+    url = url.replace(/&ahour=\d+/g, `&ahour=${hr}`);
+    document.getElementById('nwsembed').setAttribute('src', url)
+}
