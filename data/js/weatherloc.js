@@ -20,7 +20,7 @@ const getloc = () => {
             var lon = json.lon;
             var name = json.name;
             var dispname = json.display_name;
-            document.getElementById('placename').innerText = name || dispname || inputloc.value;
+            document.getElementById('placename').innerText = dispname || name || inputloc.value;
 
             // Get WFO
             var wfo = 'BGM'; // Default to Binghamton
@@ -30,7 +30,7 @@ const getloc = () => {
                 if (xmlhttp2.readyState == 4 && xmlhttp2.status == 200) {
                     var credit = xmlhttp2.responseText.split(/\n/g).filter(l => l.trim().startsWith('<credit>'))[0];
                     wfo = credit.split(/\.gov/g)[1].replace('</credit>', '').replace(/\//g, '').trim().toUpperCase();
-                    console.log(wfo);
+                    wfo = wfo.replace('ANCHORAGE', 'AFC').replace('JUNEAU', 'AJK').replace('FAIRBANKS', 'AFG');
                 }
             }
             xmlhttp2.open("GET", url, false);
