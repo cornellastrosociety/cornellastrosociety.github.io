@@ -746,6 +746,11 @@ galleries.set(`astro`, {
             name: `M81`
         },
         {
+            id: `m81irv.jpg`,
+            name: `M81`,
+            desc: `Taken through Irv, April 22nd, 2025, by Ben Jacobson-Bell, Erik Payton, and Shane Kuo. 21 3-minute frames stacked in Siril.`
+        },
+        {
             id: `m82.jpg`,
             name: `M82`
         },
