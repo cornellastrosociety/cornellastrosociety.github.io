@@ -68,5 +68,9 @@ const switchloc = () => {
     url = locmap.get(loc) ?? locmap.get('fuertes');
     hr = document.getElementById('weatherhr').value;
     url = url.replace(/&ahour=\d+/g, `&ahour=${hr}`);
+    document.getElementById('nwsembed').style.opacity = "0%";
     document.getElementById('nwsembed').setAttribute('src', url);
+    document.getElementById('nwsembed').onload = () => {
+        document.getElementById('nwsembed').style.opacity = "100%";
+    }
 }
