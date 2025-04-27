@@ -174,7 +174,14 @@ document.onkeyup = function (e) {
 }
 
 function showhide(input) {
-
+    for (var item of ['about', 'visit', 'event', 'photo'].filter(e => e != input)) {
+        var resparrow = document.getElementById(item + 'arrow');
+        var elem = document.getElementById('mnav_' + item);
+        if (resparrow.classList.contains('up')) {
+            resparrow.classList.replace('up', 'down');
+            elem.style.display = 'none';
+        }
+    }
     arrow = document.getElementById(input + 'arrow');
     content = document.getElementById('mnav_' + input);
     if (arrow.classList.contains('up')) {
