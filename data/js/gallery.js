@@ -949,7 +949,7 @@ const galplace = () => {
     lbbuilder += `<div class="modal-content" id="slidesTwo" style="width: 60vh; height: auto;">`
     for (let i = 0; i < width * height && i < pics.length; i++) {
         const tgt = pics[i];
-        lbbuilder += `<div class="slideTwo"><img data-src="/data/img/${galtype}/${tgt.id}" class="gallery-image-slide"><div style="font-size: 3vh; margin: 2vh 0; width: 100%; text-align: center;">${tgt.name || ''}</div><div style="width: 100%; font-size: 2vh; text-align: center;">${tgt.desc || ''}</div></div>`;
+        lbbuilder += `<div class="slideTwo"><img onclick="window.location.href='/data/img/${galtype}/${tgt.id}'" data-src="/data/img/${galtype}/${tgt.id}" class="gallery-image-slide"><div style="font-size: 3vh; margin: 2vh 0; width: 100%; text-align: center;">${tgt.name || ''}</div><div style="width: 100%; font-size: 2vh; text-align: center;">${tgt.desc || ''}</div></div>`;
     }
     lbbuilder += `</div>\n<span style="z-index: 2147483647;" class="close pointer" onclick="closeLightboxTwo()">&times;</span>\n<a class="previous" style="position: absolute; left: 0;" onclick="changeSlideTwo(-1)">&#10094;</a>\n<a class="next" onclick="changeSlideTwo(1)">&#10095;</a>`
 
