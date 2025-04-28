@@ -748,7 +748,7 @@ galleries.set(`astro`, {
         {
             id: `m81irv.jpg`,
             name: `M81`,
-            desc: `Taken through Irv, April 22nd, 2025, by Ben Jacobson-Bell, Erik Payton, and Shane Kuo. 21 3-minute frames stacked in Siril.`
+            desc: `Taken through Irv, April 22nd, 2025, by Ben Jacobson-Bell, Erik Payton, Shane Kuo, Gillis Lowry, and Andrew Lewis. 21 3-minute frames stacked in Siril.`
         },
         {
             id: `m82.jpg`,
