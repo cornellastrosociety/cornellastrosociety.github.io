@@ -59,8 +59,8 @@ var cur_lecs = [
         ],
         desc: 'Mason Peck is the Stephen Fujikawa professor of Astronautics at Cornell University, where his research focuses on spacecraft system architectures, attitude dynamics and control, and organizational practices for technology development and innovation. His past research includes chip-scale spacecraft, propellantless orbit maneuvers, and actuation with control-moment gyroscopes. Recent years have seen new missions to the moon with ultimate objectives that include permanent human settlement, national security, and commercial enterprises. In this talk he will discuss some of the space-technology innovations that must be in place if humanity is to realize these aspirations.',
         media: {
-            type: 'photo',
-            ref: '41825',
+            type: 'video',
+            ref: '41825%%%mSj06aw1JAU',
             attr: 'NASA'
         }
     },
