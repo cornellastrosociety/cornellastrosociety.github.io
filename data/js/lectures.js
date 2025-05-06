@@ -292,6 +292,31 @@ var past_lecs = [
     {
         attributes: [
             {
+                type: 'yurititle',
+                value: 'Annual Yuri\'s Night Lecture: Space: The New Warfighting Domain'
+            },
+            {
+                type: 'presenter',
+                value: 'Prof. Gregory Falco'
+            },
+            {
+                type: 'datetime',
+                value: 'April 12th, 2024%7:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Appel Commons Multipurpose Room 303'
+            }
+        ],
+        desc: 'As geopolitical tensions rise and fierce technological competition escalates, space has become the premier theater to showcase defense prowess. This talk will discuss counterspace capabilities in development for space vehicles and murky international norms surrounding space weapons.',
+        media: {
+            type: 'photo',
+            ref: '41224'
+        }
+    },
+    {
+        attributes: [
+            {
                 type: 'title',
                 value: 'Solar Eclipses and Saros Cycles'
             },
