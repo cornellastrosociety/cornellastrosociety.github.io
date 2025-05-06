@@ -42,7 +42,7 @@ var cur_lecs = [
         attributes: [
             {
                 type: 'yurititle',
-                value: 'Annual Yuri\'s Night Lecture: How to Thrive on the Moon'
+                value: 'Tenth Annual Yuri\'s Night Lecture: How to Thrive on the Moon'
             },
             {
                 type: 'presenter',
@@ -293,7 +293,7 @@ var past_lecs = [
         attributes: [
             {
                 type: 'yurititle',
-                value: 'Annual Yuri\'s Night Lecture: Space: The New Warfighting Domain'
+                value: 'Ninth Annual Yuri\'s Night Lecture: Space: The New Warfighting Domain'
             },
             {
                 type: 'presenter',
@@ -594,7 +594,7 @@ var past_lecs = [
         attributes: [
             {
                 type: 'yurititle',
-                value: 'Yuri\'s Night Celebration: The Sunset of SmallSats and the Dawn of Big Space'
+                value: 'Eighth Annual Yuri\'s Night Celebration: The Sunset of SmallSats and the Dawn of Big Space'
             },
             {
                 type: 'presenter',
