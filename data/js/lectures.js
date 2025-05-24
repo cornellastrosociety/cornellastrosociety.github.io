@@ -292,6 +292,27 @@ var past_lecs = [
     {
         attributes: [
             {
+                type: 'title',
+                value: 'Astrophotography'
+            },
+            {
+                type: 'datetime',
+                value: 'April 19th, 2024%7:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Mews East Lounge'
+            }
+        ],
+        desc: 'A special lecture for CAS members about techniques in astrophotography.',
+        media: {
+            type: 'encphoto',
+            ref: '41924%%%https:\/\/drive.google.com/file/d/%%%EG_qjpfm>7N[]q.7XCmwx?\\\\IifzALee;X'
+        }
+    },
+    {
+        attributes: [
+            {
                 type: 'yurititle',
                 value: 'Ninth Annual Yuri\'s Night Lecture: Space: The New Warfighting Domain'
             },
@@ -3766,6 +3787,14 @@ var limg_tmp = m => `<div class="main_group img_contain">
     <span class="img_credit">Click image to view video</span>
 </div>`
 
+
+var limg_tmp_exec = m => `<div class="main_group img_contain">
+    <a href="javascript:void('Irv');" onclick="openlink('${m.split(/%%%/g)[1]}', '${m.split(/%%%/g)[2]}')">
+        <img class="img" src="/data/img/lecture/${m.split(/%%%/g)[0]}.jpg">
+    </a>
+    <span class="img_credit">Click image to view video (password-protected)</span>
+</div>`
+
 var el_tmp = (id, title, attr, desc, media, special, yuri, type) => `<div class="main_content ${type}">
     <div class="lecture_data main_group"${id ? ` id="${id}"` : ''}>
         <div class="lecture_title${special ? ` special` : ``}${yuri ? ` yuri` : ``}">${title}</div>
@@ -3832,6 +3861,9 @@ const build = lecs => {
                     break;
                 case 'lphoto':
                     media = limg_tmp(lec.media.ref);
+                    break;
+                case 'encphoto':
+                    media = limg_tmp_exec(lec.media.ref);
                     break;
             }
         }
