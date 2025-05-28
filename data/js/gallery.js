@@ -729,6 +729,11 @@ galleries.set(`astro`, {
             name: `M27`
         },
         {
+            id: `m27irv.jpg`,
+            name: `M27`,
+            desc: `taken by Ben Jacobson-Bell, Andrew Lewis, Gillis Lowry, and Marquice Sanchez-Fleming`
+        },
+        {
             id: `m42.jpg`,
             name: `M42`,
             desc: `taken by Marquice Sanchez-Fleming`
