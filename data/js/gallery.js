@@ -731,7 +731,7 @@ galleries.set(`astro`, {
         {
             id: `m27irv.jpg`,
             name: `M27`,
-            desc: `taken by Ben Jacobson-Bell, Andrew Lewis, Gillis Lowry, and Marquice Sanchez-Fleming`
+            desc: `Taken through Irv, May 26th, 2025, by Ben Jacobson-Bell, Andrew Lewis, Gillis Lowry, and Marquice Sanchez-Fleming. 19 90-second exposures stacked in Siril.`
         },
         {
             id: `m42.jpg`,
