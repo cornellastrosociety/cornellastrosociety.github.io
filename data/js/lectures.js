@@ -3737,6 +3737,69 @@ var past_lecs = [
     {
         attributes: [
             {
+                type: 'title',
+                value: 'Interstellar Dust and Gas'
+            },
+            {
+                type: 'presenter',
+                value: 'Prof. Martin O. Harwit'
+            },
+            {
+                type: 'date',
+                value: 'April 6th, 1973'
+            },
+            {
+                type: 'loc',
+                value: 'Fuertes Observatory'
+            }
+        ],
+        desc: 'Prof. Martin O. Harwit, chairman of the astronomy department spoke at the observatory on "Interstellar Dust and Gas". He explained the astronomers\' attempts to learn the process by which stars are born. Although they believe that the compression of the interstellar dust is responsible for the beginnings of a star, "just how they formed is a real puzzle", said Harwit.\n\nThe talk was sponsored by the Cornell Astronomical Society, a recently formed club of Cornell Students. According to the president of the club Lou Yurek \'75, in addition to inviting guest speakers the club is planning other activities including a field trip to the Danby Radio Telescope and amateur telescope making class. "Although we only get an average of one good observing day every two weeks, the club meets every Friday night, clear sky or no," said Kathy Hodges \'75, CAS secretary.'
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
+                value: 'Comets and Meteors'
+            },
+            {
+                type: 'presenter',
+                value: 'Prof. S. L. Boothroyd'
+            },
+            {
+                type: 'datetime',
+                value: 'March 30th, 1923%%%7:30 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Fuertes Observatory'
+            }
+        ],
+        desc: '"Comets and Meteors" was the subject covered by Prof. S. L. Boothroyd \'08 in his weekly lecture on astronomy in the Fuertes Observatory last night before the largest audience yet assembled to hear him talk. The sky was clear and favorable for the use of the telescope, and views of the moon and Mars were taken, after which the lecture proceeded, illustrated by numerous slides of comets and views of the Mount Wilson Observatory. The different comets which have appeared since early in the last century were discussed as to their orbits, shapes and future returns. Professor Boothroyd then explained the construction of the great telescope used at the Mount Wilson Observatory, the finest plant for astronomical purposes in the world.'
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
+                value: 'Our World and Other Worlds'
+            },
+            {
+                type: 'presenter',
+                value: 'Prof. S. L. Boothroyd'
+            },
+            {
+                type: 'datetime',
+                value: 'March 16th, 1923%%%7:30 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Fuertes Observatory'
+            }
+        ],
+        desc: 'Prof. S. L. Boothroyd \'08 gave his third lecture at the Fuertes Observatory on "Our World and Other Worlds." As the sky was not clear, it was impossible to observe the planets, but by means of lantern slides a general description of the planets and their orbits was presented. Probably the most interesting phase of the lecture to those not versed in the more mathematical problems of the planetary system was a discussion of the probability of higher life on Mars and Venus. A hypothesis of the existence of intelligent beings on Mars has been forwarded by Lowell, who studied that planet under the best conditions possible. The possibility of life on Venus [is] not nearly so probable as on Mars, despite recent newspaper articles to the contrary, as venus moves about the sun with one side always facing it, and as a result, one side must be very hot and the other an ice sheet. Thus the only portion that could even be imagined to support life is a narrow margin between the two expanses of desert and ice, and conditions there would not be likely to be favorable, due to extremes of hot and cold winds.'
+    },
+    {
+        attributes: [
+            {
                 type: 'specialtitle',
                 value: 'Movements of the Earth and Moon'
             },
