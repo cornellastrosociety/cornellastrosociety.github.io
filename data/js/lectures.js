@@ -3738,6 +3738,27 @@ var past_lecs = [
         attributes: [
             {
                 type: 'title',
+                value: 'How to be an Astronomer'
+            },
+            {
+                type: 'presenter',
+                value: 'Prof. Carl Sagan'
+            },
+            {
+                type: 'datetime',
+                value: 'March 22nd, 1974%%%7:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Clark Hall 700'
+            }
+        ],
+        desc: 'We have no further details to include about this lecture, but thought its mention in the Daily Sun was cool enough to include here. Please contact us if you know anything about this lecture!'
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
                 value: 'Interstellar Dust and Gas'
             },
             {
