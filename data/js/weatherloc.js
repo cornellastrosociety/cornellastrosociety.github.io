@@ -1,3 +1,23 @@
+const aqi = (lati, loni) => {
+    var params = [];
+    var url = `https://www.airnowapi.org/aq/observation/latLong/current/?format=application/json&latitude=${lati}&longitude=${loni}&distance=225&API_KEY=09C7F15E-B6E6-4305-B9D4-4963D2B192C4`;
+    var xmlhttp3 = new XMLHttpRequest();
+    xmlhttp3.onreadystatechange = function () {
+        if (xmlhttp3.readyState == 4 && xmlhttp3.status == 200) {
+            var json = JSON.parse(xmlhttp3.responseText);
+            if (json.length == 0) {
+                params.push('No air quality data for this location')
+            }
+            for (var param of json) {
+                params.push(`<a target="_blank" href="https://www.airnow.gov/" style="font-size:12px"  title="Reporting Area: ${param.ReportingArea ?? 'None'}">${param.ParameterName}</a>: ${param.AQI}`);
+            }
+            document.getElementById('aqi').innerHTML = `<span style="font-size:12px;">${params.join('&nbsp&nbsp')}</span>`;
+        }
+    }
+    xmlhttp3.open("GET", url, true);
+    xmlhttp3.send(null);
+}
+
 const getloc = () => {
     btn = document.getElementById('updateloc');
     btn.setAttribute('disabled', true);
@@ -46,6 +66,7 @@ const getloc = () => {
                 btn.removeAttribute('disabled');
                 btn.style.cursor = 'pointer';
             }, 1000);
+            aqi(lat, lon);
         }
     }
     xmlhttp.open("GET", url, true);
@@ -63,9 +84,14 @@ var locmap = new Map();
 locmap.set('fuertes', 'https://forecast.weather.gov/meteograms/Plotter.php?lat=42.4528&lon=-76.4745&wfo=BGM&zcode=NYZ025&gset=20&gdiff=10&unit=0&tinfo=EY5&ahour=0&pcmd=11110111000000000000000000000000000000000000000000000000000&lg=en&indu=1!1!1!&dd=&bw=&hrspan=48&pqpfhr=6&psnwhr=6');
 locmap.set('cssp', 'https://forecast.weather.gov/meteograms/Plotter.php?lat=41.6633&lon=-77.8234&wfo=CTP&zcode=NYZ025&gset=20&gdiff=10&unit=0&tinfo=EY5&ahour=0&pcmd=11110111000000000000000000000000000000000000000000000000000&lg=en&indu=1!1!1!&dd=&bw=&hrspan=48&pqpfhr=6&psnwhr=6');
 
+var locaqimap = new Map();
+locaqimap.set('fuertes', [42.4528, -76.4745]);
+locaqimap.set('cssp', [41.6633, -77.8234]);
+
 const switchloc = () => {
     loc = document.getElementById('locpicker').value;
     url = locmap.get(loc) ?? locmap.get('fuertes');
+    aqis = locaqimap.get(loc) ?? locaqimap.get('fuertes');
     hr = document.getElementById('weatherhr').value;
     url = url.replace(/&ahour=\d+/g, `&ahour=${hr}`);
     document.getElementById('nwsembed').style.opacity = "0%";
@@ -73,4 +99,5 @@ const switchloc = () => {
     document.getElementById('nwsembed').onload = () => {
         document.getElementById('nwsembed').style.opacity = "100%";
     }
+    aqi(aqis[0], aqis[1]);
 }
