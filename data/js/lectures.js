@@ -3746,7 +3746,7 @@ var past_lecs = [
             },
             {
                 type: 'datetime',
-                value: 'March 22nd, 1974%%%7:00 PM'
+                value: 'March 22nd, 1974%7:00 PM'
             },
             {
                 type: 'loc',
@@ -3788,7 +3788,7 @@ var past_lecs = [
             },
             {
                 type: 'datetime',
-                value: 'March 30th, 1923%%%7:30 PM'
+                value: 'March 30th, 1923%7:30 PM'
             },
             {
                 type: 'loc',
@@ -3809,7 +3809,7 @@ var past_lecs = [
             },
             {
                 type: 'datetime',
-                value: 'March 16th, 1923%%%7:30 PM'
+                value: 'March 16th, 1923%7:30 PM'
             },
             {
                 type: 'loc',
@@ -3830,7 +3830,7 @@ var past_lecs = [
             },
             {
                 type: 'datetime',
-                value: 'March 2nd, 1923%%%7:30 PM'
+                value: 'March 2nd, 1923%7:30 PM'
             },
             {
                 type: 'loc',
