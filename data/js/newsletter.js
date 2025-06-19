@@ -4,6 +4,13 @@ const newsletters = [
     {
         
         yr: `2025`,
+        mth: `June`,
+        desc: `Our last issue of the 24-25 school year contains articles from alumni galore, including prolific moon-writer Justine Singleton, Presidents Gillis Lowry and Erik Payton, and Outreach Coordinator Jillian Epstein!`
+        date: `jun25`
+    },
+    {
+        
+        yr: `2025`,
         mth: `March`,
         desc: `A short edition containing a sneak peek at some moon-related events, from lunar eclipses and solar eclipses to how humans can stay on the moon!`,
         date: `mar25`
