@@ -801,7 +801,7 @@ galleries.set(`astro`, {
         {
             id: `onlythefinest.jpg`,
             name: `M82`,
-            desc: `Taken by Erik Payton, Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis on April 20, 2024. 12x 3-minute frames stacked with Siril, post-processed with Photoshop.`
+            desc: `Taken by Erik Payton, Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis on April 20, 2025. 12x 3-minute frames stacked with Siril, post-processed with Photoshop.`
         },
         {
             id: `m101.jpg`,
