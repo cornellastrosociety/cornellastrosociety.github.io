@@ -6,16 +6,42 @@ const aqi = (lati, loni) => {
         if (xmlhttp3.readyState == 4 && xmlhttp3.status == 200) {
             var json = JSON.parse(xmlhttp3.responseText);
             if (json.length == 0) {
-                params.push('No air quality data for this location')
+                params.push('No air quality data for this location');
+            } else {
+                for (var param of json) {
+                    params.push(`<a target="_blank" href="https://www.airnow.gov/" style="font-size:12px"  title="Reporting Area: ${param.ReportingArea ?? 'None'}">${param.ParameterName}</a>: ${param.AQI}`);
+                }
+                document.getElementById('aqi').innerHTML = `<span style="font-size:12px;">${params.join('&nbsp&nbsp')}</span>`;
             }
-            for (var param of json) {
-                params.push(`<a target="_blank" href="https://www.airnow.gov/" style="font-size:12px"  title="Reporting Area: ${param.ReportingArea ?? 'None'}">${param.ParameterName}</a>: ${param.AQI}`);
-            }
-            document.getElementById('aqi').innerHTML = `<span style="font-size:12px;">${params.join('&nbsp&nbsp')}</span>`;
         }
     }
     xmlhttp3.open("GET", url, true);
     xmlhttp3.send(null);
+}
+
+const moondat = (lati, loni, tzoff) => {
+    var tzf = `${tzoff < 0 ? '-' : '+'}${tzoff.toString().replace(/[+-]/g, '').padStart(2,0)}`;
+    var locdate = new Date(new Date().toLocaleString("en-US", { timeZone: tzf }));
+    var formatlocdate = `${locdate.getFullYear()}-${locdate.getMonth()+1}-${locdate.getDate()}`;
+    var url = `https://aa.usno.navy.mil/api/rstt/oneday?date=${formatlocdate}&coords=${lati},${loni}&tz=${tzoff}`;
+    var xmlhttp4 = new XMLHttpRequest();
+    xmlhttp4.onreadystatechange = function () {
+        if (xmlhttp4.readyState == 4 && xmlhttp4.status == 200) {
+            var json = JSON.parse(xmlhttp4.responseText);
+            if (json.length == 0) {
+                document.getElementById('No moon data available');
+            } else {
+                var moonphase = json.properties.data.fracillum;
+                var phasename = json.properties.data.curphase.toLowerCase();
+                var moonrise = json.properties.data.moondata.filter(datum => datum.phen == 'Rise')[0].time;
+                var moonset = json.properties.data.moondata.filter(datum => datum.phen == 'Set')[0].time;
+                var formatstr = `<span style="font-size:12px;"><a target="_blank" href="https://aa.usno.navy.mil/data/api.html">Moon</a>: ${moonphase} illuminated ${phasename}, rise: ${moonrise}, set: ${moonset} (UTC${tzf})</span>`;
+                document.getElementById('moondat').innerHTML = formatstr;
+            }
+        }
+    }
+    xmlhttp4.open("GET", url, true);
+    xmlhttp4.send(null);
 }
 
 const getloc = () => {
@@ -45,12 +71,17 @@ const getloc = () => {
             // Get WFO
             var wfo = 'BGM'; // Default to Binghamton
             var stt = 'NY'; // Default to New York
+            var tz = new Date().getTimezoneOffset() / -60; // Default to local computer time
             var url = `https://forecast.weather.gov/MapClick.php?lat=${lat}&lon=${lon}&FcstType=digitalDWML`;
             xmlhttp2 = new XMLHttpRequest();
             xmlhttp2.onreadystatechange = function () {
                 if (xmlhttp2.readyState == 4 && xmlhttp2.status == 200) {
                     var credit = xmlhttp2.responseText.split(/\n/g).filter(l => l.trim().startsWith('<credit>'))[0];
                     var state = xmlhttp2.responseText.split(/\n/g).filter(l => l.trim().startsWith('<city state='))[0];
+                    var tzraw = xmlhttp2.responseText.match(/:00:00[+-]-?\d{2}:\d{2}/g)[0].replace(':00:00', '').trim();
+                    if (tzraw.substring(0,2) == '--') tzraw = `+${tzraw.substring(2)}`;
+                    tz = ((tzraw[0] == '+') ? 1 : -1) * (+tzraw.substring(1,3) + (+tzraw.substring(4) / 60));
+                    console.log(tz)
                     wfo = credit.split(/\.gov/g)[1].replace('</credit>', '').replace(/\//g, '').trim().toUpperCase();
                     wfo = wfo.replace('ANCHORAGE', 'AFC').replace('JUNEAU', 'AJK').replace('FAIRBANKS', 'AFG');
                     stt = state.split('state="')[1].split('">')[0] || 'NY';
@@ -70,6 +101,7 @@ const getloc = () => {
                 btn.style.cursor = 'pointer';
             }, 1000);
             aqi(lat, lon);
+            moondat(lat, lon, tz);
         }
     }
     xmlhttp.open("GET", url, true);

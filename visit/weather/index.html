@@ -103,9 +103,13 @@
                         </span>
                     </a>
                 </div>
-                <div id="widget_2_625" style="margin: auto; text-align: center; margin: 1vh; margin-bottom: 2vh;">
+                <div id="widget_2_625" style="margin: auto; text-align: center; margin: 1vh;">
                     <span id="aqi">Loading air quality information...</span>
                     <script>aqi(42.4528, -76.4745)</script>
+                </div>
+                <div id="widget_2_6875" style="margin: auto; text-align: center; margin: 1vh; margin-bottom: 2vh;">
+                    <span id="moondat">Loading moon information...</span>
+                    <script>moondat(42.4528, -76.4745, new Date().getTimezoneOffset() / -60)</script>
                 </div>
                 <div id="widget_2_75" style="margin: auto; text-align: center; margin: 1vh;">
                     <span style="font-size: 12px;">
@@ -121,7 +125,7 @@
                             </select>
                         </form>
                     </span>
-                    <div style="font-size: 8px; font-family: Verdana, Geneva, Tahoma, sans-serif; color: rgb(161, 161, 161); line-height: 1em; margin: 1vh;">Nominatim geocoding from <a href="https://www.openstreetmap.org/" target="_blank" style="color: inherit;"">OpenStreetMap</a> and contributors. Weather data from <a href="https://forecast.weather.gov/" style="color: inherit;" target="_blank">National Weather Service</a>. Preliminary air quality data from <a href="https://docs.airnowapi.org/" style="color: inherit;" target="_blank">the AirNow API</a>, sourced from <a href="https://www.airnow.gov/partners/" target="_blank" style="color: inherit;">AirNow partners</a>.</div>
+                    <div style="font-size: 8px; font-family: Verdana, Geneva, Tahoma, sans-serif; color: rgb(161, 161, 161); line-height: 1em; margin: 2vh;">Nominatim geocoding from <a href="https://www.openstreetmap.org/" target="_blank" style="color: inherit;"">OpenStreetMap</a> and contributors. Weather data from <a href="https://forecast.weather.gov/" style="color: inherit;" target="_blank">National Weather Service</a>. Preliminary air quality data from <a href="https://docs.airnowapi.org/" style="color: inherit;" target="_blank">the AirNow API</a>, sourced from <a href="https://www.airnow.gov/partners/" target="_blank" style="color: inherit;">AirNow partners</a>. Moon phase and event data from <a href="https://aa.usno.navy.mil/data/api.html" style="color: inherit;" target="_blank">the U.S. Naval Observatory's Astronomical Applications Department</a>.</div>
                 </div>
                 <div style="position: relative; text-align: center;">
                     <div style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; margin: 1em 0;">Clear Sky Chart for Ithaca, NY:</div>
