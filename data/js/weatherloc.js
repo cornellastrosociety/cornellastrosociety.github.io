@@ -35,7 +35,7 @@ const moondat = (lati, loni, tzoff) => {
                 var phasename = json.properties.data.curphase.toLowerCase();
                 var moonrise = json.properties.data.moondata.filter(datum => datum.phen == 'Rise')[0].time;
                 var moonset = json.properties.data.moondata.filter(datum => datum.phen == 'Set')[0].time;
-                var formatstr = `<span style="font-size:12px;"><a target="_blank" href="https://aa.usno.navy.mil/data/api.html">Moon</a>: ${moonphase} illuminated ${phasename}, rise: ${moonrise}, set: ${moonset} (UTC${tzf})</span>`;
+                var formatstr = `<span style="font-size:12px;"><a target="_blank" href="https://aa.usno.navy.mil/data/api.html">Moon tonight</a>: ${moonphase} illuminated ${phasename}, rise: ${moonrise}, set: ${moonset} (UTC${tzf})</span>`;
                 document.getElementById('moondat').innerHTML = formatstr;
             }
         }
