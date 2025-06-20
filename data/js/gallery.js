@@ -88,6 +88,11 @@ galleries.set('photos', {
             name: `2024 CAS Grads with Irv`
         },
         {
+            id: `officers2425.jpg`,
+            name: `2024-25 Officers`,
+            desc: `2024-25 Officers, from left to right: Gillis Lowry (President 23-24), Erik Payton (President 24-25), Ben Jacobson-Bell (Vice President 23-24), Andrew Lewis (Vice President 24-25), Jillian Epstein (Outreach Coordinator 24-25), Ben Shapiro (Outreach Coordinator 23-24), Abby Bohl (Newsletter Editor-in-Chief 23-24), Shane Kuo (Newsletter Editor-in-Chief 24-25), Haonan Gong (Treasurer 23-24), Christopher Brown (Treasurer 24-25)`
+        },
+        {
             id: `sunsetdeck.jpg`,
             name: `Sunset from Fuertes`
         },
