@@ -20,21 +20,14 @@ const aqi = (lati, loni) => {
 }
 
 const moondat = (lati, loni, tzoff) => {
-    document.getElementById('debugDiv').innerHTML += 'Test ';
-    var tzf = `${tzoff < 0 ? '-' : '+'}${tzoff.toString().replace(/[+-]/g, '').padStart(2,0)}`;
-    document.getElementById('debugDiv').innerHTML += 'Test ';
+    var tzf = `Etc/GMT${tzoff < 0 ? '+' : '-'}${tzoff.toString().replace(/[+-]/g, '')}`;
     var locdate = new Date(new Date().toLocaleString("en-US", { timeZone: tzf }));
-    document.getElementById('debugDiv').innerHTML += 'Test ';
     var formatlocdate = `${locdate.getFullYear()}-${locdate.getMonth()+1}-${locdate.getDate()}`;
-    document.getElementById('debugDiv').innerHTML += 'Test ';
     var url = `https://aa.usno.navy.mil/api/rstt/oneday?date=${formatlocdate}&coords=${lati},${loni}&tz=${tzoff}`;
-    document.getElementById('debugDiv').innerHTML += 'Test ';
     var xmlhttp4 = new XMLHttpRequest();
-    document.getElementById('debugDiv').innerHTML += 'Testing ';
     xmlhttp4.onreadystatechange = function () {
         if (xmlhttp4.readyState == 4 && xmlhttp4.status == 200) {
             var json = JSON.parse(xmlhttp4.responseText);
-            document.getElementById('debugDiv').innerHTML = '.'
             if (json.length == 0) {
                 document.getElementById('moondattoday').innerHTML = 'No moon data available';
             } else {
@@ -42,7 +35,7 @@ const moondat = (lati, loni, tzoff) => {
                 var phasename = json.properties.data.curphase.toLowerCase();
                 var moonrise = json.properties.data.moondata.filter(datum => datum.phen == 'Rise')[0].time;
                 var moonset = json.properties.data.moondata.filter(datum => datum.phen == 'Set')[0].time;
-                var formatstr = `<span style="font-size:12px;"><a target="_blank" href="https://aa.usno.navy.mil/data/api.html">Moon today</a>: ${moonphase} illuminated ${phasename}, rise: ${moonrise}, set: ${moonset} (UTC${tzf})</span>`;
+                var formatstr = `<span style="font-size:12px;"><a target="_blank" href="https://aa.usno.navy.mil/data/api.html">Moon today</a>: ${moonphase} illuminated ${phasename}, rise: ${moonrise}, set: ${moonset} (${tzf.replace('+', '^').replace('-', '+').replace('^', '-').replace('Etc/', '')})</span>`;
                 document.getElementById('moondattoday').innerHTML = formatstr;
             }
         }
@@ -65,7 +58,7 @@ const moondat = (lati, loni, tzoff) => {
                 var phasename = json.properties.data.curphase.toLowerCase();
                 var moonrise = json.properties.data.moondata.filter(datum => datum.phen == 'Rise')[0].time;
                 var moonset = json.properties.data.moondata.filter(datum => datum.phen == 'Set')[0].time;
-                var formatstr = `<span style="font-size:12px;"><a target="_blank" href="https://aa.usno.navy.mil/data/api.html">Moon tomorrow</a>: ${moonphase} illuminated ${phasename}, rise: ${moonrise}, set: ${moonset} (UTC${tzf})</span>`;
+                var formatstr = `<span style="font-size:12px;"><a target="_blank" href="https://aa.usno.navy.mil/data/api.html">Moon tomorrow</a>: ${moonphase} illuminated ${phasename}, rise: ${moonrise}, set: ${moonset} (${tzf.replace('+', '^').replace('-', '+').replace('^', '-').replace('Etc/', '')})</span>`;
                 document.getElementById('moondattomorrow').innerHTML = formatstr;
             }
         }
