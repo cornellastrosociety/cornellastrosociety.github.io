@@ -111,19 +111,6 @@
                     <div id="moondattoday">Loading moon information...</div>
                     <div id="moondattomorrow">Loading moon information...</div>
                     <div id="debugDiv"></div>
-                    <script> // Stolen from Stackoverflow temporarily
-                        if (typeof console  != "undefined") 
-                            if (typeof console.log != 'undefined')
-                                console.olog = console.log;
-                            else
-                                console.olog = function() {};
-
-                        console.log = function(message) {
-                            console.olog(message);
-                            document.getElementById('debugDiv').innerHTML += ('<p>' + message + '</p>');
-                        };
-                        console.error = console.debug = console.info =  console.log;
-                    </script>
                     <script>moondat(42.4528, -76.4745, new Date().getTimezoneOffset() / -60)</script>
                 </div>
                 <div id="widget_2_75" style="margin: auto; text-align: center; margin: 1vh;">
