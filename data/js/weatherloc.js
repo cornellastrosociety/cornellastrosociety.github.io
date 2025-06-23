@@ -22,15 +22,19 @@ const aqi = (lati, loni) => {
 const moondat = (lati, loni, tzoff) => {
     document.getElementById('debugDiv').innerHTML += 'Test ';
     var tzf = `${tzoff < 0 ? '-' : '+'}${tzoff.toString().replace(/[+-]/g, '').padStart(2,0)}`;
+    document.getElementById('debugDiv').innerHTML += 'Test ';
     var locdate = new Date(new Date().toLocaleString("en-US", { timeZone: tzf }));
+    document.getElementById('debugDiv').innerHTML += 'Test ';
     var formatlocdate = `${locdate.getFullYear()}-${locdate.getMonth()+1}-${locdate.getDate()}`;
+    document.getElementById('debugDiv').innerHTML += 'Test ';
     var url = `https://aa.usno.navy.mil/api/rstt/oneday?date=${formatlocdate}&coords=${lati},${loni}&tz=${tzoff}`;
+    document.getElementById('debugDiv').innerHTML += 'Test ';
     var xmlhttp4 = new XMLHttpRequest();
+    document.getElementById('debugDiv').innerHTML += 'Testing ';
     xmlhttp4.onreadystatechange = function () {
-        document.getElementById('debugDiv').innerHTML += 'Test ';
         if (xmlhttp4.readyState == 4 && xmlhttp4.status == 200) {
             var json = JSON.parse(xmlhttp4.responseText);
-            document.getElementById('debugDiv').innerHTML = json
+            document.getElementById('debugDiv').innerHTML = '.'
             if (json.length == 0) {
                 document.getElementById('moondattoday').innerHTML = 'No moon data available';
             } else {
