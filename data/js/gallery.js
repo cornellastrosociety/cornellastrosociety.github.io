@@ -724,7 +724,7 @@ galleries.set(`messier`, {
             id: `m8.jpg`,
             name: `M8`,
             altname: `Lagoon Nebula`,
-            desc: ``
+            desc: `Star cluster plus H II emission nebula in Sagittarius. Taken by Ben Jacobson-Bell, Gillis Lowry, Marquice Sanchez-Fleming, and Shane Kuo through the 12" Irving P. Church Refractor on 6/24/25. 49 x 30-second frames stacked using Siril, and post-processed with Photoshop.`
         },
         {
             name: `M9`
@@ -754,13 +754,13 @@ galleries.set(`messier`, {
             id: `m16.jpg`,
             name: `M16`,
             altname: `Eagle Nebula`,
-            desc: ``
+            desc: `Star cluster plus H II emission nebula in Sagittarius, also featuring the Pillars of Creation! Taken by Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming through the 12" Irving P. Church Refractor on 6/25/25. 184 x 30-second frames stacked using Siril, and post-processed with Photoshop.`
         },
         {
             id: `m17.jpg`,
             name: `M17`,
             altname: `Omega Nebula`,
-            desc: ``
+            desc: `Star cluster plus H II emission nebula in Sagittarius. Taken by Marquice Sanchez-Fleming on 6/24/25 using the 12" Irving P. Church Refractor. Later stacked 124 x 30-second frames by Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming using Siril, and post-processed with Photoshop.`
         },
         {
             name: `M18`
@@ -772,7 +772,7 @@ galleries.set(`messier`, {
             id: `m20.jpg`,
             name: `M20`,
             altname: `Trifid Nebula`,
-            desc: ``
+            desc: `Star cluster plus H II emission nebula in Sagittarius. Taken by Marquice Sanchez-Fleming on 6/24/25 using the 12" Irving P. Church Refractor. Later stacked 26 x 1-minute frames by Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming using Siril, and post-processed with Photoshop.`
         },
         {
             name: `M21`
@@ -895,7 +895,7 @@ galleries.set(`messier`, {
             id: `m51irv.jpg`,
             name: `M51`,
             altname: `Whirlpool Galaxy`,
-            desc: ``
+            desc: `Spiral galaxy in Ursa Major. Taken through the 12" Irving P. Church Refractor by Ben Jacobson-Bell, Gillis Lowry, Marquice Sanchez-Fleming, Shane Kuo, Connor Rosenthal, and Jake Turner on 6/22/25. 11 x 3-minute frames stacked with Siril, post-processed with Photoshop.`
         },
         {
             name: `M52`
@@ -1060,7 +1060,7 @@ galleries.set(`messier`, {
             id: `m101irv.jpg`,
             name: `M101`,
             altname: `Pinwheel Galaxy`,
-            desc: ``
+            desc: `Counterclockwise spiral galaxy in Ursa Major. Taken by Ben Jacobson-Bell, Gillis Lowry, Marquice Sanchez-Fleming, and Shane Kuo through the 12" Irving P. Church Refractor on 6/23/25. 8 x 3-minute frames stacked with Siril and post-processed with Photoshop.`
         },
         {
             name: `M102`
@@ -1228,7 +1228,7 @@ galleries.set(`astro`, {
             id: `m8.jpg`,
             name: `M8`,
             altname: `Lagoon Nebula`,
-            desc: ``
+            desc: `Star cluster plus H II emission nebula in Sagittarius. Taken by Ben Jacobson-Bell, Gillis Lowry, Marquice Sanchez-Fleming, and Shane Kuo through the 12" Irving P. Church Refractor on 6/24/25. 49 x 30-second frames stacked using Siril, and post-processed with Photoshop.`
         },
         {
             id: `m13.jpg`,
@@ -1240,19 +1240,19 @@ galleries.set(`astro`, {
             id: `m16.jpg`,
             name: `M16`,
             altname: `Eagle Nebula`,
-            desc: ``
+            desc: `Star cluster plus H II emission nebula in Sagittarius, also featuring the Pillars of Creation! Taken by Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming through the 12" Irving P. Church Refractor on 6/25/25. 184 x 30-second frames stacked using Siril, and post-processed with Photoshop.`
         },
         {
             id: `m17.jpg`,
             name: `M17`,
             altname: `Omega Nebula`,
-            desc: ``
+            desc: `Star cluster plus H II emission nebula in Sagittarius. Taken by Marquice Sanchez-Fleming on 6/24/25 using the 12" Irving P. Church Refractor. Later stacked 124 x 30-second frames by Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming using Siril, and post-processed with Photoshop.`
         },
         {
             id: `m20.jpg`,
             name: `M20`,
             altname: `Trifid Nebula`,
-            desc: ``
+            desc: `Star cluster plus H II emission nebula in Sagittarius. Taken by Marquice Sanchez-Fleming on 6/24/25 using the 12" Irving P. Church Refractor. Later stacked 26 x 1-minute frames by Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming using Siril, and post-processed with Photoshop.`
         },
         {
             id: `m27.jpg`,
@@ -1281,8 +1281,8 @@ galleries.set(`astro`, {
         {
             id: `m31core.jpg`,
             name: `M31`,
-            altname: `Core of Andromeda Galaxy`,
-            desc: ``
+            altname: `Andromeda Galaxy`,
+            desc: `Core of the spiral galaxy closest to the Milky Way Galaxy. Taken by Marquice Sanchez-Fleming with the 12" Irving P. Church Refractor on 6/23/25. Stacked by Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming using 45 x 3-minute frames through Siril, and post-processed with Photoshop.`
         },
         {
             id: `triangulum.jpg`,
@@ -1345,7 +1345,7 @@ galleries.set(`astro`, {
             id: `m51irv.jpg`,
             name: `M51`,
             altname: `Whirlpool Galaxy`,
-            desc: ``
+            desc: `Spiral galaxy in Ursa Major. Taken through the 12" Irving P. Church Refractor by Ben Jacobson-Bell, Gillis Lowry, Marquice Sanchez-Fleming, Shane Kuo, Connor Rosenthal, and Jake Turner on 6/22/25. 11 x 3-minute frames stacked with Siril, post-processed with Photoshop.`
         },
         {
             id: `ring91017.jpg`,
@@ -1387,7 +1387,7 @@ galleries.set(`astro`, {
             id: `m57irv.jpg`,
             name: `M57`,
             altname: `Ring Nebula`,
-            desc: ``
+            desc: `Planetary nebula in the Constellation Lyra. Taken by Marquice Sanchez-Fleming on 6/24/25 using the 12" Irving P. Church Refractor. Later stacked 67 x 30-second frames by Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming using Siril, and post-processed with Photoshop.`
         },
         {
             id: `m81.jpg`,
@@ -1438,7 +1438,7 @@ galleries.set(`astro`, {
             id: `m101irv.jpg`,
             name: `M101`,
             altname: `Pinwheel Galaxy`,
-            desc: ``
+            desc: `Counterclockwise spiral galaxy in Ursa Major. Taken by Ben Jacobson-Bell, Gillis Lowry, Marquice Sanchez-Fleming, and Shane Kuo through the 12" Irving P. Church Refractor on 6/23/25. 8 x 3-minute frames stacked with Siril and post-processed with Photoshop.`
         },
         {
             id: `try6.jpg`,
