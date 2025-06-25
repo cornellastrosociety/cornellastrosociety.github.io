@@ -1100,6 +1100,125 @@ galleries.set(`astro`, {
     exclude: [],
     data: [
         {
+            id: `grandss.jpg`,
+            name: `The Solar System from Fuertes`
+        },
+        {
+            id: `planetscomp.jpg`,
+            name: `Collection of planets from Fuertes`
+        },
+        {
+            id: `sun1.jpg`,
+            name: `Sun`,
+            desc: `Taken using the Coronado H-alpha telescope`
+        },
+        {
+            id: `sun4.jpg`,
+            name: `Sun`,
+            desc: `Taken using the Coronado H-alpha telescope`
+        },
+        {
+            id: `sun5.jpg`,
+            name: `Transit of the Tiangong Space Station across the Sun`,
+            desc: `Taken by Andrew Lewis using the Coronado H-alpha telescope on March 12, 2024. Compiled using GIMP.`
+        },
+        {
+            id: `irvprom.jpg`,
+            name: `Solar prominences through Irv`
+        },
+        {
+            id: `irvprom2.jpg`,
+            name: `Solar prominences through Irv`
+        },
+        {
+            id: `sunspots.jpg`,
+            name: `Sunspots through Irv`
+        },
+        {
+            id: `mercury.jpg`,
+            name: `Mercury`
+        },
+        {
+            id: `venus.jpg`,
+            name: `Venus`
+        },
+        {
+            id: `moon.jpg`,
+            name: `Moon`
+        },
+        {
+            id: `mooncontrast.jpg`,
+            name: `Moon`
+        },
+        {
+            id: `moonedge.jpg`,
+            name: `Moon`
+        },
+        {
+            id: `moonirv.jpg`,
+            name: `Moon`
+        },
+        {
+            id: `thewebsitedoesnotneedanothermoonimage.jpg`,
+            name: `Moon`,
+            desc: `50.7% Moon (June 2, 2025) taken through the 12" Irving P. Church Refractor Telescope by Ben Jacobson-Bell and Shane Kuo. Stacked from 40x 0.05-second frames. Slight orange color is due to high-altitude wildfire smoke.`
+        },
+        {
+            id: `mars.jpg`,
+            name: `Mars`
+        },
+        {
+            id: `asteroid7220philnicholson.jpg`,
+            name: `Asteroid (7220) Philnicholson`,
+            desc: `Main-belt asteroid named after the Cornell Astronomical Society's faculty advisor since 1983, Professor Phil Nicholson. Attempt at detection made April 23, 2025, by Ben Jacobson-Bell, Erik Payton, Shane Kuo, and Andrew Lewis using the 12" Irving P. Church Refractor. Opposition was reached ~5 days earlier. Single frame (with Lyrid meteor streak) shown here.`
+        },
+        {
+            id: `jupbands.jpg`,
+            name: `Jupiter`
+        },
+        {
+            id: `jupiter.jpg`,
+            name: `Jupiter`
+        },
+        {
+            id: `jupiterbw.jpg`,
+            name: `Jupiter`
+        },
+        {
+            id: `jupiterhc.jpg`,
+            name: `Jupiter`
+        },
+        {
+            id: `jupitermoons.jpg`,
+            name: `Jupiter, and a Selection of its Moons`
+        },
+        {
+            id: `saturnclear.jpg`,
+            name: `Saturn`,
+            desc: `Taken by Riley Scott Jacob using a personal Orion XT12i (12" Dobsonian). Stacked from the best 1% of 20,000 frames using AutoStakkert.`
+        },
+        {
+            id: `saturngap.jpg`,
+            name: `Saturn`
+        },
+        {
+            id: `saturnside.jpg`,
+            name: `Saturn`,
+            desc: `Taken by Erik Payton on August 27, 2023, using the 12" Irving P. Church Refractor. 100x 0.2-second frames stacked.`
+        },
+        {
+            id: `uranus.jpg`,
+            name: `Uranus`
+        },
+        {
+            id: `neptune.jpg`,
+            name: `Neptune`
+        },
+        {
+            id: `pluto.jpg`,
+            name: `Pluto and Charon`
+        },
+        {
             id: `crab.jpg`,
             name: `M1`,
             altname: `Crab Nebula`,
@@ -1326,125 +1445,6 @@ galleries.set(`astro`, {
             name: `Caldwell 38`,
             altname: `Needle Galaxy`,
             desc: `Taken by Riley Scott Jacob with the 12" Irving P. Church Refractor. 5x 30" frames, ISO 6400. Stacked with DSS.`
-        },
-        {
-            id: `grandss.jpg`,
-            name: `The Solar System from Fuertes`
-        },
-        {
-            id: `planetscomp.jpg`,
-            name: `Collection of planets from Fuertes`
-        },
-        {
-            id: `sun1.jpg`,
-            name: `Sun`,
-            desc: `Taken using the Coronado H-alpha telescope`
-        },
-        {
-            id: `sun4.jpg`,
-            name: `Sun`,
-            desc: `Taken using the Coronado H-alpha telescope`
-        },
-        {
-            id: `sun5.jpg`,
-            name: `Transit of the Tiangong Space Station across the Sun`,
-            desc: `Taken by Andrew Lewis using the Coronado H-alpha telescope on March 12, 2024. Compiled using GIMP.`
-        },
-        {
-            id: `irvprom.jpg`,
-            name: `Solar prominences through Irv`
-        },
-        {
-            id: `irvprom2.jpg`,
-            name: `Solar prominences through Irv`
-        },
-        {
-            id: `sunspots.jpg`,
-            name: `Sunspots through Irv`
-        },
-        {
-            id: `mercury.jpg`,
-            name: `Mercury`
-        },
-        {
-            id: `venus.jpg`,
-            name: `Venus`
-        },
-        {
-            id: `moon.jpg`,
-            name: `Moon`
-        },
-        {
-            id: `mooncontrast.jpg`,
-            name: `Moon`
-        },
-        {
-            id: `moonedge.jpg`,
-            name: `Moon`
-        },
-        {
-            id: `moonirv.jpg`,
-            name: `Moon`
-        },
-        {
-            id: `thewebsitedoesnotneedanothermoonimage.jpg`,
-            name: `Moon`,
-            desc: `50.7% Moon (June 2, 2025) taken through the 12" Irving P. Church Refractor Telescope by Ben Jacobson-Bell and Shane Kuo. Stacked from 40x 0.05-second frames. Slight orange color is due to high-altitude wildfire smoke.`
-        },
-        {
-            id: `mars.jpg`,
-            name: `Mars`
-        },
-        {
-            id: `asteroid7220philnicholson.jpg`,
-            name: `Asteroid (7220) Philnicholson`,
-            desc: `Main-belt asteroid named after the Cornell Astronomical Society's faculty advisor since 1983, Professor Phil Nicholson. Attempt at detection made April 23, 2025, by Ben Jacobson-Bell, Erik Payton, Shane Kuo, and Andrew Lewis using the 12" Irving P. Church Refractor. Opposition was reached ~5 days earlier. Single frame (with Lyrid meteor streak) shown here.`
-        },
-        {
-            id: `jupbands.jpg`,
-            name: `Jupiter`
-        },
-        {
-            id: `jupiter.jpg`,
-            name: `Jupiter`
-        },
-        {
-            id: `jupiterbw.jpg`,
-            name: `Jupiter`
-        },
-        {
-            id: `jupiterhc.jpg`,
-            name: `Jupiter`
-        },
-        {
-            id: `jupitermoons.jpg`,
-            name: `Jupiter, and a Selection of its Moons`
-        },
-        {
-            id: `saturnclear.jpg`,
-            name: `Saturn`,
-            desc: `Taken by Riley Scott Jacob using a personal Orion XT12i (12" Dobsonian). Stacked from the best 1% of 20,000 frames using AutoStakkert.`
-        },
-        {
-            id: `saturngap.jpg`,
-            name: `Saturn`
-        },
-        {
-            id: `saturnside.jpg`,
-            name: `Saturn`,
-            desc: `Taken by Erik Payton on August 27, 2023, using the 12" Irving P. Church Refractor. 100x 0.2-second frames stacked.`
-        },
-        {
-            id: `uranus.jpg`,
-            name: `Uranus`
-        },
-        {
-            id: `neptune.jpg`,
-            name: `Neptune`
-        },
-        {
-            id: `pluto.jpg`,
-            name: `Pluto and Charon`
         }
     ]
 });

@@ -46,6 +46,7 @@ var nav_data = `<!-- Nav bar, should persist across pages; add nav_el_sel to cur
                         <a href="/photos" id="nav_photos_photos" class = "nav_dd_sub">Photo Gallery <br> <br style = "font-size: 1vh"></a>
                         <a href="/photos/museum" id="nav_photos_museum" class = "nav_dd_sub">Museum Gallery <br> <br style = "font-size: 1vh"></a>
                         <a href="/photos/astro" id="nav_photos_astro" class = "nav_dd_sub">Astrophotography <br> <br style = "font-size: 1vh"></a>
+                        <a href="/photos/messier" id="nav_photos_messier" class = "nav_dd_sub">Messier Catalog <br> <br style = "font-size: 1vh"></a>
                     </div>
                 </div>
                 <div class = "no_und" > <a  class = "no_und" href="/newsletters"><div  id="nav_newsletters" class = "mnav_main ">Newsletters</div></a>   </div>
@@ -99,6 +100,7 @@ var nav_data = `<!-- Nav bar, should persist across pages; add nav_el_sel to cur
                         <a href="/photos" id="nav_photos_photos">Photo Gallery</a>
                         <a href="/photos/museum" id="nav_photos_museum">Museum Gallery</a>
                         <a href="/photos/astro" id="nav_photos_astro">Astrophotography</a>
+                        <a href="/photos/messier" id="nav_photos_messier">Messier Catalog</a>
                     </div>
                 </div>
             </div>
