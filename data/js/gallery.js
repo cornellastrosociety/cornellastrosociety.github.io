@@ -1027,7 +1027,9 @@ galleries.set(`messier`, {
             name: `M91`
         },
         {
-            name: `M92`
+            id: `m92.jpg`,
+            name: `M92`,
+            desc: `Globular cluster in Hercules. Taken through the 12" Irving P. Church Refractor, May 16th, 2025, by Ben Jacobson-Bell, Erik Payton, Gillis Lowry, and Ella Mansfield. 30x 1-minute frames stacked in Siril.`
         },
         {
             name: `M93`
@@ -1422,6 +1424,11 @@ galleries.set(`astro`, {
             name: `M82`,
             altname: `Cigar Galaxy`,
             desc: `Taken by Erik Payton, Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis on April 20, 2025. 12x 3-minute frames stacked with Siril, post-processed with Photoshop.`
+        },
+        {
+            id: `m92.jpg`,
+            name: `M92`,
+            desc: `Globular cluster in Hercules. Taken through the 12" Irving P. Church Refractor, May 16th, 2025, by Ben Jacobson-Bell, Erik Payton, Gillis Lowry, and Ella Mansfield. 30x 1-minute frames stacked in Siril.`
         },
         {
             id: `owl.jpg`,
