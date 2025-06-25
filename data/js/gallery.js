@@ -690,18 +690,255 @@ galleries.set(`astro`, {
     thumb: true,
     data: [
         {
-            id: `andromeda.jpg`,
-            name: `Andromeda Galaxy`,
-            desc: `Taken by Riley Scott Jacob using a 250-mm lens on a sky-tracking DSLR camera (no telescope). 60x 2-minute frames.`
+            id: `crab.jpg`,
+            name: `M1`,
+            altname: `Crab Nebula`,
+            desc: `M1 (the Crab Nebula), Taken by Riley Scott Jacob using the 12" Irving P. Church Refractor. 21x 30" frames at ISO 6400.`
         },
         {
-            id: `crab.jpg`,
-            name: `Crab Nebula`,
-            desc: `Taken by Riley Scott Jacob using the 12" Irving P. Church Refractor. 21x 30" frames at ISO 6400.`
+            id: `m8.jpg`,
+            name: `M8`,
+            altname: `Lagoon Nebula`,
+            desc: ``
+        },
+        {
+            id: `m13.jpg`,
+            name: `M13`,
+            altname: `Great Globular Cluster in Hercules`,
+            desc: `Great Globular Cluster in Hercules, taken through the 12" Irving P. Church Refractor on June 2, 2025, during a 50% Moon. Stacked from 15x 60-second frames.`
+        },
+        {
+            id: `m16.jpg`,
+            name: `M16`,
+            altname: `Eagle Nebula`,
+            desc: ``
+        },
+        {
+            id: `m17.jpg`,
+            name: `M17`,
+            altname: `Omega Nebula`,
+            desc: ``
+        },
+        {
+            id: `m20.jpg`,
+            name: `M20`,
+            altname: `Trifid Nebula`,
+            desc: ``
+        },
+        {
+            id: `m27.jpg`,
+            name: `M27`,
+            altname: `Dumbbell Nebula`,
+            desc: `Dumbbell Nebula, taken by Riley Scott Jacob using the 12" Irving P. Church Refractor in May 2018.`
+        },
+        {
+            id: `m27irv.jpg`,
+            name: `M27`,
+            altname: `Dumbbell Nebula`,
+            desc: `Dumbbell Nebula, taken through the 12" Irving P. Church Refractor, May 26th, 2025, by Ben Jacobson-Bell, Andrew Lewis, Gillis Lowry, and Marquice Sanchez-Fleming. 19x 90-second exposures stacked in Siril, ISO 1600.`
+        },
+        {
+            id: `m29.jpg`,
+            name: `M29`,
+            altname: `Cooling Tower Cluster`,
+            desc: `Open cluster ("Cooling Tower Cluster") in Cygnus, near the Sadr region. Taken by Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis using the 12" Irving P. Church Refractor on June 2, 2025. Stacked from 66x 30-second frames.`
+        },
+        {
+            id: `andromeda.jpg`,
+            name: `M31`,
+            altname: `Andromeda Galaxy`,
+            desc: `The Andromeda Galaxy, taken by Riley Scott Jacob using a 250-mm lens on a sky-tracking DSLR camera (no telescope). 60x 2-minute frames.`
+        },
+        {
+            id: `m31core.jpg`,
+            name: `M31`,
+            altname: `Core of Andromeda Galaxy`,
+            desc: ``
+        },
+        {
+            id: `triangulum.jpg`,
+            name: `M33`,
+            altname: `Triangulum Galaxy`,
+            desc: `M33 (the Triangulum Galaxy), taken by Sam Newman-Stonebraker using the 8" Orion astrograph.`
+        },
+        {
+            id: `m36.jpg`,
+            name: `M36`,
+            altname: `Pinwheel Cluster`,
+            desc: `Open cluster in Auriga. Taken by Erik Payton, Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis using the 12" Irving P. Church Refractor on April 20, 2025. Stacked from ~50x 30-second monochrome frames.`
+        },
+        {
+            id: `m39.jpg`,
+            name: `M39`,
+            altname: `Pyramid Cluster`,
+            desc: `Open cluster ("Pyramid Cluster") north of Deneb. Taken by Erik Payton, Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming using the 12" Irving P. Church Refractor on June 4, 2025. Stacked from ~20x 30-second frames, ISO 1600.`
+        },
+        {
+            id: `m40.jpg`,
+            name: `M40`,
+            altname: `Winnecke 4`,
+            desc: `Single 20-second frame of M40 / Winnecke 4, a double star mistakenly recorded by Charles Messier as a deep-sky object. Taken by Ben Jacobson-Bell using the Irving P. Church Refractor on May 26, 2025. The galaxy NGC 4290 is faintly visible to the left of the image.`
+        },
+        {
+            id: `orionzhou.jpg`,
+            name: `M42`,
+            altname: `Orion Nebula`
+        },
+        {
+            id: `m42.jpg`,
+            name: `M42`,
+            altname: `Orion Nebula`,
+            desc: `Single 30" frame taken by Marquice Sanchez-Fleming using the 5" Meade refractor and CMOS camera (monochrome).`
+        },
+        {
+            id: `m45.jpg`,
+            name: `M45`,
+            altname: `Pleiades`
+        },
+        {
+            id: `pleiades.jpg`,
+            name: `M45`,
+            altname: `Pleiades`,
+            desc: `Taken by Dang Pham with the 8" Orion astrograph.`
+        },
+        {
+            id: `whirlpool.jpg`,
+            name: `M51`,
+            altname: `Whirlpool Galaxy`
+        },
+        {
+            id: `m51.jpg`,
+            name: `M51`,
+            altname: `Whirlpool Galaxy`,
+            desc: `Taken by Riley Scott Jacob using the 12" Irving P. Church Refractor. 3x 30" frames, ISO 6400. Stacked with DSS.`
+        },
+        {
+            id: `m51irv.jpg`,
+            name: `M51`,
+            altname: `Whirlpool Galaxy`,
+            desc: ``
+        },
+        {
+            id: `ring91017.jpg`,
+            name: `M57`,
+            altname: `Ring Nebula`,
+            desc: `September 10, 2017`
+        },
+        {
+            id: `ringmsf.jpg`,
+            name: `M57`,
+            altname: `Ring Nebula`,
+            desc: `Taken by Riley Scott Jacob using the 12" Irving P. Church Refractor. 15x 60-second frames at ISO 1600, stacked with DSS.`
+        },
+        {
+            id: `ringhbo.jpg`,
+            name: `M57`,
+            altname: `Ring Nebula`,
+            desc: `Taken at the Hartung-Boothroyd Observatory, through the James Houck 25" reflector`
+        },
+        {
+            id: `ringlr.jpg`,
+            name: `M57`,
+            altname: `Ring Nebula`,
+            desc: `Taken by Erik Payton and Ben Jacobson-Bell on August 1, 2023, using the 12" Irving P. Church Refractor. 124x 30-second frames stacked with Astro Pixel Processor.`
+        },
+        {
+            id: `ringlrlr.jpg`,
+            name: `M57`,
+            altname: `Ring Nebula`,
+            desc: `Taken using the 25" James R. Houck Telescope at the Hartung–Boothroyd Observatory.`
+        },
+        {
+            id: `ringvivid.jpg`,
+            name: `M57`,
+            altname: `Ring Nebula`,
+            desc: `Taken using the 25" James R. Houck Telescope at the Hartung–Boothroyd Observatory.`
+        },
+        {
+            id: `m57irv.jpg`,
+            name: `M57`,
+            altname: `Ring Nebula`,
+            desc: ``
+        },
+        {
+            id: `m81.jpg`,
+            name: `M81`,
+            altname: `Bode's Galaxy`,
+            desc: `Taken by Riley Scott Jacob using the 12" Irving P. Church Refractor in May 2018.`
+        },
+        {
+            id: `m81irv.jpg`,
+            name: `M81`,
+            altname: `Bode's Galaxy`,
+            desc: `Taken through the 12" Irving P. Church Refractor, April 22nd, 2025, by Ben Jacobson-Bell, Erik Payton, Shane Kuo, Gillis Lowry, and Andrew Lewis. 21x 3-minute frames stacked in Siril.`
+        },
+        {
+            id: `m82.jpg`,
+            name: `M82`,
+            altname: `Cigar Galaxy`
+        },
+        {
+            id: `m82again.jpg`,
+            name: `M82`,
+            altname: `Cigar Galaxy`,
+            desc: `Taken by Riley Scott Jacob using the 12" Irving P. Church Refractor in May 2018.`
+        },
+        {
+            id: `m82p.jpg`,
+            name: `M82`,
+            altname: `Cigar Galaxy`
+        },
+        {
+            id: `onlythefinest.jpg`,
+            name: `M82`,
+            altname: `Cigar Galaxy`,
+            desc: `Taken by Erik Payton, Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis on April 20, 2025. 12x 3-minute frames stacked with Siril, post-processed with Photoshop.`
+        },
+        {
+            id: `owl.jpg`,
+            name: `M97`,
+            altname: `Owl Nebula`,
+            desc: `Taken by Riley Scott Jacob using the 12" Irving P. Church Refractor on May 7, 2018.`
+        },
+        {
+            id: `m101.jpg`,
+            name: `M101`,
+            altname: `Pinwheel Galaxy`
+        },
+        {
+            id: `m101irv.jpg`,
+            name: `M101`,
+            altname: `Pinwheel Galaxy`,
+            desc: ``
+        },
+        {
+            id: `try6.jpg`,
+            name: `Caldwell 38`,
+            altname: `Needle Galaxy`,
+            desc: `Taken by Riley Scott Jacob with the 12" Irving P. Church Refractor. 5x 30" frames, ISO 6400. Stacked with DSS.`
         },
         {
             id: `grandss.jpg`,
             name: `The Solar System from Fuertes`
+        },
+        {
+            id: `planetscomp.jpg`,
+            name: `Collection of planets from Fuertes`
+        },
+        {
+            id: `sun1.jpg`,
+            name: `Sun`,
+            desc: `Taken using the Coronado H-alpha telescope`
+        },
+        {
+            id: `sun4.jpg`,
+            name: `Sun`,
+            desc: `Taken using the Coronado H-alpha telescope`
+        },
+        {
+            id: `sun5.jpg`,
+            name: `Transit of the Tiangong Space Station across the Sun`,
+            desc: `Taken by Andrew Lewis using the Coronado H-alpha telescope on March 12, 2024. Compiled using GIMP.`
         },
         {
             id: `irvprom.jpg`,
@@ -712,113 +949,16 @@ galleries.set(`astro`, {
             name: `Solar prominences through Irv`
         },
         {
-            id: `jupbands.jpg`,
-            name: `Jupiter`
-        },
-        {
-            id: `jupiter.jpg`,
-            name: `Jupiter`
-        },
-        {
-            id: `jupiterbw.jpg`,
-            name: `Jupiter`
-        },
-        {
-            id: `jupiterhc.jpg`,
-            name: `Jupiter`
-        },
-        {
-            id: `jupitermoons.jpg`,
-            name: `Jupiter, and a Selection of its Moons`
-        },
-        {
-            id: `m13.jpg`,
-            name: `M13`,
-            desc: `Great Globular Cluster in Hercules, taken through the 12" Irving P. Church Refractor on June 2, 2025, during a 50% Moon. Stacked from 15x 60-second frames.`
-        },
-        {
-            id: `m27.jpg`,
-            name: `M27`,
-            desc: `Dumbbell Nebula, taken by Riley Scott Jacob using the 12" Irving P. Church Refractor in May 2018.`
-        },
-        {
-            id: `m27irv.jpg`,
-            name: `M27`,
-            desc: `Dumbbell Nebula, taken through the 12" Irving P. Church Refractor, May 26th, 2025, by Ben Jacobson-Bell, Andrew Lewis, Gillis Lowry, and Marquice Sanchez-Fleming. 19x 90-second exposures stacked in Siril, ISO 1600.`
-        },
-        {
-            id: `m29.jpg`,
-            name: `M29`,
-            desc: `Open cluster ("Cooling Tower Cluster") in Cygnus, near the Sadr region. Taken by Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis using the 12" Irving P. Church Refractor on June 2, 2025. Stacked from 66x 30-second frames.`
-        },
-        {
-            id: `m36.jpg`,
-            name: `M36`,
-            desc: `Open cluster in Auriga. Taken by Erik Payton, Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis using the 12" Irving P. Church Refractor on April 20, 2025. Stacked from ~50x 30-second monochrome frames.`
-        },
-        {
-            id: `m39.jpg`,
-            name: `M39`,
-            desc: `Open cluster ("Pyramid Cluster") north of Deneb. Taken by Erik Payton, Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming using the 12" Irving P. Church Refractor on June 4, 2025. Stacked from ~20x 30-second frames, ISO 1600.`
-        },
-        {
-            id: `m40.jpg`,
-            name: `M40`,
-            desc: `Single 20-second frame of M40 / Winnecke 4, a double star mistakenly recorded by Charles Messier as a deep-sky object. Taken by Ben Jacobson-Bell using the Irving P. Church Refractor on May 26, 2025. The galaxy NGC 4290 is faintly visible to the left of the image.`
-        },
-        {
-            id: `m42.jpg`,
-            name: `M42`,
-            desc: `Single 30" frame taken by Marquice Sanchez-Fleming using the 5" Meade refractor and CMOS camera (monochrome).`
-        },
-        {
-            id: `m45.jpg`,
-            name: `M45`
-        },
-        {
-            id: `m51.jpg`,
-            name: `M51`,
-            desc: `Taken by Riley Scott Jacob using the 12" Irving P. Church Refractor. 3x 30" frames, ISO 6400. Stacked with DSS.`
-        },
-        {
-            id: `m81.jpg`,
-            name: `M81`,
-            desc: `Taken by Riley Scott Jacob using the 12" Irving P. Church Refractor in May 2018.`
-        },
-        {
-            id: `m81irv.jpg`,
-            name: `M81`,
-            desc: `Taken through the 12" Irving P. Church Refractor, April 22nd, 2025, by Ben Jacobson-Bell, Erik Payton, Shane Kuo, Gillis Lowry, and Andrew Lewis. 21x 3-minute frames stacked in Siril.`
-        },
-        {
-            id: `m82.jpg`,
-            name: `M82`
-        },
-        {
-            id: `m82again.jpg`,
-            name: `M82`,
-            desc: `Taken by Riley Scott Jacob using the 12" Irving P. Church Refractor in May 2018.`
-        },
-        {
-            id: `m82p.jpg`,
-            name: `M82`
-        },
-        {
-            id: `onlythefinest.jpg`,
-            name: `M82`,
-            desc: `Taken by Erik Payton, Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis on April 20, 2025. 12x 3-minute frames stacked with Siril, post-processed with Photoshop.`
-        },
-        {
-            id: `m101.jpg`,
-            name: `M101`
-        },
-        {
-            id: `mars.jpg`,
-            name: `Mars`
+            id: `sunspots.jpg`,
+            name: `Sunspots through Irv`
         },
         {
             id: `mercury.jpg`,
             name: `Mercury`
+        },
+        {
+            id: `venus.jpg`,
+            name: `Venus`
         },
         {
             id: `moon.jpg`,
@@ -842,60 +982,33 @@ galleries.set(`astro`, {
             desc: `50.7% Moon (June 2, 2025) taken through the 12" Irving P. Church Refractor Telescope by Ben Jacobson-Bell and Shane Kuo. Stacked from 40x 0.05-second frames. Slight orange color is due to high-altitude wildfire smoke.`
         },
         {
-            id: `neptune.jpg`,
-            name: `Neptune`
+            id: `mars.jpg`,
+            name: `Mars`
         },
         {
-            id: `orionzhou.jpg`,
-            name: `Orion Nebula`
+            id: `asteroid7220philnicholson.jpg`,
+            name: `Asteroid (7220) Philnicholson`,
+            desc: `Main-belt asteroid named after the Cornell Astronomical Society's faculty advisor since 1983, Professor Phil Nicholson. Attempt at detection made April 23, 2025, by Ben Jacobson-Bell, Erik Payton, Shane Kuo, and Andrew Lewis using the 12" Irving P. Church Refractor. Opposition was reached ~5 days earlier. Single frame (with Lyrid meteor streak) shown here.`
         },
         {
-            id: `owl.jpg`,
-            name: `Owl Nebula`,
-            desc: `Taken by Riley Scott Jacob using the 12" Irving P. Church Refractor on May 7, 2018.`
+            id: `jupbands.jpg`,
+            name: `Jupiter`
         },
         {
-            id: `planetscomp.jpg`,
-            name: `Collection of planets from Fuertes`
+            id: `jupiter.jpg`,
+            name: `Jupiter`
         },
         {
-            id: `pleiades.jpg`,
-            name: `Pleiades`,
-            desc: `Taken by Dang Pham with the 8" Orion astrograph.`
+            id: `jupiterbw.jpg`,
+            name: `Jupiter`
         },
         {
-            id: `pluto.jpg`,
-            name: `Pluto and Charon`
+            id: `jupiterhc.jpg`,
+            name: `Jupiter`
         },
         {
-            id: `ring91017.jpg`,
-            name: `Ring Nebula`,
-            desc: `September 10, 2017`
-        },
-        {
-            id: `ringmsf.jpg`,
-            name: `Ring Nebula`,
-            desc: `Taken by Riley Scott Jacob using the 12" Irving P. Church Refractor. 15x 60-second frames at ISO 1600, stacked with DSS.`
-        },
-        {
-            id: `ringhbo.jpg`,
-            name: `Ring Nebula`,
-            desc: `Taken at the Hartung-Boothroyd Observatory, through the James Houck 25" reflector`
-        },
-        {
-            id: `ringlr.jpg`,
-            name: `Ring Nebula`,
-            desc: `Taken by Erik Payton and Ben Jacobson-Bell on August 1, 2023, using the 12" Irving P. Church Refractor. 124x 30-second frames stacked with Astro Pixel Processor.`
-        },
-        {
-            id: `ringlrlr.jpg`,
-            name: `Ring Nebula`,
-            desc: `Taken using the 25" James R. Houck Telescope at the Hartung–Boothroyd Observatory.`
-        },
-        {
-            id: `ringvivid.jpg`,
-            name: `Ring Nebula`,
-            desc: `Taken using the 25" James R. Houck Telescope at the Hartung–Boothroyd Observatory.`
+            id: `jupitermoons.jpg`,
+            name: `Jupiter, and a Selection of its Moons`
         },
         {
             id: `saturnclear.jpg`,
@@ -912,50 +1025,16 @@ galleries.set(`astro`, {
             desc: `Taken by Erik Payton on August 27, 2023, using the 12" Irving P. Church Refractor. 100x 0.2-second frames stacked.`
         },
         {
-            id: `sun1.jpg`,
-            name: `Sun`,
-            desc: `Taken using the Coronado H-alpha telescope`
-        },
-        {
-            id: `sun4.jpg`,
-            name: `Sun`,
-            desc: `Taken using the Coronado H-alpha telescope`
-        },
-        {
-            id: `sun5.jpg`,
-            name: `Transit of the Tiangong Space Station across the Sun`,
-            desc: `Taken by Andrew Lewis using the Coronado H-alpha telescope on March 12, 2024. Compiled using GIMP.`
-        },
-        {
-            id: `sunspots.jpg`,
-            name: `Sunspots through Irv`
-        },
-        {
-            id: `triangulum.jpg`,
-            name: `Triangulum Galaxy`,
-            desc: `Taken by Sam Newman-Stonebraker using the 8" Orion astrograph.`
-        },
-        {
-            id: `try6.jpg`,
-            name: `Needle Galaxy (Caldwell 38)`,
-            desc: `Taken by Riley Scott Jacob with the 12" Irving P. Church Refractor. 5x 30" frames, ISO 6400. Stacked with DSS.`
-        },
-        {
             id: `uranus.jpg`,
             name: `Uranus`
         },
         {
-            id: `venus.jpg`,
-            name: `Venus`
+            id: `neptune.jpg`,
+            name: `Neptune`
         },
         {
-            id: `whirlpool.jpg`,
-            name: `Whirlpool Galaxy`
-        },
-        {
-            id: `asteroid7220philnicholson.jpg`,
-            name: `Asteroid (7220) Philnicholson`,
-            desc: `Main-belt asteroid named after the Cornell Astronomical Society's faculty advisor since 1983, Professor Phil Nicholson. Attempt at detection made April 23, 2025, by Ben Jacobson-Bell, Erik Payton, Shane Kuo, and Andrew Lewis using the 12" Irving P. Church Refractor. Opposition was reached ~5 days earlier. Single frame (with Lyrid meteor streak) shown here.`
+            id: `pluto.jpg`,
+            name: `Pluto and Charon`
         }
     ]
 });
@@ -964,7 +1043,7 @@ const el_tmp = `<div class="gallery-col" onclick="openLightboxTwo();toSlideTwo(%
     <div class="gallery-container" style="object-fit: cover">
         <img src="%path" style="object-fit: cover" class="gallery-image">
         <div class="gallery-overlay">
-            <div class="gallery-text" style="color: black">%name</div>
+            <div class="gallery-text" style="color: black">%name%altname</div>
         </div>
     </div>
 </div>
@@ -1002,7 +1081,7 @@ const galplace = () => {
             const cols = `${' 1fr 1%'.repeat(width - 1)} 1fr`
             galbuilder += `<div class="gallery-row" style="grid-template-columns:${cols}">\n\t`;
         }
-        galbuilder += el_tmp.replace(/%path/g, `/data/img/${galtype}${thumb ? '/thumb' : ''}/${tgt.id.replace(/\.{a-zA-Z}{3,4}/g, '.jpg')}`).replace(/%name/g, tgt.name || '').replace(/%slide/g, i + 1);
+        galbuilder += el_tmp.replace(/%path/g, `/data/img/${galtype}${thumb ? '/thumb' : ''}/${tgt.id.replace(/\.{a-zA-Z}{3,4}/g, '.jpg')}`).replace(/%name/g, tgt.name || '').replace(/%altname/g, tgt.altname ? `<br><span style="font-size: 0.75em; white-space: nowrap;">${tgt.altname}</span>` : '').replace(/%slide/g, i + 1);
         if (i % width == width - 1) {
             galbuilder += `</div>\n`;
         } else {
