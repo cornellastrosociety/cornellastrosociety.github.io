@@ -1056,8 +1056,8 @@ let galdata = galleries.get(galtype);
 let width = galdata.width;
 let incr = galdata.incr;
 if (window.innerWidth < 750) {
+    incr = Math.ceil(width * incr / 2);
     width = 2;
-    incr = 16;
 }
 let thumb = galdata.thumb;
 let pics = galdata.data;
