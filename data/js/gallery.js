@@ -1477,9 +1477,14 @@ let width = galdata.width;
 let incr = galdata.incr;
 let galname = galdata.galtype;
 let exclude = galdata.exclude;
-if (window.innerWidth < 750 && galtype != 'messier') {
-    incr = Math.ceil(width * incr / 2);
-    width = 2;
+if (window.innerWidth < 750) {
+    if (galtype == 'messier') {
+        incr = 22;
+        width = 5;
+    } else {
+        incr = Math.ceil(width * incr / 2);
+        width = 2;
+    }
 }
 let thumb = galdata.thumb;
 let pics = galdata.data;
