@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Messier catalog by current and former members of the Cornell Astronomical Society.">
+    <meta name="og:description" content="A Messier catalog with photos by current and former members of the Cornell Astronomical Society.">
+    <meta name="og:title" content="Messier Catalog | The Cornell Astronomical Society">
+    <meta name="og:type" content="website">
+    <meta property="og:image" content="https://www.cornellastrosociety.org/data/img/epic.jpg">
+    <meta name="twitter:image:src" content="https://www.cornellastrosociety.org/data/img/epic.jpg">
+    <title>Messier Catalog | The Cornell Astronomical Society</title>
+    <link rel="stylesheet" href="/data/css/index.css">
+    <link rel="stylesheet" href="/data/css/gallery.css">
+    <style>
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: black;
+        }
+
+        body:before {
+            content: "";
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            background-color: black;
+            background: url(/data/img/hbomw.jpg) no-repeat center center, rgb(0, 0, 0, 0.3);
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body style="background-color: black; color: rgb(234, 234, 234); overflow-x: hidden;">
+
+    <script src="/data/js/nav.js"></script>
+    <script>
+        document.getElementById('nav_photos').classList.add('nav_el_sel');
+        document.getElementById('nav_photos_astro').classList.add('nav_el_sel');
+        showhide("photo");
+    </script>
+
+    <div id="main" style="margin: auto; max-width: 67vw; animation: fadein ease-in-out 1.5s none;">
+
+        <div style="padding: 2vh;"></div>
+
+        <!-- Title text -->
+        <div style="width: 100%; text-align: center; color: white; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; font-size: 24px;">Messier Catalog</div>
+
+        <div style="padding: 1vh;"></div>
+
+        <div style="width: 100%; text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 15px; font-style: italic;">All images on this page were taken at the Fuertes Observatory by members of the Cornell Astronomical Society.</div>
+
+        <div style="padding: 2vh;"></div>
+
+        <div style="display: none;" id="galtype" data-galtype="messier"></div>
+        <div id="gal"></div>
+        <div style="padding: 1vh;"></div>
+        <div id="gal_ext" style="width: 100%; text-align: center; cursor: pointer; text-decoration: underline;" onclick="galplace()">Show More</div>
+
+        <div style="padding: 2vh;"></div>
+    </div>
+
+    <script src="/data/js/footer.js"></script>
+
+    <div id="lightboxtwo" class="modal" style="position: fixed; overflow: hidden;"></div>
+
+    <script src="/data/js/gallery.js"></script>
+    <script src="/data/js/lightbox.js"></script>
+</body>
+
+</html>

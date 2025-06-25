@@ -1,9 +1,11 @@
 const galleries = new Map();
 
 galleries.set('club', {
+    galtype: 'club',
     width: 3,
     incr: 3,
     thumb: false,
+    exclude: [],
     data: [
         {
             id: `2425.jpg`,
@@ -65,9 +67,11 @@ galleries.set('club', {
 });
 
 galleries.set('photos', {
+    galtype: 'photos',
     width: 4,
     incr: 5,
     thumb: true,
+    exclude: [],
     data: [
         {
             id: `asgrad24.jpg`,
@@ -560,9 +564,11 @@ galleries.set('photos', {
 });
 
 galleries.set('museum', {
+    galtype: 'museum',
     width: 4,
     incr: 6,
     thumb: false,
+    exclude: [],
     data: [
         {
             id: '39.jpg'
@@ -684,10 +690,414 @@ galleries.set('museum', {
     ]
 });
 
+galleries.set(`messier`, {
+    galtype: 'astro',
+    width: 10,
+    incr: 11,
+    thumb: true,
+    exclude: ['border', 'altname'],
+    data: [
+        {
+            id: `crab.jpg`,
+            name: `M1`,
+            desc: `M1 (the Crab Nebula), Taken by Riley Scott Jacob using the 12" Irving P. Church Refractor. 21x 30" frames at ISO 6400.`
+        },
+        {
+            name: `M2`
+        },
+        {
+            name: `M3`
+        },
+        {
+            name: `M4`
+        },
+        {
+            name: `M5`
+        },
+        {
+            name: `M6`
+        },
+        {
+            name: `M7`
+        },
+        {
+            id: `m8.jpg`,
+            name: `M8`,
+            altname: `Lagoon Nebula`,
+            desc: ``
+        },
+        {
+            name: `M9`
+        },
+        {
+            name: `M10`
+        },
+        {
+            name: `M11`
+        },
+        {
+            name: `M12`
+        },
+        {
+            id: `m13.jpg`,
+            name: `M13`,
+            altname: `Great Globular Cluster in Hercules`,
+            desc: `Great Globular Cluster in Hercules, taken through the 12" Irving P. Church Refractor on June 2, 2025, during a 50% Moon. Stacked from 15x 60-second frames.`
+        },
+        {
+            name: `M14`
+        },
+        {
+            name: `M15`
+        },
+        {
+            id: `m16.jpg`,
+            name: `M16`,
+            altname: `Eagle Nebula`,
+            desc: ``
+        },
+        {
+            id: `m17.jpg`,
+            name: `M17`,
+            altname: `Omega Nebula`,
+            desc: ``
+        },
+        {
+            name: `M18`
+        },
+        {
+            name: `M19`
+        },
+        {
+            id: `m20.jpg`,
+            name: `M20`,
+            altname: `Trifid Nebula`,
+            desc: ``
+        },
+        {
+            name: `M21`
+        },
+        {
+            name: `M22`
+        },
+        {
+            name: `M23`
+        },
+        {
+            name: `M24`
+        },
+        {
+            name: `M25`
+        },
+        {
+            name: `M26`
+        },
+        {
+            id: `m27irv.jpg`,
+            name: `M27`,
+            altname: `Dumbbell Nebula`,
+            desc: `Dumbbell Nebula, taken through the 12" Irving P. Church Refractor, May 26th, 2025, by Ben Jacobson-Bell, Andrew Lewis, Gillis Lowry, and Marquice Sanchez-Fleming. 19x 90-second exposures stacked in Siril, ISO 1600.`
+        },
+        {
+            name: `M28`
+        },
+        {
+            id: `m29.jpg`,
+            name: `M29`,
+            altname: `Cooling Tower Cluster`,
+            desc: `Open cluster ("Cooling Tower Cluster") in Cygnus, near the Sadr region. Taken by Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis using the 12" Irving P. Church Refractor on June 2, 2025. Stacked from 66x 30-second frames.`
+        },
+        {
+            name: `M30`
+        },
+        {
+            id: `andromeda.jpg`,
+            name: `M31`,
+            altname: `Andromeda Galaxy`,
+            desc: `The Andromeda Galaxy, taken by Riley Scott Jacob using a 250-mm lens on a sky-tracking DSLR camera (no telescope). 60x 2-minute frames.`
+        },
+        {
+            name: `M32`
+        },
+        {
+            id: `triangulum.jpg`,
+            name: `M33`,
+            altname: `Triangulum Galaxy`,
+            desc: `M33 (the Triangulum Galaxy), taken by Sam Newman-Stonebraker using the 8" Orion astrograph.`
+        },
+        {
+            name: `M34`
+        },
+        {
+            name: `M35`
+        },
+        {
+            id: `m36.jpg`,
+            name: `M36`,
+            altname: `Pinwheel Cluster`,
+            desc: `Open cluster in Auriga. Taken by Erik Payton, Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis using the 12" Irving P. Church Refractor on April 20, 2025. Stacked from ~50x 30-second monochrome frames.`
+        },
+        {
+            name: `M37`
+        },
+        {
+            name: `M38`
+        },
+        {
+            id: `m39.jpg`,
+            name: `M39`,
+            altname: `Pyramid Cluster`,
+            desc: `Open cluster ("Pyramid Cluster") north of Deneb. Taken by Erik Payton, Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming using the 12" Irving P. Church Refractor on June 4, 2025. Stacked from ~20x 30-second frames, ISO 1600.`
+        },
+        {
+            id: `m40.jpg`,
+            name: `M40`,
+            altname: `Winnecke 4`,
+            desc: `Single 20-second frame of M40 / Winnecke 4, a double star mistakenly recorded by Charles Messier as a deep-sky object. Taken by Ben Jacobson-Bell using the Irving P. Church Refractor on May 26, 2025. The galaxy NGC 4290 is faintly visible to the left of the image.`
+        },
+        {
+            name: `M41`
+        },
+        {
+            id: `m42.jpg`,
+            name: `M42`,
+            altname: `Orion Nebula`,
+            desc: `Single 30" frame taken by Marquice Sanchez-Fleming using the 5" Meade refractor and CMOS camera (monochrome).`
+        },
+        {
+            name: `M43`
+        },
+        {
+            name: `M44`
+        },
+        {
+            id: `pleiades.jpg`,
+            name: `M45`,
+            altname: `Pleiades`,
+            desc: `Taken by Dang Pham with the 8" Orion astrograph.`
+        },
+        {
+            name: `M46`
+        },
+        {
+            name: `M47`
+        },
+        {
+            name: `M48`
+        },
+        {
+            name: `M49`
+        },
+        {
+            name: `M50`
+        },
+        {
+            id: `m51irv.jpg`,
+            name: `M51`,
+            altname: `Whirlpool Galaxy`,
+            desc: ``
+        },
+        {
+            name: `M52`
+        },
+        {
+            name: `M53`
+        },
+        {
+            name: `M54`
+        },
+        {
+            name: `M55`
+        },
+        {
+            name: `M56`
+        },
+        {
+            id: `ringlr.jpg`,
+            name: `M57`,
+            altname: `Ring Nebula`,
+            desc: `Taken by Erik Payton and Ben Jacobson-Bell on August 1, 2023, using the 12" Irving P. Church Refractor. 124x 30-second frames stacked with Astro Pixel Processor.`
+        },
+        {
+            name: `M58`
+        },
+        {
+            name: `M59`
+        },
+        {
+            name: `M60`
+        },
+        {
+            name: `M61`
+        },
+        {
+            name: `M62`
+        },
+        {
+            name: `M63`
+        },
+        {
+            name: `M64`
+        },
+        {
+            name: `M65`
+        },
+        {
+            name: `M66`
+        },
+        {
+            name: `M67`
+        },
+        {
+            name: `M68`
+        },
+        {
+            name: `M69`
+        },
+        {
+            name: `M70`
+        },
+        {
+            name: `M71`
+        },
+        {
+            name: `M72`
+        },
+        {
+            name: `M73`
+        },
+        {
+            name: `M74`
+        },
+        {
+            name: `M75`
+        },
+        {
+            name: `M76`
+        },
+        {
+            name: `M77`
+        },
+        {
+            name: `M78`
+        },
+        {
+            name: `M79`
+        },
+        {
+            name: `M80`
+        },
+        {
+            id: `m81irv.jpg`,
+            name: `M81`,
+            altname: `Bode's Galaxy`,
+            desc: `Taken through the 12" Irving P. Church Refractor, April 22nd, 2025, by Ben Jacobson-Bell, Erik Payton, Shane Kuo, Gillis Lowry, and Andrew Lewis. 21x 3-minute frames stacked in Siril.`
+        },
+        {
+            id: `onlythefinest.jpg`,
+            name: `M82`,
+            altname: `Cigar Galaxy`,
+            desc: `Taken by Erik Payton, Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis on April 20, 2025. 12x 3-minute frames stacked with Siril, post-processed with Photoshop.`
+        },
+        {
+            name: `M83`
+        },
+        {
+            name: `M84`
+        },
+        {
+            name: `M85`
+        },
+        {
+            name: `M86`
+        },
+        {
+            name: `M87`
+        },
+        {
+            name: `M88`
+        },
+        {
+            name: `M89`
+        },
+        {
+            name: `M90`
+        },
+        {
+            name: `M91`
+        },
+        {
+            name: `M92`
+        },
+        {
+            name: `M93`
+        },
+        {
+            name: `M94`
+        },
+        {
+            name: `M95`
+        },
+        {
+            name: `M96`
+        },
+        {
+            id: `owl.jpg`,
+            name: `M97`,
+            altname: `Owl Nebula`,
+            desc: `Taken by Riley Scott Jacob using the 12" Irving P. Church Refractor on May 7, 2018.`
+        },
+        {
+            name: `M98`
+        },
+        {
+            name: `M99`
+        },
+        {
+            name: `M100`
+        },
+        {
+            id: `m101irv.jpg`,
+            name: `M101`,
+            altname: `Pinwheel Galaxy`,
+            desc: ``
+        },
+        {
+            name: `M102`
+        },
+        {
+            name: `M103`
+        },
+        {
+            name: `M104`
+        },
+        {
+            name: `M105`
+        },
+        {
+            name: `M106`
+        },
+        {
+            name: `M107`
+        },
+        {
+            name: `M108`
+        },
+        {
+            name: `M109`
+        },
+        {
+            name: `M110`
+        }
+    ]
+});
+
 galleries.set(`astro`, {
+    galtype: 'astro',
     width: 3,
     incr: 4,
     thumb: true,
+    exclude: [],
     data: [
         {
             id: `crab.jpg`,
@@ -1049,13 +1459,25 @@ const el_tmp = `<div class="gallery-col" onclick="openLightboxTwo();toSlideTwo(%
 </div>
 `
 
+const el_tmp_noborder = `<div class="gallery-col" onclick="openLightboxTwo();toSlideTwo(%slide)">
+    <div class="gallery-container gallery-container-noborder" style="object-fit: cover">
+        <img src="%path" style="object-fit: cover" class="gallery-image">
+        <div class="gallery-overlay">
+            <div class="gallery-text" style="color: black">%name%altname</div>
+        </div>
+    </div>
+</div>
+`
+
 let height = 0;
 
 const galtype = document.getElementById('galtype').getAttribute('data-galtype');
 let galdata = galleries.get(galtype);
 let width = galdata.width;
 let incr = galdata.incr;
-if (window.innerWidth < 750) {
+let galname = galdata.galtype;
+let exclude = galdata.exclude;
+if (window.innerWidth < 750 && galtype != 'messier') {
     incr = Math.ceil(width * incr / 2);
     width = 2;
 }
@@ -1081,7 +1503,7 @@ const galplace = () => {
             const cols = `${' 1fr 1%'.repeat(width - 1)} 1fr`
             galbuilder += `<div class="gallery-row" style="grid-template-columns:${cols}">\n\t`;
         }
-        galbuilder += el_tmp.replace(/%path/g, `/data/img/${galtype}${thumb ? '/thumb' : ''}/${tgt.id.replace(/\.{a-zA-Z}{3,4}/g, '.jpg')}`).replace(/%name/g, tgt.name || '').replace(/%altname/g, tgt.altname ? `<br><span style="font-size: 0.75em; white-space: nowrap;">${tgt.altname}</span>` : '').replace(/%slide/g, i + 1);
+        galbuilder += (exclude.includes('border') ? el_tmp_noborder : el_tmp).replace(/%path/g, tgt.id ? `/data/img/${galname}${thumb ? '/thumb' : ''}/${tgt.id.replace(/\.{a-zA-Z}{3,4}/g, '.jpg')}` : `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2PQ0DX6DwACjwGHAe9kcwAAAABJRU5ErkJggg==`).replace(/%name/g, tgt.name || '').replace(/%altname/g, tgt.altname && !exclude.includes('altname') ? `<br><span style="font-size: 0.75em; white-space: nowrap;">${tgt.altname}</span>` : '').replace(/%slide/g, i + 1);
         if (i % width == width - 1) {
             galbuilder += `</div>\n`;
         } else {
@@ -1095,8 +1517,13 @@ const galplace = () => {
     lbbuilder += `<div class="modal-content" id="slidesTwo" style="width: 60vh; height: auto;">`
     for (let i = 0; i < width * height && i < pics.length; i++) {
         const tgt = pics[i];
-        lbbuilder += `<div class="slideTwo"><img onclick="window.open('/data/img/${galtype}/${tgt.id}','_blank').focus()" data-src="/data/img/${galtype}/${tgt.id}" class="gallery-image-slide"><div style="font-size: 3vh; margin-top: 2vh; width: 100%; text-align: center;">${tgt.name || ''}</div>
-        <div style="font-size: 2vh; margin: 2vh 0; width: 100%; text-align: center;">${tgt.altname || ''}</div><div style="width: 100%; font-size: 2vh; text-align: center;">${tgt.desc || ''}</div></div>`;
+        if (tgt.id) {
+            lbbuilder += `<div class="slideTwo"><img onclick="window.open('/data/img/${galname}/${tgt.id}','_blank').focus()" data-src="/data/img/${galname}/${tgt.id}" class="gallery-image-slide"><div style="font-size: 3vh; margin-top: 2vh; width: 100%; text-align: center;">${tgt.name || ''}</div>
+            <div style="font-size: 2vh; margin: 2vh 0; width: 100%; text-align: center;">${tgt.altname || ''}</div><div style="width: 100%; font-size: 2vh; text-align: center;">${tgt.desc || ''}</div></div>`;
+        } else {
+            lbbuilder += `<div class="slideTwo"><img data-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2PQ0DX6DwACjwGHAe9kcwAAAABJRU5ErkJggg==" class="gallery-image-slide"><div style="font-size: 3vh; margin-top: 2vh; width: 100%; text-align: center;">${tgt.name || ''}</div>
+            <div style="font-size: 2vh; margin: 2vh 0; width: 100%; text-align: center;">${tgt.altname || ''}</div><div style="width: 100%; font-size: 2vh; text-align: center;">${tgt.desc || ''}</div></div>`;
+        }
     }
     lbbuilder += `</div>\n<span style="z-index: 2147483647;" class="close pointer" onclick="closeLightboxTwo()">&times;</span>\n<a class="previous" style="position: absolute; left: 0;" onclick="changeSlideTwo(-1)">&#10094;</a>\n<a class="next" onclick="changeSlideTwo(1)">&#10095;</a>`
 

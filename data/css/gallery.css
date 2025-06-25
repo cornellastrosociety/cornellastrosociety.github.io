@@ -12,7 +12,10 @@
     background-color: rgb(161, 161, 161);
     border: 2px solid rgb(161, 161, 161);
     cursor: pointer;
+}
 
+.gallery-container-noborder {
+    border: 0.25px solid rgb(161, 161, 161);;
 }
 
 .gallery-image-slide {
