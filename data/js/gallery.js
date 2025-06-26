@@ -719,10 +719,12 @@ galleries.set(`messier`, {
             name: `M5`
         },
         {
-            name: `M6`
+            name: `M6`,
+            altname: `Butterfly Cluster`
         },
         {
-            name: `M7`
+            name: `M7`,
+            altname: `Ptolemy Cluster`
         },
         {
             id: `m8.jpg`,
@@ -737,7 +739,8 @@ galleries.set(`messier`, {
             name: `M10`
         },
         {
-            name: `M11`
+            name: `M11`,
+            altname: `Wild Duck Cluster`
         },
         {
             name: `M12`
@@ -752,7 +755,8 @@ galleries.set(`messier`, {
             name: `M14`
         },
         {
-            name: `M15`
+            name: `M15`,
+            altname: `Great Pegasus Cluster`
         },
         {
             id: `m16.jpg`,
@@ -767,7 +771,8 @@ galleries.set(`messier`, {
             desc: `Swan Nebula, one of the closest star forming regions to the Earth, as seen from Fuertes in 2016.`
         },
         {
-            name: `M18`
+            name: `M18`,
+            altname: `Black Swan Cluster`
         },
         {
             name: `M19`
@@ -779,16 +784,19 @@ galleries.set(`messier`, {
             desc: `Star cluster plus H II emission nebula in Sagittarius. Taken by Marquice Sanchez-Fleming on June 24, 2025, using the 12" Irving P. Church Refractor. Later stacked 26 x 1-minute frames by Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming using Siril, and post-processed with Photoshop.`
         },
         {
-            name: `M21`
+            name: `M21`,
+            altname: `Webb's Cross`
         },
         {
-            name: `M22`
+            name: `M22`,
+            altname: `Great Sagittarius Cluster`
         },
         {
             name: `M23`
         },
         {
-            name: `M24`
+            name: `M24`,
+            altname: `Small Sagittarius Star Cloud`
         },
         {
             id: `m25.jpg`,
@@ -814,7 +822,8 @@ galleries.set(`messier`, {
             desc: `Open cluster ("Cooling Tower Cluster") in Cygnus, near the Sadr region. Taken by Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis using the 12" Irving P. Church Refractor on June 2, 2025. Stacked from 66 x 30-second frames.`
         },
         {
-            name: `M30`
+            name: `M30`,
+            altname: `Jellyfish Cluster`
         },
         {
             id: `andromeda.jpg`,
@@ -832,10 +841,12 @@ galleries.set(`messier`, {
             desc: `M33 (the Triangulum Galaxy), taken by Sam Newman-Stonebraker using the 8" Orion astrograph.`
         },
         {
-            name: `M34`
+            name: `M34`,
+            altname: `Spiral Cluster`
         },
         {
-            name: `M35`
+            name: `M35`,
+            altname: `Shoe-Buckle Cluster`
         },
         {
             id: `m36.jpg`,
@@ -844,10 +855,12 @@ galleries.set(`messier`, {
             desc: `Open cluster in Auriga. Taken by Erik Payton, Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis using the 12" Irving P. Church Refractor on April 20, 2025. Stacked from ~50 x 30-second monochrome frames.`
         },
         {
-            name: `M37`
+            name: `M37`,
+            altname: `Salt and Pepper Cluster`
         },
         {
-            name: `M38`
+            name: `M38`,
+            altname: `Starfish Cluster`
         },
         {
             id: `m39.jpg`,
@@ -862,7 +875,8 @@ galleries.set(`messier`, {
             desc: `Single 20-second frame of M40 / Winnecke 4, a double star mistakenly recorded by Charles Messier as a deep-sky object. Taken by Ben Jacobson-Bell using the Irving P. Church Refractor on May 26, 2025. The galaxy NGC 4290 is faintly visible to the left of the image.`
         },
         {
-            name: `M41`
+            name: `M41`,
+            altname: `Little Beehive Cluster`
         },
         {
             id: `fborion.jpg`,
@@ -871,10 +885,12 @@ galleries.set(`messier`, {
             desc: `Taken by CAS members in December 2015.`
         },
         {
-            name: `M43`
+            name: `M43`,
+            altname: `De Mairan's Nebula`
         },
         {
-            name: `M44`
+            name: `M44`,
+            altname: `Beehive Cluster`
         },
         {
             id: `pleiades.jpg`,
@@ -895,7 +911,8 @@ galleries.set(`messier`, {
             name: `M49`
         },
         {
-            name: `M50`
+            name: `M50`,
+            altname: `Heart-shaped Cluster`
         },
         {
             id: `m51irv.jpg`,
@@ -904,7 +921,8 @@ galleries.set(`messier`, {
             desc: `Spiral galaxy in Ursa Major. Taken through the 12" Irving P. Church Refractor by Ben Jacobson-Bell, Gillis Lowry, Marquice Sanchez-Fleming, Shane Kuo, Connor Rosenthal, and Jake Turner on June 22, 2025. 11 x 3-minute frames stacked with Siril, post-processed with Photoshop.`
         },
         {
-            name: `M52`
+            name: `M52`,
+            altname: `Scorpion Cluster`
         },
         {
             name: `M53`
@@ -913,7 +931,8 @@ galleries.set(`messier`, {
             name: `M54`
         },
         {
-            name: `M55`
+            name: `M55`,
+            altname: `Specter Cluster`
         },
         {
             name: `M56`
@@ -934,16 +953,20 @@ galleries.set(`messier`, {
             name: `M60`
         },
         {
-            name: `M61`
+            name: `M61`,
+            altname: `Swelling Spiral Galaxy`
         },
         {
-            name: `M62`
+            name: `M62`,
+            altname: `Flickering Globular Cluster`
         },
         {
-            name: `M63`
+            name: `M63`,
+            altname: `Sunflower Galaxy`
         },
         {
-            name: `M64`
+            name: `M64`,
+            altname: `Black Eye Galaxy`
         },
         {
             name: `M65`
@@ -952,7 +975,8 @@ galleries.set(`messier`, {
             name: `M66`
         },
         {
-            name: `M67`
+            name: `M67`,
+            altname: `King Cobra Cluster`
         },
         {
             name: `M68`
@@ -964,7 +988,8 @@ galleries.set(`messier`, {
             name: `M70`
         },
         {
-            name: `M71`
+            name: `M71`,
+            altname: `Angelfish Cluster`
         },
         {
             name: `M72`
@@ -973,7 +998,8 @@ galleries.set(`messier`, {
             name: `M73`
         },
         {
-            name: `M74`
+            name: `M74`,
+            altname: `Phantom Galaxy`
         },
         {
             name: `M75`
@@ -985,7 +1011,8 @@ galleries.set(`messier`, {
             desc: `Planetary nebula in Perseus. Taken by Ben Jacobson-Bell, Gillis Lowry, Shane Kuo, and Marquice Sanchez-Fleming on June 26, 2025, using the 12" Irving P. Church Refractor. 56 x 30-second exposures, ISO 3200, stacked in Siril and post-processed with Photoshop.`
         },
         {
-            name: `M77`
+            name: `M77`,
+            altname: `Squid Galaxy`
         },
         {
             name: `M78`
@@ -1009,7 +1036,8 @@ galleries.set(`messier`, {
             desc: `Taken by Erik Payton, Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis on April 20, 2025. 12 x 3-minute frames stacked with Siril, post-processed with Photoshop.`
         },
         {
-            name: `M83`
+            name: `M83`,
+            altname: `Southern Pinwheel Galaxy`
         },
         {
             name: `M84`
@@ -1021,7 +1049,8 @@ galleries.set(`messier`, {
             name: `M86`
         },
         {
-            name: `M87`
+            name: `M87`,
+            altname: `Virgo A`
         },
         {
             name: `M88`
@@ -1041,10 +1070,12 @@ galleries.set(`messier`, {
             desc: `Globular cluster in Hercules. Taken through the 12" Irving P. Church Refractor, May 16th, 2025, by Ben Jacobson-Bell, Erik Payton, Gillis Lowry, and Ella Mansfield. 30 x 1-minute frames stacked in Siril.`
         },
         {
-            name: `M93`
+            name: `M93`,
+            altname: `Critter Cluster`
         },
         {
-            name: `M94`
+            name: `M94`,
+            altname: `Cat's Eye Galaxy`
         },
         {
             name: `M95`
@@ -1062,10 +1093,12 @@ galleries.set(`messier`, {
             name: `M98`
         },
         {
-            name: `M99`
+            name: `M99`,
+            altname: `Coma Pinwheel`
         },
         {
-            name: `M100`
+            name: `M100`,
+            altname: `Mirror Galaxy`
         },
         {
             id: `m101irv.jpg`,
@@ -1074,13 +1107,15 @@ galleries.set(`messier`, {
             desc: `Counterclockwise spiral galaxy in Ursa Major. Taken by Ben Jacobson-Bell, Gillis Lowry, Marquice Sanchez-Fleming, and Shane Kuo through the 12" Irving P. Church Refractor on June 23, 2025. 8 x 3-minute frames stacked with Siril and post-processed with Photoshop.`
         },
         {
-            name: `M102`
+            name: `M102`,
+            altname: `Spindle Galaxy`
         },
         {
             name: `M103`
         },
         {
-            name: `M104`
+            name: `M104`,
+            altname: `Sombrero Galaxy`
         },
         {
             name: `M105`
@@ -1089,13 +1124,16 @@ galleries.set(`messier`, {
             name: `M106`
         },
         {
-            name: `M107`
+            name: `M107`,
+            altname: `Crucifix Cluster`
         },
         {
-            name: `M108`
+            name: `M108`,
+            altname: `Surfboard Galaxy`
         },
         {
-            name: `M109`
+            name: `M109`,
+            altname: `Vacuum Cleaner Galaxy`
         },
         {
             name: `M110`
