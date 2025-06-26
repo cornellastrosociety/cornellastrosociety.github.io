@@ -761,10 +761,10 @@ galleries.set(`messier`, {
             desc: `Star cluster plus H II emission nebula in Sagittarius, also featuring the Pillars of Creation! Taken by Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming through the 12" Irving P. Church Refractor on June 25, 2025. 184 x 30-second frames stacked using Siril, and post-processed with Photoshop.`
         },
         {
-            id: `m17.jpg`,
+            id: `fbswan.jpg`,
             name: `M17`,
-            altname: `Omega Nebula`,
-            desc: `Star cluster plus H II emission nebula in Sagittarius. Taken by Marquice Sanchez-Fleming on June 24, 2025, using the 12" Irving P. Church Refractor. Later stacked 124 x 30-second frames by Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming using Siril, and post-processed with Photoshop.`
+            altname: `Swan Nebula`,
+            desc: `Swan Nebula, one of the closest star forming regions to the Earth, as seen from Fuertes in 2016.`
         },
         {
             name: `M18`
@@ -865,10 +865,10 @@ galleries.set(`messier`, {
             name: `M41`
         },
         {
-            id: `m42.jpg`,
+            id: `fborion.jpg`,
             name: `M42`,
             altname: `Orion Nebula`,
-            desc: `Single 30" frame taken by Marquice Sanchez-Fleming using the 5" Meade refractor and CMOS camera (monochrome).`
+            desc: `Taken by CAS members in December 2015.`
         },
         {
             name: `M43`
@@ -1260,6 +1260,12 @@ galleries.set(`astro`, {
             desc: `Star cluster plus H II emission nebula in Sagittarius, also featuring the Pillars of Creation! Taken by Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming through the 12" Irving P. Church Refractor on June 25, 2025. 184 x 30-second frames stacked using Siril, and post-processed with Photoshop.`
         },
         {
+            id: `fbswan.jpg`,
+            name: `M17`,
+            altname: `Swan Nebula`,
+            desc: `Swan Nebula, one of the closest star forming regions to the Earth, as seen from Fuertes in 2016.`
+        },
+        {
             id: `m17.jpg`,
             name: `M17`,
             altname: `Omega Nebula`,
@@ -1307,6 +1313,12 @@ galleries.set(`astro`, {
             desc: `Core of the spiral galaxy closest to the Milky Way Galaxy. Taken by Marquice Sanchez-Fleming with the 12" Irving P. Church Refractor on June 23, 2025. Stacked by Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming using 45 x 3-minute frames through Siril, and post-processed with Photoshop.`
         },
         {
+            id: `fbandromeda.jpg`,
+            name: `M31`,
+            altname: `Andromeda Galaxy`,
+            desc: `Spiral galaxy near the Milky Way Galaxy. Taken from the Fuertes Observatory in 2016.`
+        },
+        {
             id: `triangulum.jpg`,
             name: `M33`,
             altname: `Triangulum Galaxy`,
@@ -1331,9 +1343,16 @@ galleries.set(`astro`, {
             desc: `Single 20-second frame of M40 / Winnecke 4, a double star mistakenly recorded by Charles Messier as a deep-sky object. Taken by Ben Jacobson-Bell using the Irving P. Church Refractor on May 26, 2025. The galaxy NGC 4290 is faintly visible to the left of the image.`
         },
         {
+            id: `fborion.jpg`,
+            name: `M42`,
+            altname: `Orion Nebula`,
+            desc: `Taken by CAS members in December 2015.`
+        },
+        {
             id: `orionzhou.jpg`,
             name: `M42`,
-            altname: `Orion Nebula`
+            altname: `Orion Nebula`,
+            desc: `The Orion Nebula (M42) taken by Jason Zhou through the 12" Irving P. Church Refractor on January 20, 2015. Single 30-second exposure.`
         },
         {
             id: `m42.jpg`,
@@ -1368,6 +1387,12 @@ galleries.set(`astro`, {
             name: `M51`,
             altname: `Whirlpool Galaxy`,
             desc: `Spiral galaxy in Ursa Major. Taken through the 12" Irving P. Church Refractor by Ben Jacobson-Bell, Gillis Lowry, Marquice Sanchez-Fleming, Shane Kuo, Connor Rosenthal, and Jake Turner on June 22, 2025. 11 x 3-minute frames stacked with Siril, post-processed with Photoshop.`
+        },
+        {
+            id: `fbring.jpg`,
+            name: `M57`,
+            altname: `Ring Nebula`,
+            desc: `The Ring Nebula (M57) taken by CAS members at the Fuertes Observatory on September 25, 2014. 8 x 1-minute exposures with a Canon T2i through the 12" Irving P. Church Telescope.`
         },
         {
             id: `ring91017.jpg`,
@@ -1478,6 +1503,12 @@ galleries.set(`astro`, {
             name: `Caldwell 38`,
             altname: `Needle Galaxy`,
             desc: `Taken by Riley Scott Jacob with the 12" Irving P. Church Refractor. 5 x 30" frames, ISO 6400. Stacked with DSS.`
+        },
+        {
+            id: `fbowl.jpg`,
+            name: `NGC 457`,
+            altname: `Owl Cluster`,
+            desc: `Open cluster in Cassiopeia. Taken by CAS members in November 2015.`
         }
     ]
 });
