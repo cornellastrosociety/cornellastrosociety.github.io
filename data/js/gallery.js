@@ -707,7 +707,9 @@ galleries.set(`messier`, {
             name: `M2`
         },
         {
-            name: `M3`
+            id: `m3.jpg`,
+            name: `M3`,
+            desc: `Globular cluster in Canes Venatici. Taken by Riley Scott Jacob, using the 12" Irving P. Church Refractor, in May of 2018.`
         },
         {
             id: `m4.jpg`,
@@ -1272,6 +1274,11 @@ galleries.set(`astro`, {
             name: `M1`,
             altname: `Crab Nebula`,
             desc: `M1 (the Crab Nebula), Taken by Riley Scott Jacob using the 12" Irving P. Church Refractor. 21 x 30" frames at ISO 6400.`
+        },
+        {
+            id: `m3.jpg`,
+            name: `M3`,
+            desc: `Globular cluster in Canes Venatici. Taken by Riley Scott Jacob, using the 12" Irving P. Church Refractor, in May of 2018.`
         },
         {
             id: `m4.jpg`,
