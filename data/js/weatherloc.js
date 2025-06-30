@@ -56,9 +56,9 @@ const moondat = (lati, loni, tzoff) => {
             } else {
                 var moonphase = json.properties.data.fracillum;
                 var phasename = json.properties.data.curphase.toLowerCase();
-                var moonrise = json.properties.data.moondata.filter(datum => datum.phen == 'Rise')[0].time;
-                var moonset = json.properties.data.moondata.filter(datum => datum.phen == 'Set')[0].time;
-                var formatstr = `<span style="font-size:12px;"><a target="_blank" href="https://aa.usno.navy.mil/data/api.html">Moon tomorrow</a>: ${moonphase} illuminated ${phasename}, rise: ${moonrise}, set: ${moonset} (${tzf.replace('+', '^').replace('-', '+').replace('^', '-').replace('Etc/', '')})</span>`;
+                var moonrise = json.properties.data.moondata.filter(datum => datum.phen == 'Rise')[0];
+                var moonset = json.properties.data.moondata.filter(datum => datum.phen == 'Set')[0];
+                var formatstr = `<span style="font-size:12px;"><a target="_blank" href="https://aa.usno.navy.mil/data/api.html">Moon tomorrow</a>: ${moonphase} illuminated ${phasename}, rise: ${moonrise ? moonrise.time : 'none'}, set: ${moonset ? moonset.time : 'none'} (${tzf.replace('+', '^').replace('-', '+').replace('^', '-').replace('Etc/', '')})</span>`;
                 document.getElementById('moondattomorrow').innerHTML = formatstr;
             }
         }
