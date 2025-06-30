@@ -963,8 +963,10 @@ galleries.set(`messier`, {
             altname: `Flickering Globular Cluster`
         },
         {
+            id: `m63.jpg`,
             name: `M63`,
-            altname: `Sunflower Galaxy`
+            altname: `Sunflower Galaxy`,
+            desc: `Spiral galaxy in Canes Venatici near Ursa Major.  Taken by Marquice Sanchez-Fleming, Shane Kuo, and Jillian Epstein through the 12" Irving P. Church Refractor on 6/29/25. 12 x 3-minute frames of 3200 ISO stacked using Siril, and post-processed with GIMP.`
         },
         {
             name: `M64`,
@@ -1480,6 +1482,12 @@ galleries.set(`astro`, {
             name: `M57`,
             altname: `Ring Nebula`,
             desc: `Planetary nebula in the Constellation Lyra. Taken by Marquice Sanchez-Fleming on June 24, 2025, using the 12" Irving P. Church Refractor. Later stacked 67 x 30-second frames by Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming using Siril, and post-processed with Photoshop.`
+        },
+        {
+            id: `m63.jpg`,
+            name: `M63`,
+            altname: `Sunflower Galaxy`,
+            desc: `Spiral galaxy in Canes Venatici near Ursa Major.  Taken by Marquice Sanchez-Fleming, Shane Kuo, and Jillian Epstein through the 12" Irving P. Church Refractor on 6/29/25. 12 x 3-minute frames of 3200 ISO stacked using Siril, and post-processed with GIMP.`
         },
         {
             id: `m76.jpg`,
