@@ -834,7 +834,9 @@ galleries.set(`messier`, {
             desc: `The Andromeda Galaxy, taken by Riley Scott Jacob using a 250-mm lens on a sky-tracking DSLR camera (no telescope). 60 x 2-minute frames.`
         },
         {
-            name: `M32`
+            id: `m32.jpg`,
+            name: `M32`,
+            desc: `Satellite galaxy of the Andromeda Galaxy (M31). Taken by Marquice Sanchez-Fleming using the 12" Irving P. Church Refractor on July 3, 2025. Stacked in Siril from 86 x 30-second frames, and post-processed with Photoshop.`
         },
         {
             id: `triangulum.jpg`,
@@ -1142,7 +1144,9 @@ galleries.set(`messier`, {
             altname: `Vacuum Cleaner Galaxy`
         },
         {
-            name: `M110`
+            id: `m110.jpg`,
+            name: `M110`,
+            desc: `Satellite galaxy of the Andromeda Galaxy (M31). Taken by Marquice Sanchez-Fleming using the 12" Irving P. Church Refractor on July 3, 2025. Stacked in Siril from 24 x 2-minute frames, ISO 3200, and post-processed with Photoshop.`
         }
     ]
 });
@@ -1368,6 +1372,11 @@ galleries.set(`astro`, {
             desc: `Spiral galaxy near the Milky Way Galaxy. Taken from the Fuertes Observatory in 2016.`
         },
         {
+            id: `m32.jpg`,
+            name: `M32`,
+            desc: `Satellite galaxy of the Andromeda Galaxy (M31). Taken by Marquice Sanchez-Fleming using the 12" Irving P. Church Refractor on July 3, 2025. Stacked in Siril from 86 x 30-second frames, ISO 3200, and post-processed with Photoshop.`
+        },
+        {
             id: `triangulum.jpg`,
             name: `M33`,
             altname: `Triangulum Galaxy`,
@@ -1557,6 +1566,11 @@ galleries.set(`astro`, {
             name: `M101`,
             altname: `Pinwheel Galaxy`,
             desc: `Counterclockwise spiral galaxy in Ursa Major. Taken by Ben Jacobson-Bell, Gillis Lowry, Marquice Sanchez-Fleming, and Shane Kuo through the 12" Irving P. Church Refractor on June 23, 2025. 8 x 3-minute frames stacked with Siril and post-processed with Photoshop.`
+        },
+        {
+            id: `m110.jpg`,
+            name: `M110`,
+            desc: `Satellite galaxy of the Andromeda Galaxy (M31). Taken by Marquice Sanchez-Fleming using the 12" Irving P. Church Refractor on July 3, 2025. Stacked in Siril from 24 x 2-minute frames, ISO 3200, and post-processed with Photoshop.`
         },
         {
             id: `try6.jpg`,
