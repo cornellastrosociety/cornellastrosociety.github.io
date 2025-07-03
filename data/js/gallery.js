@@ -751,7 +751,7 @@ galleries.set(`messier`, {
             id: `m13.jpg`,
             name: `M13`,
             altname: `Great Globular Cluster in Hercules`,
-            desc: `Great Globular Cluster in Hercules, taken through the 12" Irving P. Church Refractor on June 2, 2025, during a 50% Moon. Stacked from 15 x 60-second frames.`
+            desc: `Great Globular Cluster in Hercules, taken through the 12" Irving P. Church Refractor on June 2, 2025, during a 50% Moon. Stacked from 15 x 60-second frames, and post-processed with GIMP.`
         },
         {
             name: `M14`
@@ -812,7 +812,7 @@ galleries.set(`messier`, {
             id: `m27irv.jpg`,
             name: `M27`,
             altname: `Dumbbell Nebula`,
-            desc: `Dumbbell Nebula, taken through the 12" Irving P. Church Refractor, May 26th, 2025, by Ben Jacobson-Bell, Andrew Lewis, Gillis Lowry, and Marquice Sanchez-Fleming. 19 x 90-second exposures stacked in Siril, ISO 1600.`
+            desc: `Dumbbell Nebula, taken through the 12" Irving P. Church Refractor, May 26th, 2025, by Ben Jacobson-Bell, Andrew Lewis, Gillis Lowry, and Marquice Sanchez-Fleming. 19 x 90-second exposures, ISO 1600, stacked in Siril, and post-processed with Photoshop.`
         },
         {
             name: `M28`
@@ -821,7 +821,7 @@ galleries.set(`messier`, {
             id: `m29.jpg`,
             name: `M29`,
             altname: `Cooling Tower Cluster`,
-            desc: `Open cluster ("Cooling Tower Cluster") in Cygnus, near the Sadr region. Taken by Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis using the 12" Irving P. Church Refractor on June 2, 2025. Stacked from 66 x 30-second frames.`
+            desc: `Open cluster ("Cooling Tower Cluster") in Cygnus, near the Sadr region. Taken by Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis using the 12" Irving P. Church Refractor on June 2, 2025. Stacked in Siril from 66 x 30-second frames, and post-processed with GIMP.`
         },
         {
             name: `M30`,
@@ -854,7 +854,7 @@ galleries.set(`messier`, {
             id: `m36.jpg`,
             name: `M36`,
             altname: `Pinwheel Cluster`,
-            desc: `Open cluster in Auriga. Taken by Erik Payton, Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis using the 12" Irving P. Church Refractor on April 20, 2025. Stacked from ~50 x 30-second monochrome frames.`
+            desc: `Open cluster in Auriga. Taken by Erik Payton, Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis using the 12" Irving P. Church Refractor on April 20, 2025. Stacked from ~50 x 30-second monochrome frames, and post-processed with GIMP.`
         },
         {
             name: `M37`,
@@ -868,7 +868,7 @@ galleries.set(`messier`, {
             id: `m39.jpg`,
             name: `M39`,
             altname: `Pyramid Cluster`,
-            desc: `Open cluster ("Pyramid Cluster") north of Deneb. Taken by Erik Payton, Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming using the 12" Irving P. Church Refractor on June 4, 2025. Stacked from ~20 x 30-second frames, ISO 1600.`
+            desc: `Open cluster ("Pyramid Cluster") north of Deneb. Taken by Erik Payton, Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming using the 12" Irving P. Church Refractor on June 4, 2025. Stacked in Siril from ~20 x 30-second frames, ISO 1600, and post-processed with GIMP.`
         },
         {
             id: `m40.jpg`,
@@ -927,7 +927,9 @@ galleries.set(`messier`, {
             altname: `Scorpion Cluster`
         },
         {
-            name: `M53`
+            id: `m53.jpg`,
+            name: `M53`,
+            desc: `Globular cluster in Coma Berenices, near Virgo and Boötes. Taken by Marquice Sanchez-Fleming, Shane Kuo, and Jillian Epstein through the 12" Irving P. Church Refractor on 6/30/25. 96 x 10-second frames of 3200 ISO stacked using Siril, and post-processed with GIMP.`
         },
         {
             name: `M54`
@@ -966,7 +968,7 @@ galleries.set(`messier`, {
             id: `m63.jpg`,
             name: `M63`,
             altname: `Sunflower Galaxy`,
-            desc: `Spiral galaxy in Canes Venatici near Ursa Major.  Taken by Marquice Sanchez-Fleming, Shane Kuo, and Jillian Epstein through the 12" Irving P. Church Refractor on 6/29/25. 12 x 3-minute frames of 3200 ISO stacked using Siril, and post-processed with GIMP.`
+            desc: `Spiral galaxy in Canes Venatici near Ursa Major. Taken by Marquice Sanchez-Fleming, Shane Kuo, and Jillian Epstein through the 12" Irving P. Church Refractor on 6/29/25. 12 x 3-minute frames of 3200 ISO stacked using Siril, and post-processed with GIMP and Photoshop.`
         },
         {
             name: `M64`,
@@ -1031,13 +1033,13 @@ galleries.set(`messier`, {
             id: `m81irv.jpg`,
             name: `M81`,
             altname: `Bode's Galaxy`,
-            desc: `Taken through the 12" Irving P. Church Refractor, April 22nd, 2025, by Ben Jacobson-Bell, Erik Payton, Shane Kuo, Gillis Lowry, and Andrew Lewis. 21 x 3-minute frames stacked in Siril.`
+            desc: `Taken through the 12" Irving P. Church Refractor, April 22nd, 2025, by Ben Jacobson-Bell, Erik Payton, Shane Kuo, Gillis Lowry, and Andrew Lewis. 21 x 3-minute frames stacked in Siril and post-processed with GIMP.`
         },
         {
             id: `onlythefinest.jpg`,
             name: `M82`,
             altname: `Cigar Galaxy`,
-            desc: `Taken by Erik Payton, Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis on April 20, 2025. 12 x 3-minute frames stacked with Siril, post-processed with Photoshop.`
+            desc: `Taken by Erik Payton, Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis on April 20, 2025. 12 x 3-minute frames stacked with Siril, post-processed with Photoshop and GIMP.`
         },
         {
             name: `M83`,
@@ -1071,7 +1073,7 @@ galleries.set(`messier`, {
         {
             id: `m92.jpg`,
             name: `M92`,
-            desc: `Globular cluster in Hercules. Taken through the 12" Irving P. Church Refractor, May 16th, 2025, by Ben Jacobson-Bell, Erik Payton, Gillis Lowry, and Ella Mansfield. 30 x 1-minute frames stacked in Siril.`
+            desc: `Globular cluster in Hercules. Taken through the 12" Irving P. Church Refractor, May 16th, 2025, by Ben Jacobson-Bell, Erik Payton, Gillis Lowry, and Ella Mansfield. 30 x 1-minute frames stacked in Siril and post-processed with GIMP.`
         },
         {
             name: `M93`,
@@ -1298,7 +1300,7 @@ galleries.set(`astro`, {
             id: `m13.jpg`,
             name: `M13`,
             altname: `Great Globular Cluster in Hercules`,
-            desc: `Great Globular Cluster in Hercules, taken through the 12" Irving P. Church Refractor on June 2, 2025, during a 50% Moon. Stacked from 15 x 60-second frames.`
+            desc: `Great Globular Cluster in Hercules, taken through the 12" Irving P. Church Refractor on June 2, 2025, during a 50% Moon. Stacked from 15 x 60-second frames, and post-processed with GIMP.`
         },
         {
             id: `m16.jpg`,
@@ -1339,13 +1341,13 @@ galleries.set(`astro`, {
             id: `m27irv.jpg`,
             name: `M27`,
             altname: `Dumbbell Nebula`,
-            desc: `Dumbbell Nebula, taken through the 12" Irving P. Church Refractor, May 26th, 2025, by Ben Jacobson-Bell, Andrew Lewis, Gillis Lowry, and Marquice Sanchez-Fleming. 19 x 90-second exposures stacked in Siril, ISO 1600.`
+            desc: `Dumbbell Nebula, taken through the 12" Irving P. Church Refractor, May 26th, 2025, by Ben Jacobson-Bell, Andrew Lewis, Gillis Lowry, and Marquice Sanchez-Fleming. 19 x 90-second exposures, ISO 1600, stacked in Siril, and post-processed with Photoshop.`
         },
         {
             id: `m29.jpg`,
             name: `M29`,
             altname: `Cooling Tower Cluster`,
-            desc: `Open cluster ("Cooling Tower Cluster") in Cygnus, near the Sadr region. Taken by Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis using the 12" Irving P. Church Refractor on June 2, 2025. Stacked from 66 x 30-second frames.`
+            desc: `Open cluster ("Cooling Tower Cluster") in Cygnus, near the Sadr region. Taken by Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis using the 12" Irving P. Church Refractor on June 2, 2025. Stacked in Siril from 66 x 30-second frames, and post-processed with GIMP.`
         },
         {
             id: `andromeda.jpg`,
@@ -1375,13 +1377,13 @@ galleries.set(`astro`, {
             id: `m36.jpg`,
             name: `M36`,
             altname: `Pinwheel Cluster`,
-            desc: `Open cluster in Auriga. Taken by Erik Payton, Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis using the 12" Irving P. Church Refractor on April 20, 2025. Stacked from ~50 x 30-second monochrome frames.`
+            desc: `Open cluster in Auriga. Taken by Erik Payton, Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis using the 12" Irving P. Church Refractor on April 20, 2025. Stacked from ~50 x 30-second monochrome frames, and post-processed with GIMP.`
         },
         {
             id: `m39.jpg`,
             name: `M39`,
             altname: `Pyramid Cluster`,
-            desc: `Open cluster ("Pyramid Cluster") north of Deneb. Taken by Erik Payton, Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming using the 12" Irving P. Church Refractor on June 4, 2025. Stacked from ~20 x 30-second frames, ISO 1600.`
+            desc: `Open cluster ("Pyramid Cluster") north of Deneb. Taken by Erik Payton, Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming using the 12" Irving P. Church Refractor on June 4, 2025. Stacked in Siril from ~20 x 30-second frames, ISO 1600, and post-processed with GIMP.`
         },
         {
             id: `m40.jpg`,
@@ -1436,6 +1438,11 @@ galleries.set(`astro`, {
             desc: `Spiral galaxy in Ursa Major. Taken through the 12" Irving P. Church Refractor by Ben Jacobson-Bell, Gillis Lowry, Marquice Sanchez-Fleming, Shane Kuo, Connor Rosenthal, and Jake Turner on June 22, 2025. 11 x 3-minute frames stacked with Siril, post-processed with Photoshop.`
         },
         {
+            id: `m53.jpg`,
+            name: `M53`,
+            desc: `Globular cluster in Coma Berenices, near Virgo and Boötes. Taken by Marquice Sanchez-Fleming, Shane Kuo, and Jillian Epstein through the 12" Irving P. Church Refractor on 6/30/25. 96 x 10-second frames of 3200 ISO stacked using Siril, and post-processed with GIMP.`
+        },
+        {
             id: `fbring.jpg`,
             name: `M57`,
             altname: `Ring Nebula`,
@@ -1487,7 +1494,7 @@ galleries.set(`astro`, {
             id: `m63.jpg`,
             name: `M63`,
             altname: `Sunflower Galaxy`,
-            desc: `Spiral galaxy in Canes Venatici near Ursa Major.  Taken by Marquice Sanchez-Fleming, Shane Kuo, and Jillian Epstein through the 12" Irving P. Church Refractor on 6/29/25. 12 x 3-minute frames of 3200 ISO stacked using Siril, and post-processed with GIMP.`
+            desc: `Spiral galaxy in Canes Venatici near Ursa Major. Taken by Marquice Sanchez-Fleming, Shane Kuo, and Jillian Epstein through the 12" Irving P. Church Refractor on 6/29/25. 12 x 3-minute frames of 3200 ISO stacked using Siril, and post-processed with GIMP and Photoshop.`
         },
         {
             id: `m76.jpg`,
@@ -1505,7 +1512,7 @@ galleries.set(`astro`, {
             id: `m81irv.jpg`,
             name: `M81`,
             altname: `Bode's Galaxy`,
-            desc: `Taken through the 12" Irving P. Church Refractor, April 22nd, 2025, by Ben Jacobson-Bell, Erik Payton, Shane Kuo, Gillis Lowry, and Andrew Lewis. 21 x 3-minute frames stacked in Siril.`
+            desc: `Taken through the 12" Irving P. Church Refractor, April 22nd, 2025, by Ben Jacobson-Bell, Erik Payton, Shane Kuo, Gillis Lowry, and Andrew Lewis. 21 x 3-minute frames stacked in Siril and post-processed with GIMP.`
         },
         {
             id: `m82.jpg`,
@@ -1527,12 +1534,12 @@ galleries.set(`astro`, {
             id: `onlythefinest.jpg`,
             name: `M82`,
             altname: `Cigar Galaxy`,
-            desc: `Taken by Erik Payton, Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis on April 20, 2025. 12 x 3-minute frames stacked with Siril, post-processed with Photoshop.`
+            desc: `Taken by Erik Payton, Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis on April 20, 2025. 12 x 3-minute frames stacked with Siril, post-processed with Photoshop and GIMP.`
         },
         {
             id: `m92.jpg`,
             name: `M92`,
-            desc: `Globular cluster in Hercules. Taken through the 12" Irving P. Church Refractor, May 16th, 2025, by Ben Jacobson-Bell, Erik Payton, Gillis Lowry, and Ella Mansfield. 30 x 1-minute frames stacked in Siril.`
+            desc: `Globular cluster in Hercules. Taken through the 12" Irving P. Church Refractor, May 16th, 2025, by Ben Jacobson-Bell, Erik Payton, Gillis Lowry, and Ella Mansfield. 30 x 1-minute frames stacked in Siril and post-processed with GIMP.`
         },
         {
             id: `owl.jpg`,
