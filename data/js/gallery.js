@@ -1579,10 +1579,22 @@ galleries.set(`astro`, {
             desc: `Taken by Riley Scott Jacob with the 12" Irving P. Church Refractor. 5 x 30" frames, ISO 6400. Stacked with DSS.`
         },
         {
+            id: `nomnomgood.jpg`,
+            name: `NGC 281`,
+            altname: `Pacman Nebula`,
+            desc: `Emission nebula in Cassiopeia. Taken by Marquice Sanchez-Fleming using the 12" Irving P. Church Refractor on July 3, 2025. Stacked in Siril from 274 x 30-second frames, ISO 3200, and post-processed with Photoshop, by Ben Jacobson-Bell, Marquice Sanchez-Fleming, and Shane Kuo.`
+        },
+        {
             id: `fbowl.jpg`,
             name: `NGC 457`,
             altname: `Owl Cluster`,
             desc: `Open cluster in Cassiopeia. Taken by CAS members in November 2015.`
+        },
+        {
+            id: `offtoseethewizard.jpg`,
+            name: `NGC 7380`,
+            altname: `Wizard Nebula`,
+            desc: `Open cluster with emission nebulosity in Cepheus. Taken by Marquice Sanchez-Fleming using the 12" Irving P. Church Refractor on July 3, 2025. Stacked in Siril from 150 x 30-second frames, ISO 3200, and post-processed with Photoshop, by Ben Jacobson-Bell, Marquice Sanchez-Fleming, and Shane Kuo.`
         }
     ]
 });
