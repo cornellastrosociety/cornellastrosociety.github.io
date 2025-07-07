@@ -1,0 +1,46 @@
+<html>
+<title>CU Department of Astronomy : Instructional Facilities : Fuertes Observatory : Photographs </title>
+
+<!--#include virtual="/basehref.txt"-->
+
+<body bgcolor="#FFFFFF" background="images/saturnback.jpg" vlink="#996666" link="#0000ff" marginwidth="0" marginheight="0">
+
+<!--#include virtual="/topstuff.txt"-->
+
+<table width=620 cellspacing=0 cellpadding=0 border=0>
+<tr valign=top>
+<td width=170>
+       	<!--#include virtual="/main_menu.txt"-->
+</td>
+<td width=10>&nbsp;</td>
+<td width=410>
+
+
+               
+                <div align=center>
+                <font align=right size=5 face=Lucida,Helvetica,Arial color=#0000cc><b>The Fuertes Observatory</b></font><p>
+                </div>
+
+<a href="/CAS/fphotos/big/Fuertes/fuertessnow.jpg"><img border=0 width=426 height=284 align=center src="/CAS/fphotos/Fuertes/fuertessnow.jpg" alt="Fuertes in winter"></a>
+
+<p>
+<!--#include virtual="/CAS/fphotos/Fuertes/fuertessnow.txt"-->
+
+<p>
+
+<center>
+<a href="/CAS/ptour/bbN.shtml"><img src="/images/backward_arrow.gif" border="0" width="60" height="40"></a>
+ 
+<a href="/CAS/ptour/bb1.shtml"><img src="/images/forward_arrow.gif" border="0" width="50" height="40"></a>
+</center>
+
+
+<!--#include virtual="/CAS/credits.txt"-->
+
+</td>
+</tr>
+</table>
+<!--#include virtual="/bottomstuff.txt"-->
+</body>
+</html>
+

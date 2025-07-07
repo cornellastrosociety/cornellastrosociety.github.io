@@ -1,0 +1,49 @@
+<html>
+<title>CU Department of Astronomy : Instructional Facilities : Old Observatories : Barnes</title>
+
+<!--#include virtual="/basehref.txt"-->
+
+<body bgcolor="#FFFFFF" background="images/saturnback.jpg" vlink="#996666" link="#0000ff" marginwidth="0" marginheight="0">
+
+<!--#include virtual="/topstuff.txt"-->
+
+<table width=620 cellspacing=0 cellpadding=0 border=0>
+<tr valign=top>
+<td width=170>
+       	<!--#include virtual="/main_menu.txt"-->
+</td>
+<td width=10>&nbsp;</td>
+<td width=410>
+
+
+               
+                <div align=center>
+                <font align=right size=5 face=Lucida,Helvetica,Arial color=#0000cc><b>The "Barton Hall" Observatory</b></font><p>
+                </div>
+
+
+<bold>From Hewitt. Cornell: A History, 1905, p 342:</bold>
+<blockquote>
+<p>
+"General Alfred C. Barnes, of the Board of Trustees, offered to erect a geodetic observatory which, while not large enough to meet the needs of an astronomical observatory, would yet serve for such astronomical practice as it was necessary for students in civil engineering to receive. This building stands on the eminence south of the veterinary college. It contains a computing room twenty feet  square at the west end, a transit room, four piers, a clock-room, and two domes over the clock-room twenty feet and eighteen feet in diameter respectively. The west front extends south from the computing room, with a prime vertical transit room, a general instrument room, and a dome, eleven feet in diameter, above the instrument room. This observatory contained at its opening a five-inch equatorial, two altazimuths, two astronomical transits, and two zenith telescopes with two chronographs, and an astronomical clock. This building was completed so that it could be used in September, 1903."
+</blockquote>
+<p>
+The cornerstone of the current Barton Hall indicates that it was built in 1915.
+<p>
+Some pictures of the Barnes observatory:
+<p>
+<img alt="barton hall observatory" src="/CAS/history/photos/barton/barton-hewitt1905.jpg">
+<p>(from Hewitt's book)
+<p>
+<img alt="a second picture of the barton hall observatory" src="/CAS/history/photos/barton/bartonphoto.jpg">
+<p> (from the Cornell Archives)
+
+<!--#include virtual="/CAS/history/credits.txt"-->
+
+</td>
+</tr>
+</table>
+<!--#include virtual="/bottomstuff.txt"-->
+</body>
+</html>
+

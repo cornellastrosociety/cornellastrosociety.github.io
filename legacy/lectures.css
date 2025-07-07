@@ -1,0 +1,17 @@
+p.date {
+	font-weight: bold;
+	font-size: smaller;
+}
+p.title {
+	margin-left:    5%;
+	margin-bottom: 0px;
+	font-style: italic;
+}
+p.presenter {
+	margin-top: 0px;
+	margin-left: 5%;
+}
+p.abstract {
+	width:      80%;
+	margin-left: 5%;
+}

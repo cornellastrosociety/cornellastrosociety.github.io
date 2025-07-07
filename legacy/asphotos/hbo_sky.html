@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Cornell Astronomical Society</title>
+<link href="../base.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+// Preload images
+var foo = new Image();
+foo.src = "photos/mpOrion.jpg";
+bar = new Image();
+bar.src = "photos/mpOrion_label.jpg";
+
+// Identify the image object we want
+function getImage()
+{
+  if (document.getElementById)
+    return document.getElementById("skyimg");
+  else if (document.all)
+    return document.all[apollo];
+  else 
+    return document.apollo;
+}
+
+// Image swap
+function showLines()
+{
+    var theimage = getImage();
+    theimage.src = "photos/mpOrion_label.jpg";
+}
+function hideLines()
+{
+    var theimage = getImage();
+    theimage.src = "photos/mpOrion.jpg";
+}
+</script>
+<script type="text/javascript" src="../menubar.js"></script>
+</head>
+
+<body>
+<div id="banner">
+<h1><a href="index.html">Cornell Astronomical Society</a></h1>
+</div>
+
+<div id="main">
+<h2>Mt. Pleasant Sky</h2>
+
+<p>When the members of CAS just can't take any more of Ithaca's light pollution, they pack up and head to nearby Mt. Pleasant. During one trip, Mike Roman took a few pictures of the skyline. Think you can recognize the constellations with so many stars? Try picking out the patterns, then mouse over the image to check.</p>
+
+<p><img width="100%" src="photos/mpOrion.jpg" alt="Sky from Mt. Pleasant" 
+	name="skyimg" id="skyimg" onmouseover="showLines();" onmouseout="hideLines();" /></p>
+Mike decided to edit one of the constellations a bit to make it look more like his dog. After all, he couldn't just let all those extra stars go to waste!
+<p><img width="100%" src="photos/canisMikus.jpg" alt="Mike's new constellation" /></p>
+
+<!-- Need the br to make IE leave space on the bottom -->
+<br />
+</div>
+
+<script type="text/javascript">writeMenu(1);</script>
+
+</body>
+</html>

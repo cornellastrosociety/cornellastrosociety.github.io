@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Cornell Astronomical Society</title>
+<link href="../base.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+// Preload apollo 11 image
+var foo = new Image();
+foo.src = "photos/moon.jpg";
+bar = new Image();
+bar.src = "photos/apollo.jpg";
+
+// Identify the image object we want
+function getApollo()
+{
+  if (document.getElementById)
+    return document.getElementById("apollo");
+  else if (document.all)
+    return document.all[apollo];
+  else 
+    return document.apollo;
+}
+
+// Image swap
+function showApollo()
+{
+    var theimage = getApollo();
+    theimage.src = "photos/apollo.jpg";
+}
+function hideApollo()
+{
+    var theimage = getApollo();
+    theimage.src = "photos/moon.jpg";
+}
+</script>
+<script type="text/javascript" src="../menubar.js"></script>
+</head>
+
+<body>
+<div id="banner">
+<h1><a href="index.html">Cornell Astronomical Society</a></h1>
+</div>
+
+<div id="main">
+<h2> Lunar Photos </h2>
+
+<p>These pictures were taken by Mike Roman through our main telescope using his Canon 300D digital camera. They are all of essentially the same part of the moon; in particular, you can recognize a chain of three very prominent craters in all four images (the craters are near the lower left corner of the first image). The two overlapping craters are Theophilus and Cyrillus; the one a little farther apart is Catharina. The flat region just to the right (in the first and second images) of the three is Mare Nectaris, the Sea of Nectar. The large dark region in the center of the first image is none other than Mare Tranquilitatis, site of the first human landing on the moon. Mouse over the image to see the Apollo 11 landing site.</p>
+
+<p>You might have noticed that the apparent edge (the <span class="defn">limb</span>) of the moon in these images has a red or blue colored band. This is not part of the moon! Instead, it's what astronomers call <span class="defn">chromatic aberration</span>. Any glass lens, including the ones used by our telescope, acts as a weak prism and splits light into different colors. Especially for bright, highly magnified objects, this manifests itself as colored bands like the ones you see here.</p>
+
+<p>Some amateur telescope manufacturers offer <span class="defn">achromatic</span> or <span class="defn">apochromatic</span> refractors. These are telescopes that use several lens components stacked on top of each other to try to even out how light of different colors gets bent. They can't completely remove chromatic aberration, but a good apochromat comes close. The downside is that such complex optical elements are much more difficult to make well and are much more expensive for a given size than the simple lens used by our telescope.</p>
+
+<p><img width="100%" src="photos/moon.jpg" alt="Moon image 1" 
+	name="apollo" id="apollo" onmouseover="showApollo();" onmouseout="hideApollo();" /></p>
+<p><img width="100%" src="photos/moon7.jpg" alt="Moon image 2" /></p>
+<p><img width="100%" src="photos/moon12.jpg" alt="Moon image 3" /></p>
+<p><img width="100%" src="photos/moon10.jpg" alt="Moon image 4" /></p>
+
+<!-- Need the br to make IE leave space on the bottom -->
+<br />
+</div>
+
+<script type="text/javascript">writeMenu(1);</script>
+
+</body>
+</html>

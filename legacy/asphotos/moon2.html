@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Cornell Astronomical Society</title>
+<link href="../base.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+// Preload all the images
+(new Image()).src = "photos/wholemoon.jpg";
+(new Image()).src = "photos/wholemoon_label.jpg";
+
+var curImg = "photos/wholemoon";		// Currently whole image
+
+// Identify the objects we want
+function getImg()
+{
+  if (document.getElementById)
+    return document.getElementById("mainimg");
+  else if (document.all)
+    return document.all[mainimg];
+  else 
+    return document.mainimg;
+}
+function getCBox()
+{
+  if (document.getElementById)
+    return document.getElementById("showoverlay");
+  else if (document.all)
+    return document.all[showoverlay];
+  else 
+    return document.overlay.showoverlay;
+}
+
+// Zoom in/out
+function loadImg(subImg)
+{
+    //Zooming out is simpler
+    if(curImg != "photos/wholemoon")
+	curImg = "photos/wholemoon";
+    //Zoom in
+    else if(subImg != "")
+	curImg = subImg;
+    //If invalid region AND already zoomed out, do nothing
+
+    showFeatures();
+}
+
+// Image swap
+function showFeatures()
+{
+    if((getCBox()).checked == true) (getImg()).src = curImg + "_label.jpg";
+}
+function hideFeatures()
+{
+    (getImg()).src = curImg + ".jpg";
+}
+</script>
+<script type="text/javascript" src="../menubar.js"></script>
+</head>
+
+<body>
+<div id="banner">
+<h1><a href="index.html">Cornell Astronomical Society</a></h1>
+</div>
+
+<div id="main">
+<h2> Lunar Mosaic </h2>
+
+<p>Mike Roman created this mosaic by stitching together 12 seperate contrast-enhanced images he made through our main telescope using his Canon 300D digital camera (the exposures were 1/60 of a second at 100 ISO for you technical folks). The result is an extremely detailed image of the moon as it appears about 2 days past full.</p>
+
+<p>In fact, the mosaic is too detailed to show here in its full glory -- each dimension has been shrunk by a factor of 4 to keep loading and display times reasonable. If you want, we also have the full, <a href="photos/wholemoon_raw.jpg">11&nbsp;MB version</a>. If you are using Internet Explorer and the image fits in your browser window, you should click the "Expand to regular size" button floating over the lower right corner.</p>
+<!--
+<p>Click on any part of the image to see the full-resolution images from which Mike composed his mosaic. Click again to return to the full view.</p>
+-->
+<p>
+<form name="overlay" action="">
+<input type="checkbox" name="showoverlay" id="showoverlay" checked="checked" />Show Features on Mouseover<br />
+</form>
+<img width="100%" src="photos/wholemoon.jpg" alt="Map of the Moon"
+	name="mainimg" id="mainimg" onmouseover="showFeatures();" onmouseout="hideFeatures();" /></p>
+
+<!--
+<map name="moon_regions">
+<area shape="rect" nohref="true" onClick="loadImg();" coords="lx,ty,rx,by" alt="Region #" />
+</map>
+-->
+
+<!-- Need the br to make IE leave space on the bottom -->
+<br />
+</div>
+
+<script type="text/javascript">writeMenu(1);</script>
+
+</body>
+</html>

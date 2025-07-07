@@ -1,0 +1,48 @@
+<html>
+<title>CU Department of Astronomy : Instructional Facilities : Old Observatories : Original Fuertes</title>
+
+<!--#include virtual="/basehref.txt"-->
+
+<body bgcolor="#FFFFFF" background="/images/saturnback.jpg" vlink="#996666" link="#0000ff" marginwidth="0" marginheight="0">
+
+<!--#include virtual="/topstuff.txt"-->
+
+<table width=620 cellspacing=0 cellpadding=0 border=0>
+<tr valign=top>
+<td width=170>
+       	<!--#include virtual="/main_menu.txt"-->
+</td>
+<td width=10>&nbsp;</td>
+<td width=410>
+
+
+               
+                <div align=center>
+                <font align=right size=5 face=Lucida,Helvetica,Arial color=#0000cc><b>The "Goldwin Smith" Observatory</b></font><p>
+                </div>
+
+<bold>From Hewitt. Cornell: A History, 1905, p 342:</bold>
+<blockquote>
+<p>
+"Professor Fuertes had advocated for many years the erection of an astronomical observatory. He possessed several telescopes which were purchased by the university, and which were installed in a wooden building which stood on the site of the north wing of the Goldwin Smith Hall. Later it was removed to the site of Stimson Hall. The building had many practical conveniences, owing to the skill and enthusiasm of the professor who planned it. It, however, was imcomplete, and was itself a standing reproach to the campus."
+</blockquote>
+<p>
+
+Some pictures of the observatory near Goldwin Smith:
+<p>(from the Cornell Archives)
+<p>
+<img alt="goldwin smith hall observatory" src="/CAS/history/photos/gs/gsobs.jpg">
+<p>
+<img alt="a second picture of the goldwin smith hall observatory" src="/CAS/history/photos/gs/transitcamera.jpg">
+
+
+
+<!--#include virtual="/CAS/history/credits.txt"-->
+
+</td>
+</tr>
+</table>
+<!--#include virtual="/bottomstuff.txt"-->
+</body>
+</html>
+

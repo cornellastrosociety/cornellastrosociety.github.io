@@ -1,0 +1,23 @@
+div.center { text-align: center; }
+img.square { 
+	width:  364px;
+	height: 364px;
+	vertical-align: middle;
+	text-align: center;
+}
+img.portrait { 
+	width:  426px;
+	height: 284px;
+	vertical-align: middle;
+	text-align: center;
+}
+img.nav { 
+	width:  60px;
+	height: 40px;
+	vertical-align: middle;
+	text-align: center;
+}
+#main {
+	width: 73%; 
+	margin-left: 7%;
+}
