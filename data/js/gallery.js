@@ -786,8 +786,10 @@ galleries.set(`messier`, {
             desc: `Star cluster plus H II emission nebula in Sagittarius. Taken by Marquice Sanchez-Fleming on June 24, 2025, using the 12" Irving P. Church Refractor. Later stacked 26 x 1-minute frames by Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming using Siril, and post-processed with Photoshop.`
         },
         {
+            id: `m21.jpg`,
             name: `M21`,
-            altname: `Webb's Cross`
+            altname: `Webb's Cross`,
+            desc: `Open cluster near the Trifid Nebula (M20). Taken by CAS members in the 1980s using a Schmidt camera mounted to the Irving P. Church Refractor. The relevant open cluster is in the upper left corner of the image; the object in the lower right corner is M20.`
         },
         {
             name: `M22`,
