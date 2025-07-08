@@ -19,7 +19,7 @@ function writeMenu(level)
     document.write('<br>');
     writeMainMenuRelative(prefix, 'faq.html', 'FAQs');
     writeMainMenuRelative(prefix, 'fuertes.html', 'About Fuertes');
-    writeMainMenuRelative(prefix, 'observing.php', 'Observing at Fuertes');
+    writeMainMenuRelative(prefix, 'observing.html', 'Observing at Fuertes');
     document.write('<br>');
     writeMainMenuRelative(prefix, 'ccd.html', 'CCD camera project');
     writeMainMenuRelative(prefix, 'messier.html', 'Messier Marathon');
