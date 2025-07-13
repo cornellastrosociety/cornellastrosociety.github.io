@@ -1286,6 +1286,11 @@ galleries.set(`astro`, {
             name: `Pluto and Charon`
         },
         {
+            id: `Pluto_070525.jpg`,
+            name: `Pluto`,
+            desc: `Taken on July 5, 2025.`
+        },
+        {
             id: `crab.jpg`,
             name: `M1`,
             altname: `Crab Nebula`,
