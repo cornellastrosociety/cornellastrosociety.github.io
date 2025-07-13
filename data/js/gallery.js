@@ -773,8 +773,10 @@ galleries.set(`messier`, {
             desc: `Swan Nebula, one of the closest star forming regions to the Earth, as seen from Fuertes in 2016.`
         },
         {
+            id: `m18.jpg`,
             name: `M18`,
-            altname: `Black Swan Cluster`
+            altname: `Black Swan Cluster`,
+            desc: `Open cluster in Sagittarius. Taken by Marquice Sanchez-Fleming, Shane Kuo, and Ben Jacobson-Bell on July 3, 2025, using the 12" Irving P. Church Refractor. Stacked in Siril from 98 x 3-second frames, ISO 1600, and post-processed with Photoshop.`
         },
         {
             name: `M19`
@@ -1121,7 +1123,9 @@ galleries.set(`messier`, {
             altname: `Spindle Galaxy`
         },
         {
-            name: `M103`
+            id: `m103.jpg`,
+            name: `M103`,
+            desc: `Open cluster in Cassiopeia. Taken by Ben Jacobson-Bell, Shane Kuo, Marquice Sanchez-Fleming, Erik Payton, Gillis Lowry, Ella Mansfield, Jillian Epstein, Treyton Grahn, and Jason Peskin using the 12" Irving P. Church Refractor on July 13, 2025. Stacked in Siril from 42 x 30-second frames, ISO 200, and post-processed with Photoshop.`
         },
         {
             name: `M104`,
@@ -1142,8 +1146,10 @@ galleries.set(`messier`, {
             altname: `Surfboard Galaxy`
         },
         {
+            id: `m109.jpg`,
             name: `M109`,
-            altname: `Vacuum Cleaner Galaxy`
+            altname: `Vacuum Cleaner Galaxy`,
+            desc: `Barred spiral galaxy in Ursa Major, near the star Phecda. Taken by Ben Jacobson-Bell, Erik Payton, Shane Kuo, Marquice Sanchez-Fleming, Ella Mansfield, Gillis Lowry, Jillian Epstein, Treyton Grahn, and Jason Peskin using the 12" Irving P. Church Refractor on July 12, 2025. Stacked in Siril from 19 x 3-minute frames, ISO 3200, and post-processed with Photoshop. Other galaxies UGC 6940 and UGC 6969 are visible in the upper left and upper right of the image, respectively.`
         },
         {
             id: `m110.jpg`,
@@ -1325,6 +1331,12 @@ galleries.set(`astro`, {
             name: `M17`,
             altname: `Omega Nebula`,
             desc: `Star cluster plus H II emission nebula in Sagittarius. Taken by Marquice Sanchez-Fleming on June 24, 2025, using the 12" Irving P. Church Refractor. Later stacked 124 x 30-second frames by Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming using Siril, and post-processed with Photoshop.`
+        },
+        {
+            id: `m18.jpg`,
+            name: `M18`,
+            altname: `Black Swan Cluster`,
+            desc: `Open cluster in Sagittarius. Taken by Marquice Sanchez-Fleming, Shane Kuo, and Ben Jacobson-Bell on July 3, 2025, using the 12" Irving P. Church Refractor. Stacked in Siril from 98 x 3-second frames, ISO 1600, and post-processed with Photoshop.`
         },
         {
             id: `m20.jpg`,
@@ -1568,6 +1580,17 @@ galleries.set(`astro`, {
             name: `M101`,
             altname: `Pinwheel Galaxy`,
             desc: `Counterclockwise spiral galaxy in Ursa Major. Taken by Ben Jacobson-Bell, Gillis Lowry, Marquice Sanchez-Fleming, and Shane Kuo through the 12" Irving P. Church Refractor on June 23, 2025. 8 x 3-minute frames stacked with Siril and post-processed with Photoshop.`
+        },
+        {
+            id: `m103.jpg`,
+            name: `M103`,
+            desc: `Open cluster in Cassiopeia. Taken by Ben Jacobson-Bell, Shane Kuo, Marquice Sanchez-Fleming, Erik Payton, Gillis Lowry, Ella Mansfield, Jillian Epstein, Treyton Grahn, and Jason Peskin using the 12" Irving P. Church Refractor on July 13, 2025. Stacked in Siril from 42 x 30-second frames, ISO 200, and post-processed with Photoshop.`
+        },
+        {
+            id: `m109.jpg`,
+            name: `M109`,
+            altname: `Vacuum Cleaner Galaxy`,
+            desc: `Barred spiral galaxy in Ursa Major, near the star Phecda. Taken by Ben Jacobson-Bell, Erik Payton, Shane Kuo, Marquice Sanchez-Fleming, Ella Mansfield, Gillis Lowry, Jillian Epstein, Treyton Grahn, and Jason Peskin using the 12" Irving P. Church Refractor on July 12, 2025. Stacked in Siril from 19 x 3-minute frames, ISO 3200, and post-processed with Photoshop. Other galaxies UGC 6940 and UGC 6969 are visible in the upper left and upper right of the image, respectively.`
         },
         {
             id: `m110.jpg`,
