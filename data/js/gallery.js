@@ -1086,8 +1086,11 @@ galleries.set(`messier`, {
             altname: `Critter Cluster`
         },
         {
+            id: `m94.jpg`,
             name: `M94`,
-            altname: `Cat's Eye Galaxy`
+            altname: `Crocodile's Eye Galaxy`,
+            desc: `Spiral galaxy in Canes Venatici. Taken through the 12" Irving P. Church Refractor on July 15th, 2025, by Ben Jacobson-Bell, Gillis Lowry, Marquice Sanchez-Fleming, Shane Kuo, and Treyton Grahn. 12 x 3-minute frames, ISO 3200, stacked in Siril and post-processed with Photoshop.`
+
         },
         {
             name: `M95`
@@ -1568,6 +1571,13 @@ galleries.set(`astro`, {
             id: `m92.jpg`,
             name: `M92`,
             desc: `Globular cluster in Hercules. Taken through the 12" Irving P. Church Refractor, May 16th, 2025, by Ben Jacobson-Bell, Erik Payton, Gillis Lowry, and Ella Mansfield. 30 x 1-minute frames stacked in Siril and post-processed with GIMP.`
+        },
+        {
+            id: `m94.jpg`,
+            name: `M94`,
+            altname: `Crocodile's Eye Galaxy`,
+            desc: `Spiral galaxy in Canes Venatici. Taken through the 12" Irving P. Church Refractor on July 15th, 2025, by Ben Jacobson-Bell, Gillis Lowry, Marquice Sanchez-Fleming, Shane Kuo, and Treyton Grahn. 12 x 3-minute frames, ISO 3200, stacked in Siril and post-processed with Photoshop.`
+
         },
         {
             id: `owl.jpg`,
