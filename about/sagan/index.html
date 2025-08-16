@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="overflow-x: hidden;">
+<html lang="en" style="overflow: hidden;">
 
 <head>
     <meta charset="UTF-8">
@@ -22,13 +22,23 @@
             z-index: 99;
             color: rgb(22, 59, 125);
         }
+
+        #csfooter {
+            font-size: 2.5vw;
+        }
+
+        @media only screen and (min-width: 750px) {
+            #csfooter {
+                font-size: 18.75px;
+            }
+        }
     </style>
 </head>
 
 <body style="overflow: hidden; padding: 0; margin: 0;">
     <div id="main" style="margin: auto; animation: fadein ease-in-out 1.5s none; overflow: hidden; padding: 0; margin: 0;">
-        <iframe style="width: 100%; height: 100vh; border: none; margin: 0; padding: 0;" src="https://arcg.is/10i4O50"></iframe>
-        <div style="position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); padding: 0.5em; font-family: caudex, serif; background-color: white; border-radius: 10px 10px 0 0;">
+        <iframe style="width: 100%; max-height: 95dvh; height: 95dvh; border: none; margin: 0; padding: 0;" src="https://arcg.is/10i4O50"></iframe>
+        <div id="csfooter" style="font-family: caudex, serif; width: 100%; height: 5dvh; text-align: center;">
             <a href="/">The Cornell Astronomical Society</a>
             &nbsp;|&nbsp;
             <a target="_blank" href="https://carlsaganinstitute.cornell.edu">The Carl Sagan Institute</a>
