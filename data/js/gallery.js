@@ -1171,7 +1171,8 @@ galleries.set(`astro`, {
     data: [
         {
             id: `2025.jpg`,
-            name: `Spring, Summer 2025 Astrophotography`
+            name: `Spring, Summer 2025 Astrophotography`,
+            desc: `Taken using the Irving P. Church Refractor. Full-size image available <a target="_blank" style="color: white;" href="/data/img/astro/2025Full.png">here</a>.`
         },
         {
             id: `grandss.jpg`,
