@@ -1170,6 +1170,10 @@ galleries.set(`astro`, {
     exclude: [],
     data: [
         {
+            id: `2025.jpg`,
+            name: `Spring, Summer 2025 Astrophotography`
+        },
+        {
             id: `grandss.jpg`,
             name: `The Solar System from Fuertes`
         },
