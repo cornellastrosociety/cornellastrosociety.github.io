@@ -1777,6 +1777,108 @@ var past_lecs = [
         attributes: [
             {
                 type: 'title',
+                value: 'Robotic Exploration'
+            },
+            {
+                type: 'datetime',
+                value: 'March 21st, 2014%7:30 PM'
+            },
+            {
+                type: 'presenter',
+                value: 'Kevin Kruempelstaedter'
+            }
+        ],
+        desc: 'CAS member Kevin Kruempelstaedter, a mechanical engineering student, is presenting a lecture on autonomous space exploration! The lecture will be about robots and their role in the exploration of Mars, focusing more specifically on the Mars rovers and landers and the challenges they face.'
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
+                value: 'Europa, the Oceanic World'
+            },
+            {
+                type: 'datetime',
+                value: 'February 28th, 2014%7:30 PM'
+            },
+            {
+                type: 'presenter',
+                value: 'Adrian Poniatowski'
+            }
+        ],
+        desc: 'The recent blast of chilly weather befits a lecture on a distant icy world orbiting Jupiter. Ever since its discovery four hundred years ago, Europa and the Galilean moons of Jupiter have provided us with invaluable insights into the mechanics of our solar system, moon systems, planetary geology, and geomagnetic effects. Recent discoveries have focused on the thrilling possibility of finding life in a liquid ocean theorized to exist under the icy crust of Europa. This lecture will be an general survey of the knowledge gathered to-date on the moon, primarily from the Galileo mission, with a special emphasis on discussing Europa\'s ocean and future missions to the moon.'
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
+                value: 'Uncle Carl Wants YOU to Participate in Citizen Astronomy Projects!'
+            },
+            {
+                type: 'datetime',
+                value: 'February 7th, 2014%7:30 PM'
+            },
+            {
+                type: 'presenter',
+                value: 'Art Samplaski'
+            }
+        ],
+        desc: 'Thanks to the Internet and dirt-cheap computing, we are living in a Golden Age(TM) for citizen science. Multiple crowdsourcing websites allow everyday people around the world to help specialists analyze datasets that would overwhelm any supercomputer, with no special training or advanced degree needed. Not only are there astronomy projects, but also ones on nature/climate studies, medicine, and the humanities. In some instances, such as the galaxy-sized gas cloud "Hanny\'s Voorwerp," significant discoveries have been made by average people! Join us as we explore some of the ways ordinary folks can make valuable contributions to science while having fun and, in many cases, seeing amazing images. (Not to mention being a MUCH more productive way to waste time than playing more "Angry Birds!"'
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
+                value: 'The History of Fuertes Observatory'
+            },
+            {
+                type: 'datetime',
+                value: 'November 8th, 2013%8:00 PM'
+            },
+            {
+                type: 'presenter',
+                value: 'Prof. Phil Nicholson'
+            }
+        ],
+        desc: 'The Fuertes Observatory is the second-last of a long line of astronomical observatories at Cornell, and by far the longest-lived, having been completed almost 100 years ago. Prof. Nicholson will review the early history of astronomy at Cornell, culminating in the construction of Fuertes in 1917 and the installation of the 12-inch refractor in 1922. We will also look briefly at the history and construction of the 24-inch reflector at the Hartung-Boothroyd Observatory, located on Mt Pleasant about 5 miles from the Cornell campus.'
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
+                value: 'Asteroid Mining and Planetary Resources'
+            },
+            {
+                type: 'datetime',
+                value: 'November 1st, 2013%7:30 PM'
+            },
+            {
+                type: 'presenter',
+                value: 'Yoni Saltzman'
+            }
+        ],
+        desc: 'In April of 2012 a company named Planetary Resources unveiled itself to the world and in one fell swoop asteroid mining jumped from the pages of science fiction into the world of science fact. Yoni Saltzman, a Senior Independent Major in the College of Engineering with a primary focus in Mechanical Engineering and a secondary focus in Astronomy, will speak about his experiences working at Planetary Resources during the Summer of 2013. The talk will give an overview of the driving forces and technologies behind asteroid mining as well as the economic feasibility of plans that were once considered pure fiction.'
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
+                value: 'Voyager 1, Humanity\'s First Baby Step into the Galaxy'
+            },
+            {
+                type: 'datetime',
+                value: 'September 27th, 2013%7:30 PM'
+            },
+            {
+                type: 'presenter',
+                value: 'Art Samplaski'
+            }
+        ],
+        desc: 'On Sept. 12, 2013, NASA announced that new data analysis showed the spacecraft Voyager 1, launched 36 years and 1 week earlier, had crossed the boundary into interstellar space just over a year earlier. News about a decades-old space probe may not seem as emotionally direct and dramatic as the Apollo 11 landing; but Voyager\'s achievement is as important a moment in the history of humanity as Neil Armstrong\'s "That\'s one small step." For the first time ever, a human-made object has left the solar system; only a handful of events in the history of exploration are as significant. Come join us for a look at the history of Project Voyager, the discoveries it and its twin have made, how we determined that it had crossed the frontier, and connections to other exploration milestones.'
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
                 value: 'ET Phones Home?: Atrobiological Thoughts'
             },
             {
