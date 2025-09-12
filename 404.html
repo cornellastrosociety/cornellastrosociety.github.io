@@ -90,6 +90,8 @@
             default:
                 if (window.location.pathname.replace(/\//g, '').startsWith('w')) {
                     location.replace('/visit/weather');
+                } else if (window.location.pathname.replace(/\//g, '').startsWith('x')) {
+                    location.replace('/members/Constitution.pdf');
                 }
                 setTimeout(() => {
                     location.replace('/');
