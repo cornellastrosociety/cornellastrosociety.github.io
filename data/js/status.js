@@ -3,7 +3,7 @@ var status_data = `<div style="width: 100%; background-color: rgba(140, 0, 0, 0.
             <br>
             <br>
             <!-- Status message -->
-            <span style="text-shadow: white 0 0 4px; color: white; font-size: 18px; line-height: 1.5em;"><b>The deck and dome room will be closed</b> during our open house the evening of Friday, September 19th, due to construction. They should reopen next week! Telescopes will be in use outside of the building, and the museum and slide wall will be open on the first floor of the building. As was done during the very first open houses at Fuertes in February of 1923, we will also make use of a glass slide projector with original glass slides to display antique photographs of astronomical objects.</span>
+            <span style="text-shadow: white 0 0 4px; color: white; font-size: 24px; line-height: 1.5em;">The first lecture this semester of the Cornell Astronomical Society's <a href="/events/lectures/">lecture series</a> will take place Friday, September 26th, at 7 PM! Join our <a href="/#email">email list</a> for updates.</span>
         </div>`
 
 document.write(status_data);

@@ -41,6 +41,34 @@ var cur_lecs = [
     {
         attributes: [
             {
+                type: 'title',
+                value: 'Seeing the Forest, Not the Trees: Serendipitous Glances into the Universe'
+            },
+            {
+                type: 'presenter',
+                value: 'Prof. Dongwoo Chung'
+            },
+            {
+                type: 'datetime',
+                value: 'September 26th, 2025%7:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Appel Commons Multipurpose Room 303'
+            }
+        ],
+        desc: 'The story of visual astronomy is all about looking at distinct objects and spotting patterns across those objects. In the story of early radio astronomy, on the other hand, some of the most important discoveries were completely serendipitous. Following some of these historical anecdotes, Professor Dongwoo Chung of the Department of Astronomy will discuss how researchers at Cornell and elsewhere are developing a new kind of astronomical survey that scans the cosmos in three dimensions without trying to target detections of individual objects.',
+        media: {
+            type: 'photo',
+            ref: '92625'
+        }
+    },
+]
+
+var past_lecs = [
+    {
+        attributes: [
+            {
                 type: 'yurititle',
                 value: 'Tenth Annual Yuri\'s Night Lecture: How to Thrive on the Moon'
             },
@@ -139,10 +167,7 @@ var cur_lecs = [
             type: 'video',
             ref: '2725%%%LvBXcdoxIn8'
         }
-    }
-]
-
-var past_lecs = [
+    },
     {
         attributes: [
             {
