@@ -1,10 +1,10 @@
 var footer_data = `<div style="padding: 2vh;"></div>
 
-<footer style="background-color: rgba(0, 0, 0, 0.8); left: 0; width: 100vw; align-items: center; justify-content: center; font-size: 0.8em;">
+<footer id="footer" style="background-color: rgba(0, 0, 0, 0.8); left: 0; width: 100vw; align-items: center; justify-content: center; font-size: 0.8em;">
     <div style="padding: 2vh;"></div>
     <div class="main_content" style="display: grid; grid-template-columns: 4fr 2.2fr 1px 2fr 1px 1.5fr 1px 3fr 1px 2fr 4fr; margin: auto;">
         <div></div>
-        <div style="text-align: left; padding: 1rem 10%; overflow-wrap: anywhere;">Email us: <a href="mailto:astrosociety@cornell.edu">astrosociety@cornell.edu</a><br><br>Call us: <a href="tel:+16072553557">(607) 255-3557</a></div>
+        <div style="text-align: left; padding: 1rem 10%; overflow-wrap: anywhere;">Email us: <a href="mailto:astrosociety@cornell.edu">astrosociety@cornell.edu</a><br><br>Our (607) 255-3557 phone is offline :(</div>
         <div style="background-color: white; width: 100%;"></div>
         <div style="text-align: left; padding: 1rem 10%;"><a href="/visit/hours">Find us</a>:<br>209 Cradit Farm Drive<br>Ithaca, New York 14850</div>
         <div style="background-color: white; width: 100%;"></div>
