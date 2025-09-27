@@ -59,8 +59,8 @@ var cur_lecs = [
         ],
         desc: 'The story of visual astronomy is all about looking at distinct objects and spotting patterns across those objects. In the story of early radio astronomy, on the other hand, some of the most important discoveries were completely serendipitous. Following some of these historical anecdotes, Professor Dongwoo Chung of the Department of Astronomy will discuss how researchers at Cornell and elsewhere are developing a new kind of astronomical survey that scans the cosmos in three dimensions without trying to target detections of individual objects.',
         media: {
-            type: 'photo',
-            ref: '92625'
+            type: 'video',
+            ref: '92625%%%vHzR8UxoRkY'
         }
     },
 ]
