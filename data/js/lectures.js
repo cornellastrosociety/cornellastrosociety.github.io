@@ -42,6 +42,56 @@ var cur_lecs = [
         attributes: [
             {
                 type: 'title',
+                value: 'From the First Light of the Cosmos to the Cameras that Capture it Today'
+            },
+            {
+                type: 'presenter',
+                value: 'Prof. Abigail Crites'
+            },
+            {
+                type: 'datetime',
+                value: 'October 24th, 2025%7:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Appel Commons Multipurpose Room 303'
+            }
+        ],
+        desc: 'Nearly 14 billion years ago, the universe blazed with light in the first moments after the Big Bang. That light has been stretching as the universe expands, now reaching us as an invisible millimeter glow that still fills the sky. By building exquisitely sensitive cameras to capture this faint signal, scientists have opened a window into the universe\'s early days—revealing how the first stars and galaxies took shape and how the cosmos has grown into the vast, rich structure we see today.',
+        media: {
+            type: 'photo',
+            ref: '102425'
+        }
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
+                value: 'We Have [Insert Planet Name] At Home: The Amazing World of Analog Studies'
+            },
+            {
+                type: 'presenter',
+                value: 'Alexia Kubas'
+            },
+            {
+                type: 'datetime',
+                value: 'October 17th, 2025%7:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Appel Commons Multipurpose Room 303'
+            }
+        ],
+        desc: 'With limited budgets and competing scientific priorities, it is impossible to send dedicated missions to every fascinating world in our Solar System. Even the lucky few missions that get selected require years (if not decades!) of patience before we start receiving data. In the meantime, we can turn to our own planet to learn about extreme environments far beyond Earth. Analog science allows us to study planetary processes without leaving the stratosphere—preparing us for future missions while deepening our understanding of the Earth system. In this talk, Alexia will highlight how Earth-based research, especially in the polar regions, reveals new insights into hydrology and astrobiology on cold, icy planets across the Solar System.',
+        media: {
+            type: 'photo',
+            ref: '101725'
+        }
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
                 value: 'Seeing the Forest, Not the Trees: Serendipitous Glances into the Universe'
             },
             {
