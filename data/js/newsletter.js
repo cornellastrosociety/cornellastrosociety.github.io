@@ -6,7 +6,7 @@ const newsletters = [
         yr: `2025`,
         mth: `October`,
         desc: `Happy fall! Our first newsletter of the 25-26 school year contains new officer introductions and some astrophotography taken by CAS members over the summer!`,
-        date: `jun25`
+        date: `oct25`
     },
     {
         
