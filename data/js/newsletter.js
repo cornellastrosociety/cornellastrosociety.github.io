@@ -4,6 +4,13 @@ const newsletters = [
     {
         
         yr: `2025`,
+        mth: `October`,
+        desc: `Happy fall! Our first newsletter of the 25-26 school year contains new officer introductions and some astrophotography taken by CAS members over the summer!`,
+        date: `jun25`
+    },
+    {
+        
+        yr: `2025`,
         mth: `June`,
         desc: `Our last issue of the 24-25 school year contains articles from alumni galore, including prolific moon-writer Justine Singleton, Presidents Gillis Lowry and Erik Payton, and Outreach Coordinator Jillian Epstein!`,
         date: `jun25`
