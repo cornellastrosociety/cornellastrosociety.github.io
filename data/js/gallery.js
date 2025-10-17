@@ -1399,6 +1399,12 @@ galleries.set(`astro`, {
             desc: `Spiral galaxy near the Milky Way Galaxy. Taken from the Fuertes Observatory in 2016.`
         },
         {
+            id: `appelandromeda.jpg`,
+            name: `M31`,
+            altname: `Andromeda Galaxy`,
+            desc: `The Andromeda Galaxy (M31), along with M32 and M110. Taken by Samuel Kim using a Canon Rebel t1i at 250mm and a small star tracker, and processed using Siril and Lightroom.`
+        },
+        {
             id: `m32.jpg`,
             name: `M32`,
             desc: `Satellite galaxy of the Andromeda Galaxy (M31). Taken by Marquice Sanchez-Fleming using the 12" Irving P. Church Refractor on July 3, 2025. Stacked in Siril from 86 x 30-second frames, ISO 3200, and post-processed with Photoshop.`
