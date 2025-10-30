@@ -41,6 +41,31 @@ var cur_lecs = [
     {
         attributes: [
             {
+                type: 'specialtitle',
+                value: 'The Search for Intelligent Life on Earth: Carl Sagan\'s Birthday Night'
+            },
+            {
+                type: 'presenter',
+                value: 'Gillis Lowry'
+            },
+            {
+                type: 'datetime',
+                value: 'November 7th, 2025%7:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Appel Commons Multipurpose Room 303'
+            }
+        ],
+        desc: 'Finding alien life is hard, and living life on Earth is hard enough. What’s the best way to search for aliens on other planets? And if we find them, how will we break the news?',
+        media: {
+            type: 'photo',
+            ref: '11725'
+        }
+    },
+    {
+        attributes: [
+            {
                 type: 'title',
                 value: 'From the First Light of the Cosmos to the Cameras that Capture it Today'
             },
