@@ -4,7 +4,7 @@ var status_data = `<!-- Temporary special lecture information -->
 
             <span style="text-shadow: white 0 0 6px; font-size: 40px;">Carl Sagan's 91st Birthday Celebration</span>
             <br>
-            <div style="color: white; font-size: 20px;">The Cornell Astronomical Society will be celebrating Carl Sagan's 91st birthday on Friday, November 7th, 2025, the Friday nearest his birthday. More information is presented below.</div>
+            <div style="color: white; font-size: 20px;">The Cornell Astronomical Society will be celebrating Carl Sagan's 91st birthday on Friday, November 7th, 2025, the Friday nearest his birthday. More information is presented below. <b>Please register <a href="https://cglink.me/2ee/r2293935" target="_blank">here</a>!</b></div>
 
             <div style="padding: 2vh;"></div>
 
