@@ -57,7 +57,7 @@ var cur_lecs = [
                 value: 'Appel Commons Multipurpose Room 303'
             }
         ],
-        desc: 'Finding alien life is hard, and living life on Earth is hard enough. What’s the best way to search for aliens on other planets? And if we find them, how will we break the news?',
+        desc: 'Finding alien life is hard, and living life on Earth is hard enough. What’s the best way to search for aliens on other planets? And if we find them, how will we break the news?<b><br><br>Please register <a href="https://cglink.me/2ee/r2293935" target="_blank">here</a>!</b>',
         media: {
             type: 'photo',
             ref: '11725'
