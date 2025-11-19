@@ -41,7 +41,28 @@ var cur_lecs = [
     {
         attributes: [
             {
-                type: 'specialtitle',
+                type: 'title',
+                value: 'CAS Members\' Research: Black Hole Spectra, Telescope Software, and Volcanic Moons'
+            },
+            {
+                type: 'datetime',
+                value: 'November 21st, 2025%7:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Appel Commons Multipurpose Room 303'
+            }
+        ],
+        desc: 'This week\'s lecture features unique research by three undergraduate CAS members. Topics will explore the use of machine-learning methods to investigate the spectra of supermassive black holes, the development of software to turn the Haystack 37-meter telescope into a multi-user system, and the study of whether volcanic eruptions on Jupiter\'s moon Io are influenced by tidal forces.',
+        media: {
+            type: 'photo',
+            ref: '112125'
+        }
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
                 value: 'The Search for Intelligent Life on Earth: Carl Sagan\'s Birthday Night'
             },
             {
