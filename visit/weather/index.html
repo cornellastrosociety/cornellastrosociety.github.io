@@ -29,18 +29,42 @@
             background-size: cover;
         }
 
+        /* Next 8 hours have precipitation average >= 80%, temp <= 20, day = Friday, time >= 5 pm */
+        .idiot_bg:before {
+            background-image: url(/data/img/idiot.jpg) !important;
+        }
+
+        /* Next 8 hours have precipitation average >= 70%, temp <= 25, day = Friday, Saturday, Sunday, 5 pm <= time < 6 am */
+        .sled_bg:before {
+            background-image: url(/data/img/sled.jpg) !important;
+        }
+
+        /* Precipitation >= 40%, temp <= 32 */
         .snow_bg:before {
             background-image: url(/data/img/fuertessnowbg.jpg) !important;
         }
 
+        /* Cloud >= 75 */
         .cloud_bg:before {
             background-image: url(/data/img/allyeastronomerscomegathernighillsingyouasongofthestarsintheskyanditswindyweatherboysstormyweatherboyswhenthewindblowswerealltogetherboysblowyewindswesterlyblowyewindsblowjollysouwesterboyssteadyshegoes.jpg) !important;
         }
 
+        /* Cloud >= 25 */
         .pc_bg:before {
             background-image: url(/data/img/photos/sunsetdeck.jpg) !important;
         }
 
+        /* Cloud >= 17 */
+        .sc_bg:before {
+            background-image: url(/data/img/leaves.jpg) !important;
+        }
+
+        /* Cloud >= 10 */
+        .mc_bg:before {
+            background-image: url(/data/img/clearish.jpg) !important;
+        }
+
+        /* Otherwise */
         .clear_bg:before {
             background-image: url(/data/img/orion.jpg) !important;
         }
