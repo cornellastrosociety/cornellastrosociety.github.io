@@ -15,10 +15,11 @@ Add a corresponding object. Fields include:
    * presenter
  * desc: Lecture description
  * media: an object with the following fields:
-   * type: photo | video | lphoto
+   * type: photo | video | lphoto | encphoto
    * ref: /data/img/lecture/[].jpg name if photo
           thumb id separated by %%% to https://www.youtube.com/watch?v=[] if video
           photo id separated by %%% to external link if lphoto
+          photo id separated by %%% to unencrypted url portion, separated by %%% to encrypted url portion via cipher
    * attr: Attribution caption, if necessary
    * unbounded: true to override 16:9 aspect ratio
 
@@ -38,6 +39,31 @@ page shows the correct ending year.
 */
 
 var cur_lecs = [
+    {
+        attributes: [
+            {
+                type: 'title',
+                value: 'CAS Website Exhibition'
+            },
+            {
+                type: 'presenter',
+                value: 'Andrew Lewis'
+            },
+            {
+                type: 'datetime',
+                value: 'December 5, 2025%7:15 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Appel Commons Multipurpose Room 303'
+            }
+        ],
+        desc: 'A special lecture for CAS members about the extensive development of the CAS website, and the tools available on the website to make observing more accessible and predictable.',
+        media: {
+            type: 'encphoto',
+            ref: '12625%%%https://www.youtube.com/watch?v=%%%eVWx\\\\v?BlxW'
+        }
+    },
     {
         attributes: [
             {
