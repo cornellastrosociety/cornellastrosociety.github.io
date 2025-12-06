@@ -55,8 +55,8 @@ var cur_lecs = [
         ],
         desc: 'This week\'s lecture features unique research by three undergraduate CAS members. Topics will explore the use of machine-learning methods to investigate the spectra of supermassive black holes, the development of software to turn the Haystack 37-meter telescope into a multi-user system, and the study of whether volcanic eruptions on Jupiter\'s moon Io are influenced by tidal forces.',
         media: {
-            type: 'photo',
-            ref: '112125'
+            type: 'video',
+            ref: '112125%%%QOOb3H4mLgI'
         }
     },
     {
