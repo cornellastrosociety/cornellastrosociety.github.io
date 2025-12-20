@@ -10,7 +10,7 @@ var nav_data = `<!-- Nav bar, should persist across pages; add nav_el_sel to cur
                         <a href="/about/telescope" id="nav_about_telescope">The Telescope</a>
                         <a href="/about/fuertes" id="nav_about_fuertes">Fuertes History</a>
                         <a href="/about/irvhistory" id="nav_about_irvhistory">Telescope History</a>
-                        <a href="/about/slides" id="nav_about_slides">Lantern Slide Wall</a>
+                        <a href="/about/slides" id="nav_about_slides">Lantern Slides</a>
                     </div>
                 </div>
             </div>

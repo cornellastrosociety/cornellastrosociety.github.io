@@ -18,7 +18,7 @@ var nav_data = `<!-- Nav bar, should persist across pages; add nav_el_sel to cur
                         <a href="/about/telescope" id="nav_about_telescope" class = "nav_dd_sub">The Telescope <br> <br style = "font-size: 1vh"></a>
                         <a href="/about/fuertes" id="nav_about_fuertes" class = "nav_dd_sub">Fuertes History <br> <br style = "font-size: 1vh"></a>
                         <a href="/about/irvhistory" id="nav_about_irvhistory" class = "nav_dd_sub">Telescope History <br> <br style = "font-size: 1vh"></a>
-                        <a href="/about/slides" id="nav_about_slides" class = "nav_dd_sub">Lantern Slide Wall <br> <br style = "font-size: 1vh"></a>
+                        <a href="/about/slides" id="nav_about_slides" class = "nav_dd_sub">Lantern Slides <br> <br style = "font-size: 1vh"></a>
                     </div>
                 </div>
           
