@@ -78,6 +78,196 @@ galleries.set('photos', {
     exclude: [],
     data: [
         {
+            id: `outwardfuertes.jpg`,
+            name: `Looking West from Fuertes`
+        },
+        {
+            id: `moonoverfuertes.jpg`,
+            name: `Moon over Fuertes`
+        },
+        {
+            id: `fuertessunsetdeck.jpg`,
+            name: `Sunset from the Deck`
+        }, 
+        {
+            id: `fuertesground.jpg`,
+            name: `A Fine Evening at Fuertes`
+        },
+        {
+            id: `fuertesflowers.jpg`,
+            name: `The Fuertes Observatory`
+        },
+        {
+            id: `fuertesatsunset.jpg`,
+            name: `Fuertes at Sunset`,
+        },
+        {
+            id: `finefuertes.jpg`,
+            name: `Fuertes in the Summer`
+        },
+        {
+            id: `observingonthedeck.jpg`,
+            name: `Observing on the Deck`,
+            desc: `Observing on the deck during an open house.`
+        },
+        {
+            id: `irvindome.jpg`,
+            name: `Irv in the Dome`,
+            desc: `(I would be surprised if it was anywhere else)`
+        },
+        {
+            id: `warrickobsession.jpg`,
+            name: `Warrick Carrying the Obsession Base`
+        },
+        {
+            id: `scavengers.jpg`,
+            name: `Winners of the CAS Co-Presidential Scavenger Hunt`,
+        },
+        {
+            id: `badhandbridge.jpg`,
+            name: `First Clue`,
+            desc: `👎✋🌉`
+        },
+        {
+            id: `prescavengers.jpg`,
+            name: `Preparing for the CAS Co-Presidential Scavenger Hunt`,
+            desc: `Spring 2025`
+        },
+        {
+            id: `reboxed.jpg`,
+            name: `Protecting Irv for painting the dome, take 2!`,
+            desc: `Fall 2025`
+        },
+        {
+            id: `picnic.jpg`,
+            name: `Picnic by the Lake`,
+            desc: `Spring 2025`
+        },
+        {
+            id: `milkyway.jpg`,
+            name: `CAS Members under the Milky Way`,
+            desc: `Taken at Cherry Springs State Park`
+        },
+        {
+            id: `meatlovers.jpg`,
+            name: `Another Cherry Springs Trip!`,
+            desc: `From left to right: Gillis Lowry, Ben Jacobson-Bell, Marquice Sanchez-Fleming, Andrew Lewis, Jillian Epstein, Erik Payton`
+        },
+        {
+            id: `uranus.jpg`,
+            name: `Uranus`,
+            desc: `It's the real planet in full detail!`
+        },
+        {
+            id: `mc.jpg`,
+            name: `CAS Members see the Minecraft Movie`,
+            desc: `Spring 2025`
+        },
+        {
+            id: `jbobs.jpg`,
+            name: `Ben Jacobson-Bell with the Obsession`
+        },
+        {
+            id: `irvdeco.jpg`,
+            name: `Festive Irv`
+        },
+        {
+            id: `irvbox1.jpg`,
+            name: `Protecting Irv for painting the dome, take 1!`,
+            desc: `Summer 2025`
+        },
+        {
+            id: `irvwrap.jpg`,
+            name: `Wrapping Irv`
+        },
+        {
+            id: `summercas.jpg`,
+            name: `CAS Members and Alumni at Graduation`
+        },
+        {
+            id: `caspresidents.jpg`,
+            name: `CAS Presidents in 2025`,
+            desc: `Left to right: Annika Deutsch, Ella Mansfield, Gillis Lowry, Erik Payton`
+        },
+        {
+            id: `casseniors.jpg`,
+            name: `CAS Graduates 2025`
+        },
+        {
+            id: `gillisjbphil.jpg`,
+            name: `Gillis, Ben, and Advisor Phil`
+        },
+        {
+            id: `gillisjbaurora.jpg`,
+            name: `Gillis and Ben under the Aurora`
+        },
+        {
+            id: `giftexchange.jpg`,
+            name: `CAS Gift Exchange`,
+            desc: `Fall 2024`
+        },
+        {
+            id: `geeg25.jpg`,
+            name: `Geeg Day Festivities at Fuertes`
+        },
+        {
+            id: `funkhouser.jpg`,
+            name: `Carl Sagan Festivities at Fuertes!`
+        },
+        {
+            id: `fuertesrainbow.jpg`,
+            name: `Rainbow over Fuertes`,
+            desc: `Spring 2025`
+        },
+        {
+            id: `concert.jpg`,
+            name: `CAS at the Cornell Symphony Orchestra Concert`
+        },
+        {
+            id: `dometour.jpg`,
+            name: `Dome Tour at Fuertes`
+        },
+        {
+            id: `casredapple.jpg`,
+            name: `On the way to Cherry Springs!`,
+            desc: `Left to right: Warrick Ma, Erik Payton, Ella Mansfield, Gillis Lowry, Treyton Grahn, Ben Jacobson-Bell, Andrew Lewis`
+        },
+        {
+            id: `cslecture.jpg`,
+            name: `Carl Sagan's 90th Birthday Lecture!`,
+            desc: `Fall 2024`
+        },
+        {
+            id: `casmerch.jpg`,
+            name: `New Fuertes Shirts!`
+        },
+        {
+            id: `cashalloween24.jpg`,
+            name: `Halloween 2024`
+        },
+        {
+            id: `casfreshmen.jpg`,
+            name: `CAS Members by Beebe Lake`,
+            desc: `Spring 2025`
+        },
+        {
+            id: `sledding.jpg`,
+            name: `CAS Members sledding near the slope`
+        },
+        {
+            id: `casdrone.jpg`,
+            name: `2024-25 CAS Members on the Deck`
+        },
+        {
+            id: `aurora.jpg`,
+            name: `CAS Members Under the Aurora`
+        },
+        {
+            id: `andrewirv.jpg`,
+            name: `Andrew Lewis with Irv`,
+            desc: `CAS Vice President Andrew Lewis using Irv to observe the lunar eclipse of March 2025.`
+        },
+        {
             id: `asgrad24.jpg`,
             name: `2024 Arts & Sciences CAS graduates!`,
             desc: `Back row, left-to-right: Sebastian DeRosa, Ben Jacobson-Bell; middle row: Justine Singleton, Adam Zortea, Cella Kove, Annika Deutsch, Dylan Jackaway, Grant Whitman; lower row: Maggie Li, Gillis Lowry`
