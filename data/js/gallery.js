@@ -155,7 +155,7 @@ galleries.set('photos', {
         },
         {
             id: `uranus.jpg`,
-            name: `Uranus`,
+            name: `Mercury`,
             desc: `It's the real planet in full detail!`
         },
         {

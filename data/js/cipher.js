@@ -31,6 +31,12 @@ function intsToCharList(integers) {
     return ints;
 }
 
+// How to "encrypt" text:
+// Open a page that includes this script.
+// Run `encrypt("your text", "your password")`
+// Exclude recognizable phrases from your text; these should be included as a non-protected prefix.
+// To create a password-protected link, insert `<a href="javascript:void('Anything');" onclick="openlink('non-protected prefix', 'protected suffix')">Text</a>`.
+// Output will open regardless of the correctness of the passcode entered, but the output will only be correct if the correct passcode is entered.
 function encrypt(text, key) {
     text = stringToIntList(text);
     key = stringToIntList(key);
