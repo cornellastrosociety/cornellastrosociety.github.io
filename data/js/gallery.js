@@ -198,10 +198,6 @@ galleries.set('photos', {
             name: `Gillis, Ben, and Advisor Phil`
         },
         {
-            id: `gillisjbaurora.jpg`,
-            name: `Gillis and Ben under the Aurora`
-        },
-        {
             id: `giftexchange.jpg`,
             name: `CAS Gift Exchange`,
             desc: `Fall 2024`
@@ -625,7 +621,7 @@ galleries.set('photos', {
         },
         {
             id: `irvclosed.jpg`,
-            name: `The Irving Porter Church Telescope`
+            name: `The Irving Porter Church Memorial Telescope`
         },
         {
             id: `irvmoon.jpg`,
@@ -633,15 +629,15 @@ galleries.set('photos', {
         },
         {
             id: `irvday.jpg`,
-            name: `The Irving Porter Church Telescope`
+            name: `The Irving Porter Church Memorial Telescope`
         },
         {
             id: `irvflat.jpg`,
-            name: `The Irving Porter Church Telescope`
+            name: `The Irving Porter Church Memorial Telescope`
         },
         {
             id: `irvwide.jpg`,
-            name: `The Irving Porter Church Telescope`
+            name: `The Irving Porter Church Memorial Telescope`
         },
         {
             id: `solar.jpg`,
@@ -751,7 +747,7 @@ galleries.set('photos', {
         },
         {
             id: `irv1923.jpg`,
-            name: `Professor Samuel L. Boothroyd using the Irving Porter Church Telescope`,
+            name: `Professor Samuel L. Boothroyd using the Irving Porter Church Memorial Telescope`,
             desc: `1923`
         }
     ]
