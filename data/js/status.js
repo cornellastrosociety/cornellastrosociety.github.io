@@ -1,9 +1,9 @@
 var status_data = `<div style="width: 100%; background-color: rgba(140, 0, 0, 0.69); text-align: center; margin: auto; padding: 6vh 2vw; max-width: 100%; box-sizing: border-box; color: white">
             <span style="text-shadow: white 0 0 6px; font-size: 40px;">Open every Friday <span style="font-weight: bold;">8 PM - midnight</span>!</span>
-            <!-- <br> -->
+            <br>
             <!-- <br> -->
             <!-- Status message -->
-            <!-- <span style="text-shadow: white 0 0 4px; color: white; font-size: 24px; line-height: 1.5em;">The last open house of the year was held on Friday, December 19th. We will be closed for Winter Break, and we will reopen on Friday, January 16th.</span> -->
+            <span style="text-shadow: white 0 0 4px; color: white; font-size: 24px; line-height: 1.5em;">Please dress warmly!</span>
         </div>`
 
 document.write(status_data);
