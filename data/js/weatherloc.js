@@ -114,7 +114,7 @@ const getloc = () => {
             xmlhttp2.send(null);
 
             hour = document.getElementById('weatherhr').value;
-            document.getElementById('nwsembed').setAttribute('src', `https://forecast.weather.gov/meteograms/Plotter.php?lat=${lat}&lon=${lon}&wfo=${wfo}&zcode=${stt}Z025&gset=20&gdiff=10&unit=0&tinfo=EY5&ahour=${hour}&pcmd=11110111001000000000000000000000000000000000000000000000000&lg=en&indu=1!1!1!&dd=&bw=&hrspan=48&pqpfhr=6&psnwhr=6`); // zcode may be irrelevant but must be valid
+            document.getElementById('nwsembed').setAttribute('src', `https://forecast.weather.gov/meteograms/Plotter.php?lat=${lat}&lon=${lon}&wfo=${wfo}&zcode=${stt}Z025&gset=20&gdiff=10&unit=0&tinfo=EY5&ahour=${hour}&pcmd=11110111000000000000000000000000000000000000000000000000000&lg=en&indu=1!1!1!&dd=&bw=&hrspan=48&pqpfhr=6&psnwhr=6`); // zcode may be irrelevant but must be valid
             document.getElementById('forecastlink').setAttribute('href', `https://forecast.weather.gov/MapClick.php?lat=${lat}&lon=${lon}&unit=0&lg=english&FcstType=graphical`);
             btn.style.backgroundColor = 'rgba(84, 216, 93, 0.8)';
             clearTimeout(reset);
@@ -139,8 +139,8 @@ const sethr = () => {
 }
 
 var locmap = new Map();
-locmap.set('fuertes', 'https://forecast.weather.gov/meteograms/Plotter.php?lat=42.4528&lon=-76.4745&wfo=BGM&zcode=NYZ025&gset=20&gdiff=10&unit=0&tinfo=EY5&ahour=0&pcmd=11110111001000000000000000000000000000000000000000000000000&lg=en&indu=1!1!1!&dd=&bw=&hrspan=48&pqpfhr=6&psnwhr=6');
-locmap.set('cssp', 'https://forecast.weather.gov/meteograms/Plotter.php?lat=41.6633&lon=-77.8234&wfo=CTP&zcode=NYZ025&gset=20&gdiff=10&unit=0&tinfo=EY5&ahour=0&pcmd=11110111001000000000000000000000000000000000000000000000000&lg=en&indu=1!1!1!&dd=&bw=&hrspan=48&pqpfhr=6&psnwhr=6');
+locmap.set('fuertes', 'https://forecast.weather.gov/meteograms/Plotter.php?lat=42.4528&lon=-76.4745&wfo=BGM&zcode=NYZ025&gset=20&gdiff=10&unit=0&tinfo=EY5&ahour=0&pcmd=11110111000000000000000000000000000000000000000000000000000&lg=en&indu=1!1!1!&dd=&bw=&hrspan=48&pqpfhr=6&psnwhr=6');
+locmap.set('cssp', 'https://forecast.weather.gov/meteograms/Plotter.php?lat=41.6633&lon=-77.8234&wfo=CTP&zcode=NYZ025&gset=20&gdiff=10&unit=0&tinfo=EY5&ahour=0&pcmd=11110111000000000000000000000000000000000000000000000000000&lg=en&indu=1!1!1!&dd=&bw=&hrspan=48&pqpfhr=6&psnwhr=6');
 
 var locaqimap = new Map();
 locaqimap.set('fuertes', [42.4528, -76.4745]);
