@@ -12,9 +12,6 @@ function openLightboxTwo() {
 
 
     document.getElementById('lightboxtwo').style.display = 'block';
-    document.getElementsByTagName('html')[0].style.overflow = 'hidden';
-    document.getElementsByTagName('body')[0].style.overflow = 'hidden';
-    if (document.getElementById('wind')) document.getElementById('wind').style.overflow = 'hidden';
 };
 
 function closeLightboxTwo() {
@@ -27,9 +24,6 @@ function closeLightboxTwo() {
         document.getElementById('burger').classList.remove('burger_hide');
     }
     document.getElementById('lightboxtwo').style.display = 'none';
-    document.getElementsByTagName('html')[0].style.overflow = 'auto';
-    document.getElementsByTagName('body')[0].style.overflow = 'auto';
-    if (document.getElementById('wind')) document.getElementById('wind').style.overflow = 'auto';
 };
 
 function changeSlideTwo(n) {
