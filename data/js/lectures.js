@@ -43,6 +43,34 @@ var cur_lecs = [
         attributes: [
             {
                 type: 'title',
+                value: 'A Big Eye on the Cosmos'
+            },
+            {
+                type: 'presenter',
+                value: 'Prof. Anna Ho'
+            },
+            {
+                type: 'datetime',
+                value: 'February 27th, 2026%7:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Appel Commons Multipurpose Room 303'
+            }
+        ],
+        desc: 'This year is the 75th anniversary of the Corning Museum of Glass. Corning Glass Works has been responsible for making the mirrors for many of the world\'s foremost astronomical telescopes. Prof. Anna Ho will share her firsthand experiences using one of those telescopes—the Hale Telescope on Mount Palomar—and how it is still a valuable tool for astronomers after more than 70 years in service.',
+        media: {
+            type: 'photo',
+            ref: '22326'
+        }
+    },
+]
+
+var past_lecs = [
+    {
+        attributes: [
+            {
+                type: 'title',
                 value: 'CAS Website Exhibition'
             },
             {
@@ -185,9 +213,6 @@ var cur_lecs = [
             ref: '92625%%%vHzR8UxoRkY'
         }
     },
-]
-
-var past_lecs = [
     {
         attributes: [
             {
