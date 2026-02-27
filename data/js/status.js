@@ -3,7 +3,7 @@ var status_data = `<div style="width: 100%; background-color: rgba(140, 0, 0, 0.
             <br>
             <!-- <br> -->
             <!-- Status message -->
-            <span style="text-shadow: white 0 0 4px; color: white; font-size: 24px; line-height: 1.5em;">Please dress warmly!</span>
+            <span style="text-shadow: white 0 0 4px; color: white; font-size: 24px; line-height: 1.5em;">The first lecture of the semesterly <a href="/events/lectures">lecture series</a> takes place Friday, February 27th, in Appel 303 at 7 PM with Professor Anna Ho!</span>
         </div>`
 
 document.write(status_data);
