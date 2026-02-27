@@ -687,6 +687,31 @@ var past_lecs = [
         attributes: [
             {
                 type: 'title',
+                value: 'The Landscape of Stellar Death'
+            },
+            {
+                type: 'presenter',
+                value: 'Prof. Anna Ho'
+            },
+            {
+                type: 'datetime',
+                value: 'November 3rd, 2023%7:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Appel Commons Multipurpose Room 303'
+            }
+        ],
+        desc: 'Research on the life, death, and afterlife of stars focuses on studying their properties. Such properties determine how a star dies and what kind of corpse it forms, for example a neutron star or a black hole.',
+        media: {
+            type: 'photo',
+            ref: '11323'
+        }
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
                 value: 'Purple is the New Green: The Colors of Life as a Tool to Find Life in the Cosmos'
             },
             {
