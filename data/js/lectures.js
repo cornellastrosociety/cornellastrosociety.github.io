@@ -43,6 +43,31 @@ var cur_lecs = [
         attributes: [
             {
                 type: 'title',
+                value: 'Eavesdropping on our (Intergalactic) Neighbors with Pulsar Timing Arrays'
+            },
+            {
+                type: 'presenter',
+                value: 'Lydia Guertin'
+            },
+            {
+                type: 'datetime',
+                value: 'March 6th, 2026%7:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Appel Commons Multipurpose Room 303'
+            }
+        ],
+        desc: 'Pulsar timing arrays have recently opened a new window of gravitational wave astronomy -- the low-frequency domain, where the interactions of supermassive black holes dominate. Astronomy PhD student and NANOGrav member Lydia Guertin will walk through what led to this multi-decadal breakthrough scientific endeavor, and what gravitational wave sources we can hear now.',
+        media: {
+            type: 'photo',
+            ref: '3626'
+        }
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
                 value: 'A Big Eye on the Cosmos'
             },
             {
@@ -61,7 +86,7 @@ var cur_lecs = [
         desc: 'This year is the 75th anniversary of the Corning Museum of Glass. Corning Glass Works has been responsible for making the mirrors for many of the world\'s foremost astronomical telescopes. Prof. Anna Ho will share her firsthand experiences using one of those telescopes—the Hale Telescope on Mount Palomar—and how it is still a valuable tool for astronomers after more than 70 years in service.',
         media: {
             type: 'photo',
-            ref: '22326'
+            ref: '22826'
         }
     },
 ]
