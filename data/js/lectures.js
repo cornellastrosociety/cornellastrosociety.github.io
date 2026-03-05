@@ -43,6 +43,31 @@ var cur_lecs = [
         attributes: [
             {
                 type: 'title',
+                value: 'Space Microbes: The Importance of Studying Wee Little Creatures in Space'
+            },
+            {
+                type: 'presenter',
+                value: 'Prof. Rosa Santomartino'
+            },
+            {
+                type: 'datetime',
+                value: 'March 13th, 2026%7:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Appel Commons Multipurpose Room 303'
+            }
+        ],
+        desc: 'Microbes have a very bad reputation, as we often associate them with diseases, dirt, and even pandemics. In reality, these tiny organisms are often useful, if not essential, for our survival on Earth and beyond. In this lecture, we will explore how harnessing the power of microorganisms could support human space exploration, and what benefits this could bring to Earth as well.',
+        media: {
+            type: 'photo',
+            ref: '31326'
+        }
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
                 value: 'Eavesdropping on our (Intergalactic) Neighbors with Pulsar Timing Arrays'
             },
             {
