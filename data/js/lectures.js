@@ -85,8 +85,8 @@ var cur_lecs = [
         ],
         desc: 'Pulsar timing arrays have recently opened a new window of gravitational wave astronomy -- the low-frequency domain, where the interactions of supermassive black holes dominate. Astronomy PhD student and NANOGrav member Lydia Guertin will walk through what led to this multi-decadal breakthrough scientific endeavor, and what gravitational wave sources we can hear now.',
         media: {
-            type: 'photo',
-            ref: '3626'
+            type: 'video',
+            ref: '3626%%%R_vcczQrKaM'
         }
     },
     {
