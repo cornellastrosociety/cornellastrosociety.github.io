@@ -2,6 +2,13 @@
 
 const newsletters = [
     {
+        yr: `2026`,
+        mth: `March`,
+        desc: `Happy spring! Our first full newsletter of the 25-26 school year contains wide range of articles written by CAS members. From our adventure chasing the aurora in January, to an epic tale of star formation, to a focused biography of Stephen Hawking, and even exclusive Fuertes artwork, there’s a lot that we’re excited to share with you this month.`,
+        date: `mar26`
+    },
+    
+    {
         
         yr: `2025`,
         mth: `October`,
