@@ -43,6 +43,31 @@ var cur_lecs = [
         attributes: [
             {
                 type: 'title',
+                value: 'Laser Sailing to the Stars: the Story of Cornell University\'s Alpha CubeSat Mission'
+            },
+            {
+                type: 'presenter',
+                value: 'Josh Umansky-Castro'
+            },
+            {
+                type: 'datetime',
+                value: 'April 10th, 2026%7:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Appel Commons Multipurpose Room 303'
+            }
+        ],
+        desc: 'Laser-powered sails could be our best shot at visiting another star system. With enough of a push, thousands of lightweight sailcraft can propel across cosmic distances in the search for life in the universe. While interstellar travel isn\'t quite at our fingertips just yet, students at Cornell have been making small, but meaningful steps inspired by the dream of sailing to the stars. Join us for a story 10 years in the making, in which we share how a high schooler\'s vision paved the way for over 100 students to design, build, and launch their very own spacecraft. We\'ll also provide an exclusive look at mission operations for our satellite (currently in orbit!).',
+        media: {
+            type: 'photo',
+            ref: '41026'
+        }
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
                 value: 'Space Microbes: The Importance of Studying Wee Little Creatures in Space'
             },
             {

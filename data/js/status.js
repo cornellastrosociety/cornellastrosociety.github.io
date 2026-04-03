@@ -3,7 +3,7 @@ var status_data = `<div style="width: 100%; background-color: rgba(140, 0, 0, 0.
             <br>
             <!-- <br> -->
             <!-- Status message -->
-            <span style="text-shadow: white 0 0 4px; color: white; font-size: 24px; line-height: 1.5em;">The third lecture of the semesterly <a href="/events/lectures">lecture series</a> takes place Friday, March 13th, in Appel 303 at 7 PM with Prof. Rosa Santomartino!</span>
+            <span style="text-shadow: white 0 0 4px; color: white; font-size: 24px; line-height: 1.5em;"><a href="/events/lectures">Yuri's Night</a> takes place Friday, April 10th, in Appel 303 at 7 PM with Josh Umansky-Castro! <b>Please sign up <a target="_blank" href="https://cglink.me/2ee/r2303642">here</a>!</b></span>
         </div>`
 
 document.write(status_data);
