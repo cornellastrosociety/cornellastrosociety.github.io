@@ -42,7 +42,7 @@ var cur_lecs = [
     {
         attributes: [
             {
-                type: 'title',
+                type: 'yurititle',
                 value: 'Laser Sailing to the Stars: the Story of Cornell University\'s Alpha CubeSat Mission'
             },
             {
