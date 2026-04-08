@@ -40,10 +40,11 @@ page shows the correct ending year.
 
 var cur_lecs = [
     {
+        id: 'yn26',
         attributes: [
             {
                 type: 'yurititle',
-                value: 'Laser Sailing to the Stars: the Story of Cornell University\'s Alpha CubeSat Mission'
+                value: 'Eleventh Annual Yuri\'s Night Celebration: Laser Sailing to the Stars: the Story of Cornell University\'s Alpha CubeSat Mission'
             },
             {
                 type: 'presenter',
@@ -58,7 +59,7 @@ var cur_lecs = [
                 value: 'Appel Commons Multipurpose Room 303'
             }
         ],
-        desc: 'Laser-powered sails could be our best shot at visiting another star system. With enough of a push, thousands of lightweight sailcraft can propel across cosmic distances in the search for life in the universe. While interstellar travel isn\'t quite at our fingertips just yet, students at Cornell have been making small, but meaningful steps inspired by the dream of sailing to the stars. Join us for a story 10 years in the making, in which we share how a high schooler\'s vision paved the way for over 100 students to design, build, and launch their very own spacecraft. We\'ll also provide an exclusive look at mission operations for our satellite (currently in orbit!).',
+        desc: 'Laser-powered sails could be our best shot at visiting another star system. With enough of a push, thousands of lightweight sailcraft can propel across cosmic distances in the search for life in the universe. While interstellar travel isn\'t quite at our fingertips just yet, students at Cornell have been making small, but meaningful steps inspired by the dream of sailing to the stars. Join us for a story 10 years in the making, in which we share how a high schooler\'s vision paved the way for over 100 students to design, build, and launch their very own spacecraft. We\'ll also provide an exclusive look at mission operations for our satellite (currently in orbit!).<br><br><b>Please sign up <a target="_blank" href="https://cglink.me/2ee/r2303642">here</a>!</b>',
         media: {
             type: 'photo',
             ref: '41026'
