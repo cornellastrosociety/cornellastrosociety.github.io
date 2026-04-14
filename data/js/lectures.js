@@ -40,6 +40,31 @@ page shows the correct ending year.
 
 var cur_lecs = [
     {
+        attributes: [
+            {
+                type: 'title',
+                value: 'Are We Alone? NASA\'s Hunt for Earth 2.0'
+            },
+            {
+                type: 'presenter',
+                value: 'Aiden Zelakiewicz'
+            },
+            {
+                type: 'datetime',
+                value: 'April 17th, 2026%7:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Appel Commons Multipurpose Room 303'
+            }
+        ],
+        desc: 'The search for life, and places that can host it, has driven both the scientific community and the creative imagination of science fiction for decades. NASA\'s next flagship-class astrophysics mission, the Habitable Worlds Observatory, will probe the Habitable Zones of Sun-like stars and search for planets like Earth. Astronomy Ph.D. student Aiden Zelakiewicz will discuss how NASA is pushing the frontiers of exoplanet science to search for Earth-twins and life outside the Solar System.',
+        media: {
+            type: 'photo',
+            ref: '41726'
+        }
+    },
+    {
         id: 'yn26',
         attributes: [
             {
@@ -48,7 +73,7 @@ var cur_lecs = [
             },
             {
                 type: 'presenter',
-                value: 'Josh Umansky-Castro'
+                value: 'Joshua Umansky-Castro'
             },
             {
                 type: 'datetime',
@@ -59,7 +84,7 @@ var cur_lecs = [
                 value: 'Appel Commons Multipurpose Room 303'
             }
         ],
-        desc: 'Laser-powered sails could be our best shot at visiting another star system. With enough of a push, thousands of lightweight sailcraft can propel across cosmic distances in the search for life in the universe. While interstellar travel isn\'t quite at our fingertips just yet, students at Cornell have been making small, but meaningful steps inspired by the dream of sailing to the stars. Join us for a story 10 years in the making, in which we share how a high schooler\'s vision paved the way for over 100 students to design, build, and launch their very own spacecraft. We\'ll also provide an exclusive look at mission operations for our satellite (currently in orbit!).<br><br><b>Please sign up <a target="_blank" href="https://cglink.me/2ee/r2303642">here</a>!</b>',
+        desc: 'Laser-powered sails could be our best shot at visiting another star system. With enough of a push, thousands of lightweight sailcraft can propel across cosmic distances in the search for life in the universe. While interstellar travel isn\'t quite at our fingertips just yet, students at Cornell have been making small, but meaningful steps inspired by the dream of sailing to the stars. Join us for a story 10 years in the making, in which we share how a high schooler\'s vision paved the way for over 100 students to design, build, and launch their very own spacecraft. We\'ll also provide an exclusive look at mission operations for our satellite (currently in orbit!).',
         media: {
             type: 'photo',
             ref: '41026'
