@@ -86,8 +86,8 @@ var cur_lecs = [
         ],
         desc: 'Laser-powered sails could be our best shot at visiting another star system. With enough of a push, thousands of lightweight sailcraft can propel across cosmic distances in the search for life in the universe. While interstellar travel isn\'t quite at our fingertips just yet, students at Cornell have been making small, but meaningful steps inspired by the dream of sailing to the stars. Join us for a story 10 years in the making, in which we share how a high schooler\'s vision paved the way for over 100 students to design, build, and launch their very own spacecraft. We\'ll also provide an exclusive look at mission operations for our satellite (currently in orbit!).',
         media: {
-            type: 'photo',
-            ref: '41026'
+            type: 'video',
+            ref: '41026%%%fuGSoGksq24'
         }
     },
     {
