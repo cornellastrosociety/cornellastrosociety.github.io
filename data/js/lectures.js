@@ -60,8 +60,8 @@ var cur_lecs = [
         ],
         desc: 'The search for life, and places that can host it, has driven both the scientific community and the creative imagination of science fiction for decades. NASA\'s next flagship-class astrophysics mission, the Habitable Worlds Observatory, will probe the Habitable Zones of Sun-like stars and search for planets like Earth. Astronomy Ph.D. student Aiden Zelakiewicz will discuss how NASA is pushing the frontiers of exoplanet science to search for Earth-twins and life outside the Solar System.',
         media: {
-            type: 'photo',
-            ref: '41726'
+            type: 'video',
+            ref: '41726%%%W2BCc3PrEvE'
         }
     },
     {
