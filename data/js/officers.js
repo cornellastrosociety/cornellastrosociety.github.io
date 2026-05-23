@@ -8,8 +8,8 @@ const officers = [
     {
         title: "President",
         highlight: true,
-        officer: "Erik Payton",
-        netid: "edp48"
+        officer: "Treyton Grahn",
+        netid: "txg3"
     },
     {
         title: "Vice President",
@@ -20,8 +20,8 @@ const officers = [
     {
         title: "Treasurer",
         highlight: false,
-        officer: "Treyton Grahn",
-        netid: "txg3"
+        officer: "Valene McInerney",
+        netid: "vrm39"
     },
     {
         title: "Outreach Coordinator",
@@ -32,8 +32,8 @@ const officers = [
     {
         title: "Newsletter Editor-in-Chief",
         highlight: false,
-        officer: "Abigail Bohl",
-        netid: "acb338"
+        officer: "Samuel Kim",
+        netid: "shk223"
     }
 ]
 
