@@ -8,8 +8,8 @@ const officers = [
     {
         title: "President",
         highlight: true,
-        officer: "Ella Mansfield",
-        netid: "emm362"
+        officer: "Erik Payton",
+        netid: "edp48"
     },
     {
         title: "Vice President",
