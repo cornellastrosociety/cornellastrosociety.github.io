@@ -111,8 +111,8 @@ var cur_lecs = [
         ],
         desc: 'Microbes have a very bad reputation, as we often associate them with diseases, dirt, and even pandemics. In reality, these tiny organisms are often useful, if not essential, for our survival on Earth and beyond. In this lecture, we will explore how harnessing the power of microorganisms could support human space exploration, and what benefits this could bring to Earth as well.',
         media: {
-            type: 'photo',
-            ref: '31326'
+            type: 'video',
+            ref: '31326%%%JTcz29F8W1Q'
         }
     },
     {
