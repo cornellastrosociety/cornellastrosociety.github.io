@@ -5,7 +5,7 @@
 </head>
 
 <body style="display: flex; align-items: center; justify-content: center;">
-    <form action="https://www.list.cornell.edu/subscribe/subscribe.tml" method="POST">
+    <form name="subscribeform" id="subscribeform" action="https://lists.cornell.edu/subscribe/" target="sub" method="POST">
         <table>
             <tr>
                 <td align="right">
@@ -16,7 +16,7 @@
                 </td>
                 <td>
                     <input type="submit" class="btn" value="subscribe" title="subscribe" alt="subscribe"
-                        name="subscribe" align="left">
+                        name="subscribe" align="left" id="subscribeclick">
                 </td>
             </tr>
             <tr>
@@ -28,17 +28,20 @@
                 </td>
             </tr>
         </table>
-        <input type="hidden" name="list" value="cas-l"><input type="hidden" name="lists" value="cas-l">
-        <input type="hidden" name="demographics" value="">
-        <input type="hidden" name="name_required" value="">
-        <input type="hidden" name="pw_required" value="">
-        <input type="hidden" name="confirm" value="one">
-        <input type="hidden" name="showconfirm" value="F">
-        <input type="hidden" name="url" value="">
-        <input type="hidden" name="appendsubinfotourl" value="">
-        <input type="hidden" name="secx" value="1a7c5a2d">
+        <input type="hidden" name="list" value="cas-L@lists.cornell.edu">
+        <input type="hidden" name="submit" value="submit">
+        <input type="hidden" name="action" value="subscribe">
 
     </form>
+
+    <div id="confirmation" style="color: white;" hidden>If your request was valid, you'll receive an email to confirm your request. Thank you for subscribing!</div>
 </body>
+
+<script>
+    document.getElementById('subscribeclick').onclick = () => {
+        document.getElementById('subscribeform').hidden = true;
+        document.getElementById('confirmation').hidden = false;
+    }
+</script>
 
 </html>
