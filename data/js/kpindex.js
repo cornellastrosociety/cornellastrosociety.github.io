@@ -3,7 +3,7 @@ kpxml = new XMLHttpRequest();
 kpxml.onreadystatechange = function () {
     if (kpxml.readyState == 4 && kpxml.status == 200) {
         var kp = JSON.parse(kpxml.responseText);
-        document.getElementById('kp').innerHTML = kp.slice(-1)[0][1];
+        document.getElementById('kp').innerHTML = kp.slice(-1)[0].Kp;
     }
 }
 kpxml.open("GET", url, true);
