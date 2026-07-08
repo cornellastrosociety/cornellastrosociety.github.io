@@ -194,10 +194,6 @@ galleries.set('photos', {
             name: `CAS Graduates 2025`
         },
         {
-            id: `gillisjbphil.jpg`,
-            name: `Gillis, Ben, and Advisor Phil`
-        },
-        {
             id: `giftexchange.jpg`,
             name: `CAS Gift Exchange`,
             desc: `Fall 2024`
