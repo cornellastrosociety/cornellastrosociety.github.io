@@ -106,7 +106,7 @@ const getloc = () => {
                     tz = ((tzraw[0] == '+') ? 1 : -1) * (+tzraw.substring(1,3) + (+tzraw.substring(4) / 60));
                     console.log(tz)
                     wfo = credit.split(/\.gov/g)[1].replace('</credit>', '').replace(/\//g, '').trim().toUpperCase();
-                    wfo = wfo.replace('ANCHORAGE', 'AFC').replace('JUNEAU', 'AJK').replace('FAIRBANKS', 'AFG');
+                    wfo = wfo.replace('ANCHORAGE', 'AFC').replace('JUNEAU', 'AJK').replace('FAIRBANKS', 'AFG').replace('BOSTON', 'BOX');
                     stt = state.split('state="')[1].split('">')[0] || 'NY';
                 }
             }
