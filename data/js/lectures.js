@@ -9,6 +9,7 @@ Add a corresponding object. Fields include:
    or specialtitle, of which only one may be used. Types include:
    * title
    * specialtitle (highlights title)
+   * yurititle (red title)
    * date
    * datetime (separate date and time with %)
    * loc
