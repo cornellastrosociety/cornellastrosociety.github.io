@@ -73,10 +73,201 @@ galleries.set('club', {
 galleries.set('photos', {
     galtype: 'photos',
     width: 4,
-    incr: 5,
+    incr: 8,
     thumb: true,
     exclude: [],
     data: [
+        {
+            id: `sickestsunset.jpg`,
+            name: `Sunset from the Fuertes Deck`
+        },
+        {
+            id: `silhouette.jpg`,
+            name: `Sunset from the Fuertes Deck`
+        },
+        {
+            id: `casgrads26.jpg`,
+            name: `CAS Graduates 2026`
+        },
+        {
+            id: `gradcapthrow.jpg`,
+            name: `CAS Graduates 2026`
+        },
+        {
+            id: `gradcap.jpg`,
+            name: `Fuertes-Decorated Graduation Cap`
+        },
+        {
+            id: `sunseton.jpg`,
+            name: `Sunset on Fuertes`,
+            desc: `Spring 2026`
+        },
+        {
+            id: `sicksunset.jpg`,
+            name: `Sunset from Fuertes`
+        },
+        {
+            id: `slopescopeobs.jpg`,
+            name: `Scopes on the Slope!`,
+            desc: `Spring 2026`
+        },
+        {
+            id: `slopescope.jpg`,
+            name: `Scopes on the Slope!`,
+            desc: `Spring 2026`
+        },
+        {
+            id: `slopescopecrowd.jpg`,
+            name: `Scopes on the Slope!`,
+            desc: `Spring 2026`
+        },
+        {
+            id: `scopesloping.jpg`,
+            name: `Scopes on the Slope!`,
+            desc: `Spring 2026`
+        },
+        {
+            id: `officers2627.jpg`,
+            name: `2026-27 Officers`,
+            desc: `2026-27 Officers, from left to right, back to front: Ella Mansfield (President 2025-26), Andrew Lewis (Vice President 2025-26), Abby Bohl (Newsletter Editor 2025-26), Treyton Grahn (Treasurer 2025-26, President 2026-27), Christopher Brown (Vice President 2026-27), Samuel Kim (Newsletter Editor 2026-27), Valene McInerney (Treasurer 2026-27), Elina Stengle (Outreach Coordinator 2025-26, 2026-27)`
+        },
+        {
+            id: `geeg26.jpg`,
+            name: `Geeg Day Festivities at Fuertes`,
+            desc: `Unfortunate. 2026`,
+        },
+        {
+            id: `phillecture.jpg`,
+            name: `Prof. Phil Nicholson Lectures to the Club`,
+            desc: `Phil is retiring after advising the club for over 40 years!`
+        },
+        {
+            id: `scavengerhunt26.jpg`,
+            name: `CAS Scavenger Hunt 2026`
+        },
+        {
+            id: `phil.jpg`,
+            name: `Tours for the History of Cornell Class`,
+            desc: `With help from our advisor Prof. Phil Nicholson`
+        },
+        {
+            id: `oldstyle.jpg`,
+            name: `Sunset by Fuertes`
+        },
+        {
+            id: `lanternslides.jpg`,
+            name: `Lantern Slide Presentation in the Fuertes Basement`,
+            desc: `A new exhibit!`
+        },
+        {
+            id: `auroratry.jpg`,
+            name: `Trying for the Aurora by Trumansburg`,
+            desc: `January 2026`
+        },
+        {
+            id: `anothersunset.jpg`,
+            name: `Sunset from the Deck`
+        },
+        {
+            id: `snowysunset.jpg`,
+            name: `Sunset from the Snow-Topped Deck`
+        },
+        {
+            id: `snowtopped.jpg`,
+            name: `Fuertes in the Snow`
+        },
+        {
+            id: `orionfuertes.jpg`,
+            name: `Orion over Fuertes`
+        },
+        {
+            id: `aas.jpg`,
+            name: `Fuertes Poster at AAS!`,
+            desc: `Presented by Marquice Sanchez-Fleming. Poster available <a target="_blank" style="color: white;" href="/events/past/press/">here</a>.`
+        },
+        {
+            id: `snowman.jpg`,
+            name: `Snowman by Fuertes`,
+            desc: `December 2025`
+        },
+        {
+            id: `oiling.jpg`,
+            name: `Oiling Irv`,
+            desc: `With Andrew Lewis, Erik Payton, Bart Fried, Alan Sliski, and Mike Roman`
+        },
+        {
+            id: `tsuchinshanatlas.jpg`,
+            name: `Comet Tsuchinshan–ATLAS over Fuertes`,
+            desc: `Taken by Jake Turner`
+        },
+        {
+            id: `clearskies.jpg`,
+            name: `Clear Skies Over Fuertes`
+        },
+        {
+            id: `fuertesaurora.jpg`,
+            name: `Aurora over Fuertes`,
+            desc: `Taken by Elina Stengle`
+        },
+        {
+            id: `hboview.jpg`,
+            name: `Sunset at the Hartung–Boothroyd Observatory`
+        },
+        {
+            id: `hill.jpg`,
+            name: `Fuertes on a Clear Day`,
+            desc: `October 2025`
+        },
+        {
+            id: `103cake.jpg`,
+            name: `Irv is 103!`
+        },
+        {
+            id: `103party.jpg`,
+            name: `Irv is 103!`
+        },
+        {
+            id: `cslecture26.jpg`,
+            name: `Carl Sagan Birthday Lecture`,
+            desc: `120 people in attendance! November 2025`
+        },
+        {
+            id: `gilliscslec.jpg`,
+            name: `Carl Sagan Birthday Lecture`,
+            desc: `Gillis Lowry presenting "The Search for Intelligent Life on Earth", November 2025`
+        },
+        {
+            id: `clubdinner.jpg`,
+            name: `CAS Club Dinner`,
+            desc: `Fall 2025`
+        },
+        {
+            id: `touchdown.jpg`,
+            name: `CAS at ClubFest 2025`
+        },
+        {
+            id: `deckbusy.jpg`,
+            name: `Observing on the Deck`,
+            desc: `August 2025`
+        },
+        {
+            id: `govtour.jpg`,
+            name: `Dome Tour`,
+            desc: `Featuring the Clock Drive`
+        },
+        {
+            id: `dometourirv.jpg`,
+            name: `Dome Tour`
+        },
+        {
+            id: `museumposters.jpg`,
+            name: `New Posters in the Museum`,
+            desc: `Fall 2025`
+        },
+        {
+            id: `queue.jpg`,
+            name: `Queue at a Busy Open House`
+        },
         {
             id: `outwardfuertes.jpg`,
             name: `Looking West from Fuertes`
@@ -137,6 +328,11 @@ galleries.set('photos', {
             id: `reboxed.jpg`,
             name: `Protecting Irv for painting the dome, take 2!`,
             desc: `Fall 2025`
+        },
+        {
+            id: `officers2526.jpg`,
+            name: `2025-26 Officers`,
+            desc: `2025-26 Officers, from left to right:Ella Mansfield (President 2025-26), Erik Payton (President 2024-25), Andrew Lewis (Vice President 2024-25, Vice President 2025-26), Elina Stengle (Outreach Coordinator 2025-26), Jillian Epstein (Outreach Coordinator 2024-25), Abby Bohl (Newsletter Editor-in-Chief 2025-26), Shane Kuo (Newsletter Editor-in-Chief 2024-25), Christopher Brown (Treasurer 2024-25), Treyton Grahn (Treasurer 2025-26)`
         },
         {
             id: `picnic.jpg`,
@@ -656,6 +852,10 @@ galleries.set('photos', {
             name: `Irv's clock drive`
         },
         {
+            id: `unfortunate.jpg`,
+            name: `"Cleaning" Irv's objective lens`
+        },
+        {
             id: `oai.jpg`,
             name: `The Obsession and Irv`
         },
@@ -740,6 +940,14 @@ galleries.set('photos', {
             id: `governor1992.jpg`,
             name: `Irv's clock drive in 1992`,
             desc: `Photo by Brian Fox`
+        },
+        {
+            id: `damon1977close.jpg`,
+            name: `Viewing the partial solar eclipse of October 12, 1977`
+        },
+        {
+            id: `damon1977.jpg`,
+            name: `Viewing the partial solar eclipse of October 12, 1977`
         },
         {
             id: `irv1923.jpg`,
