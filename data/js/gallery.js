@@ -608,6 +608,11 @@ galleries.set('photos', {
             desc: `October 2023`
         },
         {
+            id: `sunpuzzle.jpg`,
+            name: `Sun puzzle!`,
+            desc: `Fall 2023`
+        },
+        {
             id: `officers2324.jpg`,
             name: `2023-24 Officers`,
             desc: `2023-24 Officers, top from left to right: Gillis Lowry (President), Ben Jacobson-Bell (VP), Ben Shapiro (Outreach Coordinator), Haonan Gong (Treasurer), Abigail Bohl (Newsletter Editor-in-Chief); bottom: Annika Deutsch (President 2022-23)`
@@ -707,8 +712,30 @@ galleries.set('photos', {
             name: `ClubFest Fall 2022`
         },
         {
+            id: `clubfest22telescope.jpg`,
+            name: `ClubFest 2022`,
+            desc: `Provided by Cornell University`
+        },
+        {
+            id: `clubfest22.jpg`,
+            name: `ClubFest 2022`,
+            desc: `Provided by Cornell University`
+        },
+        {
+            id: `clubfest22.jpg`,
+            name: `ClubFest 2022`
+        },
+        {
             id: `officers2122.jpg`,
             name: `Outgoing and incoming officers, May 2022`,
+        },
+        {
+            id: `geeg2.jpg`,
+            name: `The Second Geeg Day`
+        },
+        {
+            id: `redapple.jpg`,
+            name: `To Cherry Springs`
         },
         {
             id: `sunset.jpg`,
@@ -718,6 +745,11 @@ galleries.set('photos', {
             id: `obsessionnvm.jpg`,
             name: `Ben Jacobson-Bell with the Obsession telescope`,
             desc: `April 2022`
+        },
+        {
+            id: `jbnv.jpg`,
+            name: `Ben Jacobson-Bell with Irv`,
+            desc: `2022`
         },
         {
             id: `moonpuzzledone.jpg`,
@@ -737,6 +769,10 @@ galleries.set('photos', {
         {
             id: `gillisirv.jpg`,
             name: `Gillis Lowry, Outreach Coordinator 2022-23 with Irv`
+        },
+        {
+            id: `sleddingog.jpg`,
+            name: `CAS Members sledding near the slope`
         },
         {
             id: `fuertesorion.jpg`,
