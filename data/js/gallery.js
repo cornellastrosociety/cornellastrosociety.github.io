@@ -722,10 +722,6 @@ galleries.set('photos', {
             desc: `Provided by Cornell University`
         },
         {
-            id: `clubfest22.jpg`,
-            name: `ClubFest 2022`
-        },
-        {
             id: `officers2122.jpg`,
             name: `Outgoing and incoming officers, May 2022`,
         },
