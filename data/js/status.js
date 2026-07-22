@@ -4,7 +4,7 @@ var status_data = `<div style="width: 100%; background-color: rgba(140, 0, 0, 0.
             <!-- <img alt="Yuri's Night sticker by Winnie Chen" style="padding: 4vh; max-width: 25%;" src="/data/img/yurisnight.png"> -->
             <br>
             <!-- Status message -->
-            <span style="text-shadow: white 0 0 4px; color: white; font-size: 24px; line-height: 1.5em;">We will be open through at least the end of July!</span>
+            <span style="text-shadow: white 0 0 4px; color: white; font-size: 24px; line-height: 1.5em;">We will be open every Friday, right into the Fall semester! Note that our main telescope is currently out of service for maintenance, but we will have other telescopes set up at the observatory throughout each open house.</span>
         </div>`
 
 document.write(status_data);
