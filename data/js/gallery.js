@@ -1041,11 +1041,13 @@ galleries.set('photos', {
         },
         {
             id: `damon1977close.jpg`,
-            name: `Viewing the partial solar eclipse of October 12, 1977`
+            name: `Viewing the partial solar eclipse of October 12, 1977`,
+            desc: `Provided by Steve Kawaler. "Shown in the image is my friend and classmate, the late Damon Simonelli (BA Physics 1980, PhD 1987) who passed away too soon in 2004."`
         },
         {
             id: `damon1977.jpg`,
-            name: `Viewing the partial solar eclipse of October 12, 1977`
+            name: `Viewing the partial solar eclipse of October 12, 1977`,
+            desc: `Provided by Steve Kawaler. "Shown in the image is my friend and classmate, the late Damon Simonelli (BA Physics 1980, PhD 1987) who passed away too soon in 2004."`
         },
         {
             id: `irv1923.jpg`,
