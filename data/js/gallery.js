@@ -412,6 +412,11 @@ galleries.set('photos', {
             name: `CAS at the Cornell Symphony Orchestra Concert`
         },
         {
+            id: `andrewlewis102024.jpg`,
+            name: `Andrew Lewis with Irv`,
+            desc: `Andrew Lewis using Irv for the photo, October 2024. © and provided by Sreang "C" Hok/Cornell University`
+        },
+        {
             id: `dometour.jpg`,
             name: `Dome Tour at Fuertes`
         },
@@ -472,6 +477,11 @@ galleries.set('photos', {
         {
             id: `irvgrad24.jpg`,
             name: `2024 CAS Grads with Irv`
+        },
+        {
+            id: `redapple.jpg`,
+            name: `To Cherry Springs!`,
+            desc: `Spring 2024`
         },
         {
             id: `officers2425.jpg`,
@@ -535,6 +545,11 @@ galleries.set('photos', {
             id: `eclipseposter.jpg`,
             name: `Poster Design Contest Winner: Valerio Poggiali`,
             desc: `Placed around campus in Spring 2024 to promote eclipse safety`
+        },
+        {
+            id: `jbnv.jpg`,
+            name: `Ben Jacobson-Bell with Irv`,
+            desc: `April 2024`
         },
         {
             id: `anndruyanqa.jpg`,
@@ -626,6 +641,10 @@ galleries.set('photos', {
             name: `Ben Jacobson-Bell and Fuertes Observatory, May 2023`
         },
         {
+            id: `geeg2.jpg`,
+            name: `The Second Geeg Day`
+        },
+        {
             id: `fuerteshillzoom.jpg`,
             name: `Fuertes in May 2023`
         },
@@ -668,6 +687,11 @@ galleries.set('photos', {
             desc: `October 14, 2022`
         },
         {
+            id: `anthonyfine2022.jpg`,
+            name: `Irv Centennial!`,
+            desc: `The classic picture of Anthony Fine leading a tour during Irv's Centennial, October 14, 2022. © and provided by Jason Koski/Cornell University`
+        },
+        {
             id: `gillis100.jpg`,
             name: `Irv Centennial!`,
             desc: `October 14, 2022`
@@ -703,9 +727,24 @@ galleries.set('photos', {
             desc: `October 14, 2022`
         },
         {
+            id: `phillecslide2022.jpg`,
+            name: `Irv Centennial!`,
+            desc: `Our advisor Prof. Phil Nicholson provides a public lecture for Irv's 100th birthday celebration, hosted on October 14, 2022. © and provided by Jason Koski/Cornell University`
+        },
+        {
+            id: `phillec2022.jpg`,
+            name: `Irv Centennial!`,
+            desc: `Our advisor Prof. Phil Nicholson provides a public lecture for Irv's 100th birthday celebration, hosted on October 14, 2022. © and provided by Jason Koski/Cornell University`
+        },
+        {
             id: `sticker100.jpg`,
             name: `Irv Centennial Sticker Design`,
             desc: `Designed by Abigail Bohl`
+        },
+        {
+            id: `kaltenegger2022.jpg`,
+            name: `Observing with Irv`,
+            desc: `Prof. Lisa Kaltenegger observing with Irv. © and provided by Jason Koski/Cornell University`
         },
         {
             id: `clubfest2022.jpg`,
@@ -714,24 +753,16 @@ galleries.set('photos', {
         {
             id: `clubfest22telescope.jpg`,
             name: `ClubFest 2022`,
-            desc: `Provided by Cornell University`
+            desc: `© and provided by Cornell University`
         },
         {
             id: `clubfest22.jpg`,
             name: `ClubFest 2022`,
-            desc: `Provided by Cornell University`
+            desc: `© and provided by Cornell University`
         },
         {
             id: `officers2122.jpg`,
             name: `Outgoing and incoming officers, May 2022`,
-        },
-        {
-            id: `geeg2.jpg`,
-            name: `The Second Geeg Day`
-        },
-        {
-            id: `redapple.jpg`,
-            name: `To Cherry Springs`
         },
         {
             id: `sunset.jpg`,
@@ -741,11 +772,6 @@ galleries.set('photos', {
             id: `obsessionnvm.jpg`,
             name: `Ben Jacobson-Bell with the Obsession telescope`,
             desc: `April 2022`
-        },
-        {
-            id: `jbnv.jpg`,
-            name: `Ben Jacobson-Bell with Irv`,
-            desc: `2022`
         },
         {
             id: `moonpuzzledone.jpg`,
@@ -793,6 +819,16 @@ galleries.set('photos', {
         {
             id: `fuerteswintermoon.jpg`,
             name: `Fuertes with Winter Moon`
+        },
+        {
+            id: `fuairtes012024.jpg`,
+            name: `Fuertes from the Air`,
+            desc: `January 2024. © and provided by Jason Koski/Cornell University`
+        },
+        {
+            id: `fuairtes102023.jpg`,
+            name: `Fuertes from the Air`,
+            desc: `October 2023. © and provided by Ryan Young/Cornell University`
         },
         {
             id: `fuairtes.jpg`,
@@ -884,8 +920,33 @@ galleries.set('photos', {
             name: `Irv's clock drive`
         },
         {
+            id: `irv2016.jpg`,
+            name: `Irv's eyepiece`,
+            desc: `© and provided by Jason Koski/Cornell University`
+        },
+        {
             id: `unfortunate.jpg`,
             name: `"Cleaning" Irv's objective lens`
+        },
+        {
+            id: `dome2016.jpg`,
+            name: `Student in Fuertes dome`,
+            desc: `© and provided by Jason Koski/Cornell University`
+        },
+        {
+            id: `window2013.jpg`,
+            name: `Student in Fuertes Classroom`,
+            desc: `2013. © and provided by Robert Barker/Cornell University`
+        },
+        {
+            id: `telescope2013.jpg`,
+            name: `The Irving Porter Church Memorial Telescope`,
+            desc: `2013. © and provided by Jason Koski/Cornell University`
+        },
+        {
+            id: `fuertes2013.jpg`,
+            name: `A Night at Fuertes`,
+            desc: `2013. © and provided by Robert Barker/Cornell University`
         },
         {
             id: `oai.jpg`,
@@ -918,6 +979,11 @@ galleries.set('photos', {
         {
             id: `spectrograph.jpg`,
             name: `Antique spectrograph`
+        },
+        {
+            id: `slidewall2010.jpg`,
+            name: `Slide Wall`,
+            desc: `2010. © and provided by Jason Koski/Cornell University`
         },
         {
             id: `slidewall.jpg`,
@@ -1242,7 +1308,7 @@ galleries.set(`messier`, {
             id: `m27irv.jpg`,
             name: `M27`,
             altname: `Dumbbell Nebula`,
-            desc: `Dumbbell Nebula, taken through the 12" Irving P. Church Refractor, May 26th, 2025, by Ben Jacobson-Bell, Andrew Lewis, Gillis Lowry, and Marquice Sanchez-Fleming. 19 x 90-second exposures, ISO 1600, stacked in Siril, and post-processed with Photoshop.`
+            desc: `Dumbbell Nebula, taken through the 12" Irving P. Church Refractor, May 26, 2025, by Ben Jacobson-Bell, Andrew Lewis, Gillis Lowry, and Marquice Sanchez-Fleming. 19 x 90-second exposures, ISO 1600, stacked in Siril, and post-processed with Photoshop.`
         },
         {
             name: `M28`
@@ -1505,7 +1571,7 @@ galleries.set(`messier`, {
         {
             id: `m92.jpg`,
             name: `M92`,
-            desc: `Globular cluster in Hercules. Taken through the 12" Irving P. Church Refractor, May 16th, 2025, by Ben Jacobson-Bell, Erik Payton, Gillis Lowry, and Ella Mansfield. 30 x 1-minute frames stacked in Siril and post-processed with GIMP.`
+            desc: `Globular cluster in Hercules. Taken through the 12" Irving P. Church Refractor, May 16, 2025, by Ben Jacobson-Bell, Erik Payton, Gillis Lowry, and Ella Mansfield. 30 x 1-minute frames stacked in Siril and post-processed with GIMP.`
         },
         {
             name: `M93`,
@@ -1515,7 +1581,7 @@ galleries.set(`messier`, {
             id: `m94.jpg`,
             name: `M94`,
             altname: `Crocodile's Eye Galaxy`,
-            desc: `Spiral galaxy in Canes Venatici. Taken through the 12" Irving P. Church Refractor on July 15th, 2025, by Ben Jacobson-Bell, Gillis Lowry, Marquice Sanchez-Fleming, Shane Kuo, and Treyton Grahn. 12 x 3-minute frames, ISO 3200, stacked in Siril and post-processed with Photoshop.`
+            desc: `Spiral galaxy in Canes Venatici. Taken through the 12" Irving P. Church Refractor on July 15, 2025, by Ben Jacobson-Bell, Gillis Lowry, Marquice Sanchez-Fleming, Shane Kuo, and Treyton Grahn. 12 x 3-minute frames, ISO 3200, stacked in Siril and post-processed with Photoshop.`
 
         },
         {
@@ -1798,7 +1864,7 @@ galleries.set(`astro`, {
             id: `m27irv.jpg`,
             name: `M27`,
             altname: `Dumbbell Nebula`,
-            desc: `Dumbbell Nebula, taken through the 12" Irving P. Church Refractor, May 26th, 2025, by Ben Jacobson-Bell, Andrew Lewis, Gillis Lowry, and Marquice Sanchez-Fleming. 19 x 90-second exposures, ISO 1600, stacked in Siril, and post-processed with Photoshop.`
+            desc: `Dumbbell Nebula, taken through the 12" Irving P. Church Refractor, May 26, 2025, by Ben Jacobson-Bell, Andrew Lewis, Gillis Lowry, and Marquice Sanchez-Fleming. 19 x 90-second exposures, ISO 1600, stacked in Siril, and post-processed with Photoshop.`
         },
         {
             id: `m29.jpg`,
@@ -2007,13 +2073,13 @@ galleries.set(`astro`, {
         {
             id: `m92.jpg`,
             name: `M92`,
-            desc: `Globular cluster in Hercules. Taken through the 12" Irving P. Church Refractor, May 16th, 2025, by Ben Jacobson-Bell, Erik Payton, Gillis Lowry, and Ella Mansfield. 30 x 1-minute frames stacked in Siril and post-processed with GIMP.`
+            desc: `Globular cluster in Hercules. Taken through the 12" Irving P. Church Refractor, May 16, 2025, by Ben Jacobson-Bell, Erik Payton, Gillis Lowry, and Ella Mansfield. 30 x 1-minute frames stacked in Siril and post-processed with GIMP.`
         },
         {
             id: `m94.jpg`,
             name: `M94`,
             altname: `Crocodile's Eye Galaxy`,
-            desc: `Spiral galaxy in Canes Venatici. Taken through the 12" Irving P. Church Refractor on July 15th, 2025, by Ben Jacobson-Bell, Gillis Lowry, Marquice Sanchez-Fleming, Shane Kuo, and Treyton Grahn. 12 x 3-minute frames, ISO 3200, stacked in Siril and post-processed with Photoshop.`
+            desc: `Spiral galaxy in Canes Venatici. Taken through the 12" Irving P. Church Refractor on July 15, 2025, by Ben Jacobson-Bell, Gillis Lowry, Marquice Sanchez-Fleming, Shane Kuo, and Treyton Grahn. 12 x 3-minute frames, ISO 3200, stacked in Siril and post-processed with Photoshop.`
 
         },
         {
