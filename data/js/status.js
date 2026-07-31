@@ -5,6 +5,9 @@ var status_data = `<div style="width: 100%; background-color: rgba(140, 0, 0, 0.
             <br>
             <!-- Status message -->
             <span style="text-shadow: white 0 0 4px; color: white; font-size: 24px; line-height: 1.5em;">We will be open every Friday, right into the Fall semester! Note that our main telescope is currently out of service for maintenance, but we will have other telescopes set up at the observatory throughout each open house.</span>
+            <br>
+            <br>
+            <span style="text-shadow: white 0 0 4px; color: white; font-size: 24px; line-height: 1.5em;">Join our mailing list <a href="#email">here</a> for information about open houses, lectures, and special events!</span>
         </div>`
 
 document.write(status_data);
