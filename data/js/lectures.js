@@ -190,8 +190,8 @@ var past_lecs = [
         ],
         desc: 'This year is the 75th anniversary of the Corning Museum of Glass. Corning Glass Works has been responsible for making the mirrors for many of the world\'s foremost astronomical telescopes. Prof. Anna Ho will share her firsthand experiences using one of those telescopes—the Hale Telescope on Mount Palomar—and how it is still a valuable tool for astronomers after more than 70 years in service.',
         media: {
-            type: 'photo',
-            ref: '22826'
+            type: 'video',
+            ref: '22826%%%NXSNAkC424A'
         }
     },
     {
