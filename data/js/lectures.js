@@ -43,6 +43,34 @@ var cur_lecs = [
     {
         attributes: [
             {
+                type: 'specialtitle',
+                value: 'The NASA Psyche Mission: First Journey to a Metal World'
+            },
+            {
+                type: 'presenter',
+                value: 'Dr. Lindy Elkins-Tanton'
+            },
+            {
+                type: 'datetime',
+                value: 'September 11th, 2026%7:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Rockefeller Hall Schwartz Auditorium'
+            }
+        ],
+        desc: 'A special public lecture is to be given by Dr. Lindy Elkins-Tanton, Principal Investigator of the NASA Psyche mission and Director of the Space Sciences Laboratory at the University of California, Berkeley.<br><br>The NASA Psyche mission, in flight in space as you read this, is on its way to orbit an immensely ancient object in our asteroid belt: A body largely made of metal, the first humans will ever have visited. When our solar system was just an infant, a myriad of planetesimals (tiny planet-like objects) formed in fewer than one million years. That\'s the same as saying, if the 4,567,000,000 years that our solar system has existed were instead a 24-hour day, the planetesimals formed in the first 18 seconds. Many planetesimals melted, allowing metal cores to form inside rocky mantles. Colliding planetesimals grew to form the rocky planets, including Earth. One of these planetesimal metal cores may still exist, revealed in the asteroid (16) Psyche.<br><br>Dr. Elkins-Tanton will discuss what is known and what is hypothesized about the asteroid, how we have planned a mission and built a spacecraft to study this unknown object, an update on where we are over two years post-launch, and what will be measured and discovered while the robotic spacecraft is orbiting the asteroid starting in 2029.',
+        media: {
+            type: 'photo',
+            ref: '91126'
+        }
+    },
+]
+
+var past_lecs = [
+    {
+        attributes: [
+            {
                 type: 'title',
                 value: 'Are We Alone? NASA\'s Hunt for Earth 2.0'
             },
@@ -166,9 +194,6 @@ var cur_lecs = [
             ref: '22826'
         }
     },
-]
-
-var past_lecs = [
     {
         attributes: [
             {
@@ -703,7 +728,7 @@ var past_lecs = [
                 value: 'Appel Commons Multipurpose Room 303'
             }
         ],
-        desc: 'Today, evidence of life can be seen all over the Earth, from the land and oceans to the atmosphere. These observations define what we look for when searching for life on other planets. But what about ancient life on Earth? Would the earlier life that roamed the Earth during the past 500 million years (from sponges to the first trees to dinosaurs) have been detectable to aliens from faraway exoplanets? How can we tell? And should we be looking for space-dinosaurs?<br>Our second lecture of the semester, hosted by Dr. Rebecca Payne, will discuss research on the biosignatures of life on the ancient Earth and the potential use of similar biosignatures for our own interstellar life-seeking purposes.',
+        desc: 'Today, evidence of life can be seen all over the Earth, from the land and oceans to the atmosphere. These observations define what we look for when searching for life on other planets. But what about ancient life on Earth? Would the earlier life that roamed the Earth during the past 500 million years (from sponges to the first trees to dinosaurs) have been detectable to aliens from faraway exoplanets? How can we tell? And should we be looking for space-dinosaurs?<br><br>Our second lecture of the semester, hosted by Dr. Rebecca Payne, will discuss research on the biosignatures of life on the ancient Earth and the potential use of similar biosignatures for our own interstellar life-seeking purposes.',
         media: {
             type: 'video',
             ref: '3124%%%S6AxTlTcx3g'
@@ -3904,7 +3929,7 @@ var past_lecs = [
                 value: 'Matipon Tangmatitham'
             }
         ],
-        desc: 'How does the universe "work"? What is the true nature and mechanism behind everything? While no one can really know for certain, modern cosmology proposes some interesting answers to such fundamental questions. This lecture will present a brief introduction to some cosmological theories that might explain the expansive nature of the universe.<br><br> So how do we know that the universe is expanding? What is meant by "expanding universe"? And simply, How does that work? Come to the Fuertes Observatory this Friday evening to find out.'
+        desc: 'How does the universe "work"? What is the true nature and mechanism behind everything? While no one can really know for certain, modern cosmology proposes some interesting answers to such fundamental questions. This lecture will present a brief introduction to some cosmological theories that might explain the expansive nature of the universe.<br><br>So how do we know that the universe is expanding? What is meant by "expanding universe"? And simply, How does that work? Come to the Fuertes Observatory this Friday evening to find out.'
     },
     {
         attributes: [
