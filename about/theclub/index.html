@@ -68,6 +68,7 @@
             text-align: left;
             padding: 6px;
             font-size: 0.75em;
+            max-width: 10vw;
         }
 
         td {
@@ -100,6 +101,11 @@
         @media only screen and (max-width: 750px) {
             #main_img {
                 width: 90% !important;
+            }
+
+            td,
+            th {
+                max-width: unset !important;
             }
         }
 
