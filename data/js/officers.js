@@ -14,8 +14,8 @@ const officers = [
     {
         title: "Vice President",
         highlight: true,
-        officer: "Andrew Lewis",
-        netid: "ail36"
+        officer: "Christopher Brown",
+        netid: "cpb95"
     },
     {
         title: "Treasurer",
