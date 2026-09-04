@@ -59,7 +59,7 @@ var cur_lecs = [
                 value: 'Rockefeller Hall Schwartz Auditorium'
             }
         ],
-        desc: 'The NASA Psyche mission is currently on its way to an ancient object in our asteroid belt: 16 Psyche, a body largely made of metal. Compress the solar system\'s 4.5-billion-year history into a single day, and its planetesimals formed in the first 18 seconds. Many melted, letting metal cores form inside rocky mantles. One of those cores may still exist, in asteroid 16 Psyche.<br><br>Dr. Lindy Elkins-Tanton, Principal Investigator of the NASA Psyche mission, will discuss what is known and hypothesized about the asteroid, the spacecraft built to study it, and what we\'ll discover when it arrives in 2029.',
+        desc: 'The NASA Psyche mission is currently on its way to an ancient object in our asteroid belt: 16 Psyche, a body largely made of metal. Compress the solar system\'s 4.5-billion-year history into a single day, and its planetesimals formed in the first 18 seconds. Many melted, letting metal cores form inside rocky mantles. One of those cores may still exist, in asteroid 16 Psyche.<br><br>Dr. Lindy Elkins-Tanton, Principal Investigator of the NASA Psyche mission, will discuss what is known and hypothesized about the asteroid, the spacecraft built to study it, and what we\'ll discover when it arrives in 2029.<br><br><b>Please register <a href="https://cglink.me/2ee/r2308443" target="_blank">here</a>!</b>',
         media: {
             type: 'photo',
             ref: '91126'
