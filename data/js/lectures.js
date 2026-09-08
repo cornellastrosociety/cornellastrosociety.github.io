@@ -43,6 +43,31 @@ var cur_lecs = [
     {
         attributes: [
             {
+                type: 'title',
+                value: 'The Search for Extraterrestrial Intelligence: History & Implications'
+            },
+            {
+                type: 'presenter',
+                value: 'Dr. Jacob Turner'
+            },
+            {
+                type: 'datetime',
+                value: 'September 25th, 2026%7:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Appel Commons Multipurpose Room 303'
+            }
+        ],
+        desc: 'The question of whether we alone in the universe is perhaps the most fundamentally unifying point of debate for civilizations throughout the history of humanity. This talk discusses the history and current efforts in this field, and thoroughly examines the Drake Equation, which allows astronomers to estimate the number intelligent civilizations with which we could achieve contact.',
+        media: {
+            type: 'photo',
+            ref: '92526'
+        }
+    },
+    {
+        attributes: [
+            {
                 type: 'specialtitle',
                 value: 'The NASA Psyche Mission: First Journey to a Metal World'
             },
