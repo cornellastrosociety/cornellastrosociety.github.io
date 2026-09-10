@@ -66,6 +66,7 @@ var cur_lecs = [
         }
     },
     {
+        id: 'psyche',
         attributes: [
             {
                 type: 'specialtitle',
