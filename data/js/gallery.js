@@ -1742,6 +1742,11 @@ galleries.set(`astro`, {
             desc: `Main-belt asteroid named after the Cornell Astronomical Society's faculty advisor since 1983, Professor Phil Nicholson. Attempt at detection made April 23, 2025, by Ben Jacobson-Bell, Erik Payton, Shane Kuo, and Andrew Lewis using the 12" Irving P. Church Refractor. Opposition was reached ~5 days earlier. Single frame (with Lyrid meteor streak) shown here.`
         },
         {
+            id: `phil.jpg`,
+            name: `Asteroid (7220) Philnicholson`,
+            desc: `Main-belt asteroid named after the Cornell Astronomical Society's faculty advisor since 1983, Professor Phil Nicholson. Taken by Shane Kuo, Andrew Lewis, Samuel Kim, Shantanusinh Parmar, Jason Peskin, and Maya Aboutaleb through the 8" Celestron C8 on September 7, 2026. 16 x 30-second frames stacked using Siril and post-processed with GIMP.`
+        },
+        {
             id: `jupbands.jpg`,
             name: `Jupiter`
         },
@@ -2116,6 +2121,12 @@ galleries.set(`astro`, {
             id: `m110.jpg`,
             name: `M110`,
             desc: `Satellite galaxy of the Andromeda Galaxy (M31). Taken by Marquice Sanchez-Fleming using the 12" Irving P. Church Refractor on July 3, 2025. Stacked in Siril from 24 x 2-minute frames, ISO 3200, and post-processed with Photoshop.`
+        },
+        {
+            id: `bubble.jpg`,
+            name: `Caldwell 11`,
+            altname: `Bubble Nebula`,
+            desc: `NGC 7635, Bubble Nebula. H2 emission nebula in Cassiopeia. Taken by Marquice Sanchez-Fleming, Shane Kuo, Gabe Nell, and Aaron Wang through the 12" Irving P. Church Refractor on September 14th, 2026. 9 x 2-minute frames stacked using Siril, and post-processed with GIMP.`
         },
         {
             id: `try6.jpg`,
