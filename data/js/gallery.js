@@ -1880,6 +1880,12 @@ galleries.set(`astro`, {
             desc: `Open cluster ("Cooling Tower Cluster") in Cygnus, near the Sadr region. Taken by Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis using the 12" Irving P. Church Refractor on June 2, 2025. Stacked in Siril from 66 x 30-second frames, and post-processed with GIMP.`
         },
         {
+            id: `samdromeda.jpg`,
+            name: `M31`,
+            altname: `Andromeda Galaxy`,
+            desc: `The Andromeda Galaxy, taken by Samuel Kim using a 200-mm f/3.5 lens on a sky-tracking DSLR camera, ISO 400. 106 x 1-minute frames, and 50 each of darks, flats, and biases. Stacked and processed in Siril, Lightroom, and Photoshop.`
+        },
+        {
             id: `andromeda.jpg`,
             name: `M31`,
             altname: `Andromeda Galaxy`,
