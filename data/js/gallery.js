@@ -1658,8 +1658,8 @@ galleries.set(`messier`, {
 
 galleries.set(`astro`, {
     galtype: 'astro',
-    width: 3,
-    incr: 4,
+    width: 6,
+    incr: 5,
     thumb: true,
     exclude: [],
     data: [
