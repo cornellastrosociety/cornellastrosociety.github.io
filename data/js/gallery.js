@@ -8,6 +8,10 @@ galleries.set('club', {
     exclude: [],
     data: [
         {
+            id: `2526.jpg`,
+            name: `2025-2026`
+        },
+        {
             id: `2425.jpg`,
             name: `2024-2025`
         },
