@@ -44,6 +44,31 @@ var cur_lecs = [
         attributes: [
             {
                 type: 'title',
+                value: 'The Axiverse: String-Theory Origins and Axion Dark Matter Abundance'
+            },
+            {
+                type: 'presenter',
+                value: 'Marquice Sanchez-Fleming'
+            },
+            {
+                type: 'datetime',
+                value: 'October 23rd, 2026%7:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Appel Commons Multipurpose Room 303'
+            }
+        ],
+        desc: 'About 85% of the matter in the universe is invisible, but we still don\'t know what it is. One leading candidate is the axion, a hypothetical particle first proposed to solve a puzzle about the strong nuclear force. String theory, which requires extra dimensions curled up too small to see, goes further: depending on the shape of those hidden dimensions, it can predict hundreds of axions at once, an "Axiverse."<br><br>Physics undergraduate student Marquice Sanchez-Fleming will explain how axions could have formed in the hot early universe and how the precisely measured amount of dark matter lets us test which of these string-theory models could describe our universe.',
+        media: {
+            type: 'photo',
+            ref: '102326'
+        }
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
                 value: 'The Search for Extraterrestrial Intelligence: History & Implications'
             },
             {
