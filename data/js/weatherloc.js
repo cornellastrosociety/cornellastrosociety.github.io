@@ -1,18 +1,18 @@
 const aqi = (lati, loni) => {
     var params = [];
-    var url = `https://www.airnowapi.org/aq/observation/latLong/current/?format=application/json&latitude=${lati}&longitude=${loni}&distance=225&API_KEY=09C7F15E-B6E6-4305-B9D4-4963D2B192C4`;
+    var url = `https://www.airnowapi.org/aq/observation/current/ziplatLong/?format=application/json&latitude=${lati}&longitude=${loni}&API_KEY=09C7F15E-B6E6-4305-B9D4-4963D2B192C4`;
     var xmlhttp3 = new XMLHttpRequest();
     xmlhttp3.onreadystatechange = function () {
         if (xmlhttp3.readyState == 4 && xmlhttp3.status == 200) {
             var json = JSON.parse(xmlhttp3.responseText);
-            if (json.length == 0) {
+            if (json.length == 0 || !!json.WebServiceError) {
                 params.push('No air quality data for this location');
             } else {
                 for (var param of json) {
-                    params.push(`<a target="_blank" href="https://www.airnow.gov/" style="font-size:12px"  title="Reporting Area: ${param.ReportingArea ?? 'None'}">${param.ParameterName}</a>: ${param.AQI}`);
+                    params.push(`<a target="_blank" href="https://www.airnow.gov/" style="font-size:12px"  title="Reporting Area: ${param.reportingAreaName ?? param.reportingAgency ?? 'None'} (${param.siteName ?? 'None'})">${param.parameterName}</a>: ${param.nowcastAQI}`);
                 }
-                document.getElementById('aqi').innerHTML = `<span style="font-size:12px;">${params.join('&nbsp&nbsp')}</span>`;
             }
+            document.getElementById('aqi').innerHTML = `<span style="font-size:12px;">${params.join('&nbsp&nbsp')}</span>`;
         }
     }
     xmlhttp3.open("GET", url, true);
