@@ -1262,7 +1262,7 @@ galleries.set(`messier`, {
             id: `m16.jpg`,
             name: `M16`,
             altname: `Eagle Nebula`,
-            desc: `Star cluster plus H II emission nebula in Sagittarius, also featuring the Pillars of Creation! Taken by Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming through the 12" Irving P. Church Refractor on June 25, 2025. 184 x 30-second frames stacked using Siril, and post-processed with Photoshop.`
+            desc: `Star cluster plus H II emission nebula in Sagittarius, also featuring the Pillars of Creation. Taken by Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming through the 12" Irving P. Church Refractor on June 25, 2025. 184 x 30-second frames stacked using Siril, and post-processed with Photoshop.`
         },
         {
             id: `fbswan.jpg`,
@@ -1834,7 +1834,7 @@ galleries.set(`astro`, {
             id: `m16.jpg`,
             name: `M16`,
             altname: `Eagle Nebula`,
-            desc: `Star cluster plus H II emission nebula in Sagittarius, also featuring the Pillars of Creation! Taken by Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming through the 12" Irving P. Church Refractor on June 25, 2025. 184 x 30-second frames stacked using Siril, and post-processed with Photoshop.`
+            desc: `Star cluster plus H II emission nebula in Sagittarius, also featuring the Pillars of Creation. Taken by Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming through the 12" Irving P. Church Refractor on June 25, 2025. 184 x 30-second frames stacked using Siril, and post-processed with Photoshop.`
         },
         {
             id: `fbswan.jpg`,
