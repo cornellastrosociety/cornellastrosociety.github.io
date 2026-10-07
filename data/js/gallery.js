@@ -1508,8 +1508,10 @@ galleries.set(`messier`, {
             name: `M73`
         },
         {
+            id: `m74.jpg`,
             name: `M74`,
-            altname: `Phantom Galaxy`
+            altname: `Phantom Galaxy`,
+            desc: `Grand design spiral galaxy in Pisces. Taken by Marquice Sanchez-Fleming through the 12” Irving P. Church Refractor on October 6th, 2026. Stacked and post-processed using 45 x 150-second frames in Siril.`
         },
         {
             name: `M75`
@@ -2046,6 +2048,12 @@ galleries.set(`astro`, {
             name: `M63`,
             altname: `Sunflower Galaxy`,
             desc: `Spiral galaxy in Canes Venatici near Ursa Major. Taken by Marquice Sanchez-Fleming, Shane Kuo, and Jillian Epstein through the 12" Irving P. Church Refractor on 6/29/25. 12 x 3-minute frames of 3200 ISO stacked using Siril, and post-processed with GIMP and Photoshop.`
+        },
+        {
+            id: `m74.jpg`,
+            name: `M74`,
+            altname: `Phantom Galaxy`,
+            desc: `Grand design spiral galaxy in Pisces. Taken by Marquice Sanchez-Fleming through the 12” Irving P. Church Refractor on October 6th, 2026. Stacked and post-processed using 45 x 150-second frames in Siril.`
         },
         {
             id: `m76.jpg`,
