@@ -44,6 +44,31 @@ var cur_lecs = [
         attributes: [
             {
                 type: 'title',
+                value: 'Cold Worlds Lurking in our Solar Backyard'
+            },
+            {
+                type: 'presenter',
+                value: 'Dr. Jackie Faherty'
+            },
+            {
+                type: 'datetime',
+                value: 'October 30th, 2026%5:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Appel Commons Multipurpose Room 303'
+            }
+        ],
+        desc: 'It\'s hard to imagine but the neighborhood surrounding a few light years away from the Sun is still unmapped territory. It\'s possible there is a cold, Jupiter like object lurking below the threshold of the planet\'s best telescopes. In this talk I will review the quest to completely map the solar neighborhood for the closest worlds to our own. We will review the story of brown dwarfs, objects not quite stars and not quite planets, which astronomers use to understand the low mass end of how stars form and the high mass end of how planets "look". I will also invite you into the search for nearby worlds via two citizen science projects called "Backyard Worlds" and "Rogue Worlds".',
+        media: {
+            type: 'photo',
+            ref: '103026'
+        }
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
                 value: 'The Axiverse: String Theory Origins and Axion Dark Matter Abundance'
             },
             {
