@@ -86,8 +86,8 @@ var cur_lecs = [
         ],
         desc: 'About 85% of the matter in the universe is invisible, and we still don\'t know what it is. One leading candidate is the axion, a hypothetical particle first proposed to solve a puzzle about the strong nuclear force. String theory, which requires extra dimensions curled up too small to see, goes further: depending on the shape of those hidden dimensions, it can predict hundreds of axions at once, an "Axiverse."<br><br>Physics undergraduate student Marquice Sanchez-Fleming will explain how axions could have formed in the hot early universe and how the precisely measured amount of dark matter lets us test which of these string theory models could describe our universe.',
         media: {
-            type: 'photo',
-            ref: '102326'
+            type: 'video',
+            ref: '102326%%%k5NrEdJi6Oo'
         }
     },
     {
