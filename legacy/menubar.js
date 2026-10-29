@@ -25,6 +25,8 @@ function writeMenu(level)
     writeMainMenuRelative(prefix, 'messier.html', 'Messier Marathon');
     writeMainMenuAbsolute('http://htmlgear.tripod.com/guest/control.guest?u=cassite&i=1&a=view', 'Guestbook');
     writeMainMenuRelative(prefix, 'links.html', 'Useful Links');
+    document.write('<br>');
+    writeMainMenuAbsolute('/', 'Return to Active Site');
     writeMainMenuAbsoluteExt('https://hr.cornell.edu/about/workplace-rights/equal-education-and-employment', 'Equal Education and Employment');
     document.writeln('</div>');
 }
