@@ -44,7 +44,7 @@ var cur_lecs = [
         attributes: [
             {
                 type: 'title',
-                value: 'Life or Just a Weird'
+                value: 'Life or Just a Weird Rock?'
             },
             {
                 type: 'presenter',
