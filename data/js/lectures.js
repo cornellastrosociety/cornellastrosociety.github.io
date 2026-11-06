@@ -44,6 +44,31 @@ var cur_lecs = [
         attributes: [
             {
                 type: 'title',
+                value: 'Life or Just a Weird'
+            },
+            {
+                type: 'presenter',
+                value: 'Prof. Bonnie Teece'
+            },
+            {
+                type: 'datetime',
+                value: 'November 20th, 2026%7:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Appel Commons Multipurpose Room 303'
+            }
+        ],
+        desc: 'When we imagine life beyond Earth, we might picture strange beings roaming distant worlds. But what if life elsewhere looks less like an alien from a science fiction movie and more like a rock? If life is present elsewhere in our solar system, it\'s probably microbial, leaving behind trace chemical signals for us to find. Our challenge is in working out whether those signatures were produced by life or by geology acting alone. As it turns out, rocks can be surprisingly convincing impostors. In this talk, I will explore how scientists search for evidence of life, why some of our most promising clues can be deceiving, and what it really takes to tell biology from geology on other worlds.',
+        media: {
+            type: 'photo',
+            ref: '112026'
+        }
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
                 value: 'Tuning into Radio Signals from Distant Worlds: Carl Sagan\'s Birthday Night'
             },
             {
