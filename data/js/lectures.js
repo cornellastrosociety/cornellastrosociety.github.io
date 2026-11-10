@@ -4290,6 +4290,26 @@ var past_lecs = [
         attributes: [
             {
                 type: 'title',
+                value: 'On Making Telescopes'
+            },
+            {
+                type: 'presenter',
+                value: 'Prof. James R. Houck'
+            },
+            {
+                type: 'datetime',
+                value: 'October 18th, 1978%7:30 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Space Sciences Building Room 105'
+            }
+        ]
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
                 value: 'How to be an Astronomer'
             },
             {
@@ -4304,8 +4324,27 @@ var past_lecs = [
                 type: 'loc',
                 value: 'Clark Hall 700'
             }
-        ],
-        desc: 'We have no further details to include about this lecture, but thought its mention in the Daily Sun was cool enough to include here. Please contact us if you know anything about this lecture!'
+        ]
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
+                value: 'Astronomical Observation from Aircraft'
+            },
+            {
+                type: 'presenter',
+                value: 'Prof. James R. Houck'
+            },
+            {
+                type: 'datetime',
+                value: 'March 1st, 1974%8:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Fuertes Observatory'
+            }
+        ]
     },
     {
         attributes: [
