@@ -22,49 +22,30 @@ const aqi = (lati, loni) => {
 const moondat = (lati, loni, tzoff) => {
     var tzf = `Etc/GMT${tzoff < 0 ? '+' : '-'}${tzoff.toString().replace(/[+-]/g, '')}`;
     var locdate = new Date(new Date().toLocaleString("en-US", { timeZone: tzf }));
-    var formatlocdate = `${locdate.getFullYear()}-${locdate.getMonth()+1}-${locdate.getDate()}`;
-    var url = `https://aa.usno.navy.mil/api/rstt/oneday?date=${formatlocdate}&coords=${lati},${loni}&tz=${tzoff}`;
-    var xmlhttp4 = new XMLHttpRequest();
-    xmlhttp4.onreadystatechange = function () {
-        if (xmlhttp4.readyState == 4 && xmlhttp4.status == 200) {
-            var json = JSON.parse(xmlhttp4.responseText);
-            if (json.length == 0) {
-                document.getElementById('moondattoday').innerHTML = 'No moon data available';
-            } else {
-                var moonphase = json.properties.data.fracillum;
-                var phasename = json.properties.data.curphase.toLowerCase();
-                var moonrise = json.properties.data.moondata.filter(datum => datum.phen == 'Rise')[0];
-                var moonset = json.properties.data.moondata.filter(datum => datum.phen == 'Set')[0];
-                var formatstr = `<span style="font-size:12px;"><a target="_blank" href="https://aa.usno.navy.mil/data/api.html">Moon today</a>: ${moonphase} illuminated ${phasename}, rise: ${moonrise ? moonrise.time : 'none'}, set: ${moonset ? moonset.time : 'none'} (${tzf.replace('+', '^').replace('-', '+').replace('^', '-').replace('Etc/', '')})</span>`;
-                document.getElementById('moondattoday').innerHTML = formatstr;
+    for (const lcd of [locdate, new Date(new Date(locdate).setDate(locdate.getDate() + 1))]) {
+        const formatlocdate = `${lcd.getFullYear()}-${lcd.getMonth()+1}-${lcd.getDate()}`;
+        const url = `https://aa.usno.navy.mil/api/rstt/oneday?date=${formatlocdate}&coords=${lati},${loni}&tz=${tzoff}`;
+        const xmlhttp4 = new XMLHttpRequest();
+        xmlhttp4.onreadystatechange = function () {
+            if (xmlhttp4.readyState == 4 && xmlhttp4.status == 200) {
+                const json = JSON.parse(xmlhttp4.responseText);
+                if (json.length == 0) {
+                    document.getElementById('moondattoday').innerHTML = 'No moon data available';
+                } else {
+                    const moonphase = json.properties.data.fracillum;
+                    const phasename = json.properties.data.curphase.toLowerCase();
+                    const moonrise = json.properties.data.moondata.filter(datum => datum.phen == 'Rise')[0];
+                    const moonset = json.properties.data.moondata.filter(datum => datum.phen == 'Set')[0];
+                    const sunrise = json.properties.data.sundata.filter(datum => datum.phen == 'Rise')[0];
+                    const sunset = json.properties.data.sundata.filter(datum => datum.phen == 'Set')[0];
+                    const formatstr = `<span style="font-size:12px;"><a target="_blank" href="https://aa.usno.navy.mil/data/api.html">${lcd == locdate ? 'Today' : 'Tomorrow'}</a>: <em>Moon</em>: ${moonphase} ${phasename}, rise: ${moonrise ? moonrise.time : 'none'}, set: ${moonset ? moonset.time : 'none'}; <em>Sun</em>: rise: ${sunrise ? sunrise.time : 'none'}, set: ${sunset ? sunset.time : 'none'} (${tzf.replace('+', '^').replace('-', '+').replace('^', '-').replace('Etc/', '')})</span>`;
+                    document.getElementById(lcd == locdate ? 'moondattoday' : 'moondattomorrow').innerHTML = formatstr;
+                }
             }
         }
+        xmlhttp4.open("GET", url, true);
+        xmlhttp4.send(null);
     }
-    xmlhttp4.open("GET", url, true);
-    xmlhttp4.send(null);
-
-    var locdate = new Date(new Date().toLocaleString("en-US", { timeZone: tzf }));
-    locdate = new Date(locdate.setDate(locdate.getDate() + 1));
-    var formatlocdate = `${locdate.getFullYear()}-${locdate.getMonth()+1}-${locdate.getDate()}`;
-    var url = `https://aa.usno.navy.mil/api/rstt/oneday?date=${formatlocdate}&coords=${lati},${loni}&tz=${tzoff}`;
-    var xmlhttp5 = new XMLHttpRequest();
-    xmlhttp5.onreadystatechange = function () {
-        if (xmlhttp5.readyState == 4 && xmlhttp5.status == 200) {
-            var json = JSON.parse(xmlhttp5.responseText);
-            if (json.length == 0) {
-                document.getElementById('moondattomorrow').innerHTML = 'No moon data available';
-            } else {
-                var moonphase = json.properties.data.fracillum;
-                var phasename = json.properties.data.curphase.toLowerCase();
-                var moonrise = json.properties.data.moondata.filter(datum => datum.phen == 'Rise')[0];
-                var moonset = json.properties.data.moondata.filter(datum => datum.phen == 'Set')[0];
-                var formatstr = `<span style="font-size:12px;"><a target="_blank" href="https://aa.usno.navy.mil/data/api.html">Moon tomorrow</a>: ${moonphase} illuminated ${phasename}, rise: ${moonrise ? moonrise.time : 'none'}, set: ${moonset ? moonset.time : 'none'} (${tzf.replace('+', '^').replace('-', '+').replace('^', '-').replace('Etc/', '')})</span>`;
-                document.getElementById('moondattomorrow').innerHTML = formatstr;
-            }
-        }
-    }
-    xmlhttp5.open("GET", url, true);
-    xmlhttp5.send(null);
 }
 
 const getloc = () => {
