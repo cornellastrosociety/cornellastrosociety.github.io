@@ -86,8 +86,8 @@ var cur_lecs = [
         ],
         desc: 'Distant planets may be invisible to our eyes, yet they naturally emit radio signals we can tune into. In this talk, Dr. Turner will explore how auroral radio observations of exoplanets, the radio counterpart to the optical aurorae we see on Earth and Jupiter, can reveal their magnetic fields. Exoplanets with and without a magnetic field form, behave, and evolve differently, so these observations are essential to understanding their true nature and whether terrestrial planets remain habitable. They will also discuss how this emerging field connects to the search for extraterrestrial intelligence (SETI), and look ahead to a new frontier: radio telescopes on the Moon, whose uniquely quiet environment could unlock the deepest searches yet.',
         media: {
-            type: 'photo',
-            ref: '11626'
+            type: 'video',
+            ref: '11626%%%vKFWsowhc7o'
         }
     },
     {
