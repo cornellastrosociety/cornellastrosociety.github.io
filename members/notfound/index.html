@@ -64,6 +64,11 @@
             color: white;
             margin: 0;
         }
+        #modal_contents h4{
+            position: absolute;
+            bottom: 0;
+            padding-bottom: 20px;
+        }
         #modal_contents #close_button{
             position: absolute;
             top: 0;
@@ -120,6 +125,7 @@
                 <div id="col1" class="modal_column"></div>
                 <div id="col2" class="modal_column"><p></p></div>
             </div>
+            <h4></h4>
         </div>
     </div>
     <script>
@@ -211,6 +217,7 @@
             document.getElementById('modal').style.display = "block";
             document.querySelector('#modal_contents h1').textContent = data[index][categories[0]];
             document.querySelector('#modal_contents h2').textContent = data[index][categories[1]];
+            document.querySelector('#modal_contents h2').textContent += data[index][categories[2]] == "" ? "" : " / Lyr. " + data[index][categories[2]];
 
             document.querySelector('#col2').innerHTML  = "";
             for(const i of data[index][categories[3]]){
@@ -221,6 +228,9 @@
             for(const i of data[index][categories[4]]){
                 document.querySelector('#col1').innerHTML += `<p>${i.replaceAll('{','<em>').replaceAll('}','</em>')}</p>`;
             }
+
+             
+            document.querySelector('#modal_contents h4').textContent = data[index][categories[5]];
         }
 
         //generatePageFromString()
