@@ -50,24 +50,28 @@
         }
         #modal_contents{
             position: relative;
+            display: flex;
+            flex-direction: column;
             width: 100%;
             height: 100%;
-            background: rgba(0,0,50,.8);
+            background: rgba(0,0,50,.9);
             padding: 20px;
             box-sizing: border-box;
+            min-height: 0;
         }
         #col_wrap{
             display: flex;
-            max-height: 80%;
+            min-height: 0;
+        }
+        #col2{
+            padding-right: 40px;
         }
         #modal_contents *{
             color: white;
             margin: 0;
         }
         #modal_contents h4{
-            position: absolute;
-            bottom: 0;
-            padding-bottom: 20px;
+            padding: 20px 0px;
         }
         #modal_contents #close_button{
             position: absolute;
@@ -95,6 +99,7 @@
                 border-top: 2px dashed rgba(255,255,255,.4);
             }
             #col2{
+                padding-right: 0;
                 padding-bottom: 5px;
             }
             #col1 p, #col2 p{
@@ -153,7 +158,7 @@
         <!-- Main content -->
         <div id="main_box" style="width: 100%; background-color: rgba(0, 0, 0, 0.65); text-align: left; margin: auto; padding: 6vh 2vw; max-width: 100%; box-sizing: border-box; text-shadow: rgba(0, 0, 0, 0.5) -1px -1px 0px, rgba(0, 0, 0, 0.5) 1px 1px 0px; line-height: 1.375em;">
             <!-- replace #main_box -->
-            <span id="description" style="font-weight: bold;">Failed to load page contents. If you think this is an error, try <a onClick="login()" style="text-decoration:underline">logging in</a>.</span>
+            <span id="description" style="font-weight: bold;">Failed to load page contents. If you think this is an error, try <a onClick="login()" style="text-decoration:underline;cursor:pointer;">logging in</a>.</span>
         </div>
     </div>
  
@@ -165,6 +170,10 @@
 
         document.getElementById('modal_contents').addEventListener('click', (event) => {
             event.stopPropagation();
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') closeModal();
         });
 
         function login(){
