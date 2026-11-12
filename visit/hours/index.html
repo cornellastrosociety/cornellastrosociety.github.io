@@ -119,6 +119,9 @@
                     }).addTo(map);
                     map.attributionControl.setPrefix('Leaflet');
                     var popup = L.popup().setContent("Fuertes Observatory");
+                    L.circleMarker([44.6462, -63.5692], {radius: 3}).setStyle({color: 'red'}).addTo(map);
+                    L.circleMarker([18.4612, -77.9363], {radius: 3}).setStyle({color: 'green'}).addTo(map);
+                    L.circleMarker([45.1408, -61.9842], {radius: 3}).setStyle({color: 'goldenrod'}).addTo(map);
                     var marker = L.marker([42.4528, -76.4745]).addTo(map);
                     marker.bindPopup(popup).openPopup();
                 </script>

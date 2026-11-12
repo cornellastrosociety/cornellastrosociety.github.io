@@ -43,7 +43,133 @@ var cur_lecs = [
     {
         attributes: [
             {
-                type: 'specialtitle',
+                type: 'title',
+                value: 'Life or Just a Weird Rock?'
+            },
+            {
+                type: 'presenter',
+                value: 'Prof. Bonnie Teece'
+            },
+            {
+                type: 'datetime',
+                value: 'November 20th, 2026%7:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Appel Commons Multipurpose Room 303'
+            }
+        ],
+        desc: 'When we imagine life beyond Earth, we might picture strange beings roaming distant worlds. But what if life elsewhere looks less like an alien from a science fiction movie and more like a rock? If life is present elsewhere in our solar system, it\'s probably microbial, leaving behind trace chemical signals for us to find. Our challenge is in working out whether those signatures were produced by life or by geology acting alone. As it turns out, rocks can be surprisingly convincing impostors. In this talk, I will explore how scientists search for evidence of life, why some of our most promising clues can be deceiving, and what it really takes to tell biology from geology on other worlds.',
+        media: {
+            type: 'photo',
+            ref: '112026'
+        }
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
+                value: 'Tuning into Radio Signals from Distant Worlds: Carl Sagan\'s Birthday Night'
+            },
+            {
+                type: 'presenter',
+                value: 'Dr. Jake Turner'
+            },
+            {
+                type: 'datetime',
+                value: 'November 6th, 2026%7:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Appel Commons Multipurpose Room 303'
+            }
+        ],
+        desc: 'Distant planets may be invisible to our eyes, yet they naturally emit radio signals we can tune into. In this talk, Dr. Turner will explore how auroral radio observations of exoplanets, the radio counterpart to the optical aurorae we see on Earth and Jupiter, can reveal their magnetic fields. Exoplanets with and without a magnetic field form, behave, and evolve differently, so these observations are essential to understanding their true nature and whether terrestrial planets remain habitable. They will also discuss how this emerging field connects to the search for extraterrestrial intelligence (SETI), and look ahead to a new frontier: radio telescopes on the Moon, whose uniquely quiet environment could unlock the deepest searches yet.',
+        media: {
+            type: 'video',
+            ref: '11626%%%vKFWsowhc7o'
+        }
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
+                value: 'Cold Worlds Lurking in our Solar Backyard'
+            },
+            {
+                type: 'presenter',
+                value: 'Dr. Jackie Faherty'
+            },
+            {
+                type: 'datetime',
+                value: 'October 30th, 2026%5:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Appel Commons Multipurpose Room 303'
+            }
+        ],
+        desc: 'It\'s hard to imagine but the neighborhood surrounding a few light years away from the Sun is still unmapped territory. It\'s possible there is a cold, Jupiter like object lurking below the threshold of the planet\'s best telescopes. In this talk I will review the quest to completely map the solar neighborhood for the closest worlds to our own. We will review the story of brown dwarfs, objects not quite stars and not quite planets, which astronomers use to understand the low mass end of how stars form and the high mass end of how planets "look". I will also invite you into the search for nearby worlds via two citizen science projects called "Backyard Worlds" and "Rogue Worlds".',
+        media: {
+            type: 'photo',
+            ref: '103026'
+        }
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
+                value: 'The Axiverse: String Theory Origins and Axion Dark Matter Abundance'
+            },
+            {
+                type: 'presenter',
+                value: 'Marquice Sanchez-Fleming'
+            },
+            {
+                type: 'datetime',
+                value: 'October 23rd, 2026%7:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Appel Commons Multipurpose Room 303'
+            }
+        ],
+        desc: 'About 85% of the matter in the universe is invisible, and we still don\'t know what it is. One leading candidate is the axion, a hypothetical particle first proposed to solve a puzzle about the strong nuclear force. String theory, which requires extra dimensions curled up too small to see, goes further: depending on the shape of those hidden dimensions, it can predict hundreds of axions at once, an "Axiverse."<br><br>Physics undergraduate student Marquice Sanchez-Fleming will explain how axions could have formed in the hot early universe and how the precisely measured amount of dark matter lets us test which of these string theory models could describe our universe.',
+        media: {
+            type: 'video',
+            ref: '102326%%%k5NrEdJi6Oo'
+        }
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
+                value: 'The Search for Extraterrestrial Intelligence: History & Implications'
+            },
+            {
+                type: 'presenter',
+                value: 'Dr. Jacob Turner'
+            },
+            {
+                type: 'datetime',
+                value: 'September 25th, 2026%7:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Appel Commons Multipurpose Room 303'
+            }
+        ],
+        desc: 'The question of whether we alone in the universe is perhaps the most fundamentally unifying point of debate for civilizations throughout the history of humanity. This talk discusses the history and current efforts in this field, and thoroughly examines the Drake Equation, which allows astronomers to estimate the number intelligent civilizations with which we could achieve contact.',
+        media: {
+            type: 'video',
+            ref: '92526%%%MQnbpOD85NQ'
+        }
+    },
+    {
+        id: 'psyche',
+        attributes: [
+            {
+                type: 'title',
                 value: 'The NASA Psyche Mission: First Journey to a Metal World'
             },
             {
@@ -59,10 +185,10 @@ var cur_lecs = [
                 value: 'Rockefeller Hall Schwartz Auditorium'
             }
         ],
-        desc: 'The NASA Psyche mission is currently on its way to an ancient object in our asteroid belt: 16 Psyche, a body largely made of metal. Compress the solar system\'s 4.5-billion-year history into a single day, and its planetesimals formed in the first 18 seconds. Many melted, letting metal cores form inside rocky mantles. One of those cores may still exist, in asteroid 16 Psyche.<br><br>Dr. Lindy Elkins-Tanton, Principal Investigator of the NASA Psyche mission, will discuss what is known and hypothesized about the asteroid, the spacecraft built to study it, and what we\'ll discover when it arrives in 2029.<br><br><b>Please register <a href="https://cglink.me/2ee/r2308443" target="_blank">here</a>!</b>',
+        desc: 'The NASA Psyche mission is currently on its way to an ancient object in our asteroid belt: 16 Psyche, a body largely made of metal. Compress the solar system\'s 4.5-billion-year history into a single day, and its planetesimals formed in the first 18 seconds. Many melted, letting metal cores form inside rocky mantles. One of those cores may still exist, in asteroid 16 Psyche.<br><br>Dr. Lindy Elkins-Tanton, Principal Investigator of the NASA Psyche mission, will discuss what is known and hypothesized about the asteroid, the spacecraft built to study it, and what we\'ll discover when it arrives in 2029.',
         media: {
-            type: 'photo',
-            ref: '91126'
+            type: 'video',
+            ref: '91126%%%nXt93SOUsAs'
         }
     },
 ]
@@ -4164,6 +4290,26 @@ var past_lecs = [
         attributes: [
             {
                 type: 'title',
+                value: 'On Making Telescopes'
+            },
+            {
+                type: 'presenter',
+                value: 'Prof. James R. Houck'
+            },
+            {
+                type: 'datetime',
+                value: 'October 18th, 1978%7:30 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Space Sciences Building Room 105'
+            }
+        ]
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
                 value: 'How to be an Astronomer'
             },
             {
@@ -4178,8 +4324,27 @@ var past_lecs = [
                 type: 'loc',
                 value: 'Clark Hall 700'
             }
-        ],
-        desc: 'We have no further details to include about this lecture, but thought its mention in the Daily Sun was cool enough to include here. Please contact us if you know anything about this lecture!'
+        ]
+    },
+    {
+        attributes: [
+            {
+                type: 'title',
+                value: 'Astronomical Observation from Aircraft'
+            },
+            {
+                type: 'presenter',
+                value: 'Prof. James R. Houck'
+            },
+            {
+                type: 'datetime',
+                value: 'March 1st, 1974%8:00 PM'
+            },
+            {
+                type: 'loc',
+                value: 'Fuertes Observatory'
+            }
+        ]
     },
     {
         attributes: [

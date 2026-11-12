@@ -1,18 +1,18 @@
 const aqi = (lati, loni) => {
     var params = [];
-    var url = `https://www.airnowapi.org/aq/observation/latLong/current/?format=application/json&latitude=${lati}&longitude=${loni}&distance=225&API_KEY=09C7F15E-B6E6-4305-B9D4-4963D2B192C4`;
+    var url = `https://www.airnowapi.org/aq/observation/current/ziplatLong/?format=application/json&latitude=${lati}&longitude=${loni}&API_KEY=09C7F15E-B6E6-4305-B9D4-4963D2B192C4`;
     var xmlhttp3 = new XMLHttpRequest();
     xmlhttp3.onreadystatechange = function () {
         if (xmlhttp3.readyState == 4 && xmlhttp3.status == 200) {
             var json = JSON.parse(xmlhttp3.responseText);
-            if (json.length == 0) {
+            if (json.length == 0 || !!json.WebServiceError) {
                 params.push('No air quality data for this location');
             } else {
                 for (var param of json) {
-                    params.push(`<a target="_blank" href="https://www.airnow.gov/" style="font-size:12px"  title="Reporting Area: ${param.ReportingArea ?? 'None'}">${param.ParameterName}</a>: ${param.AQI}`);
+                    params.push(`<a target="_blank" href="https://www.airnow.gov/" style="font-size:12px"  title="Reporting Area: ${param.reportingAreaName ?? param.reportingAgency ?? 'None'} (${param.siteName ?? 'None'})">${param.parameterName}</a>: ${param.nowcastAQI}`);
                 }
-                document.getElementById('aqi').innerHTML = `<span style="font-size:12px;">${params.join('&nbsp&nbsp')}</span>`;
             }
+            document.getElementById('aqi').innerHTML = `<span style="font-size:12px;">${params.join('&nbsp&nbsp')}</span>`;
         }
     }
     xmlhttp3.open("GET", url, true);
@@ -22,49 +22,30 @@ const aqi = (lati, loni) => {
 const moondat = (lati, loni, tzoff) => {
     var tzf = `Etc/GMT${tzoff < 0 ? '+' : '-'}${tzoff.toString().replace(/[+-]/g, '')}`;
     var locdate = new Date(new Date().toLocaleString("en-US", { timeZone: tzf }));
-    var formatlocdate = `${locdate.getFullYear()}-${locdate.getMonth()+1}-${locdate.getDate()}`;
-    var url = `https://aa.usno.navy.mil/api/rstt/oneday?date=${formatlocdate}&coords=${lati},${loni}&tz=${tzoff}`;
-    var xmlhttp4 = new XMLHttpRequest();
-    xmlhttp4.onreadystatechange = function () {
-        if (xmlhttp4.readyState == 4 && xmlhttp4.status == 200) {
-            var json = JSON.parse(xmlhttp4.responseText);
-            if (json.length == 0) {
-                document.getElementById('moondattoday').innerHTML = 'No moon data available';
-            } else {
-                var moonphase = json.properties.data.fracillum;
-                var phasename = json.properties.data.curphase.toLowerCase();
-                var moonrise = json.properties.data.moondata.filter(datum => datum.phen == 'Rise')[0];
-                var moonset = json.properties.data.moondata.filter(datum => datum.phen == 'Set')[0];
-                var formatstr = `<span style="font-size:12px;"><a target="_blank" href="https://aa.usno.navy.mil/data/api.html">Moon today</a>: ${moonphase} illuminated ${phasename}, rise: ${moonrise ? moonrise.time : 'none'}, set: ${moonset ? moonset.time : 'none'} (${tzf.replace('+', '^').replace('-', '+').replace('^', '-').replace('Etc/', '')})</span>`;
-                document.getElementById('moondattoday').innerHTML = formatstr;
+    for (const lcd of [locdate, new Date(new Date(locdate).setDate(locdate.getDate() + 1))]) {
+        const formatlocdate = `${lcd.getFullYear()}-${lcd.getMonth()+1}-${lcd.getDate()}`;
+        const url = `https://aa.usno.navy.mil/api/rstt/oneday?date=${formatlocdate}&coords=${lati},${loni}&tz=${tzoff}`;
+        const xmlhttp4 = new XMLHttpRequest();
+        xmlhttp4.onreadystatechange = function () {
+            if (xmlhttp4.readyState == 4 && xmlhttp4.status == 200) {
+                const json = JSON.parse(xmlhttp4.responseText);
+                if (json.length == 0) {
+                    document.getElementById('moondattoday').innerHTML = 'No moon data available';
+                } else {
+                    const moonphase = json.properties.data.fracillum;
+                    const phasename = json.properties.data.curphase.toLowerCase();
+                    const moonrise = json.properties.data.moondata.filter(datum => datum.phen == 'Rise')[0];
+                    const moonset = json.properties.data.moondata.filter(datum => datum.phen == 'Set')[0];
+                    const sunrise = json.properties.data.sundata.filter(datum => datum.phen == 'Rise')[0];
+                    const sunset = json.properties.data.sundata.filter(datum => datum.phen == 'Set')[0];
+                    const formatstr = `<span style="font-size:12px;"><a target="_blank" href="https://aa.usno.navy.mil/data/api.html">${lcd == locdate ? 'Today' : 'Tomorrow'}</a>: <em>Moon</em>: ${moonphase} ${phasename}, rise: ${moonrise ? moonrise.time : 'none'}, set: ${moonset ? moonset.time : 'none'}; <em>Sun</em>: rise: ${sunrise ? sunrise.time : 'none'}, set: ${sunset ? sunset.time : 'none'} (${tzf.replace('+', '^').replace('-', '+').replace('^', '-').replace('Etc/', '')})</span>`;
+                    document.getElementById(lcd == locdate ? 'moondattoday' : 'moondattomorrow').innerHTML = formatstr;
+                }
             }
         }
+        xmlhttp4.open("GET", url, true);
+        xmlhttp4.send(null);
     }
-    xmlhttp4.open("GET", url, true);
-    xmlhttp4.send(null);
-
-    var locdate = new Date(new Date().toLocaleString("en-US", { timeZone: tzf }));
-    locdate = new Date(locdate.setDate(locdate.getDate() + 1));
-    var formatlocdate = `${locdate.getFullYear()}-${locdate.getMonth()+1}-${locdate.getDate()}`;
-    var url = `https://aa.usno.navy.mil/api/rstt/oneday?date=${formatlocdate}&coords=${lati},${loni}&tz=${tzoff}`;
-    var xmlhttp5 = new XMLHttpRequest();
-    xmlhttp5.onreadystatechange = function () {
-        if (xmlhttp5.readyState == 4 && xmlhttp5.status == 200) {
-            var json = JSON.parse(xmlhttp5.responseText);
-            if (json.length == 0) {
-                document.getElementById('moondattomorrow').innerHTML = 'No moon data available';
-            } else {
-                var moonphase = json.properties.data.fracillum;
-                var phasename = json.properties.data.curphase.toLowerCase();
-                var moonrise = json.properties.data.moondata.filter(datum => datum.phen == 'Rise')[0];
-                var moonset = json.properties.data.moondata.filter(datum => datum.phen == 'Set')[0];
-                var formatstr = `<span style="font-size:12px;"><a target="_blank" href="https://aa.usno.navy.mil/data/api.html">Moon tomorrow</a>: ${moonphase} illuminated ${phasename}, rise: ${moonrise ? moonrise.time : 'none'}, set: ${moonset ? moonset.time : 'none'} (${tzf.replace('+', '^').replace('-', '+').replace('^', '-').replace('Etc/', '')})</span>`;
-                document.getElementById('moondattomorrow').innerHTML = formatstr;
-            }
-        }
-    }
-    xmlhttp5.open("GET", url, true);
-    xmlhttp5.send(null);
 }
 
 const getloc = () => {
@@ -114,7 +95,7 @@ const getloc = () => {
             xmlhttp2.send(null);
 
             hour = document.getElementById('weatherhr').value;
-            document.getElementById('nwsembed').setAttribute('src', `https://forecast.weather.gov/meteograms/Plotter.php?lat=${lat}&lon=${lon}&wfo=${wfo}&zcode=${stt}Z025&gset=20&gdiff=10&unit=0&tinfo=EY5&ahour=${hour}&pcmd=11110111000000000000000000000000000000000000000000000000000&lg=en&indu=1!1!1!&dd=&bw=&hrspan=48&pqpfhr=6&psnwhr=6`); // zcode may be irrelevant but must be valid
+            document.getElementById('nwsembed').setAttribute('src', `https://forecast.weather.gov/meteograms/Plotter.php?lat=${lat}&lon=${lon}&wfo=${wfo}&zcode=${stt}Z025&gset=20&gdiff=10&unit=0&tinfo=EY5&ahour=${hour}&pcmd=11110111001000000000000000000000000000000000000000000000000&lg=en&indu=1!1!1!&dd=&bw=&hrspan=48&pqpfhr=6&psnwhr=6`); // zcode may be irrelevant but must be valid
             document.getElementById('forecastlink').setAttribute('href', `https://forecast.weather.gov/MapClick.php?lat=${lat}&lon=${lon}&unit=0&lg=english&FcstType=graphical`);
             btn.style.backgroundColor = 'rgba(84, 216, 93, 0.8)';
             clearTimeout(reset);
@@ -139,9 +120,9 @@ const sethr = () => {
 }
 
 var locmap = new Map();
-locmap.set('fuertes', 'https://forecast.weather.gov/meteograms/Plotter.php?lat=42.4528&lon=-76.4745&wfo=BGM&zcode=NYZ025&gset=20&gdiff=10&unit=0&tinfo=EY5&ahour=0&pcmd=11110111000000000000000000000000000000000000000000000000000&lg=en&indu=1!1!1!&dd=&bw=&hrspan=48&pqpfhr=6&psnwhr=6');
-locmap.set('hbo', 'https://forecast.weather.gov/meteograms/Plotter.php?lat=42.4582&lon=-76.3846&wfo=BGM&zcode=NYZ025&gset=20&gdiff=10&unit=0&tinfo=EY5&ahour=0&pcmd=11110111000000000000000000000000000000000000000000000000000&lg=en&indu=1!1!1!&dd=&bw=&hrspan=48&pqpfhr=6&psnwhr=6');
-locmap.set('cssp', 'https://forecast.weather.gov/meteograms/Plotter.php?lat=41.6633&lon=-77.8234&wfo=CTP&zcode=NYZ025&gset=20&gdiff=10&unit=0&tinfo=EY5&ahour=0&pcmd=11110111000000000000000000000000000000000000000000000000000&lg=en&indu=1!1!1!&dd=&bw=&hrspan=48&pqpfhr=6&psnwhr=6');
+locmap.set('fuertes', 'https://forecast.weather.gov/meteograms/Plotter.php?lat=42.4528&lon=-76.4745&wfo=BGM&zcode=NYZ025&gset=20&gdiff=10&unit=0&tinfo=EY5&ahour=0&pcmd=11110111001000000000000000000000000000000000000000000000000&lg=en&indu=1!1!1!&dd=&bw=&hrspan=48&pqpfhr=6&psnwhr=6');
+locmap.set('hbo', 'https://forecast.weather.gov/meteograms/Plotter.php?lat=42.4582&lon=-76.3846&wfo=BGM&zcode=NYZ025&gset=20&gdiff=10&unit=0&tinfo=EY5&ahour=0&pcmd=11110111001000000000000000000000000000000000000000000000000&lg=en&indu=1!1!1!&dd=&bw=&hrspan=48&pqpfhr=6&psnwhr=6');
+locmap.set('cssp', 'https://forecast.weather.gov/meteograms/Plotter.php?lat=41.6633&lon=-77.8234&wfo=CTP&zcode=NYZ025&gset=20&gdiff=10&unit=0&tinfo=EY5&ahour=0&pcmd=11110111001000000000000000000000000000000000000000000000000&lg=en&indu=1!1!1!&dd=&bw=&hrspan=48&pqpfhr=6&psnwhr=6');
 
 var locaqimap = new Map();
 locaqimap.set('fuertes', [42.4528, -76.4745]);

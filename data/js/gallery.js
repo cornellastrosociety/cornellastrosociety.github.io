@@ -8,6 +8,10 @@ galleries.set('club', {
     exclude: [],
     data: [
         {
+            id: `2526.jpg`,
+            name: `2025-2026`
+        },
+        {
             id: `2425.jpg`,
             name: `2024-2025`
         },
@@ -1258,7 +1262,7 @@ galleries.set(`messier`, {
             id: `m16.jpg`,
             name: `M16`,
             altname: `Eagle Nebula`,
-            desc: `Star cluster plus H II emission nebula in Sagittarius, also featuring the Pillars of Creation! Taken by Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming through the 12" Irving P. Church Refractor on June 25, 2025. 184 x 30-second frames stacked using Siril, and post-processed with Photoshop.`
+            desc: `Star cluster plus H II emission nebula in Sagittarius, also featuring the Pillars of Creation. Taken by Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming through the 12" Irving P. Church Refractor on June 25, 2025. 184 x 30-second frames stacked using Siril, and post-processed with Photoshop.`
         },
         {
             id: `fbswan.jpg`,
@@ -1504,8 +1508,10 @@ galleries.set(`messier`, {
             name: `M73`
         },
         {
+            id: `m74.jpg`,
             name: `M74`,
-            altname: `Phantom Galaxy`
+            altname: `Phantom Galaxy`,
+            desc: `Grand design spiral galaxy in Pisces. Taken by Marquice Sanchez-Fleming through the 12” Irving P. Church Refractor on October 6th, 2026. Stacked and post-processed using 45 x 150-second frames in Siril.`
         },
         {
             name: `M75`
@@ -1658,8 +1664,8 @@ galleries.set(`messier`, {
 
 galleries.set(`astro`, {
     galtype: 'astro',
-    width: 3,
-    incr: 4,
+    width: 6,
+    incr: 5,
     thumb: true,
     exclude: [],
     data: [
@@ -1740,6 +1746,11 @@ galleries.set(`astro`, {
             id: `asteroid7220philnicholson.jpg`,
             name: `Asteroid (7220) Philnicholson`,
             desc: `Main-belt asteroid named after the Cornell Astronomical Society's faculty advisor since 1983, Professor Phil Nicholson. Attempt at detection made April 23, 2025, by Ben Jacobson-Bell, Erik Payton, Shane Kuo, and Andrew Lewis using the 12" Irving P. Church Refractor. Opposition was reached ~5 days earlier. Single frame (with Lyrid meteor streak) shown here.`
+        },
+        {
+            id: `phil.jpg`,
+            name: `Asteroid (7220) Philnicholson`,
+            desc: `Main-belt asteroid named after the Cornell Astronomical Society's faculty advisor since 1983, Professor Phil Nicholson. Taken by Shane Kuo, Andrew Lewis, Samuel Kim, Shantanusinh Parmar, Jason Peskin, and Maya Aboutaleb through the 8" Celestron C8 on September 7, 2026. 16 x 30-second frames stacked using Siril and post-processed with GIMP.`
         },
         {
             id: `jupbands.jpg`,
@@ -1825,7 +1836,7 @@ galleries.set(`astro`, {
             id: `m16.jpg`,
             name: `M16`,
             altname: `Eagle Nebula`,
-            desc: `Star cluster plus H II emission nebula in Sagittarius, also featuring the Pillars of Creation! Taken by Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming through the 12" Irving P. Church Refractor on June 25, 2025. 184 x 30-second frames stacked using Siril, and post-processed with Photoshop.`
+            desc: `Star cluster plus H II emission nebula in Sagittarius, also featuring the Pillars of Creation. Taken by Ben Jacobson-Bell, Gillis Lowry, and Marquice Sanchez-Fleming through the 12" Irving P. Church Refractor on June 25, 2025. 184 x 30-second frames stacked using Siril, and post-processed with Photoshop.`
         },
         {
             id: `fbswan.jpg`,
@@ -1873,6 +1884,12 @@ galleries.set(`astro`, {
             name: `M29`,
             altname: `Cooling Tower Cluster`,
             desc: `Open cluster ("Cooling Tower Cluster") in Cygnus, near the Sadr region. Taken by Ben Jacobson-Bell, Shane Kuo, and Andrew Lewis using the 12" Irving P. Church Refractor on June 2, 2025. Stacked in Siril from 66 x 30-second frames, and post-processed with GIMP.`
+        },
+        {
+            id: `samdromeda.jpg`,
+            name: `M31`,
+            altname: `Andromeda Galaxy`,
+            desc: `The Andromeda Galaxy, taken by Samuel Kim using a 200-mm f/3.5 lens on a sky-tracking DSLR camera, ISO 400. 106 x 1-minute frames, and 50 each of darks, flats, and biases. Stacked and processed in Siril, Lightroom, and Photoshop.`
         },
         {
             id: `andromeda.jpg`,
@@ -2033,6 +2050,12 @@ galleries.set(`astro`, {
             desc: `Spiral galaxy in Canes Venatici near Ursa Major. Taken by Marquice Sanchez-Fleming, Shane Kuo, and Jillian Epstein through the 12" Irving P. Church Refractor on 6/29/25. 12 x 3-minute frames of 3200 ISO stacked using Siril, and post-processed with GIMP and Photoshop.`
         },
         {
+            id: `m74.jpg`,
+            name: `M74`,
+            altname: `Phantom Galaxy`,
+            desc: `Grand design spiral galaxy in Pisces. Taken by Marquice Sanchez-Fleming through the 12” Irving P. Church Refractor on October 6th, 2026. Stacked and post-processed using 45 x 150-second frames in Siril.`
+        },
+        {
             id: `m76.jpg`,
             name: `M76`,
             altname: `Little Dumbbell Nebula`,
@@ -2116,6 +2139,12 @@ galleries.set(`astro`, {
             id: `m110.jpg`,
             name: `M110`,
             desc: `Satellite galaxy of the Andromeda Galaxy (M31). Taken by Marquice Sanchez-Fleming using the 12" Irving P. Church Refractor on July 3, 2025. Stacked in Siril from 24 x 2-minute frames, ISO 3200, and post-processed with Photoshop.`
+        },
+        {
+            id: `bubble.jpg`,
+            name: `Caldwell 11`,
+            altname: `Bubble Nebula`,
+            desc: `NGC 7635, Bubble Nebula. H2 emission nebula in Cassiopeia. Taken by Marquice Sanchez-Fleming, Shane Kuo, Gabe Nell, and Aaron Wang through the 12" Irving P. Church Refractor on September 14th, 2026. 9 x 2-minute frames stacked using Siril, and post-processed with GIMP.`
         },
         {
             id: `try6.jpg`,
