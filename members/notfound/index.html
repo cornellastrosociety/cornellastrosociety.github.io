@@ -79,6 +79,7 @@
             padding-top: 10px;
             font-size: 20px;
             white-space: pre-line;
+            font-family: 'Z003'
         }
 
         @media only screen and (max-width: 600px) {
@@ -178,7 +179,12 @@
             const ciphertextCP = { ciphertext: ciphertextWA };
             const decrypted = CryptoJS.AES.decrypt( ciphertextCP, keyWA, { iv: ivWA });
 
-            return decrypted.toString(CryptoJS.enc.Utf8);
+            let decrypt = ""
+            try{
+                return decrypted.toString(CryptoJS.enc.Utf8)
+            } catch (error){
+            }
+            return []
         }
 
         async function generatePageFromString(){
@@ -212,12 +218,10 @@
 
             document.querySelector('#col1').innerHTML  = "";
             for(const i of data[index][categories[4]]){
-                document.querySelector('#col1').innerHTML += `<p>${i}</p>`;
+                document.querySelector('#col1').innerHTML += `<p>${i.replaceAll('{','<em>').replaceAll('}','</em>')}</p>`;
             }
-            document.querySelector('#col2 p').textContent = data[index][categories[3]];
         }
 
-        closeModal()
         generatePageFromString()
 
     </script>
