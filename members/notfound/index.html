@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="No content found on this page.">
+    <meta name="og:description" content="No content found on this page.">
+    <meta name="og:title" content="Shants | The Cornell Astronomical Society">
+    <meta name="og:type" content="website">
+    <meta property="og:image" content="https://www.cornellastrosociety.org/data/img/epic.jpg">
+    <meta name="twitter:image:src" content="https://www.cornellastrosociety.org/data/img/epic.jpg">
+    <title>Page Not Found | The Cornell Astronomical Society</title>
+    <link rel="stylesheet" href="/data/css/index.css">
+    <style>
+        body:before {
+            content: "";
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            background: url(/data/img/irv.jpg) no-repeat top center;
+            background-size: cover;
+        }
+
+        #main_box a:link,
+        #main_box a:visited,
+        #main_box a:hover,
+        #main_box a:active {
+            color: rgba(224, 57, 57, 0.8);
+            text-shadow: rgba(255, 255, 255, 1) 0 0 0;
+        }
+
+        .item{
+            padding: 10px;
+            font-size: 20px;
+            border-bottom: 2px solid #cccccc;
+        }
+        #modal{
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            padding: 50px;
+            animation: fadein ease-in-out 1s none
+        }
+        #modal_contents{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,50,.8);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #col_wrap{
+            display: flex;
+        }
+        #modal_contents *{
+            color: white;
+            margin: 0;
+        }
+        #modal_contents #close_button{
+            position: absolute;
+            top: 0;
+            right: 10px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        #col1{
+            flex-grow: 1;
+        }
+        #col1 p, #col2 p{
+            padding-top: 10px;
+            font-size: 20px;
+            white-space: pre-line;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #col_wrap{
+                flex-direction: column-reverse;
+            }
+            #col1{
+                text-overflow: scroll;
+                border-top: 2px dashed rgba(255,255,255,.4);
+            }
+            #col2{
+                padding-bottom: 5px;
+            }
+            #modal{
+                padding: 20px
+            }
+            #modal_contents{
+                max-height: 100%;
+            }
+            #modal_contents #close_button{
+                display: block;
+                position: static;
+                margin: -20px;
+                text-align: center;
+                background: rgba(0,0,100,.4); 
+                margin-bottom: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color: black; color: rgb(234, 234, 234); overflow-x: hidden;">
+
+    <script src="/data/js/nav.js"></script>
+
+    <div id="modal" onClick="closeModal()">
+        <div id="modal_contents">
+            <span id="close_button" onClick="closeModal()">✕</span>
+            <h1></h1><h2></h2>
+            <div id="col_wrap">
+                <div id="col1" class="modal_column"></div>
+                <div id="col2" class="modal_column"><p></p></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function closeModal(){
+            document.getElementById("modal").style.display = "none"
+        }
+        function openModal(){
+            document.getElementById("modal_contents").style.display = "block"
+        }
+    </script>
+
+    <div id="main" style="margin: auto; max-width: 67vw; animation: fadein ease-in-out 1.5s none;">
+
+        <!-- Title text -->
+        <div id="title" style="width: 100%; background-color: rgba(0, 0, 0, 0.65); text-align: center; margin: auto; max-width: 100%; box-sizing: border-box; font-family: Georgia, 'Times New Roman', Times, serif; text-shadow: rgba(0, 0, 0, 0.3) 0px 6px 0px; padding: 5vh 1vw; font-size: 41px; font-weight: bold;">Page Not Found</div>
+
+        <div style="padding: 2vh;"></div>
+
+        <!-- Main content -->
+        <div id="main_box" style="width: 100%; background-color: rgba(0, 0, 0, 0.65); text-align: left; margin: auto; padding: 6vh 2vw; max-width: 100%; box-sizing: border-box; text-shadow: rgba(0, 0, 0, 0.5) -1px -1px 0px, rgba(0, 0, 0, 0.5) 1px 1px 0px; line-height: 1.375em;">
+            <!-- replace #main_box -->
+            <span id="description" style="font-weight: bold;">Failed to load page contents.</span>
+        </div>
+    </div>
+
+    <script src="/data/js/footer.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script type="text/javascript">
+        const input = prompt("The password has to be said:")
+
+        let categories = []
+        let data = []
+
+        document.getElementById('modal_contents').addEventListener('click', (event) => {
+            event.stopPropagation();
+        });
+
+        async function decryptFile() {
+            // fetch file contents
+            // https://stackoverflow.com/a/6761141
+            let response = await fetch('./content.enc');
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            const fileText = await response.text()
+
+            // use input as key and iv
+            const ciphertext = fileText.replace(/\s+/g, "");
+            const key = CryptoJS.MD5(input).toString() + CryptoJS.MD5(input).toString();
+            const iv = CryptoJS.MD5(input).toString();
+
+            // decrypt file contents
+            // https://stackoverflow.com/a/6803583
+            const ciphertextWA = CryptoJS.enc.Base64.parse(ciphertext);
+            const keyWA = CryptoJS.enc.Hex.parse(key);
+            const ivWA = CryptoJS.enc.Hex.parse(iv);
+            const ciphertextCP = { ciphertext: ciphertextWA };
+            const decrypted = CryptoJS.AES.decrypt( ciphertextCP, keyWA, { iv: ivWA });
+
+            return decrypted.toString(CryptoJS.enc.Utf8);
+        }
+
+        async function generatePageFromString(){
+            const JString = await decryptFile();
+
+            try {
+                data = JSON.parse(JString);
+            } catch (error) {
+                console.error("Password may be incorrect");
+            }
+
+            if(data.length > 0){
+                categories = data[0].categories
+                document.getElementById("title").textContent = data[0].title
+                document.getElementById("description").textContent = data[0].description
+            }
+            for(let i=1; i<data.length; i++){
+                document.getElementById("main_box").innerHTML += `<div class="item" onclick="openModal(${i})">${data[i][categories[0]]}</div>`
+            }
+        }
+
+        function openModal(index){
+            document.getElementById('modal').style.display = "block";
+            document.querySelector('#modal_contents h1').textContent = data[index][categories[0]];
+            document.querySelector('#modal_contents h2').textContent = data[index][categories[1]];
+
+            document.querySelector('#col2').innerHTML  = "";
+            for(const i of data[index][categories[3]]){
+                document.querySelector('#col2').innerHTML += `<p>${i}</p>`;
+            }
+
+            document.querySelector('#col1').innerHTML  = "";
+            for(const i of data[index][categories[4]]){
+                document.querySelector('#col1').innerHTML += `<p>${i}</p>`;
+            }
+            document.querySelector('#col2 p').textContent = data[index][categories[3]];
+        }
+
+        closeModal()
+        generatePageFromString()
+
+    </script>
+</body>
+
+</html>
