@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="No content found on this page.">
     <meta name="og:description" content="No content found on this page.">
-    <meta name="og:title" content="Shants | The Cornell Astronomical Society">
+    <meta name="og:title" content="Page Not Found | The Cornell Astronomical Society">
     <meta name="og:type" content="website">
     <meta property="og:image" content="https://www.cornellastrosociety.org/data/img/epic.jpg">
     <meta name="twitter:image:src" content="https://www.cornellastrosociety.org/data/img/epic.jpg">
@@ -82,9 +82,11 @@
         @media only screen and (max-width: 600px) {
             #col_wrap{
                 flex-direction: column-reverse;
+                max-height: 80%;
             }
             #col1{
-                text-overflow: scroll;
+                overflow: scroll;
+                min-height: 0;
                 border-top: 2px dashed rgba(255,255,255,.4);
             }
             #col2{
@@ -92,9 +94,6 @@
             }
             #modal{
                 padding: 20px
-            }
-            #modal_contents{
-                max-height: 100%;
             }
             #modal_contents #close_button{
                 display: block;
