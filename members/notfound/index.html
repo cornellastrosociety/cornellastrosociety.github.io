@@ -58,6 +58,7 @@
         }
         #col_wrap{
             display: flex;
+            max-height: 80%;
         }
         #modal_contents *{
             color: white;
@@ -72,6 +73,7 @@
         }
         #col1{
             flex-grow: 1;
+            overflow: scroll;
         }
         #col1 p, #col2 p{
             padding-top: 10px;
@@ -82,10 +84,8 @@
         @media only screen and (max-width: 600px) {
             #col_wrap{
                 flex-direction: column-reverse;
-                max-height: 80%;
             }
             #col1{
-                overflow: scroll;
                 min-height: 0;
                 border-top: 2px dashed rgba(255,255,255,.4);
             }
@@ -128,6 +128,7 @@
         function openModal(){
             document.getElementById("modal_contents").style.display = "block"
         }
+        closeModal()
     </script>
 
     <div id="main" style="margin: auto; max-width: 67vw; animation: fadein ease-in-out 1.5s none;">
@@ -195,7 +196,7 @@
                 document.getElementById("description").textContent = data[0].description
             }
             for(let i=1; i<data.length; i++){
-                document.getElementById("main_box").innerHTML += `<div class="item" onclick="openModal(${i})">${data[i][categories[0]]}</div>`
+                document.getElementById("main_box").innerHTML += `<div class="item" onClick="openModal(${i})">${data[i][categories[0]]}</div>`
             }
         }
 
